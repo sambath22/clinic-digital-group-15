@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   Global Variables
+=========================== */
+:root {
+    --text-color: #ffffff;
+    --text-primary: #1f1854;
+    --bg-color: #ffffff;
+    --primary: #bfe2f5;
+    --secondary: #6bb4fd;
+    --accent: #99abc3;
+    --body-text: #707476;
+}
+
+.bg-dark-blue {
+    background-color: #0b2545 !important;
+    /* dark blue */
+    transition: background-color 0.3s;
+}
+
+header,
+header a,
+header a.nav-link {
+    color: #ffffff !important;
+    /* force white text and links */
+    transition: color 0.3s;
+}
+
+/* ===========================
+   Base Styles
+=========================== */
+body {
+    font-family: "Kantumruy Pro", sans-serif;
+    color: var(--body-text);
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* ===========================
+  & Navbar
+=========================== */
+.navbar {
+    padding: 14px;
+}
+
+/* Logo */
+.navbar .navbar-brand img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Nav Links */
+.navbar .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-primary);
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Active Link */
+.navbar .navbar-nav .nav-item .nav-link.active {
+    border-bottom: 2px solid var(--text-color);
+}
+
+/* Hover Underline Animation */
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: var(--text-color);
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+    width: 100%;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 991px) {
+    .navbar .navbar-nav .nav-link {
+        display: inline-block !important;
+        margin: 8px 0;
+    }
+}
+
+/* ===============Hero================== */
+.banner {
+    background-image: url(../img/doctor/banner_bg.svg);
+}
+
+@media (max-width: 1700px) {
+
+    .banner.style_3,
+    ._banner.style_5 {
+        min-height: 600px;
+    }
+}
+
+.banner.style_3,
+.banner.style_5 {
+    padding: 225px 0 155px;
+    min-height: 700px;
+    position: relative;
+}
+
+.bg_filed {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width: 1700px) {
+    .banner.style_5 .banner_img {
+        padding-right: 12px;
+    }
+}
+
+.banner.style_5 .banner_img {
+    right: 0;
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 5%;
+}
+
+.banner.style_3 .banner_img,
+.banner.style_5 .banner_img {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 110px;
+}
+
+.banner.style_3 .banner_img img,
+.banner.style_5 .banner_img img {
+    max-height: 100%;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1199px) {
+
+    .banner.style_3,
+    .banner.style_5 {
+        min-height: 500px;
+        padding: 160px 0 125px;
+    }
+}
+
+.banner.style_3,
+.banner.style_5 {
+    min-height: 500px;
+    padding: 160px 0 125px;
+
+}
+
+.banner_text .banner_title {
+    color: #284760;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.banner_text .banner_subtitle {
+    color: #284760;
+}
+
+/* ==========ebd Hero======== */
+
+.cs_height_65 {
+    height: 65px;
+}
+
+.cs_doctors_heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 30px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1700px) {
+    .cs_isotop_filter.cs_style1 {
+        gap: 20px 30px;
+    }
+}
+
+.cs_isotop_filter.cs_style1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 20px 80px;
+}
+
+@media (max-width: 1700px) {
+    .cs_isotop_filter.cs_style1 ul {
+        gap: 20px;
+    }
+}
+
+.cs_isotop_filter.cs_style1 ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 20px 36px;
+}
+
+.cs_mp0 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1700px) {
+    .cs_isotop_filter.cs_style1 ul {
+        gap: 20px;
+    }
+}
+
+.cs_isotop_filter.cs_style1 ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 20px 36px;
+}
+
+.cs_mp0 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cs_isotop_filter.cs_style1 ul a {
+    border: 1px solid #307bc4;
+    border-radius: 20px;
+    display: inline-block;
+    cursor: pointer;
+    color: #274760;
+    padding: 11px 26px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.cs_view_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.cs_view_box_in {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+}
+
+.cs_view_box_in button.active {
+    opacity: 1;
+    color: #307bc4;
+}
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.cs_view_box_in button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    opacity: 0.5;
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+    -webkit-appearance: button;
+}
+
+button {
+    color: inherit;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.cs_view_box_in button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    opacity: 0.5;
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+    -webkit-appearance: button;
+}
+
+button {
+    color: inherit;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+.doctor-title p {
+    color: #5592CE;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+.doctor-title h2 {
+    color: #284760;
+    font-size: 54px;
+    font-weight: 600;
+}
+
+.doctor-card {
+    background: transparent;
+}
+
+.doctor-card {
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.doctor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+.doctor-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(154deg, rgba(210, 234, 239, 0.27) 0%, rgba(134, 187, 241, 0.27) 100%);
+    box-shadow: initial;
+    transition: all 0.4s ease;
+}
+
+.doctor-img-wrapper img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.doctor-card:hover .doctor-img-wrapper img {
+    transform: scale(1.05);
+}
+
+.doctor-social {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.doctor-card:hover .doctor-social {
+    opacity: 1;
+}
+
+.doctor-social a {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: #0d6efd;
+    color: #fff;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.doctor-social a:hover {
+    background: #0056b3;
+}
+
+.card-title a {
+    text-decoration: none;
+    color: #0b2545;
+    transition: color 0.3s;
+}
+
+.card-title a:hover {
+    color: #0d6efd;
+}

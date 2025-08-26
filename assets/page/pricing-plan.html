@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing-plan</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- Animation css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- ---------font-awesome---------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ---hover.css-- -->
+
+    <link
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <!-- font family cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ---hover.css-- -->
+    <link rel="stylesheet" href="assets/vendor/css/hover-min.css" />
+    <!-- bootrap -->
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+     <!-- pricing -->
+    <link rel="stylesheet" href="../css/pricing-plan.css">
+
+   
+    <!-- hero-banner style  -->
+    <link rel="stylesheet" href="../css/department_page.css">
+
+  </head>
+  <body>
+    <!-- =============== -->
+    <!-- Header -->
+    <!-- ============== -->
+    <header class="fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/img/logo1.png" alt="Logo" height="40" />
+            </a>
+
+            <!-- Toggler for mobile -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul
+                class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-uppercase"
+              >
+                <li class="nav-item px-3">
+                  <a class="nav-link active" href="#hero">ទំព័រដើម</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="#about">អំពីពួកយើង</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="#appointment">កាណាត់ជួប</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="#department">សេវាកម្ម</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="#doctor">វេជ្ជបណ្ឌិត</a>
+                </li>
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown px-3">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    ទំព័រផ្សេង
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="assets/page/department_page.html"
+                        >សេវាកម្ម</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./assets/page/pricing-plan.html"
+                        >តម្លៃ</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#page3">ផ្ទាំងគ្រប់គ្រង</a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./assets/page/timetable.html"
+                        >តារាងពេលវេលា
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="assets/page/contact_us.html"
+                    >ទាក់ទងមកពួកយើង</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Buttons (Sign In / Register) -->
+            <div class="d-flex ms-3">
+              <button
+                class="btn btn-custom btn-signin me-2"
+                data-bs-toggle="modal"
+                data-bs-target="#signinModal"
+              >
+                Sign In
+              </button>
+              <button
+                class="btn btn-custom btn-register"
+                data-bs-toggle="modal"
+                data-bs-target="#registerModal"
+              >
+                Register
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+      <main>
+        <section class="hero_department d-flex align-items-center">
+          <div class="container">
+            <div class="row align-items-center pt-5">
+              <!-- Left Column -->
+                <div class="col-md-6" data-aos-duration="1000">
+                  <img
+                    src="../img/pricing-plan/banner_img.png"
+                    alt="Hero Image"
+                    class="img-fluid hero-img "
+                  />
+                </div>
+              <!-- Right Column -->
+                <div class="col-md-6" data-aos-duration="1000">
+                  <h1 class="display-4 fw-bold">ស្វែងរកផែនការត្រឹមត្រូវសម្រាប់អ្នក</h1>
+                  <p class="lead my-4">ស្វែងរកជម្រើសសមាជិកភាពរបស់យើង ហើយចាប់ផ្តើមដំណើររបស់អ្នកទៅកាន់សុខភាពកាន់តែប្រសើរ</p>
+                 <div class="btn-submit">
+                    <button type="submit" class="btn text-white mt-4 border border-primary rounded-pill py-2 px-4">Submit <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="price-package mt-5 pt-5">
+          <div class="container">
+            <div class="row g-4">
+              <!-- Family Health Plan -->
+              <div class="col-lg-4 col-md-6">
+                <div class="card pricing-card">
+                  <div class="card-header">
+                      <div class="plan-title">ផែនការសុខភាពគ្រួសារ</div>
+                      <p class="plan-description">
+                         ការថែទាំពិសេសសម្រាប់មនុស្សចាស់។ ទទួលបានអត្ថប្រយោជន៍ពីការវាយតម្លៃសមស្រប ការការពារការធ្លាក់ចុះ និងការគាំទ្រសម្រាប់ឆ្នាំមាសរបស់អ្នក។
+                      </p>
+                      <div class="price-section mt-5">
+                          <span class="price">$249</span><span class="price-period">/ខែ</span>
+                      </div>
+                </div>
+                <div class="card-body">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span>ការធានារ៉ាប់រងគ្រួសារទាំងមូល</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span>កាត់បន្ថយការចំណាយលើការចាក់វ៉ាក់សាំង</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span>ដំបូន្មានវេជ្ជសាស្រ្ត 24/7</span>
+                    </div>
+                </div>
+                <div class="cta-section">
+                    <a href="#" class="cta-button">
+                        Get Started
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+              </div>
+              </div>
+               <!-- Wellness Plan -->
+              <div class="col-lg-4 col-md-6">
+                  <div class="card pricing-card">
+                      <div class="card-header">
+                          <div class="plan-title">
+                              ផែនការសុខភាព
+                              <span class="plan-badge">ពេញនិយម</span>
+                          </div>
+                          <p class="plan-description">
+                            ការថែទាំសុខភាពដ៏ទូលំទូលាយ ស្របតាមតម្រូវការរបស់អ្នក។ ទទួលបានបទពិសោធន៍ការថែទាំគ្មានដែនកំណត់ និងការចូលប្រើប្រាស់ផ្តាច់មុខសម្រាប់ព្រឹត្តិការណ៍សុខភាព។
+                          </p>
+                          <div class="price-section">
+                              <span class="price">$99</span><span class="price-period">/ខែ</span>
+                          </div>
+                      </div>
+                      <div class="features-section p-4">
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ការត្រួតពិនិត្យគ្មានដែនកំណត់</span>
+                          </div>
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ការបញ្ចុះតម្លៃលើការព្យាបាល</span>
+                          </div>
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ការវាយតម្លៃសុខភាពប្រចាំឆ្នាំ</span>
+                          </div>
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>កាលវិភាគអាទិភាព</span>
+                          </div>
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>សិក្ខាសាលាសុខភាព</span>
+                          </div>
+                      </div>
+                      <div class="cta-section">
+                          <a href="#" class="cta-button">
+                              Get Started
+                              <i class="fas fa-arrow-right"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+                <!-- Senior Wellness Plan -->
+              <div class="col-lg-4 col-md-6">
+                  <div class="card pricing-card">
+                      <div class="card-header">
+                          <div class="plan-title">ផែនការសុខភាពជាន់ខ្ពស់</div>
+                          <p class="plan-description">
+                            ការថែទាំពិសេសសម្រាប់មនុស្សចាស់។ ទទួលបានអត្ថប្រយោជន៍ពីការវាយតម្លៃសមស្រប ការការពារការធ្លាក់ចុះ និងការគាំទ្រសម្រាប់ឆ្នាំមាសរបស់អ្នក។
+                          </p>
+                          <div class="price-section mt-5">
+                              <span class="price">$149</span><span class="price-period">/ខែ</span>
+                          </div>
+                      </div>
+                      <div class="features-section p-4 mb-5">
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ការថែទាំពិសេសពិសេស</span>
+                          </div>
+                          <div class="feature-item ">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ការវាយតម្លៃអាយុ</span>
+                          </div>
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>កម្មវិធីបង្ការការធ្លាក់</span>
+                          </div>
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ការបញ្ចុះតម្លៃថ្នាំ</span>
+                          </div>
+                      </div>
+                      <div class="cta-section">
+                          <a href="#" class="cta-button">
+                              Get Started
+                              <i class="fas fa-arrow-right"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+                <!-- Senior Wellness Plan -->
+              <div class="col-lg-4 col-md-6">
+                  <div class="card pricing-card">
+                      <div class="card-header">
+                          <div class="plan-title">ផែនការសុខភាពមាត់ធ្មេញ</div>
+                          <p class="plan-description">
+                            ញញឹមដោយភាពជឿជាក់។ សូមរីករាយជាមួយការពិនិត្យសុខភាពមាត់ធ្មេញជាទៀងទាត់ ការធានារ៉ាប់រងសង្គ្រោះបន្ទាន់ និងការបញ្ចុះតម្លៃផ្តាច់មុខលើនីតិវិធីធ្មេញ។
+                          </p>
+                          <div class="price-section mt-5">
+                              <span class="price">$79</span><span class="price-period">/ខែ</span>
+                          </div>
+                      </div>
+                      <div class="features-section p-4 mb-5">
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ការពិនិត្យធ្មេញ</span>
+                          </div>
+                          <div class="feature-item ">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ការបញ្ចុះតម្លៃលើនីតិវិធី</span>
+                          </div>
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ការធានារ៉ាប់រងពេលមានអាសន្ន</span>
+                          </div>
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ដំបូន្មានសុខភាពមាត់ធ្មេញ</span>
+                          </div>
+                      </div>
+                      <div class="cta-section">
+                          <a href="#" class="cta-button">
+                              Get Started
+                              <i class="fas fa-arrow-right"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+                <!-- Senior Wellness Plan -->
+              <div class="col-lg-4 col-md-6">
+                  <div class="card pricing-card">
+                      <div class="card-header">
+                          <div class="plan-title">សេវាសុខភាពស្ត្រី</div>
+                          <p class="plan-description">
+                            សេវាសុខភាពស្ត្រីដ៏ទូលំទូលាយ។ ទទួលបានការថែទាំផ្នែករោគស្ត្រី ជំនួយផែនការគ្រួសារ និងមុនពេលសម្រាល/ក្រោយសម្រាលសម្រាប់ប្រសិទ្ធភាពខ្ពស់បំផុត និងការជាសះស្បើយឡើងវិញ។
+                          </p>
+                          </p>
+                          <div class="price-section mt-5">
+                              <span class="price">$169</span><span class="price-period">/ខែ</span>
+                          </div>
+                      </div>
+                      <div class="features-section p-4 mb-5">
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>សេវាសុខភាពស្ត្រី</span>
+                          </div>
+                          <div class="feature-item ">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ការថែទាំរោគស្ត្រី</span>
+                          </div>
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ផែនការគ្រួសារ</span>
+                          </div>
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ជំនួយមុនពេលសម្រាល និងក្រោយពេលសម្រាលាំ</span>
+                          </div>
+                      </div>
+                      <div class="cta-section">
+                          <a href="#" class="cta-button">
+                              Get Started
+                              <i class="fas fa-arrow-right"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+                <!-- Senior Wellness Plan -->
+              <div class="col-lg-4 col-md-6">
+                  <div class="card pricing-card">
+                      <div class="card-header">
+                          <div class="plan-title">ផែនការកីឡា និងកាយសម្បទា</div>
+                          <p class="plan-description">
+                            ប្រសើរសម្រាប់អត្តពលិក។ ចូលប្រើការវាយតម្លៃរបួសកីឡា ការព្យាបាលដោយចលនា និងការណែនាំពីអ្នកជំនាញសម្រាប់ប្រសិទ្ធភាពខ្ពស់បំផុត និងការជាសះស្បើយឡើងវិញ។
+                          </p>
+                          <div class="price-section mt-5">
+                              <span class="price">$119</span><span class="price-period">/ខែ</span>
+                          </div>
+                      </div>
+                      <div class="features-section p-4 mb-5">
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ការវាយតម្លៃរបួសកីឡា</span>
+                          </div>
+                          <div class="feature-item ">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>វគ្គព្យាបាលដោយចលនា</span>
+                          </div>
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>អ្នកជំនាញវេជ្ជសាស្ត្រកីឡា</span>
+                          </div>
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ជំនួយសុខភាព</span>
+                          </div>
+                      </div>
+                      <div class="cta-section">
+                          <a href="#" class="cta-button">
+                              Get Started
+                              <i class="fas fa-arrow-right"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+      </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="floating-elements">
+            <i class="floating-icon fas fa-heartbeat"></i>
+            <i class="floating-icon fas fa-stethoscope"></i>
+            <i class="floating-icon fas fa-plus-circle"></i>
+            <i class="floating-icon fas fa-user-md"></i>
+            <i class="floating-icon fas fa-hospital"></i>
+            <i class="floating-icon fas fa-ambulance"></i>
+            <i class="floating-icon fas fa-pills"></i>
+            <i class="floating-icon fas fa-syringe"></i>
+            <i class="floating-icon fas fa-thermometer"></i>
+            <i class="floating-icon fas fa-dna"></i>
+            <i class="floating-icon fas fa-virus"></i>
+            <i class="floating-icon fas fa-lungs"></i>
+            <i class="floating-icon fas fa-wheelchair"></i>
+            <i class="floating-icon fas fa-first-aid"></i>
+        </div>
+        <div class="footer-content">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Company Info -->
+                    <div class=" col-lg-6 footer-logo text-center d-flex flex-column pt-5">
+                      <img src="../img/logo1.png" alt="" width="130px">
+                      <p class="footer-description mt-4">
+                        ដឹកនាំអនាគតនៃការថែទាំសុខភាពជាមួយនឹងដំណោះស្រាយឌីជីថលប្រកបដោយភាពច្នៃប្រឌិត។ សុខភាពរបស់អ្នក បច្ចេកវិទ្យារបស់យើង លទ្ធភាពគ្មានកំណត់។
+                      </p>
+                    </div>
+                      <!-- Newsletter -->
+                    <div class="col-lg-6 pt-5 mb-5">
+                        <div class="newsletter-section">
+                            <h3 class="newsletter-title">រក្សាទំនាក់ទំនង</h3>
+                            <p class="newsletter-subtitle">
+                                ទទួលបានការយល់ដឹងអំពីសុខភាពចុងក្រោយបំផុត និន្នាការថែទាំសុខភាពតាមប្រព័ន្ធឌីជីថល និងការណែនាំអំពីសុខភាពដែលបានបញ្ជូនទៅកាន់ប្រអប់សំបុត្ររបស់អ្នក។
+                            </p>
+                            <form class="newsletter-form">
+                              <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                              <button type="submit" class="newsletter-btn">
+                                  Subscribe <i class="fas fa-paper-plane ms-1"></i>
+                              </button>
+                            </form>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-lg-3 col-md-6">
+                      <div class="footer-section">
+                        <h5>ទំនាក់ទំនង</h5>
+                         <ul class="contact-info">
+                            <li class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <span>ទីក្រុងភ្នំពេញ, st190</span>
+                            </li>
+                            <li class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <span>+1 (555) 123-4567</span>
+                            </li>
+                            <li class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope fs-5 p-5 me-3"></i>
+                                </div>
+                                <span>Welcometo@DigitalClinic.com</span>
+                            </li>
+                        </ul>
+                      </div>
+                    
+                       
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-section ms-5">
+                            <h5>សេវាសុខភាព</h5>
+                            <ul class="footer-links">
+                                <li><a href="#">វេជ្ជសាស្ត្រ</a></li>
+                                <li><a href="#">ការត្រួតពិនិត្យសុខភាព</a></li>
+                                <li><a href="#">កំណត់ត្រាវេជ្ជសាស្រ្ត</a></li>
+                                <li><a href="#">ការកក់ការណាត់ជួប</a></li>
+                                <li><a href="#">ការគ្រប់គ្រងវេជ្ជបញ្ជា</a></li>
+                                <li><a href="#">ការពិគ្រោះជំងឺ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Resources -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-section ms-5">
+                            <h5>វត្ថុបំណង</h5>
+                            <ul class="footer-links">
+                                <li><a href="#">ប្លុកសុខភាព</a></li>
+                                <li><a href="#">Feedbackអ្នកជំងឺ</a></li>
+                                <li><a href="#">សំណួរគេសួរញឹកញាប់</a></li>
+                                <li><a href="#">មជ្ឈមណ្ឌលគាំទ្រ</a></li>
+                                <li><a href="#">មគ្គុទ្ទេសក៍ពេទ្យ</a></li>
+                                <li><a href="#">គន្លឹះសុខភាព</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Company -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-section">
+                            <h5>តំណភ្ជាប់រហ័ស</h5>
+                            <ul class="footer-links">
+                                <li><a href="#">ទំព័រដើម</a></li>
+                                <li><a href="#">អំពីពួកយើង</a></li>
+                                <li><a href="#">ផ្នែកឯកទេស</a></li>
+                                <li><a href="#">ប្លុក</a></li>
+                                <li><a href="#">ការណាត់ជួប</a></li>
+                                <li><a href="#">ទំនាក់ទំនង</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        &copy; 2025 គ្លីនិកឌីជីថល។. | 
+                    </div>
+                    <div class="footer-legal">
+                        <a href="#" class="footer-links" style="margin-right: 2rem;">រក្សាសិទ្ធដោយ by G-15</a>
+                        <a href="#" class="footer-links" style="margin-right: 2rem;">លក្ខខណ្ឌនៃសេវាកម្ម</a>
+                        <a href="#" class="footer-links">ANT Training Center</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Newsletter form submission
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.querySelector('.newsletter-input').value;
+            if (email) {
+                alert('Thank you for subscribing!');
+                document.querySelector('.newsletter-input').value = '';
+            }
+        });
+
+        // Back to top functionality
+        document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Show/hide back to top button
+        window.addEventListener('scroll', function() {
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.scrollY > 300) {
+                backToTop.style.opacity = '1';
+                backToTop.style.visibility = 'visible';
+            } else {
+                backToTop.style.opacity = '0';
+                backToTop.style.visibility = 'hidden';
+            }
+        });
+         // Header scroll class
+
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 50) {
+          header.classList.add("bg-dark-blue", "text-white", "shadow-sm");
+        } else {
+          header.classList.remove("bg-dark-blue", "text-white", "shadow-sm");
+        }
+      });
+
+    </script>
+</body>
+</html>
