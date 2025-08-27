@@ -314,20 +314,23 @@ img {
 /* Responsive */
 @media (max-width: 1440px) {
   .about-us-hero {
-    height: 60vh;
+    height: 40vh;
   }
   .about-us-hero .about-us-image,
   .about-us-hero .about-us-text {
-    height: 60vh;
+    height: 40vh;
   }
 }
 @media (max-width: 1024px) {
   .about-us-hero {
     height: 40vh;
   }
-  .about-us-hero .about-us-image,
+  .about-us-hero .about-us-image{
+    display: none;
+  }
   .about-us-hero .about-us-text {
     height: 40vh;
+    justify-content: center;
   }
   .about-us-hero .about-us-image h2 {
     font-size: 35px;
