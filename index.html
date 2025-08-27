@@ -1,1181 +1,864 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>clinic digital</title>
-    
-    <!-- Swiper CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <!-- ---------font-awesome---------- -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- bootrap CSS  -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <header class="fixed-top">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <div class="container-fluid">
-            <!-- Logo -->
-            <a class="navbar-brand" href="index.html">
-              <img src="assets/img/logo1.png" alt="Logo" height="40" />
-            </a>
 
-            <!-- Toggler for mobile -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>clinic digital</title>
 
-            <!-- Navbar Links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul
-                class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-uppercase"
-              >
-                <li class="nav-item px-3">
-                  <a class="nav-link active" href="#hero">ទំព័រដើម</a>
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="#about">អំពីពួកយើង</a>
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="#appointment">កាណាត់ជួប</a>
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="#department">សេវាកម្ម</a>
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="#doctor">វេជ្ជបណ្ឌិត</a>
-                </li>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- ---------font-awesome---------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootrap CSS  -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
 
-                <!-- Dropdown -->
-                <li class="nav-item dropdown px-3">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    ទំព័រផ្សេង
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+<body>
+  <header class="fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-xl navbar-dark">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/img/logo1.png" alt="Logo" height="40" />
+          </a>
+
+          <!-- Toggler for mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-uppercase">
+              <li class="nav-item px-3">
+                <a class="nav-link active" href="#hero">ទំព័រដើម</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#about">អំពីពួកយើង</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#appointment">កាណាត់ជួប</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#department">សេវាកម្ម</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#doctor">វេជ្ជបណ្ឌិត</a>
+              </li>
+
+              <!-- Dropdown -->
+              <li class="nav-item dropdown px-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  ទំព័រផ្សេង
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                      <a
-                        class="dropdown-item"
-                        href="assets/page/department_page.html"
-                        >សេវាកម្ម</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="./assets/page/pricing-plan.html"
-                        >តម្លៃ</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#page3">ផ្ទាំងគ្រប់គ្រង</a>
-                    </li>
-                           <li>
-                      <a class="dropdown-item" href="assets/page/timetable.html"
-                        >តារាងពេលវេលា
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="assets/page/doctor.html"
-                        >ព័ត៍មានវេជ្ជបណ្ឌិត
-                      </a>
-                    </li>
-                  </ul>
-                </li>
+                    <a class="dropdown-item" href="assets/page/department_page.html">សេវាកម្ម</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./assets/page/pricing-plan.html">តម្លៃ</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#page3">ផ្ទាំងគ្រប់គ្រង</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="assets/page/timetable.html">តារាងពេលវេលា
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="assets/page/doctor.html">ព័ត៍មានវេជ្ជបណ្ឌិត
+                    </a>
+                  </li>
+                </ul>
+              </li>
 
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="assets/page/contact_us.html"
-                    >ទាក់ទងមកពួកយើង</a
-                  >
-                </li>
-              </ul>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="assets/page/contact_us.html">ទាក់ទងមកពួកយើង</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Buttons (Sign In / Register) -->
+          <div class="d-flex ms-3">
+            <button class="btn btn-custom btn-signin me-2" data-bs-toggle="modal" data-bs-target="#signinModal">
+              ចុះឈ្មោះ
+            </button>
+            <button class="btn btn-custom btn-register" data-bs-toggle="modal" data-bs-target="#registerModal">
+              ចូលគណនី
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sign In Modal -->
+  <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content p-3">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signinModalLabel">Sign In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Enter email" />
             </div>
-
-            <!-- Buttons (Sign In / Register) -->
-            <div class="d-flex ms-3">
-              <button
-                class="btn btn-custom btn-signin me-2"
-                data-bs-toggle="modal"
-                data-bs-target="#signinModal"
-              >
-                Sign In
-              </button>
-              <button
-                class="btn btn-custom btn-register"
-                data-bs-toggle="modal"
-                data-bs-target="#registerModal"
-              >
-                Register
-              </button>
+            <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input type="password" class="form-control" placeholder="Enter password" />
             </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-
-    <!-- Sign In Modal -->
-    <div
-      class="modal fade"
-      id="signinModal"
-      tabindex="-1"
-      aria-labelledby="signinModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content p-3">
-          <div class="modal-header">
-            <h5 class="modal-title" id="signinModalLabel">Sign In</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Enter email"
-                />
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="Enter password"
-                />
-              </div>
-              <button type="submit" class="btn btn-primary w-100">
-                Sign In
-              </button>
-            </form>
-          </div>
+            <button type="submit" class="btn btn-primary w-100">
+              Sign In
+            </button>
+          </form>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Register Modal -->
-    <div
-      class="modal fade"
-      id="registerModal"
-      tabindex="-1"
-      aria-labelledby="registerModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content p-3">
-          <div class="modal-header">
-            <h5 class="modal-title" id="registerModalLabel">Register</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label class="form-label">Full Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter full name"
-                />
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Enter email"
-                />
-              </div>
-              <div class="mb-3">
-                <label class="form-label">Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="Create password"
-                />
-              </div>
-              <button type="submit" class="btn btn-success w-100">
-                Register
-              </button>
-            </form>
-          </div>
+  <!-- Register Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content p-3">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerModalLabel">Register</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" placeholder="Enter full name" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Enter email" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input type="password" class="form-control" placeholder="Create password" />
+            </div>
+            <button type="submit" class="btn btn-success w-100">
+              Register
+            </button>
+          </form>
         </div>
       </div>
     </div>
-    <!-- ==============HEADER[END]=================== -->
+  </div>
+  <!-- ==============HEADER[END]=================== -->
 
-    <main>
-      <!-- ================Hero-banner[START]===================== -->
-      <section id="hero" class="hero d-flex flex-column mb-0 pb-0">
-        <div class="container d-flex align-items-center">
-          <div class="row m-0 align-items-center w-100">
-            <!-- Left text -->
-            <div class="hero-tex col-xl-6 col-lg-6 col-md-12 col-12 text-white">
-              <h1 class="mb-5">
-                ការថែទាំប្រកបដោយមេត្តា <br />
-                លទ្ធផលពិសេស
-              </h1>
-              <div class="mb-3">
-                <a href="#" class="btn btn-light text-primary fw-bold"
-                  >ជំនួយសុខភាព</a
-                >
+  <main>
+    <!-- ================Hero-banner[START]===================== -->
+    <section id="hero" class="hero d-flex flex-column mb-0 pb-0">
+      <div class="container d-flex align-items-center">
+        <div class="row m-0 align-items-center w-100">
+          <!-- Left text -->
+          <div class="hero-tex col-xl-6 col-lg-6 col-md-12 col-12 text-white">
+            <h1 class="mb-5">
+              ការថែទាំប្រកបដោយមេត្តា <br />
+              លទ្ធផលពិសេស
+            </h1>
+            <div class="mb-3">
+              <a href="#" class="btn fw-bold hero-btn">ជំនួយសុខភាព</a>
+            </div>
+            <p>
+              ក្រុមវេជ្ជបណ្ឌិតដែលមានបទពិសោធន៍
+              និងអ្នកជំនាញផ្នែកថែទាំសុខភាពរបស់យើងប្តេជ្ញាផ្តល់ការថែទាំប្រកបដោយគុណភាព
+              និងការយកចិត្តទុកដាក់ផ្ទាល់ខ្លួនដល់អ្នកជំងឺរបស់យើង។
+            </p>
+          </div>
+
+          <!-- Right image -->
+          <div class="col-xl-6 col-lg-6 col-md-12 text-center me-5">
+            <img src="assets/img/patents.png" alt="Doctor and Family" class="cs_hero_patents" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================Hero-banner[END]===================== -->
+
+    <!-- About US -->
+    <section class="aboutus cs_shape_wrap mb-5" id="about">
+      <div class="cs_shape_3">
+        <svg width="738" height="1021" viewBox="0 0 738 1021" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.3"
+            d="M506.527 867.937C615.393 1097.48 818.459 1018.63 907.122 949.788C1042.42 829.481 1036.04 611.775 1029.54 527.791C1024.34 460.604 1062.82 284.256 1082.7 204.481C1083.75 -64.008 818.226 5.58123 770.748 15.9811C723.269 26.3809 576.724 101.716 421.771 86.8061C297.808 74.8779 186.268 99.512 145.993 113.32C-23.6388 193.807 -2.65999 291.251 7.10276 333.378C16.8655 375.504 69.7486 450.893 258.934 518.436C410.283 572.47 487.55 773.465 506.527 867.937Z"
+            fill="url(#paint0_linear_6_231)"></path>
+          <defs>
+            <linearGradient id="paint0_linear_6_231" x1="916.904" y1="949.82" x2="393.707" y2="-20.953"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#86BBF1" offset="0"></stop>
+              <stop offset="1" stop-color="#D2EAEF"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="cs_height_190 cs_height_xl_150 cs_height_lg_105"></div>
+      <div class="container">
+        <div class="experience row text-center align-items-center">
+          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-0">
+            <h2 class="mt-2">20+</h2>
+            <p class="mb-0">Year Of Experience</p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-md-0">
+            <h2 class="mt-2">95%</h2>
+            <p class="mb-0">Patient satisfaction rating</p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-md-0">
+            <h2 class="mt-2">5000+</h2>
+            <p class="mb-0">Patients served annually</p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-md-0">
+            <h2 class="mt-2">10+</h2>
+            <p class="mb-0">Healthcare providers on staff</p>
+          </div>
+        </div>
+
+        <div class="row align-items-center mt-5 gap_y_50">
+          <div class="col-lg-6">
+            <div class="about-image">
+              <img src="assets/img/about-us/about.png" alt="About" />
+              <div class="about_mini_img">
+                <img src="assets/img/about-us/about_mini.svg" alt="Mini" class="rotate_animation" />
+                <img src="assets/img/about-us/tick.svg" alt="Right" class="right_icon" />
               </div>
-              <p>
-                ក្រុមវេជ្ជបណ្ឌិតដែលមានបទពិសោធន៍
-                និងអ្នកជំនាញផ្នែកថែទាំសុខភាពរបស់យើងប្តេជ្ញាផ្តល់ការថែទាំប្រកបដោយគុណភាព
-                និងការយកចិត្តទុកដាក់ផ្ទាល់ខ្លួនដល់អ្នកជំងឺរបស់យើង។
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about_content">
+              <h3 class="subtitle text-uppercase">អំពីពួកយើង</h3>
+              <h2 class="title">
+                DigiTal Clinic គឺជាក្រុមគ្រូពេទ្យដែលមានបទពិសោធន៍
+              </h2>
+              <p class="mb-0">
+                ឧទ្ទិសដល់ការផ្តល់សេវាថែទាំសុខភាពគុណភាពខ្ពស់។ យើងជឿជាក់លើ ក
+                វិធីសាស្រ្តរួមចំពោះការថែទាំសុខភាពដែលផ្តោតលើការព្យាបាលទាំងមូល
+                មនុស្ស​មិន​ត្រឹម​តែ​ជា​ជំងឺ​ឬ​រោគ​សញ្ញា​នោះ​ទេ
               </p>
             </div>
-
-            <!-- Right image -->
-            <div class="col-xl-6 col-lg-6 col-md-12 text-center me-5">
-              <img
-                src="assets/img/patents.png"
-                alt="Doctor and Family"
-                class="cs_hero_patents"
-              />
-            </div>
           </div>
         </div>
-      </section>
-      <!-- ================Hero-banner[END]===================== -->
+      </div>
+    </section>
+    <!-- ===============ABOUT[END]================ -->
+    <!-- ==============TESTIMONIAL[START]=================== -->
 
-      <!-- About US -->
-      <section class="aboutus cs_shape_wrap mb-5" id="about">
-        <div class="cs_shape_3">
-          <svg
-            width="738"
-            height="1021"
-            viewBox="0 0 738 1021"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              opacity="0.3"
-              d="M506.527 867.937C615.393 1097.48 818.459 1018.63 907.122 949.788C1042.42 829.481 1036.04 611.775 1029.54 527.791C1024.34 460.604 1062.82 284.256 1082.7 204.481C1083.75 -64.008 818.226 5.58123 770.748 15.9811C723.269 26.3809 576.724 101.716 421.771 86.8061C297.808 74.8779 186.268 99.512 145.993 113.32C-23.6388 193.807 -2.65999 291.251 7.10276 333.378C16.8655 375.504 69.7486 450.893 258.934 518.436C410.283 572.47 487.55 773.465 506.527 867.937Z"
-              fill="url(#paint0_linear_6_231)"
-            ></path>
-            <defs>
-              <linearGradient
-                id="paint0_linear_6_231"
-                x1="916.904"
-                y1="949.82"
-                x2="393.707"
-                y2="-20.953"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#86BBF1" offset="0"></stop>
-                <stop offset="1" stop-color="#D2EAEF"></stop>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div class="cs_height_190 cs_height_xl_150 cs_height_lg_105"></div>
-        <div class="container">
-          <div class="experience row text-center align-items-center">
-            <div class="col-md-3 mb-3 mb-md-0">
-              <h2 class="mt-2">20+</h2>
-              <p class="mb-0">Year Of Experience</p>
-            </div>
-            <div class="col-md-3 mb-3 mb-md-0">
-              <h2 class="mt-2">95%</h2>
-              <p class="mb-0">Patient satisfaction rating</p>
-            </div>
-            <div class="col-md-3 mb-3 mb-md-0">
-              <h2 class="mt-2">5000+</h2>
-              <p class="mb-0">Patients served annually</p>
-            </div>
-            <div class="col-md-3 mb-3 mb-md-0">
-              <h2 class="mt-2">10+</h2>
-              <p class="mb-0">Healthcare providers on staff</p>
-            </div>
-          </div>
-
-          <div class="row align-items-center mt-5 gap_y_50">
-            <div class="col-lg-6">
-              <div class="about-image">
-                <img src="assets/img/about-us/about.png" alt="About" />
-                <div class="about_mini_img">
-                  <img
-                    src="assets/img/about-us/about_mini.svg"
-                    alt="Mini"
-                    class="rotate_animation"
-                  />
-                  <img
-                    src="assets/img/about-us/tick.svg"
-                    alt="Right"
-                    class="right_icon"
-                  />
-                </div>
+    <section class="testimonial cs_bg_filed align-items-cente py-5 border data-aos=" fade-up"">
+      <div class="container align-items-center">
+        <span>មតិយោបល់</span>
+        <h2>អ្វីដែលអ្នកជំងឺបាននិយាយ</h2>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <img src="assets/img/testimonial_img_1.png" alt="profile" />
+                <div class="testimonial-name">Laurence Vendetta</div>
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">
+                  ថ្មីៗនេះខ្ញុំត្រូវនាំកូនរបស់ខ្ញុំទៅ ProHealth សម្រាប់អនីតិជន
+                  របួស ហើយខ្ញុំចាប់អារម្មណ៍យ៉ាងខ្លាំងចំពោះការថែទាំ។ នេះ។
+                  គ្រូពេទ្យកុមារគឺអស្ចារ្យជាមួយគាត់
+                  ហើយធ្វើឱ្យគាត់មានអារម្មណ៍ស្រួល។ បុគ្គលិកមានចិត្តល្អ
+                  និងយកចិត្តទុកដាក់។
+                </p>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="about_content">
-                <h3 class="subtitle text-uppercase">អំពីពួកយើង</h3>
-                <h2 class="title">
-                  DigiTal Clinic គឺជាក្រុមគ្រូពេទ្យដែលមានបទពិសោធន៍
-                </h2>
-                <p class="mb-0">
-                  ឧទ្ទិសដល់ការផ្តល់សេវាថែទាំសុខភាពគុណភាពខ្ពស់។ យើងជឿជាក់លើ ក
-                  វិធីសាស្រ្តរួមចំពោះការថែទាំសុខភាពដែលផ្តោតលើការព្យាបាលទាំងមូល
-                  មនុស្ស​មិន​ត្រឹម​តែ​ជា​ជំងឺ​ឬ​រោគ​សញ្ញា​នោះ​ទេ
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <img src="assets/img/testimonial_img_2.png" alt="profile" />
+                <div class="testimonial-name">Paulo Hubert</div>
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">
+                  បទពិសោធន៍ដ៏អស្ចារ្យនៅគ្លីនិក! គ្រូពេទ្យគឺ ប្រកបដោយវិជ្ជាជីវៈ
+                  និងរួសរាយរាក់ទាក់ ហើយពួកគេបានធ្វើឱ្យខ្ញុំមានអារម្មណ៍ស្រួល
+                  ពីដើមដល់ចប់។ ផ្តល់អនុសាសន៍ខ្ពស់សម្រាប់គ្រួសារ
+                  ការថែទាំសុខភាព។
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <img src="assets/img/testimonial_img.jpg" alt="profile" />
+                <div class="testimonial-name">Sophia James</div>
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">
+                  សេវាកម្មនៅទីនេះគឺអស្ចារ្យណាស់។ ពួកគេពិតជាយកចិត្តទុកដាក់
+                  សុខុមាលភាពរបស់អ្នកជំងឺ។ ការ​ពិគ្រោះ​យោបល់​ឌីជីថល​បាន​រលូន
+                  និងងាយស្រួលចូលប្រើ។
                 </p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- ===============ABOUT[END]================ -->
-      <!-- ==============TESTIMONIAL[START]=================== -->
 
-      <section class="testimonial cs_bg_filed align-items-cente py-5 border data-aos="fade-up"">
-        <div class="container align-items-center">
-          <span>មតិយោបល់</span>
-          <h2>អ្វីដែលអ្នកជំងឺបាននិយាយ</h2>
-          <!-- Swiper -->
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <!-- Slide 1 -->
-              <div class="swiper-slide">
-                <div class="testimonial-card">
-                  <img src="assets/img/testimonial_img_1.png" alt="profile" />
-                  <div class="testimonial-name">Laurence Vendetta</div>
-                  <div class="stars">★★★★★</div>
-                  <p class="testimonial-text">
-                    ថ្មីៗនេះខ្ញុំត្រូវនាំកូនរបស់ខ្ញុំទៅ ProHealth សម្រាប់អនីតិជន
-                    របួស ហើយខ្ញុំចាប់អារម្មណ៍យ៉ាងខ្លាំងចំពោះការថែទាំ។ នេះ។
-                    គ្រូពេទ្យកុមារគឺអស្ចារ្យជាមួយគាត់
-                    ហើយធ្វើឱ្យគាត់មានអារម្មណ៍ស្រួល។ បុគ្គលិកមានចិត្តល្អ
-                    និងយកចិត្តទុកដាក់។
-                  </p>
-                </div>
-              </div>
-
-              <!-- Slide 2 -->
-              <div class="swiper-slide">
-                <div class="testimonial-card">
-                  <img src="assets/img/testimonial_img_2.png" alt="profile" />
-                  <div class="testimonial-name">Paulo Hubert</div>
-                  <div class="stars">★★★★★</div>
-                  <p class="testimonial-text">
-                    បទពិសោធន៍ដ៏អស្ចារ្យនៅគ្លីនិក! គ្រូពេទ្យគឺ ប្រកបដោយវិជ្ជាជីវៈ
-                    និងរួសរាយរាក់ទាក់ ហើយពួកគេបានធ្វើឱ្យខ្ញុំមានអារម្មណ៍ស្រួល
-                    ពីដើមដល់ចប់។ ផ្តល់អនុសាសន៍ខ្ពស់សម្រាប់គ្រួសារ
-                    ការថែទាំសុខភាព។
-                  </p>
-                </div>
-              </div>
-
-              <!-- Slide 3 -->
-              <div class="swiper-slide">
-                <div class="testimonial-card">
-                  <img src="assets/img/testimonial_img.jpg" alt="profile" />
-                  <div class="testimonial-name">Sophia James</div>
-                  <div class="stars">★★★★★</div>
-                  <p class="testimonial-text">
-                    សេវាកម្មនៅទីនេះគឺអស្ចារ្យណាស់។ ពួកគេពិតជាយកចិត្តទុកដាក់
-                    សុខុមាលភាពរបស់អ្នកជំងឺ។ ការ​ពិគ្រោះ​យោបល់​ឌីជីថល​បាន​រលូន
-                    និងងាយស្រួលចូលប្រើ។
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Custom Nav Buttons -->
-            <div class="swiper-nav">
-              <div class="custom-swiper-btn swiper-button-prev">←</div>
-              <div class="custom-swiper-btn swiper-button-next">→</div>
-            </div>
+          <!-- Custom Nav Buttons -->
+          <div class="swiper-nav">
+            <div class="custom-swiper-btn swiper-button-prev">←</div>
+            <div class="custom-swiper-btn swiper-button-next">→</div>
           </div>
         </div>
-      </section>
-      <!-- ============ TESTIMONIAL[END]============= -->
-      <!-- ===========DOCTOR-SECTION[START]========= -->
-      <section class="doctor py-5 bg-light" id="doctor">
-        <div class="container">
-          <span>ព័ត៍មាន</span>
-          <h2>វេជ្ជបណ្ឌិត</h2>
-          <div class="row g-4">
-            <!-- Doctor Card -->
-            <div class="col-lg-4 col-md-6">
-              <div class="card doctor-card shadow-sm border-0 h-100">
-                <div class="doctor-img-wrapper position-relative">
-                  <img
-                    src="assets/img/doctor/doctor_1.png"
-                    class="card-img-top"
-                    alt="Dr. James Lee"
-                  />
-                  <div
-                    class="doctor-social d-flex justify-content-center align-items-center"
-                  >
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                  </div>
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-2">
-                    <a href="doctor-details.html">វេជ្ជបណ្ឌិត James Lee, MD</a>
-                  </h5>
-                  <p class="text-primary mb-2">ប្រធានគ្រូពេទ្យបេះដូង</p>
+      </div>
+    </section>
+    <!-- ============ TESTIMONIAL[END]============= -->
+    <!-- ===========DOCTOR-SECTION[START]========= -->
+    <section class="doctor py-5 bg-light" id="doctor">
+      <div class="container">
+        <span>ព័ត៍មាន</span>
+        <h2 class="title">វេជ្ជបណ្ឌិត</h2>
+        <div class="row g-4">
+          <!-- Doctor Card -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card doctor-card shadow-sm border-0 h-100">
+              <div class="doctor-img-wrapper position-relative">
+                <img src="assets/img/doctor/doctor_1.png" class="card-img-top" alt="Dr. James Lee" />
+                <div class="doctor-social d-flex justify-content-center align-items-center">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 </div>
               </div>
-            </div>
-
-            <!-- Repeat for other doctors -->
-            <div class="col-lg-4 col-md-6">
-              <div class="card doctor-card shadow-sm border-0 h-100">
-                <div class="doctor-img-wrapper position-relative">
-                  <img
-                    src="assets/img/doctor/doctor_2.png"
-                    class="card-img-top"
-                    alt="Dr. Anna Smith"
-                  />
-                  <div
-                    class="doctor-social d-flex justify-content-center align-items-center"
-                  >
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                  </div>
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-2">
-                    <a href="doctor-details.html">វេជ្ជបណ្ឌិត Anna Smith, MD</a>
-                  </h5>
-                  <p class="text-primary mb-2">ប្រធានផ្នែកសរសៃប្រសាទ</p>
-                </div>
+              <div class="card-body text-center">
+                <h5 class="card-title mb-2">
+                  <a href="doctor-details.html">វេជ្ជបណ្ឌិត James Lee, MD</a>
+                </h5>
+                <p class="text-primary mb-2">ប្រធានគ្រូពេទ្យបេះដូង</p>
               </div>
             </div>
+          </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="card doctor-card shadow-sm border-0 h-100">
-                <div class="doctor-img-wrapper position-relative">
-                  <img
-                    src="assets/img/doctor/doctor_3.png"
-                    class="card-img-top"
-                    alt="Dr. Robert Kim"
-                  />
-                  <div
-                    class="doctor-social d-flex justify-content-center align-items-center"
-                  >
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                  </div>
+          <!-- Repeat for other doctors -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card doctor-card shadow-sm border-0 h-100">
+              <div class="doctor-img-wrapper position-relative">
+                <img src="assets/img/doctor/doctor_2.png" class="card-img-top" alt="Dr. Anna Smith" />
+                <div class="doctor-social d-flex justify-content-center align-items-center">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-2">
-                    <a href="doctor-details.html">
-                      វេជ្ជបណ្ឌិត Robert Kim, MD</a
-                    >
-                  </h5>
-                  <p class="text-primary mb-2">ប្រធានពេទ្យកុមារ</p>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title mb-2">
+                  <a href="doctor-details.html">វេជ្ជបណ្ឌិត Anna Smith, MD</a>
+                </h5>
+                <p class="text-primary mb-2">ប្រធានផ្នែកសរសៃប្រសាទ</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card doctor-card shadow-sm border-0 h-100">
+              <div class="doctor-img-wrapper position-relative">
+                <img src="assets/img/doctor/doctor_3.png" class="card-img-top" alt="Dr. Robert Kim" />
+                <div class="doctor-social d-flex justify-content-center align-items-center">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 </div>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title mb-2">
+                  <a href="doctor-details.html">
+                    វេជ្ជបណ្ឌិត Robert Kim, MD</a>
+                </h5>
+                <p class="text-primary mb-2">ប្រធានពេទ្យកុមារ</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ===========DOCTOR-SECTION[END]========= -->
-      <!-- ===============DEPARTMENT [START]================ -->
+    <!-- ===========DOCTOR-SECTION[END]========= -->
+    <!-- ===============DEPARTMENT [START]================ -->
 
-      <section class="departments py-5" id="department">
-        <div class="container">
-          <h2 class="text-center mb-5 fw-bold">ឯកទេសព្យាបាល</h2>
-          <div class="row g-4 justify-content-center">
-            <!-- Department 1 -->
-            <div
-              class="col-12 col-sm-6 col-md-4 col-lg-2"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="department-card text-center">
-                <img
-                  src="assets/img/department1.svg"
-                  alt="សង្គ្រោះបន្ទាន់"
-                  class="img-fluid"
-                />
-                <h5>សង្គ្រោះបន្ទាន់</h5>
+    <section class="departments py-5" id="department">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold title">ឯកទេសព្យាបាល</h2>
+        <div class="row g-4 justify-content-center">
+          <!-- Department 1 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+            <div class="department-card text-center">
+              <img src="assets/img/department1.svg" alt="សង្គ្រោះបន្ទាន់" class="img-fluid" />
+              <h5>សង្គ្រោះបន្ទាន់</h5>
+            </div>
+          </div>
+
+          <!-- Department 2 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="200">
+            <div class="department-card text-center">
+              <img src="assets/img/department2.svg" alt="ព្យាបាលកុមារ" class="img-fluid" />
+              <h5>ព្យាបាលកុមារ</h5>
+            </div>
+          </div>
+
+          <!-- Department 3 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="300">
+            <div class="department-card text-center">
+              <img src="assets/img/departmet3.svg" alt="រោគស្ត្រី" class="img-fluid" />
+              <h5>រោគស្ត្រី</h5>
+            </div>
+          </div>
+
+          <!-- Department 4 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="400">
+            <div class="department-card text-center">
+              <img src="assets/img/department4.svg" alt="ព្យាបាលបេះដូង" class="img-fluid" />
+              <h5>ព្យាបាលបេះដូង</h5>
+            </div>
+          </div>
+
+          <!-- Department 5 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="500">
+            <div class="department-card text-center">
+              <img src="assets/img/department5.svg" alt="សរសៃប្រសាទ" class="img-fluid" />
+              <h5>សរសៃប្រសាទ</h5>
+            </div>
+          </div>
+
+          <!-- Department 6 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="600">
+            <div class="department-card text-center">
+              <img src="assets/img/department6.svg" alt="ចិត្តសាស្ត្រ" class="img-fluid" />
+              <h5>ចិត្តសាស្ត្រ</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ SECTION [START]==== -->
+    <section class="faq py-5">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="faq-title text-center mb-4">
+          <h2 class="title">អ្វីដែលអ្នកជំងឺ <span>តែងតែសួរ</span></h2>
+        </div>
+
+        <!-- Accordion -->
+        <div class="accordion" id="faqAccordion">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                តើ ProHealth ផ្តល់សេវាកម្មអ្វីខ្លះ?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                ProHealth ផ្តល់ជូននូវសេវាកម្មវេជ្ជសាស្រ្ត
+                និងថែទាំសុខភាពជាច្រើនប្រភេទ តាមតម្រូវការរបស់អ្នក។
               </div>
             </div>
+          </div>
 
-            <!-- Department 2 -->
-            <div
-              class="col-12 col-sm-6 col-md-4 col-lg-2"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="department-card text-center">
-                <img
-                  src="assets/img/department2.svg"
-                  alt="ព្យាបាលកុមារ"
-                  class="img-fluid"
-                />
-                <h5>ព្យាបាលកុមារ</h5>
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo">
+                តើខ្ញុំត្រូវកំណត់ពេលណាត់ជួបជាមួយ ProHealth ដោយរបៀបណា?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                អ្នកអាចកំណត់ពេលណាត់ជួបតាមអ៊ីនធឺណិត
+                ឬដោយទាក់ទងក្រុមសេវាកម្មអតិថិជនរបស់យើង។
               </div>
             </div>
+          </div>
 
-            <!-- Department 3 -->
-            <div
-              class="col-12 col-sm-6 col-md-4 col-lg-2"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="department-card text-center">
-                <img
-                  src="assets/img/departmet3.svg"
-                  alt="រោគស្ត្រី"
-                  class="img-fluid"
-                />
-                <h5>រោគស្ត្រី</h5>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree">
+                តើអ្នកទទួលយកការធានារ៉ាប់រងទេ?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                បាទ/ចាស យើងទទួលយកអ្នកផ្តល់សេវាធានារ៉ាប់រងធំៗភាគច្រើន។
+                សូមបញ្ជាក់ជាមួយក្រុមការងាររបស់យើងសម្រាប់ព័ត៌មានលម្អិត។
               </div>
             </div>
+          </div>
 
-            <!-- Department 4 -->
-            <div
-              class="col-12 col-sm-6 col-md-4 col-lg-2"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="department-card text-center">
-                <img
-                  src="assets/img/department4.svg"
-                  alt="ព្យាបាលបេះដូង"
-                  class="img-fluid"
-                />
-                <h5>ព្យាបាលបេះដូង</h5>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour">
+                តើខ្ញុំគួរនាំយកអ្វីទៅការណាត់ជួបរបស់ខ្ញុំ?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                សូមនាំយកអត្តសញ្ញាណប័ណ្ណដែលមានសុពលភាព ប័ណ្ណធានារ៉ាប់រង
+                និងកំណត់ត្រាវេជ្ជសាស្ត្រពីមុន ប្រសិនបើមាន។
               </div>
             </div>
+          </div>
 
-            <!-- Department 5 -->
-            <div
-              class="col-12 col-sm-6 col-md-4 col-lg-2"
-              data-aos="fade-up"
-              data-aos-delay="500"
-            >
-              <div class="department-card text-center">
-                <img
-                  src="assets/img/department5.svg"
-                  alt="សរសៃប្រសាទ"
-                  class="img-fluid"
-                />
-                <h5>សរសៃប្រសាទ</h5>
-              </div>
-            </div>
-
-            <!-- Department 6 -->
-            <div
-              class="col-12 col-sm-6 col-md-4 col-lg-2"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
-              <div class="department-card text-center">
-                <img
-                  src="assets/img/department6.svg"
-                  alt="ចិត្តសាស្ត្រ"
-                  class="img-fluid"
-                />
-                <h5>ចិត្តសាស្ត្រ</h5>
+          <!-- Item 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive">
+                តើខ្ញុំស្នើសុំការបំពេញតាមវេជ្ជបញ្ជាដោយរបៀបណា?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                អ្នកអាចស្នើសុំការបំពេញតាមវេជ្ជបញ្ជាតាមរយៈវេបសាយអនឡាញរបស់យើង
+                ឬដោយទាក់ទងការិយាល័យផ្ទាល់។
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <!-- ===== FAQ SECTION [END]==== -->
 
-      <!-- ===== FAQ SECTION [START]==== -->
-      <section class="faq py-5">
-        <div class="container">
-          <!-- Section Title -->
-          <div class="faq-title text-center mb-4">
-            <h2>អ្វីដែលអ្នកជំងឺ <span>តែងតែសួរ</span></h2>
-          </div>
-
-          <!-- Accordion -->
-          <div class="accordion" id="faqAccordion">
-            <!-- Item 1 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                >
-                  តើ ProHealth ផ្តល់សេវាកម្មអ្វីខ្លះ?
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse show"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">
-                  ProHealth ផ្តល់ជូននូវសេវាកម្មវេជ្ជសាស្រ្ត
-                  និងថែទាំសុខភាពជាច្រើនប្រភេទ តាមតម្រូវការរបស់អ្នក។
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 2 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                >
-                  តើខ្ញុំត្រូវកំណត់ពេលណាត់ជួបជាមួយ ProHealth ដោយរបៀបណា?
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">
-                  អ្នកអាចកំណត់ពេលណាត់ជួបតាមអ៊ីនធឺណិត
-                  ឬដោយទាក់ទងក្រុមសេវាកម្មអតិថិជនរបស់យើង។
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 3 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                >
-                  តើអ្នកទទួលយកការធានារ៉ាប់រងទេ?
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">
-                  បាទ/ចាស យើងទទួលយកអ្នកផ្តល់សេវាធានារ៉ាប់រងធំៗភាគច្រើន។
-                  សូមបញ្ជាក់ជាមួយក្រុមការងាររបស់យើងសម្រាប់ព័ត៌មានលម្អិត។
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 4 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFour">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour"
-                >
-                  តើខ្ញុំគួរនាំយកអ្វីទៅការណាត់ជួបរបស់ខ្ញុំ?
-                </button>
-              </h2>
-              <div
-                id="collapseFour"
-                class="accordion-collapse collapse"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">
-                  សូមនាំយកអត្តសញ្ញាណប័ណ្ណដែលមានសុពលភាព ប័ណ្ណធានារ៉ាប់រង
-                  និងកំណត់ត្រាវេជ្ជសាស្ត្រពីមុន ប្រសិនបើមាន។
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 5 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFive">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFive"
-                >
-                  តើខ្ញុំស្នើសុំការបំពេញតាមវេជ្ជបញ្ជាដោយរបៀបណា?
-                </button>
-              </h2>
-              <div
-                id="collapseFive"
-                class="accordion-collapse collapse"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">
-                  អ្នកអាចស្នើសុំការបំពេញតាមវេជ្ជបញ្ជាតាមរយៈវេបសាយអនឡាញរបស់យើង
-                  ឬដោយទាក់ទងការិយាល័យផ្ទាល់។
-                </div>
-              </div>
+    <!-- ===== FQA QUESTION SECTION [END]==== -->
+    <!-- ==============Appointment============== -->
+    <section class="appointment p-3" id="appointment">
+      <div class="container">
+        <div class="row">
+          <div class="d-sm-none d-md-none col-xl-6">
+            <div class="card pt-5 mt-5">
+              <img src="assets/img/Appointment/appointment_img.png"
+                class="appointment-image d-sm-none d-md-block" alt="" />
             </div>
           </div>
-        </div>
-      </section>
-      <!-- ===== FAQ SECTION [END]==== -->
-
-      <!-- ===== FQA QUESTION SECTION [END]==== -->
-      <!-- ==============Appointment============== -->
-      <section class="appointment mt-5 py-5" id="appointment">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="card pt-5 mt-5">
-                <img
-                  src="assets/img/Appointment/appointment_img.png"
-                  class="appointment-image pt-5 mt-5 d-sm-none d-md-block"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <div class="card mt-3">
-                <div class="card-title pt-5">
-                  <span class="book-appointment">តោះ!!</span>
-                  <h1 class="title-appointment">កក់កាណាត់ជួប</h1>
-                  <div class="col-md-12">
-                    <div class="card border-0 bg-white p-4 rounded-5">
-                      <form class="row g-3">
-                        <div class="col-md-6">
-                          <div>
-                            <label for="" class="form-label">ឈ្មោះ</label>
-                            <input
-                              class="form-control"
-                              id=""
-                              type="text"
-                              placeholder="ប៊ុន​​​ ណា"
-                              aria-label=""
-                            />
-                          </div>
+          <div class="col-sm-12 col-md-12 col-xl-6">
+            <div class="card mt-3">
+              <div class="card-title">
+                <span class="book-appointment">តោះ!!</span>
+                <h1 class="title-appointment">កក់កាណាត់ជួប</h1>
+                <div class="col-md-12">
+                  <div class="card border-0 bg-white p-4 rounded-5">
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <div>
+                          <label for="" class="form-label">ឈ្មោះ</label>
+                          <input class="form-control" id="" type="text" placeholder="ប៊ុន​​​ ណា" aria-label="" />
                         </div>
-                        <div class="col-md-6">
-                          <div>
-                            <label for="" class="form-label">លេខទូរស័ព្ទ</label>
-                            <input
-                              class="form-control"
-                              id=""
-                              type="text"
-                              placeholder="+855 98 765 432"
-                              aria-label=""
-                            />
-                          </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div>
+                          <label for="" class="form-label">លេខទូរស័ព្ទ</label>
+                          <input class="form-control" id="" type="text" placeholder="+855 98 765 432" aria-label="" />
                         </div>
-                        <div class="col-md-12">
-                          <div>
-                            <label for="" class="form-label"
-                              >អុីម៉ែលរបស់អ្នក</label
-                            >
-                            <input
-                              class="form-control"
-                              id=""
-                              type="email"
-                              placeholder="ឈ្មោះ@gmail.com"
-                              aria-label=""
-                            />
-                          </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div>
+                          <label for="" class="form-label">អុីម៉ែលរបស់អ្នក</label>
+                          <input class="form-control" id="" type="email" placeholder="ឈ្មោះ@gmail.com" aria-label="" />
                         </div>
-                        <div class="col-md-6">
-                          <div class="mb-3">
-                            <label for="" class="form-label"
-                              >ហេតុផលសម្រាប់ការកក់</label
-                            >
-                            <select
-                              class="form-select"
-                              aria-label="Default select example"
-                              novalidate
-                            >
-                              <option value="1">ការត្រួតពិនិត្យជាប្រចាំ</option>
-                              <option value="2">ការវះកាត់</option>
-                              <option value="3">ការធ្វើតេស្តរោគវិទ្យា</option>
-                              <option value="4">របាយការណ៍ត្រួតពិនិត្យ</option>
-                              <option value="5">មូលហេតុផ្សេងៗទៀត</option>
-                            </select>
-                          </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label for="" class="form-label">ហេតុផលសម្រាប់ការកក់</label>
+                          <select class="form-select" aria-label="Default select example" novalidate>
+                            <option value="1">ការត្រួតពិនិត្យជាប្រចាំ</option>
+                            <option value="2">ការវះកាត់</option>
+                            <option value="3">ការធ្វើតេស្តរោគវិទ្យា</option>
+                            <option value="4">របាយការណ៍ត្រួតពិនិត្យ</option>
+                            <option value="5">មូលហេតុផ្សេងៗទៀត</option>
+                          </select>
                         </div>
-                        <div class="col-md-6">
-                          <div class="mb-3">
-                            <label for="" class="form-label">ផ្នែកឯកទេស</label>
-                            <select
-                              class="form-select"
-                              aria-label="Default select example"
-                              novalidate
-                            >
-                              <option value="1">ឯកទេសជំងឺទូទៅ</option>
-                              <option value="2">ឯកទេសការវះកាត់</option>
-                              <option value="3">ឯកទេសតម្រងនោម</option>
-                              <option value="4">ឯកទេសសម្ភព</option>
-                            </select>
-                          </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label for="" class="form-label">ផ្នែកឯកទេស</label>
+                          <select class="form-select" aria-label="Default select example" novalidate>
+                            <option value="1">ឯកទេសជំងឺទូទៅ</option>
+                            <option value="2">ឯកទេសការវះកាត់</option>
+                            <option value="3">ឯកទេសតម្រងនោម</option>
+                            <option value="4">ឯកទេសសម្ភព</option>
+                          </select>
                         </div>
-                        <div class="col-md-6">
-                          <div class="mt-3">
-                            <label for="date" class="form-label"
-                              >កាលបរិច្ឆេទដែលពេញចិត្ត</label
-                            >
-                            <input
-                              type="date"
-                              class="form-control"
-                              id="date"
-                              value="2025-08-21"
-                            />
-                          </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label for="date" class="form-label">កាលបរិច្ឆេទដែលពេញចិត្ត</label>
+                          <input type="date" class="form-control" id="date" value="2025-08-21" />
                         </div>
-                        <div class="col-md-6">
-                          <div class="mt-3">
-                            <label for="time" class="form-label"
-                              >ពេលវេលាដែលពេញចិត្ត</label
-                            >
-                            <select class="form-control" id="time">
-                              <option>09:00 AM</option>
-                              <option>09:30 AM</option>
-                              <option>10:00 AM</option>
-                              <option>10:30 AM</option>
-                              <option>11:00 AM</option>
-                              <option>11:30 AM</option>
-                              <option>12:00 PM</option>
-                              <option>12:30 PM</option>
-                              <option>01:00 PM</option>
-                              <option>01:30 PM</option>
-                              <option>02:00 PM</option>
-                              <option>02:30 PM</option>
-                              <option>03:00 PM</option>
-                              <option>03:30 PM</option>
-                              <option>04:00 PM</option>
-                              <option>04:30 PM</option>
-                              <option>05:00 PM</option>
-                              <option>06:00 PM</option>
-                              <option>07:00 PM</option>
-                              <option>08:00 PM</option>
-                              <option>09:00 PM</option>
-                              <option>10:00 PM</option>
-                              <option>11:00 PM</option>
-                            </select>
-                          </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label for="time" class="form-label">ពេលវេលាដែលពេញចិត្ត</label>
+                          <select class="form-control" id="time">
+                            <option>09:00 AM</option>
+                            <option>09:30 AM</option>
+                            <option>10:00 AM</option>
+                            <option>10:30 AM</option>
+                            <option>11:00 AM</option>
+                            <option>11:30 AM</option>
+                            <option>12:00 PM</option>
+                            <option>12:30 PM</option>
+                            <option>01:00 PM</option>
+                            <option>01:30 PM</option>
+                            <option>02:00 PM</option>
+                            <option>02:30 PM</option>
+                            <option>03:00 PM</option>
+                            <option>03:30 PM</option>
+                            <option>04:00 PM</option>
+                            <option>04:30 PM</option>
+                            <option>05:00 PM</option>
+                            <option>06:00 PM</option>
+                            <option>07:00 PM</option>
+                            <option>08:00 PM</option>
+                            <option>09:00 PM</option>
+                            <option>10:00 PM</option>
+                            <option>11:00 PM</option>
+                          </select>
                         </div>
-                        <div class="btn-submit">
-                          <button type="submit" class="btn text-white mt-4">
-                            Submit <i class="fa-solid fa-arrow-right"></i>
-                          </button>
-                        </div>
-                      </form>
-                    </div>
+                      </div>
+                      <div class="btn-submit">
+                        <button type="submit" class="btn text-white mt-3">
+                          Submit <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- ==============Call To Action[START]================== -->
-      <section class="cta-section py-5">
-        <div class="container">
-          <div class="cta-banner">
-            <div class="cta-content p-4" data-aos="fade-left">
-              <h2>កុំអោយសុខភាពរបស់អ្នកត្រូវបានមិនអើពើ!</h2>
-              <p>
-                កំណត់ពេលជួបជាមួយវេជ្ជបណ្ឌិតមានបទពិសោធន៍<br />
-                របស់យើងថ្ងៃនេះ!
-              </p>
-            </div>
+      </div>
+    </section>
+    <!-- ==============Call To Action[START]================== -->
+    <section class="cta-section py-5">
+      <div class="container">
+        <div class="cta-banner">
+          <div class="cta-content p-4" data-aos="fade-left">
+            <h2>កុំអោយសុខភាពរបស់អ្នកត្រូវបានមិនអើពើ!</h2>
+            <p>
+              កំណត់ពេលជួបជាមួយវេជ្ជបណ្ឌិតមានបទពិសោធន៍<br />
+              របស់យើងថ្ងៃនេះ!
+            </p>
           </div>
         </div>
-      </section>
-      <!-- ==============Call To Action[END]================== -->
-    </main>
+      </div>
+    </section>
+    <!-- ==============Call To Action[END]================== -->
+  </main>
 
-    <!-- ====================Footer=============================== -->
-    <footer class="footer pt-5 text-white">
-      <!-- Banner Section -->
-      <section
-        class="banner-footer position-relative text-white py-5"
-        style="
+  <!-- ====================Footer=============================== -->
+  <footer class="footer pt-5 text-white">
+    <!-- Banner Section -->
+    <section class="banner-footer position-relative text-white py-5" style="
           background: linear-gradient(135deg, #0f172a, #1e293b);
           overflow: hidden;
-        "
-      >
-        <div
-          class="floating-elements position-absolute w-100 h-100"
-          style="top: 0; left: 0; z-index: 0; opacity: 0.08"
-        >
-          <i
-            class="floating-icon fas fa-heartbeat position-absolute"
-            style="top: 20%; left: 10%; font-size: 4rem"
-          ></i>
-          <i
-            class="floating-icon fas fa-stethoscope position-absolute"
-            style="top: 40%; right: 15%; font-size: 3.5rem"
-          ></i>
-          <i
-            class="floating-icon fas fa-plus-circle position-absolute"
-            style="bottom: 20%; left: 20%; font-size: 3rem"
-          ></i>
-        </div>
-        <div class="container position-relative z-1">
-          <div class="row align-items-center">
-            <div class="col-lg-6 mb-4">
-              <h1 class="display-5 fw-bold mb-4">
-                រក្សាទំនាក់ទំនងជាមួយ
-                <span class="text-info">សុខភាពរបស់អ្នក</span>
-              </h1>
-              <p class="lead opacity-90 mb-4">
-                ចូលរួមជាមួយមនុស្សរាប់ពាន់នាក់ដែលជឿជាក់លើ DigitalClinic
-                សម្រាប់ការយល់ដឹងផ្នែកវេជ្ជសាស្ត្រចុងក្រោយបំផុត
-                និងដំបូន្មានអ្នកជំនាញ។
-              </p>
-              <div class="d-flex align-items-center">
-                <i class="fas fa-users text-info fs-2 me-3"></i>
-                <div>
-                  <strong class="d-block">50,000+ អតិថិជនរីករាយ</strong>
-                  <small class="opacity-75">រីកលូតលាស់ជារៀងរាល់ថ្ងៃ</small>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 text-center">
-              <div
-                class="doctor-card p-4 bg-dark rounded-3 shadow-lg"
-                style="max-width: 350px; margin: auto"
-              >
-                <div class="mb-3 position-relative">
-                  <img
-                    src="assets/img/footer/footer-doctorprofile.jpg"
-                    alt=""
-                    class="rounded-circle border border-4 border-info shadow"
-                    width="150"
-                  />
-                  <span
-                    class="position-absolute top-0 end-0 translate-middle badge bg-success rounded-circle p-2"
-                  >
-                    <i class="fas fa-plus text-white"></i>
-                  </span>
-                </div>
-                <h5 class="mb-1">អ្នកគ្រូពេទ្យ សារ៉ា លីដា</h5>
-                <p class="text-info mb-2">ប្រធានពេទ្យ</p>
-                <small class="opacity-75 fst-italic"
-                  >"យើងប្តេជ្ញារក្សាអ្នកឱ្យទទួលបានព័ត៌មាន និងសុខភាពល្អ"</small
-                >
+        ">
+      <div class="floating-elements position-absolute w-100 h-100" style="top: 0; left: 0; z-index: 0; opacity: 0.08">
+        <i class="floating-icon fas fa-heartbeat position-absolute" style="top: 20%; left: 10%; font-size: 4rem"></i>
+        <i class="floating-icon fas fa-stethoscope position-absolute"
+          style="top: 40%; right: 15%; font-size: 3.5rem"></i>
+        <i class="floating-icon fas fa-plus-circle position-absolute"
+          style="bottom: 20%; left: 20%; font-size: 3rem"></i>
+      </div>
+      <div class="container position-relative z-1">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4">
+            <h1 class="display-5 fw-bold mb-4">
+              រក្សាទំនាក់ទំនងជាមួយ
+              <span class="text-info">សុខភាពរបស់អ្នក</span>
+            </h1>
+            <p class="lead opacity-90 mb-4">
+              ចូលរួមជាមួយមនុស្សរាប់ពាន់នាក់ដែលជឿជាក់លើ DigitalClinic
+              សម្រាប់ការយល់ដឹងផ្នែកវេជ្ជសាស្ត្រចុងក្រោយបំផុត
+              និងដំបូន្មានអ្នកជំនាញ។
+            </p>
+            <div class="d-flex align-items-center">
+              <i class="fas fa-users text-info fs-2 me-3"></i>
+              <div>
+                <strong class="d-block">50,000+ អតិថិជនរីករាយ</strong>
+                <small class="opacity-75">រីកលូតលាស់ជារៀងរាល់ថ្ងៃ</small>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- Links Section -->
-      <section class="link-footer" style="background: #0f172a">
-        <div class="container py-5">
-          <!-- Brand -->
-          <div class="row mb-5">
-            <div class="col text-center">
-              <img src="assets/img/logo1.png" alt="" width="160" class="mb-3" />
-              <p class="text-white-50 mx-auto" style="max-width: 500px">
-                ផ្តល់អំណាចដល់សហគមន៍ជាមួយនឹងព័ត៌មានសុខភាពដែលអាចទុកចិត្តបាន
-                ចាប់តាំងពីឆ្នាំ 2018.
-              </p>
-            </div>
-          </div>
-
-          <div class="row">
-            <!-- Quick Links -->
-            <div class="col-lg-3 col-md-6 mb-4">
-              <h5 class="fw-bold mb-3">តំណភ្ជាប់រហ័ស</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#" class="f-link"
-                    ><i class="fas fa-angle-right me-2"></i>អំពីយើង</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="f-link"
-                    ><i class="fas fa-angle-right me-2"></i>ផ្នែកឯកទេស</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="f-link"
-                    ><i class="fas fa-angle-right me-2"></i>ជួបគ្រូពេទ្យ</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="f-link"
-                    ><i class="fas fa-angle-right me-2"></i>កាលវិភាគ</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="f-link"
-                    ><i class="fas fa-angle-right me-2"></i>ការណាត់ជួប</a
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <!-- Services -->
-            <div class="col-lg-3 col-md-6 mb-4">
-              <h5 class="fw-bold mb-3">សេវាសុខភាព</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#" class="f-link"
-                    ><i class="fas fa-heartbeat me-2"></i>វេជ្ជសាស្ត្រទូទៅ</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="f-link"
-                    ><i class="fas fa-child me-2"></i>ការថែទាំកុមារ</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="f-link"
-                    ><i class="fas fa-heart me-2"></i>រោគបេះដូង</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="f-link"
-                    ><i class="fas fa-tooth me-2"></i>ទន្តសាស្ត្រ</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="f-link"
-                    ><i class="fas fa-eye me-2"></i>ចក្ខុវិស័យ</a
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <!-- Contact -->
-            <div class="col-lg-3 col-md-6 mb-4">
-              <h5 class="fw-bold mb-3">ទំនាក់ទំនង</h5>
-              <p class="text-white-50 mb-1">
-                <i class="fas fa-map-marker-alt me-2"></i>123 Wellness Avenue,
-                ភ្នំពេញ
-              </p>
-              <p class="mb-1">
-                <a href="tel:123-436-7890" class="f-link"
-                  ><i class="fas fa-phone me-2"></i>+1 (123) 436-7890</a
-                >
-              </p>
-              <p class="mb-1">
-                <a href="mailto:hello@prohealth.com" class="f-link"
-                  ><i class="fas fa-envelope me-2"></i
-                  >Welcometo@DigitalClinic.com</a
-                >
-              </p>
-              <p class="text-white-50">
-                <i class="fas fa-clock me-2"></i>24/7 ការថែទាំសង្គ្រោះបន្ទាន់
-              </p>
-            </div>
-
-            <!-- Social -->
-            <div class="col-lg-3 col-md-6 mb-4">
-              <h5 class="fw-bold mb-3">រក្សាទំនាក់ទំនង</h5>
-              <p class="text-white-50">
-                តាមដានពួកយើងសម្រាប់ព័ត៌មានសុខភាពប្រចាំថ្ងៃ
-              </p>
-              <div class="d-flex gap-2 mb-3">
-                <a href="#" class="social-btn bg-info text-white"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a href="#" class="social-btn bg-danger text-white"
-                  ><i class="fab fa-youtube"></i
-                ></a>
-                <a href="#" class="social-btn bg-primary text-white"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="#" class="social-btn bg-pink-600 text-white"
-                  ><i class="fab fa-instagram"></i
-                ></a>
+          <div class="col-lg-6 text-center">
+            <div class="doctor-card p-4 bg-dark rounded-3 shadow-lg" style="max-width: 350px; margin: auto">
+              <div class="mb-3 position-relative">
+                <img src="assets/img/footer/footer-doctorprofile.jpg" alt=""
+                  class="rounded-circle border border-4 border-info shadow" width="150" />
+                <span class="position-absolute top-0 end-0 translate-middle badge bg-success rounded-circle p-2">
+                  <i class="fas fa-plus text-white"></i>
+                </span>
               </div>
-              <small class="text-white-50"
-                ><i class="fas fa-users me-1"></i>អ្នកគាំទ្រ 50K+</small
-              >
-            </div>
-          </div>
-
-          <hr class="my-4" style="border-color: rgba(255, 255, 255, 0.1)" />
-          <div class="row">
-            <div class="col text-center">
-              <p class="text-white-50 mb-0">
-                &copy; 2025 គ្លីនិកឌីជីថល | រក្សាសិទ្ធិដោយ G-15 |
-                <a href="#" class="text-decoration-none text-info"
-                  >លក្ខខណ្ឌនៃសេវាកម្ម</a
-                >
-              </p>
+              <h5 class="mb-1">អ្នកគ្រូពេទ្យ សារ៉ា លីដា</h5>
+              <p class="text-info mb-2">ប្រធានពេទ្យ</p>
+              <small class="opacity-75 fst-italic">"យើងប្តេជ្ញារក្សាអ្នកឱ្យទទួលបានព័ត៌មាន និងសុខភាពល្អ"</small>
             </div>
           </div>
         </div>
-      </section>
-    </footer>
+      </div>
+    </section>
 
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!-- swipper -->
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        grabCursor: true,
-        slidesPerView: 1,
-        spaceBetween: 30,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          768: { slidesPerView: 2 },
-          1200: { slidesPerView: 3 },
-        },
-      });
-      // Header scroll class
+    <!-- Links Section -->
+    <section class="link-footer" style="background: #0f172a">
+      <div class="container py-5">
+        <!-- Brand -->
+        <div class="row mb-5">
+          <div class="col text-center">
+            <img src="assets/img/logo1.png" alt="" width="160" class="mb-3" />
+            <p class="text-white-50 mx-auto" style="max-width: 500px">
+              ផ្តល់អំណាចដល់សហគមន៍ជាមួយនឹងព័ត៌មានសុខភាពដែលអាចទុកចិត្តបាន
+              ចាប់តាំងពីឆ្នាំ 2018.
+            </p>
+          </div>
+        </div>
 
-      window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        if (window.scrollY > 50) {
-          header.classList.add("bg-dark-blue", "text-white", "shadow-sm");
-        } else {
-          header.classList.remove("bg-dark-blue", "text-white", "shadow-sm");
-        }
-      });
-    </script>
-  </body>
+        <div class="row">
+          <!-- Quick Links -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">តំណភ្ជាប់រហ័ស</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-angle-right me-2"></i>អំពីយើង</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-angle-right me-2"></i>ផ្នែកឯកទេស</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-angle-right me-2"></i>ជួបគ្រូពេទ្យ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-angle-right me-2"></i>កាលវិភាគ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-angle-right me-2"></i>ការណាត់ជួប</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">សេវាសុខភាព</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-heartbeat me-2"></i>វេជ្ជសាស្ត្រទូទៅ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-child me-2"></i>ការថែទាំកុមារ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-heart me-2"></i>រោគបេះដូង</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-tooth me-2"></i>ទន្តសាស្ត្រ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-eye me-2"></i>ចក្ខុវិស័យ</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">ទំនាក់ទំនង</h5>
+            <p class="text-white-50 mb-1">
+              <i class="fas fa-map-marker-alt me-2"></i>123 Wellness Avenue,
+              ភ្នំពេញ
+            </p>
+            <p class="mb-1">
+              <a href="tel:123-436-7890" class="f-link"><i class="fas fa-phone me-2"></i>+1 (123) 436-7890</a>
+            </p>
+            <p class="mb-1">
+              <a href="mailto:hello@prohealth.com" class="f-link"><i
+                  class="fas fa-envelope me-2"></i>Welcometo@DigitalClinic.com</a>
+            </p>
+            <p class="text-white-50">
+              <i class="fas fa-clock me-2"></i>24/7 ការថែទាំសង្គ្រោះបន្ទាន់
+            </p>
+          </div>
+
+          <!-- Social -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">រក្សាទំនាក់ទំនង</h5>
+            <p class="text-white-50">
+              តាមដានពួកយើងសម្រាប់ព័ត៌មានសុខភាពប្រចាំថ្ងៃ
+            </p>
+            <div class="d-flex gap-2 mb-3">
+              <a href="#" class="social-btn bg-info text-white"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="social-btn bg-primary text-white"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-btn bg-pink-600 text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+            <small class="text-white-50"><i class="fas fa-users me-1"></i>អ្នកគាំទ្រ 50K+</small>
+          </div>
+        </div>
+
+        <hr class="my-4" style="border-color: rgba(255, 255, 255, 0.1)" />
+        <div class="row">
+          <div class="col text-center">
+            <p class="text-white-50 mb-0">
+              &copy; 2025 គ្លីនិកឌីជីថល | រក្សាសិទ្ធិដោយ G-15 |
+              <a href="#" class="text-decoration-none text-info">លក្ខខណ្ឌនៃសេវាកម្ម</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- swipper -->
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      grabCursor: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1200: { slidesPerView: 3 },
+      },
+    });
+    // Header scroll class
+
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) {
+        header.classList.add("bg-dark-blue", "text-white", "shadow-sm");
+      } else {
+        header.classList.remove("bg-dark-blue", "text-white", "shadow-sm");
+      }
+    });
+  </script>
+</body>
+
 </html>
