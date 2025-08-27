@@ -11,7 +11,25 @@
   --accent: #99abc3;
   --body-text: #707476;
 }
+/* Active Link */
+.navbar .navbar-nav .nav-item .nav-link.active {
+  border-bottom: 3px solid var(--text-color);
+}
 
+/* Hover Underline Animation */
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background: var(--text-color);
+  transition: width 0.3s ease;
+}
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
 /* ===========================
    Base Styles
 =========================== */
@@ -199,29 +217,29 @@ img {
 }
 
 /* Why Choose Us Section */
-.why-choose-us{
+.why-choose-us {
   padding: 70px 0;
-  /* background-color: #1f1854; */
+  background-color: #6a95ce22;
 }
-.why-choose-us .choose-us-image{
+.why-choose-us .choose-us-image {
   height: 600px;
 }
-.why-choose-us .choose-us-image img{
+.why-choose-us .choose-us-image img {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
 }
-.why-choose-us .choose-us-content{
-  height: 600px;
+.why-choose-us .choose-us-content {
+  height: auto;
 }
-.why-choose-us .choose-us-content{
-  height: 600px;
+.why-choose-us .choose-us-image {
+  height: auto;
 }
-.why-choose-us .choose-us-content .choose-us-card{
+.why-choose-us .choose-us-content .choose-us-card {
   padding: 20px 0;
   height: auto;
 }
-.why-choose-us .choose-us-content .choose-us-card .choose-us-icon{
+.why-choose-us .choose-us-content .choose-us-card .choose-us-icon {
   width: 50px;
   height: 50px;
   background-color: var(--secondary);
@@ -242,6 +260,56 @@ img {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* Meet Our Doctor Section */
+.our-doctor {
+  padding: 70px 0;
+}
+.our-doctor .doctor-card {
+  padding: 30px 40px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 30px;
+}
+.our-doctor .doctor-card .doctor-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+}
+.our-doctor .doctor-card .doctor-image img {
+  height: 100%;
+  object-fit: contain;
+}
+.our-doctor .doctor-card .doctor-body {
+  margin: 20px 0;
+  text-align: center;
+}
+.our-doctor .doctor-card .doctor-body h4 {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.our-doctor .doctor-card .doctor-body p {
+  font-size: 21px;
+  font-weight: 400;
+  color: var(--secondary);
+}
+.our-doctor .doctor-card .doctor-social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.our-doctor .doctor-card .doctor-social-media .social-media-item {
+  font-size: 30px;
+  color: var(--secondary);
+  transition: 0.3s;
+}
+.our-doctor .doctor-card .doctor-social-media .social-media-item:hover {
+  color: #1f1854;
+  cursor: pointer;
 }
 /* Responsive */
 @media (max-width: 1440px) {
@@ -264,7 +332,6 @@ img {
   .about-us-hero .about-us-image h2 {
     font-size: 35px;
   }
-  
 }
 @media (max-width: 820px) {
   .about-us-hero {
@@ -309,4 +376,5 @@ img {
     height: auto;
     margin-bottom: 30px;
   }
+  
 }
