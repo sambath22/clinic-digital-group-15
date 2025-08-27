@@ -17,7 +17,7 @@
   --body-text: #707476;
 }
 .bg-dark-blue {
-  background-color: #0b2545 !important; /* dark blue */
+  background-color: #0b2545c1 !important; /* dark blue */
   transition: background-color 0.3s;
 }
 
@@ -667,6 +667,7 @@ body {
 .title{
   color: var(--text-primary);
   font-size: 50px;
+  font-weight: bold;
 }
 .aboutus .gap_y_50 {
   gap: 50px 0;
