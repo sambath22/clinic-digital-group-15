@@ -989,7 +989,7 @@ img {
   border: 1px solid #2ca4c2;
   border-radius: 20px;
 }
-.appointment .card .btn-submit .btn {
+.btn-submit .btn {
   padding: 10px 40px;
   border-radius: 30px;
   font-weight: 500;
@@ -1040,8 +1040,17 @@ img {
   line-height: 1.6;
   font-weight: 500;
 }
+.cta-content .quick-contact{
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--bg-color);
+}
 /* <!-- ==============Call To Action[END]================== --> */
-/* footer */
+
+/*===================== footer================================ */
+.footer{
+  background: linear-gradient( to left, #04326b ,#062c5a, #0b2545 100%);
+}
 .footer .f-link {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
@@ -1050,7 +1059,7 @@ img {
   transition: all 0.3s;
 }
 .footer .f-link:hover {
-  color: #06b6d4;
+  color: var(--secondary);
   padding-left: 5px;
 }
 .footer .social-btn {
@@ -1061,6 +1070,15 @@ img {
   height: 40px;
   border-radius: 50%;
   transition: 0.3s;
+}
+.footer .bg-fb{
+  background-color: #1877F2;
+}
+.footer .bg-linkin{
+  background-color: #0A66C2;
+}
+.footer .bg-ig{
+  background: linear-gradient(#5B51D8,#E1306C,#FCAF45);
 }
 .footer .social-btn:hover {
   transform: scale(1.1);
