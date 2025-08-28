@@ -151,7 +151,7 @@ body {
   color: var(--text-primary) !important;
 }
 /* ================HERO-BANNER[START]==================== */
-.banner {
+.hero_department {
   height: auto;
   background: url("../img/banner_bg.svg");
   background-position: center;
