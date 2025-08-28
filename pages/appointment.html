@@ -1,124 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- bootrap -->
-    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="../assets/css/appointment.css" />
-    <link rel="stylesheet" href="../assets/css/doctor.css" />
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <title>Appointment section</title>
-  </head>
-  <body>
-    <!-- =============== -->
-    <!-- Header -->
-    <!-- ============== -->
-    <header class="fixed-top">
-      <div class="container">
-        <nav class="navbar navbar-expand-xl navbar-dark">
-          <div class="container-fluid">
-            <!-- Logo -->
-            <a class="navbar-brand" href="../index.html">
-              <img src="../assets/img/logo1.png" alt="Logo" height="40" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- bootrap -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="../assets/css/appointment.css" />
+  <link rel="stylesheet" href="../assets/css/doctor.css" />
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <title>Appointment section</title>
+</head>
+
+<body>
+  <!-- =============== -->
+  <!-- Header -->
+  <!-- ============== -->
+  <header class="fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-xl navbar-dark">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/img/logo1.png" alt="Logo" height="40" />
+          </a>
+
+          <!-- Toggler for mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-uppercase">
+              <li class="nav-item px-3">
+                <a class="nav-link active" href="../index.html">ទំព័រដើម</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="../pages/aboutUs.html">អំពីពួកយើង</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="../pages/appointment.html">កាណាត់ជួប</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="../pages/department_page.html">សេវាកម្ម</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="../pages/doctor.html">វេជ្ជបណ្ឌិត</a>
+              </li>
+
+              <li class="nav-item px-3">
+                <a class="nav-link" href="../pages/contact_us.html">ទាក់ទងមកពួកយើង</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Buttons (Sign In / Register) -->
+          <div class="d-flex ms-3">
+            <a href="../pages/patient-signup.html" class="btn btn-custom btn-signin me-2">
+              ចុះឈ្មោះ
             </a>
-
-            <!-- Toggler for mobile -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar Links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul
-                class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-uppercase"
-              >
-                <li class="nav-item px-3">
-                  <a class="nav-link active" href="../index.html">ទំព័រដើម</a>
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="../pages/aboutUs.html"
-                    >អំពីពួកយើង</a
-                  >
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="../pages/appointment.html"
-                    >កាណាត់ជួប</a
-                  >
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="../pages/department_page.html"
-                    >សេវាកម្ម</a
-                  >
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="../pages/doctor.html"
-                    >វេជ្ជបណ្ឌិត</a
-                  >
-                </li>
-
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="../pages/contact_us.html"
-                    >ទាក់ទងមកពួកយើង</a
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <!-- Buttons (Sign In / Register) -->
-            <div class="d-flex ms-3">
-              <a
-                href="../pages/patient-signup.html"
-                class="btn btn-custom btn-signin me-2"
-              >
-                ចុះឈ្មោះ
-              </a>
-              <a
-                href="../pages/patient-signup.html"
-                class="btn btn-custom btn-register"
-              >
-                ចូលគណនី
-              </a>
-            </div>
+            <a href="../pages/patient-signup.html" class="btn btn-custom btn-register">
+              ចូលគណនី
+            </a>
           </div>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <!-- HERO-BANNER [START]-->
-      <section class="hero_department d-flex align-items-center" id="hero">
-        <div class="container">
-          <div class="row align-items-center pt-5">
-            <!-- Left Column -->
-            <div class="col-md-6" data-aos-duration="1000">
-              <h1 class="display-4 fw-bold">ជ្រើសរើសផ្នែកដែលអ្នកចង់ពិនិត្យ</h1>
-              <p class="lead my-4">ពួកយើងមានផ្នែកជាច្រើនដើម្បីបម្រើអ្នក</p>
-              <a href="#service" class="btn btn-primary btn-lg">
-                ស្វែងយល់បន្ថែម
-              </a>
-            </div>
-
-            <!-- Right Column -->
-            <div class="col-md-6" data-aos-duration="1000">
-              <img
-                src="../assets/img/department_img/banner_img.png"
-                alt="Hero Image"
-                class="img-fluid hero-img"
-              />
-            </div>
-          </div>
-          <!-- /row -->
         </div>
-        <!-- /container -->
-      </section>
-      <!-- ==============Appointment============== -->
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO-BANNER [START]-->
+    <section class="hero_department d-flex align-items-center" id="hero">
+      <div class="container">
+        <div class="row align-items-center pt-5">
+          <!-- Left Column -->
+          <div class="col-md-6" data-aos-duration="1000">
+            <h1 class="display-4 fw-bold">ជ្រើសរើសផ្នែកដែលអ្នកចង់ពិនិត្យ</h1>
+            <p class="lead my-4">ពួកយើងមានផ្នែកជាច្រើនដើម្បីបម្រើអ្នក</p>
+            <a href="#service" class="btn btn-primary btn-lg">
+              ស្វែងយល់បន្ថែម
+            </a>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-md-6" data-aos-duration="1000">
+            <img src="../assets/img/department_img/banner_img.png" alt="Hero Image" class="img-fluid hero-img" />
+          </div>
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </section>
+    <!-- ==============Appointment============== -->
     <section class="appointment p-3" id="appointment">
       <div class="container">
         <div class="row no-wrap">
@@ -225,7 +200,7 @@
         </div>
       </div>
     </section>
-      <!-- <section class="appointment-section">
+    <!-- <section class="appointment-section">
         <div class="container">
           <div class="row gx-5 gap-2">
             <div class="col-12 col-md-12 col-lg-7 m-auto">
@@ -354,9 +329,9 @@
           </div>
         </div>
       </section> -->
-    </main>
+  </main>
 
-      <!-- ====================Footer=============================== -->
+  <!-- ====================Footer=============================== -->
   <footer class="footer pt-3 text-white">
 
     <!-- Links Section -->
@@ -394,20 +369,19 @@
             <h5 class="fw-bold mb-3">តំណភ្ជាប់រហ័ស</h5>
             <ul class="list-unstyled">
               <li>
-                <a href="pages/aboutUs.html" class="f-link"><i class="fas fa-angle-right me-2"></i>អំពីយើង</a>
+                <a href="aboutUs.html" class="f-link"><i class="fas fa-angle-right me-2"></i>អំពីយើង</a>
               </li>
               <li>
-                <a href="pages/department_page.html" class="f-link"><i
-                    class="fas fa-angle-right me-2"></i>ផ្នែកឯកទេស</a>
+                <a href="department_page.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ផ្នែកឯកទេស</a>
               </li>
               <li>
-                <a href="pages/doctor.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ជួបគ្រូពេទ្យ</a>
+                <a href="doctor.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ជួបគ្រូពេទ្យ</a>
               </li>
               <li>
-                <a href="pages/timetable.html" class="f-link"><i class="fas fa-angle-right me-2"></i>កាលវិភាគ</a>
+                <a href="timetable.html" class="f-link"><i class="fas fa-angle-right me-2"></i>កាលវិភាគ</a>
               </li>
               <li>
-                <a href="pages/appointment.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ការណាត់ជួប</a>
+                <a href="#" class="f-link"><i class="fas fa-angle-right me-2"></i>ការណាត់ជួប</a>
               </li>
             </ul>
           </div>
@@ -465,18 +439,19 @@
         </div>
     </section>
   </footer>
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <script>
-      // Header scroll class
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Header scroll class
 
-      window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        if (window.scrollY > 50) {
-          header.classList.add("bg-dark-blue", "text-white", "shadow-sm");
-        } else {
-          header.classList.remove("bg-dark-blue", "text-white", "shadow-sm");
-        }
-      });
-    </script>
-  </body>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) {
+        header.classList.add("bg-dark-blue", "text-white", "shadow-sm");
+      } else {
+        header.classList.remove("bg-dark-blue", "text-white", "shadow-sm");
+      }
+    });
+  </script>
+</body>
+
 </html>
