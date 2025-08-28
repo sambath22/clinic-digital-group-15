@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ===========================
+   Global Variables
+=========================== */
+:root {
+  --text-color: #ffffff;
+  --text-primary: #1f1854;
+  --bg-color: #ffffff;
+  --primary: #bfe2f5;
+  --secondary: #6bb4fde1;
+  --accent: #99abc3;
+  --body-text: #707476;
+}
+.bg-dark-blue {
+  background-color: #0b2545 !important; /* dark blue */
+  transition: background-color 0.3s;
+}
+
+header,
+header a,
+header a.nav-link {
+  color: #ffffff !important; /* force white text and links */
+  transition: color 0.3s;
+  font-size: 17px;
+}
+
+/* ===========================
+   Base Styles
+=========================== */
+body {
+  font-family: "Kantumruy Pro", sans-serif;
+  color: var(--body-text);
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* ===========================
+  & Navbar
+=========================== */
+.navbar {
+  width: 100%;
+  padding: 12px;
+}
+
+/* Logo */
+.navbar .navbar-brand img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Nav Links */
+.navbar .navbar-nav .nav-item .nav-link {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  position: relative;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Active Link */
+.navbar .navbar-nav .nav-item .nav-link.active {
+  border-bottom: 2px solid var(--text-color);
+}
+
+/* Hover Underline Animation */
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: var(--text-color);
+  transition: width 0.3s ease;
+}
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Dropdown menu background */
+.dropdown-menu {
+  background-color: #02305c; /* dark blue */
+  border-radius: 8px;
+}
+
+/* Dropdown text color */
+.dropdown-menu .dropdown-item {
+  color: #fff;
+}
+
+/* Hover effect */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #0066cc;
+  color: #fff;
+}
+
+/* Custom buttons */
+.btn-custom {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-signin {
+  background-color: var(--secondary);
+  border: 2px solid var(--secondary);
+  color: #fff;
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+.btn-signin:hover {
+  background-color: var(--primary);
+  color: #004a8f;
+}
+
+.btn-register {
+  background-color: var(--text-primary);
+  border: 2px solid var(--accent);
+  color: #fff;
+  margin-left: 10px;
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+.btn-register:hover {
+  background-color: #004a8f;
+  border-color: var(--accent);
+}
+.hero-btn {
+  background-color: #02305c;
+  color: var(--text-color);
+}
+.hero-btn:hover {
+  background-color: #004a8f;
+}
+.experience h2,
+.experience p {
+  color: var(--text-primary) !important;
+}
+
+/* ============TESTIMONIAL [START]=============== */
+.testimonial {
+  /* max-width: 1200px; */
+  margin: 80px auto;
+  text-align: center;
+  height: 80vh;
+  padding: 20px;
+  background-image: url("../img/testimonial_bg.svg");
+}
+.testimonial span {
+  color: var(--secondary);
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 28px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.testimonial h2 {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: var(--text-primary);
+}
+.testimonial-card {
+  background: #fff;
+  padding: 40px 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+.testimonial-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-name {
+  font-weight: 600;
+  font-size: 18px;
+  color: #004a8f;
+  margin-top: 10px;
+}
+
+.stars {
+  margin: 10px 0;
+  color: #00aaff;
+  font-size: 18px;
+}
+
+.testimonial-text {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* Hide default swiper arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
+/* Custom buttons like your screenshot */
+.custom-swiper-btn {
+  width: 42px;
+  height: 42px;
+  border: 2px solid #0077ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0077ff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+  margin: 0 6px;
+}
+
+.custom-swiper-btn:hover {
+  background: #0077ff;
+  color: #fff;
+}
+
+.swiper-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+/* Pagination dots */
+.swiper-pagination {
+  margin-top: 15px;
+}
+
+.swiper-pagination-bullet {
+  background: #00aaff;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.cs_bg_filed {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* =======================[ Hero ]=========================== */
+.hero {
+  position: relative;
+  min-height: 750px;
+  max-height: 1080px;
+  height: 100vh;
+  background: url(../img/hero_bg.jpeg) no-repeat center/cover;
+  padding: 200px 0 24px;
+  overflow: hidden;
+}
+
+/* 
+.hero-tex {
+    margin-top: 70px;
+} */
+
+.hero-text h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin: 30px 0 50px;
+  max-width: 500px;
+  opacity: 0.9;
+}
+
+.cs_hero_patents {
+  max-height: 550px;
+  animation: floatY 5s ease-in-out infinite alternate;
+}
+
+@keyframes floatY {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(40px);
+  }
+}
+
+/* Info strip (below hero) */
+.info-strip {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: -40px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .cs_hero_patents {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-text h1 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+/* Floating animation for hero image */
+.cs_hero_patents {
+  position: absolute;
+  /* right: 96px;
+    top: 50px; */
+  left: 700px;
+  max-height: 550px;
+  animation: floatY 5s ease-in-out infinite alternate;
+}
+
+/* Fade-in + slide-up for hero text */
+.hero-text h1,
+.hero-text p,
+.cs_hero_text_in .cs_hero_btn {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}
+
+/* Delay each element so they appear one by one */
+.hero-text h1 {
+  animation-delay: 0.3s;
+}
+
+.hero-text p {
+  animation-delay: 0.6s;
+}
+
+.cs_hero_text_in .cs_hero_btn {
+  animation-delay: 0.9s;
+}
+
+/* Keyframes */
+@keyframes floatY {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(40px);
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.aboutus .experience h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.aboutus .experience p {
+  flex-wrap: nowrap;
+  color: #fff;
+}
+
+.experience {
+  position: relative;
+  margin: -100px auto 40px auto;
+  justify-content: space-evenly;
+  padding: 50px 30px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  /* adjust size */
+  z-index: 5;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.32);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.3px);
+  -webkit-backdrop-filter: blur(9.3px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.aboutus .gap_y_50 {
+  gap: 50px 0;
+}
+
+.cs_shape_wrap {
+  position: relative;
+}
+/* ====================Blog==================== */
+.main-blog .blog-link .b-link{
+  text-decoration: none;
+  color: var(--text-primary);
+}
