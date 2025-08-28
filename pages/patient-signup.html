@@ -26,12 +26,39 @@
     <style>
       body {
         font-family: "Hanuman", serif;
-        background: #f0f4f8;
+        background: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
         margin: 0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Decorative background circles */
+      body::before,
+      body::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        z-index: 0;
+      }
+
+      body::before {
+        width: 500px;
+        height: 500px;
+        background: rgba(74, 111, 165, 0.15);
+        top: -150px;
+        left: -150px;
+      }
+
+      body::after {
+        width: 400px;
+        height: 400px;
+        background: rgba(44, 76, 122, 0.12);
+        bottom: -120px;
+        right: -120px;
       }
 
       .signup-card {
@@ -42,6 +69,8 @@
         overflow: hidden;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         background: #fff;
+        position: relative;
+        z-index: 1; /* make sure card is above circles */
       }
 
       .signup-left {
@@ -253,7 +282,7 @@
             class="btn btn-google mb-3 d-flex align-items-center justify-content-center"
           >
             <img
-              src="../img/signup-img/Google__G__logo.svg.png"
+              src="../assets/img/signup-img/Google__G__logo.svg.png"
               alt="Google Logo"
               style="width: 20px; margin-right: 10px"
             />
