@@ -17,7 +17,7 @@
   --body-text: #707476;
 }
 .bg-dark-blue {
-  background-color: #0b2545 !important; /* dark blue */
+  background-color: #0b2545c1 !important; /* dark blue */
   transition: background-color 0.3s;
 }
 
@@ -266,8 +266,7 @@ body {
 .swiper-pagination-bullet-active {
   opacity: 1;
 }
-.cs_bg_filed {
-}
+
 .cs_bg_filed {
   background-size: cover;
   background-repeat: no-repeat;
@@ -667,6 +666,7 @@ body {
 .title{
   color: var(--text-primary);
   font-size: 50px;
+  font-weight: bold;
 }
 .aboutus .gap_y_50 {
   gap: 50px 0;
@@ -963,12 +963,15 @@ img {
   background: var(--primary);
 }
 
-.appointment .card .appointment-image {
+.appointment .appointment-image {
   object-fit: contain;
-  background-color: #004a8f5b;
+  object-position: center;
+  background-color: var(--primary);
   border-radius: 10px;
   margin-top: 150px !important;
   padding: 30px 30px 0 30px;
+  width: 100%;
+  height: 81.25%;
 }
 .appointment .card .card-title .book-appointment {
   color: black;
@@ -987,7 +990,7 @@ img {
   border: 1px solid #2ca4c2;
   border-radius: 20px;
 }
-.appointment .card .btn-submit .btn {
+.btn-submit .btn {
   padding: 10px 40px;
   border-radius: 30px;
   font-weight: 500;
@@ -1038,8 +1041,17 @@ img {
   line-height: 1.6;
   font-weight: 500;
 }
+.cta-content .quick-contact{
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--bg-color);
+}
 /* <!-- ==============Call To Action[END]================== --> */
-/* footer */
+
+/*===================== footer================================ */
+.footer{
+  background: linear-gradient( to left, #04326b ,#062c5a, #0b2545 100%);
+}
 .footer .f-link {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
@@ -1048,7 +1060,7 @@ img {
   transition: all 0.3s;
 }
 .footer .f-link:hover {
-  color: #06b6d4;
+  color: var(--secondary);
   padding-left: 5px;
 }
 .footer .social-btn {
@@ -1059,6 +1071,15 @@ img {
   height: 40px;
   border-radius: 50%;
   transition: 0.3s;
+}
+.footer .bg-fb{
+  background-color: #1877F2;
+}
+.footer .bg-linkin{
+  background-color: #0A66C2;
+}
+.footer .bg-ig{
+  background: linear-gradient(#5B51D8,#E1306C,#FCAF45);
 }
 .footer .social-btn:hover {
   transform: scale(1.1);
