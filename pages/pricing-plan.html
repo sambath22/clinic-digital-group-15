@@ -37,17 +37,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- ---hover.css-- -->
-    <link rel="stylesheet" href="assets/vendor/css/hover-min.css" />
     <!-- bootrap -->
-    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
      <!-- pricing -->
-    <link rel="stylesheet" href="../css/pricing-plan.css">
+    <link rel="stylesheet" href="../assets/css/pricing-plan.css">
 
    
     <!-- hero-banner style  -->
-    <link rel="stylesheet" href="../css/department_page.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../assets/css/department_page.css">
 
   </head>
   <body>
@@ -56,11 +53,11 @@
     <!-- ============== -->
     <header class="fixed-top">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-xl navbar-dark">
           <div class="container-fluid">
             <!-- Logo -->
             <a class="navbar-brand" href="index.html">
-              <img src="assets/img/logo1.png" alt="Logo" height="40" />
+              <img src="../assets/img/logo1.png" alt="Logo" height="40" />
             </a>
 
             <!-- Toggler for mobile -->
@@ -79,63 +76,31 @@
                 class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-uppercase"
               >
                 <li class="nav-item px-3">
-                  <a class="nav-link active" href="#hero">ទំព័រដើម</a>
+                  <a class="nav-link active" href="../index.html">ទំព័រដើម</a>
                 </li>
                 <li class="nav-item px-3">
-                  <a class="nav-link" href="#about">អំពីពួកយើង</a>
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="#appointment">កាណាត់ជួប</a>
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="#department">សេវាកម្ម</a>
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="#doctor">វេជ្ជបណ្ឌិត</a>
-                </li>
-
-                <!-- Dropdown -->
-                <li class="nav-item dropdown px-3">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                  <a class="nav-link" href="../pages/aboutUs.html"
+                    >អំពីពួកយើង</a
                   >
-                    ទំព័រផ្សេង
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="assets/page/department_page.html"
-                        >សេវាកម្ម</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="./assets/page/pricing-plan.html"
-                        >តម្លៃ</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#page3">ផ្ទាំងគ្រប់គ្រង</a>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="./assets/page/timetable.html"
-                        >តារាងពេលវេលា
-                      </a>
-                    </li>
-                  </ul>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="../pages/appointment.html"
+                    >កាណាត់ជួប</a
+                  >
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="../pages/department_page.html"
+                    >សេវាកម្ម</a
+                  >
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="../pages/doctor.html"
+                    >វេជ្ជបណ្ឌិត</a
+                  >
                 </li>
 
                 <li class="nav-item px-3">
-                  <a class="nav-link" href="assets/page/contact_us.html"
+                  <a class="nav-link" href="../pages/contact_us.html"
                     >ទាក់ទងមកពួកយើង</a
                   >
                 </li>
@@ -144,20 +109,18 @@
 
             <!-- Buttons (Sign In / Register) -->
             <div class="d-flex ms-3">
-              <button
+              <a
+                href="../pages/patient-signup.html"
                 class="btn btn-custom btn-signin me-2"
-                data-bs-toggle="modal"
-                data-bs-target="#signinModal"
               >
-                Sign In
-              </button>
-              <button
+                ចុះឈ្មោះ
+              </a>
+              <a
+                href="../pages/patient-signup.html"
                 class="btn btn-custom btn-register"
-                data-bs-toggle="modal"
-                data-bs-target="#registerModal"
               >
-                Register
-              </button>
+                ចូលគណនី
+              </a>
             </div>
           </div>
         </nav>
@@ -171,7 +134,7 @@
               <!-- Left Column -->
                 <div class="col-md-6" data-aos-duration="1000">
                   <img
-                    src="../img/pricing-plan/banner_img.png"
+                    src="../assets/img/pricing-plan/banner_img.png"
                     alt="Hero Image"
                     class="img-fluid hero-img "
                   />
@@ -590,39 +553,9 @@
         <i class="fas fa-chevron-up"></i>
     </a>
 
-    <script src="../js/bootstrap.bundle.min.js"></script>
+   <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Newsletter form submission
-        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = document.querySelector('.newsletter-input').value;
-            if (email) {
-                alert('Thank you for subscribing!');
-                document.querySelector('.newsletter-input').value = '';
-            }
-        });
-
-        // Back to top functionality
-        document.querySelector('.back-to-top').addEventListener('click', function(e) {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        // Show/hide back to top button
-        window.addEventListener('scroll', function() {
-            const backToTop = document.querySelector('.back-to-top');
-            if (window.scrollY > 300) {
-                backToTop.style.opacity = '1';
-                backToTop.style.visibility = 'visible';
-            } else {
-                backToTop.style.opacity = '0';
-                backToTop.style.visibility = 'hidden';
-            }
-        });
-         // Header scroll class
+      // Header scroll class
 
       window.addEventListener("scroll", function () {
         const header = document.querySelector("header");
@@ -632,7 +565,8 @@
           header.classList.remove("bg-dark-blue", "text-white", "shadow-sm");
         }
       });
-
     </script>
+    
+   
 </body>
 </html>

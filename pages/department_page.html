@@ -3,9 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/bootstrap.css" />
-    <link rel="stylesheet" href="../css/appointment.css" />
-    <title>Appointment section</title>
+    <title>department page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- Animation css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- ---------font-awesome---------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ---hover.css-- -->
+
+    <link
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <!-- font family cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ---hover.css-- -->
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="../assets/css/department_page.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <!-- =============== -->
@@ -13,73 +49,80 @@
     <!-- ============== -->
     <header class="fixed-top">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-xl navbar-dark">
           <div class="container-fluid">
             <!-- Logo -->
-            <a class="navbar-brand" href="#">
-              <img src="../img/logo1.png" alt="Logo" height="40" />
+            <a class="navbar-brand" href="index.html">
+              <img src="../assets/img/logo1.png" alt="Logo" height="40" />
             </a>
 
-            <!-- Toggle Button -->
+            <!-- Toggler for mobile -->
             <button
               class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+              data-bs-target="#navbarNav"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Menu -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
               <ul
                 class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-uppercase"
               >
                 <li class="nav-item px-3">
-                  <a class="nav-link active" href="../../index.html"
-                    >ទំព័រដើម</a
-                  >
+                  <a class="nav-link active" href="../index.html">ទំព័រដើម</a>
                 </li>
                 <li class="nav-item px-3">
-                  <a class="nav-link hvr-underline-from-left" href="#about"
+                  <a class="nav-link" href="../pages/aboutUs.html"
                     >អំពីពួកយើង</a
                   >
                 </li>
                 <li class="nav-item px-3">
-                  <a
-                    class="nav-link hvr-underline-from-left"
-                    href="../page/appointment.html"
+                  <a class="nav-link" href="../pages/appointment.html"
                     >កាណាត់ជួប</a
                   >
                 </li>
                 <li class="nav-item px-3">
-                  <a
-                    class="nav-link hvr-underline-from-left"
-                    href="../page/department_page.html"
+                  <a class="nav-link" href="../pages/department_page.html"
                     >សេវាកម្ម</a
                   >
                 </li>
                 <li class="nav-item px-3">
-                  <a
-                    class="nav-link hvr-underline-from-left"
-                    href="../page/doctor.html"
+                  <a class="nav-link" href="../pages/doctor.html"
                     >វេជ្ជបណ្ឌិត</a
                   >
                 </li>
+
                 <li class="nav-item px-3">
-                  <a class="nav-link hvr-underline-from-left" href="#contact"
+                  <a class="nav-link" href="../pages/contact_us.html"
                     >ទាក់ទងមកពួកយើង</a
                   >
                 </li>
               </ul>
             </div>
+
+            <!-- Buttons (Sign In / Register) -->
+            <div class="d-flex ms-3">
+              <a
+                href="../pages/patient-signup.html"
+                class="btn btn-custom btn-signin me-2"
+              >
+                ចុះឈ្មោះ
+              </a>
+              <a
+                href="../pages/patient-signup.html"
+                class="btn btn-custom btn-register"
+              >
+                ចូលគណនី
+              </a>
+            </div>
           </div>
         </nav>
       </div>
     </header>
+
     <main>
       <!-- HERO-BANNER [START]-->
       <section class="hero_department d-flex align-items-center" id="hero">
@@ -97,7 +140,7 @@
             <!-- Right Column -->
             <div class="col-md-6" data-aos-duration="1000">
               <img
-                src="../img/department_img/banner_img.png"
+                src="../assets/img/department_img/banner_img.png"
                 alt="Hero Image"
                 class="img-fluid hero-img"
               />
@@ -107,138 +150,100 @@
         </div>
         <!-- /container -->
       </section>
-      <section class="appointment-section">
-        <div class="container">
-          <div class="row gx-5 gap-2">
-            <div class="col-12 col-md-12 col-lg-7 m-auto">
-              <div class="appointment">
-                <h3>ការណាត់ជួប</h3>
-                <form class="needs-validation" novalidate>
-                  <div class="row g-5">
-                    <div class="col-sm-12 col-md-12 col-lg-6">
-                      <div>
-                        <label for="" class="form-label">នាមខ្លួន</label>
-                        <input
-                          class="form-control"
-                          id=""
-                          type="text"
-                          placeholder=""
-                          aria-label=""
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-12 col-lg-6">
-                      <div>
-                        <label for="" class="form-label">នាមត្រកូល</label>
-                        <input
-                          class="form-control"
-                          id=""
-                          type="text"
-                          placeholder=""
-                          aria-label=""
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div>
-                        <label for="" class="form-label"
-                          >មូលហេតុសម្រាប់ការមកពិនិត្យ</label
-                        >
-                        <textarea
-                          class="form-control"
-                          id="exampleFormControlTextarea1"
-                          rows="3"
-                        ></textarea>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-12 col-lg-6">
-                      <div>
-                        <label for="" class="form-label">លេខទូរស័ព្ទ</label>
-                        <input
-                          class="form-control"
-                          id=""
-                          type="tel"
-                          placeholder=""
-                          aria-label=""
-                          required
-                        />
-                      </div>
-                    </div>
+      <!-- ============SECTION CARD[start]========= -->
 
-                    <div class="col-sm-12 col-md-12 col-lg-6">
-                      <div>
-                        <label for="" class="form-label">កាលបរិច្ឆេទ</label>
-                        <input
-                          class="form-control"
-                          id=""
-                          type="date"
-                          placeholder=""
-                          aria-label=""
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div class="col-sm-12 col-md-12 col-lg-6">
-                      <div>
-                        <label class="pb-2">ផ្នែក</label>
-                        <select
-                          class="form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>ជ្រើសរើសផ្នែក</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-sm-12 col-md-12 col-lg-6">
-                      <div>
-                        <label class="pb-2">ពេលវេលា</label>
-                        <select
-                          class="form-select"
-                          aria-label="Default select example"
-                        >
-                          <option selected>ជ្រើសរើសពេលវេលា</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div>
-                      <button type="submit" class="btn btn-primary">
-                        បញ្ជូនទិន្នន័យ
-                      </button>
-                    </div>
-                  </div>
-                </form>
+      <section class="department" style="background-color: #f9fcff">
+        <div class="container my-5">
+          <div class="row g-4">
+            <!-- Emergency Department -->
+            <div class="col-md-4">
+              <div class="department-card text-start">
+                <img src="../img/department1.svg" class="p-3" alt="" />
+                <h4 class="fw-bold">នាយកដ្ឋានសង្គ្រោះបន្ទាន់</h4>
+                <p class="text-muted">
+                  នាយកដ្ឋាននេះផ្តល់ការថែទាំវេជ្ជសាស្រ្តភ្លាមៗដល់អ្នកជំងឺដែលមានជំងឺធ្ងន់ធ្ងរ
+                  ឬរបួសដែលត្រូវការការយកចិត្តទុកដាក់ជាបន្ទាន់។
+                </p>
+                <div class="arrow-btn">
+                  <i class="bi bi-arrow-right"></i>
+                </div>
               </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-4 m-auto">
-              <div class="contact">
-                <h3>ព័ត៌មានទំនាក់ទំនង</h3>
-                <img
-                  src="https://html.laralink.com/prohealth/assets/img/appointments/appointment_img.jpeg"
-                  alt=""
-                />
-                <h5>លេខទូរស័ព្ទ</h5>
-                <p>102-392-1291</p>
-                <h5>អ៊ីមែល</h5>
-                <p>Digitalclinic@gamil.com</p>
-                <h5>ទីតាំងរបស់យើង</h5>
-                <p>123 sensok st.russi , pp</p>
+
+            <!-- Cardiology Department -->
+            <div class="col-md-4">
+              <div class="department-card text-start">
+                <img src="../img/department2.svg" class="p-3" alt="" />
+                <h4 class="fw-bold">នាយកដ្ឋានជំងឺបេះដូង</h4>
+                <p class="text-muted">
+                  នាយកដ្ឋាននេះផ្តល់ការថែទាំវេជ្ជសាស្រ្តភ្លាមៗដល់អ្នកជំងឺដែលមានជំងឺធ្ងន់ធ្ងរ
+                  ឬរបួសដែលត្រូវការការយកចិត្តទុកដាក់ជាបន្ទាន់។
+                </p>
+                <div class="arrow-btn">
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pediatric Department -->
+            <div class="col-md-4">
+              <div class="department-card text-start">
+                <img src="../img/department4.svg" class="p-3" alt="" />
+                <h4 class="fw-bold">នាយកដ្ឋានកុមារ</h4>
+                <p class="text-muted">
+                  នាយកដ្ឋាននេះផ្តល់ការថែទាំវេជ្ជសាស្រ្តភ្លាមៗដល់អ្នកជំងឺដែលមានជំងឺធ្ងន់ធ្ងរ
+                  ឬរបួសដែលត្រូវការការយកចិត្តទុកដាក់ជាបន្ទាន់។
+                </p>
+                <div class="arrow-btn">
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="department-card text-start">
+                <img src="../img/department4.svg" class="p-3" alt="" />
+                <h4 class="fw-bold">នាយកដ្ឋានកុមារ</h4>
+                <p class="text-muted">
+                  នាយកដ្ឋាននេះផ្តល់ការថែទាំវេជ្ជសាស្រ្តភ្លាមៗដល់អ្នកជំងឺដែលមានជំងឺធ្ងន់ធ្ងរ
+                  ឬរបួសដែលត្រូវការការយកចិត្តទុកដាក់ជាបន្ទាន់។
+                </p>
+                <div class="arrow-btn">
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="department-card text-start">
+                <img src="../img/department4.svg" class="p-3" alt="" />
+                <h4 class="fw-bold">នាយកដ្ឋានកុមារ</h4>
+                <p class="text-muted">
+                  នាយកដ្ឋាននេះផ្តល់ការថែទាំវេជ្ជសាស្រ្តភ្លាមៗដល់អ្នកជំងឺដែលមានជំងឺធ្ងន់ធ្ងរ
+                  ឬរបួសដែលត្រូវការការយកចិត្តទុកដាក់ជាបន្ទាន់។
+                </p>
+                <div class="arrow-btn">
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="department-card text-start">
+                <img src="../img/department4.svg" class="p-3" alt="" />
+                <h4 class="fw-bold">នាយកដ្ឋានកុមារ</h4>
+                <p class="text-muted">
+                  នាយកដ្ឋាននេះផ្តល់ការថែទាំវេជ្ជសាស្រ្តភ្លាមៗដល់អ្នកជំងឺដែលមានជំងឺធ្ងន់ធ្ងរ
+                  ឬរបួសដែលត្រូវការការយកចិត្តទុកដាក់ជាបន្ទាន់។
+                </p>
+                <div class="arrow-btn">
+                  <i class="bi bi-arrow-right"></i>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </main>
 
-    <!-- ====================Footer=============================== -->
+      <!-- ============SECTION CARD[END]========= -->
+    </main>
     <footer class="footer pt-5 text-white">
       <!-- Banner Section -->
       <section
@@ -320,7 +325,12 @@
           <!-- Brand -->
           <div class="row mb-5">
             <div class="col text-center">
-              <img src="assets/img/logo1.png" alt="" width="160" class="mb-3" />
+              <img
+                src="../assets/img/logo1.png"
+                alt=""
+                width="160"
+                class="mb-3"
+              />
               <p class="text-white-50 mx-auto" style="max-width: 500px">
                 ផ្តល់អំណាចដល់សហគមន៍ជាមួយនឹងព័ត៌មានសុខភាពដែលអាចទុកចិត្តបាន
                 ចាប់តាំងពីឆ្នាំ 2018.
@@ -456,5 +466,21 @@
         </div>
       </section>
     </footer>
+
+    <!-- HERO-BANNER [END]-->
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Header scroll class
+
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 50) {
+          header.classList.add("bg-dark-blue", "text-white", "shadow-sm");
+        } else {
+          header.classList.remove("bg-dark-blue", "text-white", "shadow-sm");
+        }
+      });
+    </script>
   </body>
 </html>
