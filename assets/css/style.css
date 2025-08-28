@@ -1085,6 +1085,46 @@ img {
   transform: scale(1.1);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
+/* ==================Contact us======================= */
+.form-contact .card{
+  background-color: var(--bg-color);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.form-contact .card form input,
+.form-contact .card form select,
+.form-contact .card form textarea {
+  padding: 15px 20px;
+  border: 1px solid #2ca4c2;
+  border-radius: 20px;
+}
+.form-contact .btn {
+  padding: 10px 40px;
+  border-radius: 30px;
+  font-weight: 500;
+  background: linear-gradient(to right, #2e6fae, #2a5377);
+}
+.find-us{
+  margin-top: 660px;
+}
+.find-us h2{
+  color: #274660;
+}
+.find-us .card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.find-us .card:hover {
+  background: linear-gradient(135deg,var(--secondary), var(--text-primary)); /* blue gradient */
+  color: #fff;
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.find-us .card:hover i {
+  color: #fff; 
+}
 
 /* ===========================
    Responsive
