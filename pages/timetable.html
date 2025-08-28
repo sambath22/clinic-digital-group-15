@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="km">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clinic Digital - តារាងពេលវេលា</title>
+
+    <!-- Google Font: Kantumruy Pro -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="../assets/css/contact-us.css" />
+    <link rel="stylesheet" href="../assets/css/ti" />
+
+    <!-- Custom Styles -->
+    <style>
+      /* Global font */
+      :root {
+        --khmer-font: "Kantumruy Pro", sans-serif;
+      html,
+      body {
+        font-family: var(--khmer-font);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* Banner */
+
+
+
+      .banner p {
+        font-size: 1.1rem;
+        opacity: 0.9;
+      }
+
+      /* Timetable */
+      .schedule-table table {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      }
+
+      .schedule-table thead {
+        background: #0f172a;
+        color: white;
+      }
+
+      .schedule-table th {
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        padding: 14px;
+      }
+
+      .schedule-table td {
+        position: relative;
+        padding: 20px;
+        vertical-align: middle;
+        transition: 0.3s;
+      }
+
+      .schedule-table td.active {
+        background: #f0f9ff;
+        border-left: 4px solid #0ea5e9;
+        cursor: pointer;
+        border-radius: 8px;
+      }
+
+      .schedule-table td.active:hover {
+        background: #e0f2fe;
+        transform: scale(1.02);
+      }
+
+      .schedule-table h5 {
+        font-size: 1rem;
+        margin-bottom: 6px;
+        color: #0369a1;
+        font-weight: 600;
+      }
+
+      .schedule-table p {
+        margin: 0;
+        font-size: 0.85rem;
+        color: #334155;
+      }
+
+      /* Footer */
+      footer {
+        background: #0f172a;
+        color: white;
+        padding: 40px 0;
+      }
+
+      footer p {
+        margin: 0;
+        color: #94a3b8;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- =============== -->
+    <!-- Header -->
+    <!-- ============== -->
+    <header class="fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-xl navbar-dark">
+          <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+              <img src="../assets/img/logo1.png" alt="Logo" height="40" />
+            </a>
+
+            <!-- Toggler for mobile -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul
+                class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-uppercase"
+              >
+                <li class="nav-item px-3">
+                  <a class="nav-link active" href="../index.html">ទំព័រដើម</a>
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="../pages/aboutUs.html"
+                    >អំពីពួកយើង</a
+                  >
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="../pages/appointment.html"
+                    >កាណាត់ជួប</a
+                  >
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="../pages/department_page.html"
+                    >សេវាកម្ម</a
+                  >
+                </li>
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="../pages/doctor.html"
+                    >វេជ្ជបណ្ឌិត</a
+                  >
+                </li>
+
+                <li class="nav-item px-3">
+                  <a class="nav-link" href="../pages/contact_us.html"
+                    >ទាក់ទងមកពួកយើង</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Buttons (Sign In / Register) -->
+            <div class="d-flex ms-3">
+              <a
+                href="../pages/patient-signup.html"
+                class="btn btn-custom btn-signin me-2"
+              >
+                ចុះឈ្មោះ
+              </a>
+              <a
+                href="../pages/patient-signup.html"
+                class="btn btn-custom btn-register"
+              >
+                ចូលគណនី
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- =================== HERO =================== -->
+      <section
+        class="hero_department d-flex align-items-center position-relative"
+        id="hero"
+      >
+        <div class="container">
+          <div class="row align-items-center pt-5">
+            <!-- Left Column -->
+            <div class="col-md-6" data-aos-duration="1000">
+              <h1 class="display-4 fw-bold">ទាក់ទងមកយើងខ្ញុំ</h1>
+              <p class="lead my-4">
+                សូមអញ្ជើញមកកាន់យើងខ្ញុំ ដើម្បីទទួលបានការឆ្លើយតប
+                និងការព្យាបាលលឿនបំផុត។
+              </p>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-6" data-aos-duration="1000">
+              <img
+                src="../assets/img/Contact-us/banner_img (1).png"
+                alt="Hero Image"
+                class="img-fluid hero-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================== TIMETABLE =================== -->
+      <section class="timetable py-5">
+        <div class="container">
+          <h3 class="text-center fw-bold mb-4 text-primary">
+            កាលវិភាគប្រចាំសប្តាហ៍
+          </h3>
+          <div class="schedule-table">
+            <table class="table table-bordered align-middle text-center">
+              <thead>
+                <tr>
+                  <th>ម៉ោង</th>
+                  <th>ចន្ទ</th>
+                  <th>អង្គារ</th>
+                  <th>ពុធ</th>
+                  <th>ព្រហស្បតិ៍</th>
+                  <th>សុក្រ</th>
+                  <th>សៅរ៍</th>
+                  <th>អាទិត្យ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>7:00 - 8:00 AM</td>
+                  <td class="active">
+                    <h5>កុមារ</h5>
+                    <p>វេ. សារ៉ា</p>
+                  </td>
+                  <td></td>
+                  <td class="active">
+                    <h5>ស្ត្រីមានផ្ទៃពោះ</h5>
+                    <p>វេ. ការីន</p>
+                  </td>
+                  <td class="active">
+                    <h5>កុមារ</h5>
+                    <p>វេ. ដេវីត</p>
+                  </td>
+                  <td></td>
+                  <td class="active">
+                    <h5>ស្ត្រីមានផ្ទៃពោះ</h5>
+                    <p>វេ. ការីន</p>
+                  </td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td>8:00 - 9:00 AM</td>
+                  <td></td>
+                  <td class="active">
+                    <h5>បេះដូង</h5>
+                    <p>វេ. មីសែល</p>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td class="active">
+                    <h5>ទន្តសាស្ត្រ</h5>
+                    <p>វេ. ចាន់លីដា</p>
+                  </td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td>9:00 - 10:00 AM</td>
+                  <td class="active">
+                    <h5>ភ្នែក</h5>
+                    <p>វេ. ពិសិដ្ឋ</p>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td class="active">
+                    <h5>ទូទៅ</h5>
+                    <p>វេ. ម៉ារី</p>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td>10:00 - 11:00 AM</td>
+                  <td class="active">
+                    <h5>ទូទៅ</h5>
+                    <p>វេ. ចាន់រិទ្ធ</p>
+                  </td>
+                  <td></td>
+                  <td class="active">
+                    <h5>ទន្តសាស្ត្រ</h5>
+                    <p>វេ. សុភា</p>
+                  </td>
+                  <td></td>
+                  <td class="active">
+                    <h5>បេះដូង</h5>
+                    <p>វេ. មីសែល</p>
+                  </td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================Footer=============================== -->
+    <footer class="footer pt-5 text-white">
+      <!-- Banner Section -->
+      <section
+        class="banner-footer position-relative text-white py-5"
+        style="
+          background: linear-gradient(135deg, #0f172a, #1e293b);
+          overflow: hidden;
+        "
+      >
+        <div
+          class="floating-elements position-absolute w-100 h-100"
+          style="top: 0; left: 0; z-index: 0; opacity: 0.08"
+        >
+          <i
+            class="floating-icon fas fa-heartbeat position-absolute"
+            style="top: 20%; left: 10%; font-size: 4rem"
+          ></i>
+          <i
+            class="floating-icon fas fa-stethoscope position-absolute"
+            style="top: 40%; right: 15%; font-size: 3.5rem"
+          ></i>
+          <i
+            class="floating-icon fas fa-plus-circle position-absolute"
+            style="bottom: 20%; left: 20%; font-size: 3rem"
+          ></i>
+        </div>
+        <div class="container position-relative z-1">
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-4">
+              <h1 class="display-5 fw-bold mb-4">
+                រក្សាទំនាក់ទំនងជាមួយ
+                <span class="text-info">សុខភាពរបស់អ្នក</span>
+              </h1>
+              <p class="lead opacity-90 mb-4">
+                ចូលរួមជាមួយមនុស្សរាប់ពាន់នាក់ដែលជឿជាក់លើ DigitalClinic
+                សម្រាប់ការយល់ដឹងផ្នែកវេជ្ជសាស្ត្រចុងក្រោយបំផុត
+                និងដំបូន្មានអ្នកជំនាញ។
+              </p>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-users text-info fs-2 me-3"></i>
+                <div>
+                  <strong class="d-block">50,000+ អតិថិជនរីករាយ</strong>
+                  <small class="opacity-75">រីកលូតលាស់ជារៀងរាល់ថ្ងៃ</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 text-center">
+              <div
+                class="doctor-card p-4 bg-dark rounded-3 shadow-lg"
+                style="max-width: 350px; margin: auto"
+              >
+                <div class="mb-3 position-relative">
+                  <img
+                    src="assets/img/footer/footer-doctorprofile.jpg"
+                    alt=""
+                    class="rounded-circle border border-4 border-info shadow"
+                    width="150"
+                  />
+                  <span
+                    class="position-absolute top-0 end-0 translate-middle badge bg-success rounded-circle p-2"
+                  >
+                    <i class="fas fa-plus text-white"></i>
+                  </span>
+                </div>
+                <h5 class="mb-1">អ្នកគ្រូពេទ្យ សារ៉ា លីដា</h5>
+                <p class="text-info mb-2">ប្រធានពេទ្យ</p>
+                <small class="opacity-75 fst-italic"
+                  >"យើងប្តេជ្ញារក្សាអ្នកឱ្យទទួលបានព័ត៌មាន និងសុខភាពល្អ"</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Links Section -->
+      <section class="link-footer" style="background: #0f172a">
+        <div class="container py-5">
+          <!-- Brand -->
+          <div class="row mb-5">
+            <div class="col text-center">
+              <img src="assets/img/logo1.png" alt="" width="160" class="mb-3" />
+              <p class="text-white-50 mx-auto" style="max-width: 500px">
+                ផ្តល់អំណាចដល់សហគមន៍ជាមួយនឹងព័ត៌មានសុខភាពដែលអាចទុកចិត្តបាន
+                ចាប់តាំងពីឆ្នាំ 2018.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Quick Links -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="fw-bold mb-3">តំណភ្ជាប់រហ័ស</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="f-link"
+                    ><i class="fas fa-angle-right me-2"></i>អំពីយើង</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="f-link"
+                    ><i class="fas fa-angle-right me-2"></i>ផ្នែកឯកទេស</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="f-link"
+                    ><i class="fas fa-angle-right me-2"></i>ជួបគ្រូពេទ្យ</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="f-link"
+                    ><i class="fas fa-angle-right me-2"></i>កាលវិភាគ</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="f-link"
+                    ><i class="fas fa-angle-right me-2"></i>ការណាត់ជួប</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="fw-bold mb-3">សេវាសុខភាព</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="f-link"
+                    ><i class="fas fa-heartbeat me-2"></i>វេជ្ជសាស្ត្រទូទៅ</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="f-link"
+                    ><i class="fas fa-child me-2"></i>ការថែទាំកុមារ</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="f-link"
+                    ><i class="fas fa-heart me-2"></i>រោគបេះដូង</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="f-link"
+                    ><i class="fas fa-tooth me-2"></i>ទន្តសាស្ត្រ</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="f-link"
+                    ><i class="fas fa-eye me-2"></i>ចក្ខុវិស័យ</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="fw-bold mb-3">ទំនាក់ទំនង</h5>
+              <p class="text-white-50 mb-1">
+                <i class="fas fa-map-marker-alt me-2"></i>123 Wellness Avenue,
+                ភ្នំពេញ
+              </p>
+              <p class="mb-1">
+                <a href="tel:123-436-7890" class="f-link"
+                  ><i class="fas fa-phone me-2"></i>+1 (123) 436-7890</a
+                >
+              </p>
+              <p class="mb-1">
+                <a href="mailto:hello@prohealth.com" class="f-link"
+                  ><i class="fas fa-envelope me-2"></i
+                  >Welcometo@DigitalClinic.com</a
+                >
+              </p>
+              <p class="text-white-50">
+                <i class="fas fa-clock me-2"></i>24/7 ការថែទាំសង្គ្រោះបន្ទាន់
+              </p>
+            </div>
+
+            <!-- Social -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="fw-bold mb-3">រក្សាទំនាក់ទំនង</h5>
+              <p class="text-white-50">
+                តាមដានពួកយើងសម្រាប់ព័ត៌មានសុខភាពប្រចាំថ្ងៃ
+              </p>
+              <div class="d-flex gap-2 mb-3">
+                <a href="#" class="social-btn bg-info text-white"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-btn bg-danger text-white"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a href="#" class="social-btn bg-primary text-white"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="social-btn bg-pink-600 text-white"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+              <small class="text-white-50"
+                ><i class="fas fa-users me-1"></i>អ្នកគាំទ្រ 50K+</small
+              >
+            </div>
+          </div>
+
+          <hr class="my-4" style="border-color: rgba(255, 255, 255, 0.1)" />
+          <div class="row">
+            <div class="col text-center">
+              <p class="text-white-50 mb-0">
+                &copy; 2025 គ្លីនិកឌីជីថល | រក្សាសិទ្ធិដោយ G-15 |
+                <a href="#" class="text-decoration-none text-info"
+                  >លក្ខខណ្ឌនៃសេវាកម្ម</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Header scroll class
+
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 50) {
+          header.classList.add("bg-dark-blue", "text-white", "shadow-sm");
+        } else {
+          header.classList.remove("bg-dark-blue", "text-white", "shadow-sm");
+        }
+      });
+    </script>
+  </body>
+</html>

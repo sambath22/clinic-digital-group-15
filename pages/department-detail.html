@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="km">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>សេវាសុខភាព</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/department_page.css" />
+    <style>
+      :root {
+        --primary: #2a5bd7;
+        --secondary: #3b9ab2;
+        --accent: #e67e22;
+        --light-bg: #f8f9fa;
+        --dark-text: #2c3e50;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--dark-text);
+      }
+
+      .hero-section {
+        background: linear-gradient(
+            rgba(42, 91, 215, 0.8),
+            rgba(59, 154, 178, 0.8)
+          ),
+          url("https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80");
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+        color: white;
+      }
+
+      .section-title {
+        position: relative;
+        margin-bottom: 40px;
+        font-weight: 700;
+      }
+
+      .section-title:after {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 4px;
+        background: var(--primary);
+        margin: 15px auto 0;
+        border-radius: 2px;
+      }
+
+      .facility-card {
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+        border: none;
+      }
+
+      .facility-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .facility-icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: var(--primary);
+      }
+
+      .card-title {
+        font-weight: 700;
+        color: var(--primary);
+      }
+
+      .card-text {
+        color: #666;
+      }
+
+      .bg-light-custom {
+        background-color: var(--light-bg);
+      }
+
+      .navbar {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn-primary {
+        background-color: var(--primary);
+        border-color: var(--primary);
+      }
+
+      .btn-primary:hover {
+        background-color: #1a4bc2;
+        border-color: #1a4bc2;
+      }
+
+      footer {
+        background-color: var(--dark-text);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+          <i class="fas fa-hospital me-2 text-primary"></i>សេវាសុខភាព MediCare
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">ទំព័រដើម</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">អំពីយើង</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">សេវាកម្ម</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#facilities">សេវាសុខភាព</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">ទំនាក់ទំនង</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center" id="home">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-4">សេវាសុខភាពដែលយើងមាន</h1>
+        <p class="lead mb-4">
+          សេវាសុខាភិបាលទំនើបសម្រាប់សុខភាព និងសុវត្ថិភាពរបស់អ្នក
+        </p>
+        <a href="#facilities" class="btn btn-light btn-lg px-4"
+          >ស្វែងរកសេវាសុខភាពរបស់យើង</a
+        >
+      </div>
+    </section>
+
+    <!-- Facilities Intro -->
+    <section class="py-5 bg-light-custom" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h2 class="section-title">សេវាសុខភាពដែលយើងផ្តល់</h2>
+            <p class="lead">
+              យើងផ្តល់សេវាសុខាភិបាលពេញលេញជាមួយបច្ចេកវិទ្យាទំនើប
+              និងបុគ្គលិកសុខាភិបាលមានបទពិសោធន៍ ដើម្បីធានាសុវត្ថិភាព
+              និងគុណភាពសេវាកម្មល្អបំផុតសម្រាប់អ្នកជម្ងឺ។
+            </p>
+            <p>
+              សេវាកម្មរបស់យើងត្រូវបានរចនាឡើងដើម្បីផ្តល់បរិយាកាសមានសុវត្ថិភាព
+              និងសមស្រប ជាមួយនឹងការប្រើប្រាស់បច្ចេកវិទ្យាសុខាភិបាលទំនើប។
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+              alt="Medical Facility"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="py-5" id="facilities">
+      <div class="container">
+        <h2 class="text-center section-title mb-5">សេវាសុខាភិបាលរបស់យើង</h2>
+
+        <div class="row g-4">
+          <!-- Medical Surgery -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card facility-card shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="facility-icon">
+                  <i class="fas fa-stethoscope"></i>
+                </div>
+                <h4 class="card-title">ការវះកាត់សុខាភិបាល</h4>
+                <p class="card-text">
+                  ផ្នែកវះកាត់របស់យើងមានបច្ចេកវិទ្យាទំនើបសម្រាប់ប្រតិបត្តិការផ្សេងៗ
+                  ដែលធ្វើដោយគ្រូពេទ្យមានបទពិសោធន៍។
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Medical Therapy -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card facility-card shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="facility-icon">
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+                <h4 class="card-title">សេវាថែទាំសុខភាព</h4>
+                <p class="card-text">
+                  យើងផ្តល់ការព្យាបាលបច្ចេកទេសផ្សេងៗ
+                  ដើម្បីជួយអ្នកជម្ងឺស្ដារឡើងវិញពីរបួស និងគ្រប់គ្រងជំងឺបន្ត។
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Medical Pediatrics -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card facility-card shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="facility-icon">
+                  <i class="fas fa-baby"></i>
+                </div>
+                <h4 class="card-title">ផ្នែកទារក និងកុមារ</h4>
+                <p class="card-text">
+                  ផ្នែកកុមាររបស់យើងផ្តល់សេវាផ្សេងៗសម្រាប់កុមារ
+                  ចាប់ពីការត្រួតពិនិត្យធម្មតាទៅដល់ការព្យាបាលជំងឺកុមារ។
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Eye Care Services -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card facility-card shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="facility-icon">
+                  <i class="fas fa-eye"></i>
+                </div>
+                <h4 class="card-title">សេវាថែទាំភ្នែក</h4>
+                <p class="card-text">
+                  សេវាថែទាំភ្នែកពេញលេញ រួមទាំងតេស្តទស្សនៈ ការព្យាបាលជំងឺភ្នែក
+                  និងប្រតិបត្តិការ surgical ទំនើប។
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cardiology Services -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card facility-card shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="facility-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <h4 class="card-title">សេវាបេះដូង</h4>
+                <p class="card-text">
+                  ផ្នែកបេះដូងរបស់យើងផ្តល់ការថែទាំបេះដូងពេញលេញ
+                  ចាប់ពីការត្រួតពិនិត្យទៀងទាត់ ដល់ការវះកាត់បេះដូងទំនើប។
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dental Services -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card facility-card shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="facility-icon">
+                  <i class="fas fa-tooth"></i>
+                </div>
+                <h4 class="card-title">សេវាប្រព័ន្ធធ្មេញ</h4>
+                <p class="card-text">
+                  យើងផ្តល់សេវាថែទាំធ្មេញទាំងស្រុង រួមទាំងការសម្អាត ការព្យាបាល
+                  បង្គាប់ និងសេវាកម្មធ្មេញសោភ័ណភាព។
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+      <div class="container text-center">
+        <h2 class="mb-4">ត្រូវការជំនួយវេជ្ជសាស្រ្ត?</h2>
+        <p class="lead mb-4">
+          កំណត់ពេលវេលាការណាត់ជួបជាមួយអ្នកជំនាញរបស់យើងថ្ងៃនេះ
+        </p>
+        <a href="#contact" class="btn btn-light btn-lg px-4">ទំនាក់ទំនងមកយើង</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h5 class="mb-3">
+              <i class="fas fa-hospital me-2"></i>សេវាសុខភាព MediCare
+            </h5>
+            <p>
+              ផ្តល់សេវាសុខាភិបាលមានគុណភាពដោយមានក្រម
+              និងការបរិយាបណ្តោះអាស្រ័យចាប់ពីឆ្នាំ 2005។
+            </p>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h5 class="mb-3">តំណរយោងរហ័ស</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#home" class="text-white text-decoration-none"
+                  >ទំព័រដើម</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="text-white text-decoration-none"
+                  >អំពីយើង</a
+                >
+              </li>
+              <li>
+                <a href="#services" class="text-white text-decoration-none"
+                  >សេវាកម្ម</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="text-white text-decoration-none"
+                  >ទំនាក់ទំនង</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h5 class="mb-3">ព័ត៌មានទំនាក់ទំនង</h5>
+            <p>
+              <i class="fas fa-map-marker-alt me-2"></i> 123
+              ផ្លូវមជ្ឈមណ្ឌលសុខភាព
+            </p>
+            <p><i class="fas fa-phone me-2"></i> (555) 123-4567</p>
+            <p>
+              <i class="fas fa-envelope me-2"></i> info@medicalfacilities.com
+            </p>
+          </div>
+        </div>
+        <hr class="my-4 bg-light" />
+        <p class="text-center mb-0">
+          © 2023 សេវាសុខភាព MediCare. រក្សា​សិទ្ធិ​គ្រប់យ៉ាង។
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

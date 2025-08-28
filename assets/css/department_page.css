@@ -16,12 +16,19 @@
   transition: background-color 0.3s;
 }
 
+.bg-dark-blue {
+  background-color: #0b2545 !important; /* dark blue */
+  transition: background-color 0.3s;
+}
+
 header,
 header a,
 header a.nav-link {
   color: #ffffff !important; /* force white text and links */
   transition: color 0.3s;
+  font-size: 17px;
 }
+
 /* ===========================
    Base Styles
 =========================== */
@@ -59,6 +66,7 @@ body {
   color: var(--text-primary);
   position: relative;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 /* Active Link */
@@ -111,8 +119,8 @@ body {
   background-color: var(--secondary);
   border: 2px solid var(--secondary);
   color: #fff;
+  font-size: 17px;
   white-space: nowrap;
-  font-size: 15px;
 }
 
 .btn-signin:hover {
@@ -125,20 +133,32 @@ body {
   border: 2px solid var(--accent);
   color: #fff;
   margin-left: 10px;
+  font-size: 17px;
   white-space: nowrap;
 }
 
 .btn-register:hover {
-  background-color: var(--accent);
+  background-color: #004a8f;
   border-color: var(--accent);
 }
-/* ===========================
-   Responsive
-=========================== */
-@media (max-width: 991px) {
-  .navbar .navbar-nav .nav-link {
-    display: inline-block !important;
-    margin: 8px 0;
+.hero-btn {
+  background-color: #02305c;
+  color: var(--text-color);
+}
+.hero-btn:hover {
+  background-color: #004a8f;
+}
+.experience h2,
+.experience p {
+  color: var(--text-primary) !important;
+}
+
+@media (max-width: 1024px) {
+  .navbar .navbar-nav {
+    background-color: #004a8f;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
   }
 }
 
