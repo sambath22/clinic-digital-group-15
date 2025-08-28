@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="../assets/css/doctor_detail.css" />
+</head>
+
+<body>
+    <header class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl navbar-dark">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/img/logo1.png" alt="Logo" height="40" />
+                    </a>
+
+                    <!-- Toggler for mobile -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Navbar Links -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-uppercase">
+                            <li class="nav-item px-3">
+                                <a class="nav-link active" href="../index.html">ទំព័រដើម</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link" href="aboutUs.html">អំពីពួកយើង</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link" href="appointment.html">កាណាត់ជួប</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link" href="department-detail.html">សេវាកម្ម</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link" href="doctor.html">វេជ្ជបណ្ឌិត</a>
+                            </li>
+
+
+
+
+                            <li class="nav-item px-3">
+                                <a class="nav-link" href="contact_us.html">ទាក់ទងមកពួកយើង</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Buttons (Sign In / Register) -->
+                    <div class="d-flex ms-3">
+                        <a href="patient-signup.html" class="btn btn-custom btn-signin me-2">
+                            ចុះឈ្មោះ
+                        </a>
+                        <a href="patient-login.html" class="btn btn-custom btn-register">
+                            ចូលគណនី
+                        </a>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="space-170"></div>
+        <div class="page_heading">
+            <div class="container">
+                <div class="page_heading_in">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../index.html">ទំព័រដើម</a></li>
+                        <li class="breadcrumb-item"><a href="doctor.html">វេជ្ជបណ្ឌិត</a></li>
+                        <li class="breadcrumb-item active">ព័ត៌មានលម្អិតរបស់វេជ្ជបណ្ឌិត</li>
+                    </ol>
+                    <form action="#" class="search_form">
+                        <input type="text" placeholder="ស្វែងរកវេជ្ជបណ្ឌិត">
+                        <button class="search_btn">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.07914 0C3.62682 0 0 3.62558 0 8.07641C0 12.5272 3.62682 16.1599 8.07914 16.1599C9.98086 16.1599 11.7299 15.4936 13.1122 14.3875L16.4775 17.7498C16.6473 17.9126 16.8741 18.0024 17.1094 18C17.3446 17.9975 17.5695 17.9032 17.736 17.737C17.9025 17.5708 17.9972 17.3461 17.9999 17.111C18.0027 16.8758 17.9132 16.6489 17.7506 16.4789L14.3853 13.1148C15.4928 11.7308 16.16 9.97968 16.16 8.07641C16.16 3.62558 12.5315 0 8.07914 0ZM8.07914 1.79517C11.561 1.79517 14.3625 4.59577 14.3625 8.07641C14.3625 11.557 11.561 14.3647 8.07914 14.3647C4.59732 14.3647 1.79575 11.557 1.79575 8.07641C1.79575 4.59577 4.59732 1.79517 8.07914 1.79517Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <section class="banner mb-5 position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 my-5">
+                        <div class="banner-image position-relative">
+                            <img src="../assets/img/doctor/doctor_details.jpeg" alt="Dr. Sarah Lee" class="img-fluid">
+                            <h2 class="departmant py-4">ផ្នែកចិត្តសាស្ត្រ</h2>
+                        </div>
+                        <div class="space-94 space-lg-60"></div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="list style_2">
+                                    <h2 class="list_title mt-5 fs_24">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M17.7692 0H4.23077C1.89792 0 0 1.89792 0 4.23077V17.7692C0 20.1021 1.89792 22 4.23077 22H17.7692C20.1021 22 22 20.1021 22 17.7692V4.23077C22 1.89792 20.1021 0 17.7692 0ZM11.0025 4.08354C12.8692 4.08354 14.3872 5.60154 14.3872 7.46815C14.3872 9.33477 12.8692 10.8528 11.0025 10.8528C9.13592 10.8528 7.61792 9.33477 7.61792 7.46815C7.61792 5.60154 9.13592 4.08354 11.0025 4.08354ZM16.0769 18.2109H5.92308C5.45515 18.2109 5.07692 17.8318 5.07692 17.3648C5.07692 14.0986 7.73469 11.4417 11 11.4417C14.2653 11.4417 16.9231 14.0986 16.9231 17.3648C16.9231 17.8318 16.5448 18.2109 16.0769 18.2109Z"
+                                                fill="#307BC4"></path>
+                                        </svg>
+
+                                        ព័ត៌មានទំនាក់ទំនង
+                                    </h2>
+                                    <ul class="mp0 contact-infor list-unstyled fs-6">
+                                        <li class="my-3">
+                                            <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M2.38144 7.31206C3.47051 8.60899 4.78151 9.63013 6.27784 10.3527C6.84754 10.6216 7.60943 10.9407 8.45827 10.9954C8.51089 10.9977 8.56123 11 8.61385 11C9.18355 11 9.64114 10.804 10.0141 10.4005C10.0164 10.3983 10.0209 10.3937 10.0232 10.3891C10.1559 10.2296 10.3069 10.086 10.4648 9.93328C10.5723 9.83071 10.6822 9.72358 10.7874 9.61417C11.2747 9.10816 11.2747 8.4654 10.7828 7.97534L9.40777 6.60547C9.1744 6.36386 8.89527 6.23622 8.60241 6.23622C8.30955 6.23622 8.02813 6.36386 7.78789 6.60319L6.9688 7.41919C6.8933 7.37588 6.81551 7.33713 6.7423 7.30066C6.65078 7.25508 6.56612 7.21177 6.49062 7.1639C5.74475 6.69208 5.06751 6.07667 4.42002 5.28574C4.09284 4.87319 3.87319 4.52673 3.7199 4.17344C3.93497 3.97969 4.13631 3.77683 4.33079 3.57853C4.39943 3.50787 4.47035 3.43722 4.54128 3.36656C4.78838 3.12039 4.92108 2.83547 4.92108 2.546C4.92108 2.25653 4.79067 1.97161 4.54128 1.72545L3.85947 1.04621C3.77939 0.966432 3.70389 0.888935 3.62609 0.809159C3.47509 0.654165 3.31722 0.494613 3.16164 0.351015C2.92598 0.120804 2.64914 0 2.35628 0C2.06571 0 1.78657 0.120804 1.54176 0.353295L0.686065 1.20576C0.374903 1.51575 0.19873 1.89184 0.162122 2.32719C0.118651 2.87194 0.219321 3.45089 0.480149 4.15064C0.880542 5.23332 1.48456 6.2385 2.38144 7.31206ZM0.720385 2.37505C0.74784 2.0719 0.864526 1.8189 1.08417 1.60008L1.93529 0.752176C2.06799 0.624534 2.21442 0.558433 2.35628 0.558433C2.49584 0.558433 2.6377 0.624534 2.76811 0.756734C2.9214 0.898052 3.06554 1.04621 3.22113 1.20348C3.29892 1.28326 3.37899 1.36303 3.45907 1.44509L4.14089 2.12433C4.28274 2.26564 4.35595 2.40924 4.35595 2.55056C4.35595 2.69188 4.28274 2.83547 4.14089 2.97679C4.06996 3.04745 3.99903 3.12039 3.92811 3.19105C3.71533 3.4053 3.51627 3.60816 3.29663 3.80191C3.29205 3.80647 3.28976 3.80874 3.28519 3.8133C3.09529 4.00249 3.12503 4.18255 3.17079 4.31931C3.17308 4.32615 3.17537 4.33071 3.17765 4.33755C3.35383 4.75922 3.59864 5.16038 3.98073 5.63904C4.66712 6.48239 5.39011 7.13655 6.18632 7.64028C6.2847 7.7041 6.38995 7.75425 6.48833 7.80439C6.57985 7.84998 6.66451 7.89329 6.74001 7.94115C6.74916 7.94571 6.75602 7.95027 6.76518 7.95483C6.84068 7.99358 6.91389 8.01181 6.98711 8.01181C7.17015 8.01181 7.28912 7.89557 7.32801 7.85682L8.18371 7.00435C8.31641 6.87215 8.46056 6.80149 8.60241 6.80149C8.77629 6.80149 8.91815 6.90862 9.00738 7.00435L10.387 8.3765C10.6616 8.65002 10.6593 8.94633 10.3802 9.23581C10.2841 9.33838 10.1834 9.43639 10.0759 9.53896C9.9157 9.69395 9.74868 9.8535 9.59767 10.0336C9.33456 10.3162 9.0211 10.4484 8.61614 10.4484C8.57724 10.4484 8.53606 10.4461 8.49716 10.4438C7.74671 10.396 7.04888 10.1042 6.52494 9.85578C5.10183 9.16971 3.8526 8.19644 2.81616 6.96104C1.96275 5.93763 1.38847 4.98487 1.00867 3.96374C0.773008 3.33692 0.683777 2.8332 0.720385 2.37505Z"
+                                                    fill="#307BC4"></path>
+                                            </svg>
+                                            <span class="my-5">+123+456-7890</span>
+                                        </li>
+                                        <li>
+                                            <svg width="13" height="10" viewBox="0 0 13 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.2784 0.522339H1.02531C0.459825 0.522339 0 0.982164 0 1.54765V8.7248C0 9.29026 0.459825 9.75009 1.02531 9.75009H11.2784C11.8438 9.75009 12.3037 9.29026 12.3037 8.72477V1.54765C12.3037 0.982164 11.8438 0.522339 11.2784 0.522339ZM1.02531 1.03498H11.2784C11.3162 1.03498 11.3494 1.04875 11.3849 1.05654C10.4972 1.86894 7.55385 4.56162 6.52383 5.48966C6.44323 5.56225 6.31332 5.64886 6.15186 5.64886C5.9904 5.64886 5.86049 5.56225 5.77962 5.48942C4.7497 4.56152 1.80616 1.8687 0.918642 1.05659C0.954159 1.0488 0.987513 1.03498 1.02531 1.03498ZM0.512645 8.72477V1.54765C0.512645 1.49743 0.527784 1.45187 0.541337 1.40597C1.22073 2.02778 3.27448 3.90659 4.60616 5.11757C3.27881 6.25775 1.22453 8.20538 0.539727 8.85838C0.52764 8.81479 0.512645 8.77216 0.512645 8.72477ZM11.2784 9.23744H1.02531C0.984365 9.23744 0.947959 9.22317 0.909726 9.21404C1.61736 8.53945 3.68471 6.58062 4.98873 5.46505C5.15872 5.61925 5.31401 5.75986 5.43642 5.87016C5.64769 6.06091 5.89499 6.16153 6.15183 6.16153C6.40867 6.16153 6.65597 6.06089 6.86698 5.8704C6.98944 5.76005 7.14485 5.61932 7.31494 5.46505C8.61903 6.5805 10.6861 8.53919 11.3939 9.21404C11.3557 9.22317 11.3193 9.23744 11.2784 9.23744ZM11.791 8.72477C11.791 8.77214 11.776 8.81479 11.764 8.85838C11.0789 8.20504 9.02486 6.25763 7.69753 5.11759C9.02926 3.90662 11.0827 2.02798 11.7623 1.40592C11.7759 1.45182 11.791 1.4974 11.791 1.54763V8.72477Z"
+                                                    fill="#307BC4"></path>
+                                            </svg>
+                                            <span>sarahlee@prohealth.com</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 list style_3 mt-5">
+                                <h2 class="list_title">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.8 2.2H18.7V1.1C18.7 0.44 18.26 0 17.6 0C16.94 0 16.5 0.44 16.5 1.1V2.2H5.5V1.1C5.5 0.44 5.06 0 4.4 0C3.74 0 3.3 0.44 3.3 1.1V2.2H1.1C0.55 2.2 0 2.64 0 3.3V18.7C0 19.36 0.55 19.8 1.1 19.8H7.81C7.04 18.48 6.6 16.94 6.6 15.4C6.6 10.56 10.56 6.6 15.4 6.6C17.49 6.6 19.36 7.37 20.9 8.58V3.3C20.9 2.75 20.35 2.2 19.8 2.2Z"
+                                            fill="#307BC4"></path>
+                                        <path
+                                            d="M15.3998 8.80005C11.7698 8.80005 8.7998 11.77 8.7998 15.4C8.7998 19.03 11.7698 22 15.3998 22C19.0298 22 21.9998 19.03 21.9998 15.4C21.9998 11.77 19.0298 8.80005 15.3998 8.80005ZM17.5998 16.5H15.3998C14.7398 16.5 14.2998 16.06 14.2998 15.4V12.1C14.2998 11.44 14.7398 11 15.3998 11C16.0598 11 16.4998 11.44 16.4998 12.1V14.3H17.5998C18.2598 14.3 18.6998 14.74 18.6998 15.4C18.6998 16.06 18.2598 16.5 17.5998 16.5Z"
+                                            fill="#307BC4"></path>
+                                    </svg>
+
+                                    កាលវិភាគណាត់ជួប
+                                </h2>
+                                <ul class="mp0 mt-5 schedule radius_20 white_bg medium">
+                                    <li class="d-flex justify-content-between">
+                                        <span>ថ្ងៃច័ន្ទ</span>
+                                        <span><i class="fa-regular fa-clock"></i> 09.00-12.00</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <span>ថ្ងៃពុធ</span>
+                                        <span><i class="fa-regular fa-clock"></i> 05.00-18.00</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <span>ថ្ងៃសុក្រ</span>
+                                        <span><i class="fa-regular fa-clock"></i> 09.00-12.00</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 d-flex justify-content-center">
+                        <div class="banner-title position-relativ">
+                            <h3>វេជ្ជបណ្ឌិត Sarah Lee, MD, MPH, FAPA</h3>
+                            <p class="subtitle">វិផ្នែកចិត្តសាស្ត្រដែលទទួលស្គាល់ដោយក្រុមប្រឹក្សាភិបាល</p>
+                            <p>ជាមួយនឹងបទពិសោធន៍ជាង 15 ឆ្នាំនៃការរៀនចិត្តវិទ្យា និងអាកប្បកិរិយារបស់មនុស្ស វេជ្ជបណ្ឌិត
+                                Sarah Lee គឺជាអ្នកជំនាញក្នុងការគ្រប់គ្រងជំងឺផ្លូវចិត្ត និងជំងឺថប់បារម្ភ
+                            </p>
+                            <div class="social">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                            <div class="space-200 space-lg-0"></div>
+                            <div class="degree">
+                                <h2 class="list_title medium fs_24">
+                                    <svg width="29" height="24" viewBox="0 0 29 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M28.4331 4.82659L14.7827 0.048049C14.5998 -0.0160163 14.4003 -0.0160163 14.2174 0.048049L0.566973 4.82659C0.227583 4.94539 0.000453804 5.26347 6.78953e-07 5.62055C-0.000452446 5.97763 0.22594 6.29621 0.565048 6.4158L14.2154 11.2306C14.3075 11.2631 14.4038 11.2794 14.5 11.2794C14.5963 11.2794 14.6925 11.2631 14.7846 11.2306L28.435 6.4158C28.7741 6.29621 29.0004 5.97763 29 5.62055C28.9995 5.26347 28.7724 4.94539 28.4331 4.82659Z"
+                                            fill="#307BC4"></path>
+                                        <path
+                                            d="M26.9583 16.0785V8.72559L25.259 9.32493V16.0785C24.7472 16.3708 24.4023 16.9184 24.4023 17.5464C24.4023 18.1744 24.7472 18.7221 25.259 19.0144V23.157C25.259 23.6226 25.6394 24 26.1086 24C26.5779 24 26.9583 23.6226 26.9583 23.157V19.0144C27.4701 18.7222 27.8149 18.1744 27.8149 17.5465C27.8149 16.9185 27.4701 16.3708 26.9583 16.0785Z"
+                                            fill="#307BC4"></path>
+                                        <path
+                                            d="M14.5002 12.9653C14.2086 12.9653 13.9214 12.9161 13.6465 12.8192L5.97266 10.1124V13.8219C5.97266 14.7295 6.92688 15.4969 8.80882 16.103C10.4492 16.6312 12.4705 16.9222 14.5002 16.9222C16.53 16.9222 18.5512 16.6312 20.1917 16.103C22.0736 15.4969 23.0278 14.7295 23.0278 13.8219V10.1124L15.354 12.8192C15.0791 12.9161 14.7919 12.9653 14.5002 12.9653Z"
+                                            fill="#307BC4"></path>
+                                    </svg>
+                                    កាសិក្សា
+                                </h2>
+                                <ul class="decrip-degree mt-4">
+                                    <li>
+                                        <p class="medium heading_color mb-0 fs-4">
+                                            សាកលវិទ្យាល័យកាលីហ្វ័រញ៉ា សាន់ហ្វ្រាន់ស៊ីស្កូ</p>
+                                        <p class="mb-0">សញ្ញាបត្រវេជ្ជសាស្ត្រ</p>
+                                    </li>
+                                    <li class="my-5">
+                                        <p class="medium heading_color mb-0">មជ្ឈមណ្ឌលវេជ្ជសាស្ត្រ
+                                            សាកលវិទ្យាល័យកាលីហ្វ័រញ៉ា ឡូសអេនជឺលេស (UCLA) </p>
+                                        <p class="mb-0">បានបញ្ចប់ការបណ្តុះបណ្តាលស្នាក់នៅក្នុងចិត្តវិទ្យា</p>
+                                    </li>
+                                    <li>
+                                        <p class="medium heading_color mb-0">
+                                            សាកលវិទ្យាល័យកាលីហ្វ័រញ៉ា Berkeley
+                                        </p>
+                                        <p class="mb-0">អនុបណ្ឌិតផ្នែកសុខភាពសាធារណៈ</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="experiences mt-5">
+                                <h2 class="list_title medium fs_24">
+                                    <svg width="29" height="24" viewBox="0 0 29 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M28.4331 4.82659L14.7827 0.048049C14.5998 -0.0160163 14.4003 -0.0160163 14.2174 0.048049L0.566973 4.82659C0.227583 4.94539 0.000453804 5.26347 6.78953e-07 5.62055C-0.000452446 5.97763 0.22594 6.29621 0.565048 6.4158L14.2154 11.2306C14.3075 11.2631 14.4038 11.2794 14.5 11.2794C14.5963 11.2794 14.6925 11.2631 14.7846 11.2306L28.435 6.4158C28.7741 6.29621 29.0004 5.97763 29 5.62055C28.9995 5.26347 28.7724 4.94539 28.4331 4.82659Z"
+                                            fill="#307BC4"></path>
+                                        <path
+                                            d="M26.9583 16.0785V8.72559L25.259 9.32493V16.0785C24.7472 16.3708 24.4023 16.9184 24.4023 17.5464C24.4023 18.1744 24.7472 18.7221 25.259 19.0144V23.157C25.259 23.6226 25.6394 24 26.1086 24C26.5779 24 26.9583 23.6226 26.9583 23.157V19.0144C27.4701 18.7222 27.8149 18.1744 27.8149 17.5465C27.8149 16.9185 27.4701 16.3708 26.9583 16.0785Z"
+                                            fill="#307BC4"></path>
+                                        <path
+                                            d="M14.5002 12.9653C14.2086 12.9653 13.9214 12.9161 13.6465 12.8192L5.97266 10.1124V13.8219C5.97266 14.7295 6.92688 15.4969 8.80882 16.103C10.4492 16.6312 12.4705 16.9222 14.5002 16.9222C16.53 16.9222 18.5512 16.6312 20.1917 16.103C22.0736 15.4969 23.0278 14.7295 23.0278 13.8219V10.1124L15.354 12.8192C15.0791 12.9161 14.7919 12.9653 14.5002 12.9653Z"
+                                            fill="#307BC4"></path>
+                                    </svg>
+                                    បទពិសោធន៍
+                                </h2>
+                                <ul class="decrip-degree mt-4">
+                                    <li>
+                                        <p class="medium heading_color mb-0 ">
+                                            បានធ្វើការនៅក្នុងគ្លីនិកសុខភាពផ្លូវចិត្តសហគមន៍ ការអនុវត្តឯកជន
+                                            និងមជ្ឈមណ្ឌលវេជ្ជសាស្ត្រសិក្សា</p>
+
+                                    </li>
+                                    <li class="my-5">
+                                        <p class="medium heading_color mb-0">ជំនាញក្នុងការព្យាបាលជំងឺផ្លូវចិត្ត
+                                            ជំងឺថប់បារម្ភ និងជំងឺផ្លូវចិត្ត</p>
+
+                                    </li>
+                                    <li>
+                                        <p class="medium heading_color mb-0">
+                                            បទពិសោធន៍គ្រប់គ្រងករណីស្មុគស្មាញដែលពាក់ព័ន្ធទាំងសុខភាពផ្លូវចិត្ត
+                                            និងបញ្ហាវេជ្ជសាស្ត្រ
+                                        </p>
+                                        <p class="mb-0">Master of Public Health degree</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="awards mt-5">
+                                <h2 class="list_title medium fs_24">
+                                    <svg width="22" height="32" viewBox="0 0 22 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.0013 6.13159C8.04239 6.13159 5.63477 8.51293 5.63477 11.4396C5.63477 14.3662 8.04239 16.7475 11.0013 16.7475C13.9603 16.7475 16.3679 14.3662 16.3679 11.4396C16.3679 8.51293 13.9603 6.13159 11.0013 6.13159Z"
+                                            fill="#307BC4"></path>
+                                        <path
+                                            d="M9.79379 24.255L9.76496 24.2289L9.08118 23.6169L7.47203 22.1769L5.72237 22.3631L4.65164 22.4765L4.39779 22.5038L3.58031 22.5906L1.00586 28.0017L4.99265 28.0538L7.57316 31.0587L10.507 24.8931L9.79379 24.255Z"
+                                            fill="#307BC4"></path>
+                                        <path
+                                            d="M18.4169 22.5906L17.5995 22.5038L17.3456 22.4772L16.2749 22.3631L14.5252 22.1769L12.9161 23.6169L12.2323 24.2289L12.2035 24.255L11.4902 24.8931L14.4241 31.0587L17.0046 28.0538L20.9914 28.0017L18.4169 22.5906Z"
+                                            fill="#307BC4"></path>
+                                        <path
+                                            d="M20.3987 11.4397L21.9999 7.90471L18.6037 5.97578L17.7985 2.18479L13.9043 2.59844L11 0L8.09562 2.5985L4.20145 2.18485L3.39623 5.97578L0 7.90465L1.60118 11.4396L0 14.9746L3.39623 16.9035L4.20145 20.6945L4.49829 20.663L5.56963 20.5489L6.64035 20.4355L6.92738 20.4051H6.92799L8.09562 20.2808L8.97383 21.0663L9.90048 21.8955L10.1894 22.1539L10.6137 22.5336L11 22.8793L11.3864 22.5336L11.8107 22.1539L12.0996 21.8955L12.8202 21.2513L12.8208 21.2507L13.9044 20.2808L15.7969 20.4816H15.7975L15.9901 20.5023L16.4304 20.549H16.431L17.5017 20.663L17.7986 20.6946L18.6038 16.9036L22 14.9747L20.3987 11.4397ZM11 18.5673C7.02668 18.5673 3.79359 15.3702 3.79359 11.4396C3.79359 7.50974 7.02668 4.31196 11 4.31196C14.9733 4.31196 18.2063 7.50974 18.2063 11.4396C18.2063 15.3702 14.9733 18.5673 11 18.5673Z"
+                                            fill="#307BC4"></path>
+                                    </svg>
+
+                                    ពានរង្វាន់/សមិទ្ធិផល
+                                </h2>
+                                <ul>
+                                    <li>
+                                        <p class="medium heading_color mb-0">សមាជិកនៃសមាគមចិត្តសាស្រ្តអាមេរិក (FAPA)</p>
+                                    </li>
+                                    <li>
+                                        <p class="medium heading_color mb-0">
+                                            ត្រូវបានទទួលស្គាល់សម្រាប់ការរួមចំណែកស្រាវជ្រាវជាមួយនឹងជំនួយពីវិទ្យាស្ថានជាតិសុខភាពផ្លូវចិត្ត
+                                            (NIMH) និងមូលនិធិអាមេរិកសម្រាប់ការការពារការធ្វើអត្តឃាត</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="appointment mt-5 py-5">
+            <div class="bg-banner container-fluid"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-none d-md-block">
+
+                        <div class="card border-0 pt-5 mt-5">
+                            <img src="../assets/img/Appointment/appointment_img.png" class="appointment-image img-fluid"
+                                alt="A friendly doctor giving a thumbs up">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="card border-0 mt-3">
+                            <div class="card-title pt-5">
+                                <span class="book-appointment">តោះ!!</span>
+                                <h1 class="title-appointment">កក់កាណាត់ជួប</h1>
+                                <div class="col-md-12">
+                                    <div class="card border-0 bg-white p-4 rounded-5">
+                                        <form class="row g-3">
+                                            <div class="col-md-6">
+                                                <div>
+                                                    <label for="name" class="form-label">ឈ្មោះ</label>
+                                                    <input class="form-control" id="name" type="text"
+                                                        placeholder="ប៊ុន​​​ ណា" aria-label="Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div>
+                                                    <label for="phone" class="form-label">លេខទូរស័ព្ទ</label>
+                                                    <input class="form-control" id="phone" type="text"
+                                                        placeholder="+855 98 765 432" aria-label="Phone Number">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div>
+                                                    <label for="email" class="form-label">អុីម៉ែលរបស់អ្នក</label>
+                                                    <input class="form-control" id="email" type="email"
+                                                        placeholder="ឈ្មោះ@gmail.com" aria-label="Email Address">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="reason" class="form-label">ហេតុផលសម្រាប់ការកក់</label>
+                                                    <select class="form-select" id="reason" novalidate>
+                                                        <option value="1">ការត្រួតពិនិត្យជាប្រចាំ</option>
+                                                        <option value="2">ការវះកាត់</option>
+                                                        <option value="3">ការធ្វើតេស្តរោគវិទ្យា</option>
+                                                        <option value="4">របាយការណ៍ត្រួតពិនិត្យ</option>
+                                                        <option value="5">មូលហេតុផ្សេងៗទៀត</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="specialty" class="form-label">ផ្នែកឯកទេស</label>
+                                                    <select class="form-select" id="specialty" novalidate>
+                                                        <option value="1">ឯកទេសជំងឺទូទៅ</option>
+                                                        <option value="2">ឯកទេសការវះកាត់</option>
+                                                        <option value="3">ឯកទេសតម្រងនោម</option>
+                                                        <option value="4">ឯកទេសសម្ភព</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mt-3">
+                                                    <label for="date" class="form-label">កាលបរិច្ឆេទដែលពេញចិត្ត</label>
+                                                    <input type="date" class="form-control" id="date"
+                                                        value="2025-08-21">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mt-3">
+                                                    <label for="time" class="form-label">ពេលវេលាដែលពេញចិត្ត</label>
+                                                    <select class="form-control" id="time">
+                                                        <option>09:00 AM</option>
+                                                        <option>09:30 AM</option>
+                                                        <option>10:00 AM</option>
+                                                        <option>10:30 AM</option>
+                                                        <option>11:00 AM</option>
+                                                        <option>11:30 AM</option>
+                                                        <option>12:00 PM</option>
+                                                        <option>12:30 PM</option>
+                                                        <option>01:00 PM</option>
+                                                        <option>01:30 PM</option>
+                                                        <option>02:00 PM</option>
+                                                        <option>02:30 PM</option>
+                                                        <option>03:00 PM</option>
+                                                        <option>03:30 PM</option>
+                                                        <option>04:00 PM</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mt-4 btn-submit">
+                                                <button class="btn btn-primary fw-bold" type="submit">Submit
+                                                    form</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+
+<!-- ====================Footer=============================== -->
+ <footer class="footer pt-3 text-white">
+    
+    <!-- Links Section -->
+    <section class="link-footer">
+      <div class="container py-5">
+        <!-- Brand -->
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <img src="assets/img/logo1.png" alt="" width="160" class="mb-3" />
+            <p class="text-white-50 mx-auto" style="max-width: 500px">
+              សុខភាពរបស់អ្នក ជាមួយបច្ចេកវិទ្យារបស់យើង មិនត្រឹមតែបើកទ្វារទៅកាន់សក្តានុពលគ្មានកំណត់ទេ ប៉ុន្តែធ្វើឲ្យការថែទាំកាន់តែទំនើប សុវត្ថិភាព និងងាយស្រួលជាងមុន។
+            </p>
+          </div>
+        </div>
+
+        <div class="row no-wrap">
+          <!-- Social -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">រក្សាទំនាក់ទំនង</h5>
+            <p class="text-white-50">
+              តាមដានពួកយើងសម្រាប់ព័ត៌មានសុខភាពប្រចាំថ្ងៃតាមរយៈ Social Media
+            </p>
+            <div class="d-flex gap-2 mb-3">
+              <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+            <small class="text-white-50"><i class="fas fa-users me-1"></i>អ្នកគាំទ្រ 50K+</small>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">តំណភ្ជាប់រហ័ស</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-angle-right me-2"></i>អំពីយើង</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-angle-right me-2"></i>ផ្នែកឯកទេស</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-angle-right me-2"></i>ជួបគ្រូពេទ្យ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-angle-right me-2"></i>កាលវិភាគ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-angle-right me-2"></i>ការណាត់ជួប</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">សេវាសុខភាព</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-heartbeat me-2"></i>វេជ្ជសាស្ត្រទូទៅ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-child me-2"></i>ការថែទាំកុមារ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-heart me-2"></i>រោគបេះដូង</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-tooth me-2"></i>ទន្តសាស្ត្រ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-eye me-2"></i>ចក្ខុវិស័យ</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">ព័ត៍មានទំនាក់ទំនង</h5>
+            <p class="text-white-50 mb-1">
+              <i class="fas fa-map-marker-alt me-2"></i>123 Wellness Avenue,
+              ភ្នំពេញ
+            </p>
+            <p class="mb-1">
+              <a href="tel:123-436-7890" class="f-link"><i class="fas fa-phone me-2"></i>+1 (123) 436-7890</a>
+            </p>
+            <p class="mb-1">
+              <a href="mailto:hello@prohealth.com" class="f-link"><i
+                  class="fas fa-envelope me-2"></i>Welcometo@DigitalClinic.com</a>
+            </p>
+            <p class="text-white-50">
+              <i class="fas fa-clock me-2"></i>24/7 ការថែទាំសង្គ្រោះបន្ទាន់
+            </p>
+          </div>
+
+        <hr class="my-4" style="border:1px,solid, rgb(35, 88, 180)" />
+        <div class="row">
+          <div class="col text-center">
+            <p class="text-white-50 mb-0">
+              &copy; 2025 គ្លីនិកឌីជីថល | រក្សាសិទ្ធិដោយ G-15 |
+              <a href="#" class="text-decoration-none text-info">លក្ខខណ្ឌនៃសេវាកម្ម</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- swipper -->
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      grabCursor: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1200: { slidesPerView: 3 },
+      },
+    });
+    // Header scroll class
+
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) {
+        header.classList.add("bg-dark-blue", "text-white", "shadow-sm");
+      } else {
+        header.classList.remove("bg-dark-blue", "text-white", "shadow-sm");
+      }
+    });
+    const contactMethods = document.querySelectorAll('.contact-method');
+        const formPlaceholder = document.querySelector('.form-textarea');
+        
+        contactMethods.forEach(method => {
+            method.addEventListener('click', function() {
+                // Remove active class from all methods
+                contactMethods.forEach(m => m.classList.remove('active'));
+                // Add active class to clicked method
+                this.classList.add('active');
+                
+                // Update placeholder text based on selection
+                const methodType = this.getAttribute('data-method');
+                switch(methodType) {
+                    case 'urgent':
+                        formPlaceholder.placeholder = 'សូមពិពណ៌នាអំពីស្ថានភាពបន្ទាន់របស់អ្នក...';
+                        break;
+                    case 'appointment':
+                        formPlaceholder.placeholder = 'សូមប្រាប់យើងអំពីការណាត់ជួបដែលអ្នកចង់កក់...';
+                        break;
+                    case 'inquiry':
+                        formPlaceholder.placeholder = 'សូមសួរសំណួររបស់អ្នក...';
+                        break;
+                }
+            });
+        });
+
+        // Form submission with animation
+        const quickForm = document.querySelector('.quick-form');
+        quickForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            
+            // Show loading state
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> កំពុងបញ្ជូន...';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission
+            setTimeout(() => {
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> បានបញ្ជូនរួចរាល់!';
+                submitBtn.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.background = 'linear-gradient(135deg, #38bdf8 0%, #8b5cf6 100%)';
+                    quickForm.reset();
+                }, 2500);
+            }, 1500);
+        });
+
+        // Add particle effect on form interaction
+        const formInputs = document.querySelectorAll('.form-input, .form-textarea');
+        formInputs.forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.style.transform = 'translateY(-2px)';
+            });
+            
+            input.addEventListener('blur', function() {
+                this.parentElement.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Initialize animations on load
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                document.querySelector('.quick-contact-section').style.opacity = '1';
+                document.querySelector('.quick-contact-section').style.transform = 'translateY(0)';
+            }, 100);
+        });
+
+        // Add some interactive floating elements
+        document.addEventListener('mousemove', function(e) {
+            const floatingShapes = document.querySelectorAll('.floating-shape');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            floatingShapes.forEach((shape, index) => {
+                const speed = (index + 1) * 0.5;
+                const xMove = (x - 0.5) * speed * 20;
+                const yMove = (y - 0.5) * speed * 20;
+                
+                shape.style.transform = `translate(${xMove}px, ${yMove}px)`;
+            });
+        });
+  </script>
+</body>
+
+</html>
+
+</html>

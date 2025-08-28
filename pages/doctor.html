@@ -1,765 +1,773 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="../assets/css/doctor.css" />
-  </head>
 
-  <body class="bg-black">
-    <!-- =============== -->
-    <!-- Header -->
-    <!-- ============== -->
-    <header class="fixed-top">
-      <div class="container">
-        <nav class="navbar navbar-expand-xl navbar-dark">
-          <div class="container-fluid">
-            <!-- Logo -->
-            <a class="navbar-brand" href="index.html">
-              <img src="../assets/img/logo1.png" alt="Logo" height="40" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="../assets/css/doctor.css" />
+</head>
+
+<body class="bg-black">
+  <!-- =============== -->
+  <!-- Header -->
+  <!-- ============== -->
+  <header class="fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-xl navbar-dark">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/img/logo1.png" alt="Logo" height="40" />
+          </a>
+
+          <!-- Toggler for mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-uppercase">
+              <li class="nav-item px-3">
+                <a class="nav-link active" href="../index.html">ទំព័រដើម</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="aboutUs.html">អំពីពួកយើង</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="appointment.html">កាណាត់ជួប</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="department-detail.html">សេវាកម្ម</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="doctor.html">វេជ្ជបណ្ឌិត</a>
+              </li>
+
+
+
+
+              <li class="nav-item px-3">
+                <a class="nav-link" href="contact_us.html">ទាក់ទងមកពួកយើង</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Buttons (Sign In / Register) -->
+          <div class="d-flex ms-3">
+            <a href="patient-signup.html" class="btn btn-custom btn-signin me-2">
+              ចុះឈ្មោះ
             </a>
+            <a href="patient-login.html" class="btn btn-custom btn-register">
+              ចូលគណនី
+            </a>
+          </div>
 
-            <!-- Toggler for mobile -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar Links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul
-                class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-uppercase"
-              >
-                <li class="nav-item px-3">
-                  <a class="nav-link active" href="../index.html">ទំព័រដើម</a>
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="../pages/aboutUs.html"
-                    >អំពីពួកយើង</a
-                  >
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="../pages/appointment.html"
-                    >កាណាត់ជួប</a
-                  >
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="../pages/department_page.html"
-                    >សេវាកម្ម</a
-                  >
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="../pages/doctor.html"
-                    >វេជ្ជបណ្ឌិត</a
-                  >
-                </li>
-
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="../pages/contact_us.html"
-                    >ទាក់ទងមកពួកយើង</a
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <!-- Buttons (Sign In / Register) -->
-            <div class="d-flex ms-3">
-              <a
-                href="../pages/patient-signup.html"
-                class="btn btn-custom btn-signin me-2"
-              >
-                ចុះឈ្មោះ
-              </a>
-              <a
-                href="../pages/patient-signup.html"
-                class="btn btn-custom btn-register"
-              >
-                ចូលគណនី
-              </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="banner style_5 bg_filed position-relative" data-src="../img/doctors/banner_bg.svg">
+      <div class="container-fluid">
+        <div class="height_65"></div>
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6">
+            <div class="banner_text">
+              <h2 class="banner_title ">ណែនាំអ្នកឱ្យ
+                អ្នកជំនាញរបស់យើង </h2><br>
+              <p class="banner_subtitle mt-4  mb-0 heading_color">
+                បញ្ជីនៃវេជ្ជបណ្ឌិតដែលមានការបញ្ជាក់ជាមួយនឹងឆ្នាំ
+                <br> បទពិសោធន៍វិជ្ជាជីវៈ
+              </p>
             </div>
           </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="banner style_5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="banner_text">
-                <h2 class="banner_title">Introduce You to <br />Our Experts</h2>
-                <p class="banner_subtitle mb-0 heading_color">
-                  The list of certified doctors with years of <br />professional
-                  experiences
-                </p>
-              </div>
-            </div>
 
-            <div class="col-md-6">
-              <div class="banner_img">
-                <img
-                  src="../assets/img/doctor/banner_img.png"
-                  alt="Banner Image"
-                />
-              </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="banner_img mb-0 ">
+              <img src="../assets/img/doctor/banner_img.png" alt="Banner Image " class="position-relative mb-0">
             </div>
           </div>
         </div>
-      </section>
 
-      <section class="bg-light">
-        <div class="cs_height_65"></div>
-        <div class="container">
-          <div class="cs_doctors_heading">
-            <div class="cs_isotop_filter cs_style1">
-              <p class="mb-0">Sort by</p>
-              <ul class="cs_mp0">
-                <li class="active"><a href="#" data-filter="*">All</a></li>
-                <li><a href="#" data-filter=".emergency">Emergency</a></li>
-                <li><a href="#" data-filter=".pediatric">Pediatric</a></li>
-                <li><a href="#" data-filter=".cardiology">Cardiology</a></li>
-                <li><a href="#" data-filter=".psychiatry">Psychiatry</a></li>
-                <li><a href="#" data-filter=".others">Others</a></li>
-              </ul>
-            </div>
-            <div class="cs_view_box">
-              <span>Showing 12 items</span>
-              <div class="cs_view_box_in">
-                <button type="button" class="cs_grid_view active">
-                  <svg
-                    width="25"
-                    height="25"
-                    viewBox="0 0 25 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 11.8571H11.8571V0H0V11.8571ZM1.5625 1.5625H10.2948V10.2948H1.5625V1.5625ZM13.1429 0V11.8571H25V0H13.1429ZM23.4375 10.2948H14.7052V1.5625H23.4375V10.2948ZM0 25H11.8571V13.1429H0V25ZM1.5625 14.7052H10.2948V23.4375H1.5625V14.7052ZM13.1429 25H25V13.1429H13.1429V25ZM14.7052 14.7052H23.4375V23.4375H14.7052V14.7052Z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </button>
-                <button type="button" class="cs_list_view">
-                  <svg
-                    width="25"
-                    height="25"
-                    viewBox="0 0 25 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 11.8571H12.2396V0H0V11.8571ZM1.6129 1.5625H10.6267V10.2946H1.6129V1.5625ZM0 25H12.2396V13.1429H0V25ZM1.6129 14.7052H10.6267V23.4375H1.6129V14.7052ZM25 0.85022V2.41272H14.3731V0.85022H25ZM14.3731 9.44458H25V11.0071H14.3731V9.44458ZM14.3731 5.1475H25V6.71H14.3731V5.1475ZM14.3731 13.9929H25V15.5554H14.3731V13.9929ZM14.3731 22.5873H25V24.1498H14.3731V22.5873ZM14.3731 18.2902H25V19.8527H14.3731V18.2902Z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
+
+      </div>
+
+    </section>
+
+    <section class="bg-light">
+      <div class="height_65"></div>
+      <div class="container">
+        <div class="doctors_heading">
+          <div class="isotop_filter style1">
+            <p class="mb-1">Sort by</p>
+            <ul class="mp0">
+              <li class="active"><a href="#" data-filter="*">ទាំងអស់</a></li>
+              <li><a href="#" data-filter=".emergency">សង្គ្រោះបន្ទាន់</a></li>
+              <li><a href="#" data-filter=".pediatric">កុមារ</a></li>
+              <li><a href="#" data-filter=".cardiology">ជំងឺបេះដូង</a></li>
+              <li><a href="#" data-filter=".psychiatry">ចិត្តសាស្ត្រ</a></li>
+              <li><a href="#" data-filter=".others">ផ្សេងៗ</a></li>
+            </ul>
+          </div>
+          <div class="view_box">
+            <span>Showing 12 items</span>
+            <div class="view_box_in">
+              <button type="button" class="grid_view active">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 11.8571H11.8571V0H0V11.8571ZM1.5625 1.5625H10.2948V10.2948H1.5625V1.5625ZM13.1429 0V11.8571H25V0H13.1429ZM23.4375 10.2948H14.7052V1.5625H23.4375V10.2948ZM0 25H11.8571V13.1429H0V25ZM1.5625 14.7052H10.2948V23.4375H1.5625V14.7052ZM13.1429 25H25V13.1429H13.1429V25ZM14.7052 14.7052H23.4375V23.4375H14.7052V14.7052Z"
+                    fill="currentColor"></path>
+                </svg>
+              </button>
+              <button type="button" class="list_view">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 11.8571H12.2396V0H0V11.8571ZM1.6129 1.5625H10.6267V10.2946H1.6129V1.5625ZM0 25H12.2396V13.1429H0V25ZM1.6129 14.7052H10.6267V23.4375H1.6129V14.7052ZM25 0.85022V2.41272H14.3731V0.85022H25ZM14.3731 9.44458H25V11.0071H14.3731V9.44458ZM14.3731 5.1475H25V6.71H14.3731V5.1475ZM14.3731 13.9929H25V15.5554H14.3731V13.9929ZM14.3731 22.5873H25V24.1498H14.3731V22.5873ZM14.3731 18.2902H25V19.8527H14.3731V18.2902Z"
+                    fill="currentColor"></path>
+                </svg>
+              </button>
             </div>
           </div>
+        </div>
 
+        <div class="doctor-detail">
           <div class="doctor-title mt-5">
-            <p class="text-center mb-0">MEET OUR</p>
-            <h2 class="text-center mb-5">Experts Doctor</h2>
+
           </div>
           <div class="row g-4">
             <!-- Doctor Card -->
-            <div class="col-lg-4 col-md-6">
-              <div class="card doctor-card rounded-5 h-100">
-                <div class="doctor-img-wrapper position-relative">
-                  <img
-                    src="../assets/img/doctor/doctor_1.png"
-                    class="card-img-top"
-                    alt="Dr. James Lee"
-                  />
-                  <div
-                    class="doctor-social d-flex justify-content-center align-items-center"
-                  >
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <div class="col-lg-4 col-md-6 mb-5">
+              <a href="doctor_detail.html">
+                <div class="card doctor-card h-100">
+                  <div class="doctor-img-wrapper position-relative">
+                    <div class="departmant position-absolute">
+                      ពេទ្យសង្គ្រោះបន្ទាន់
+                    </div>
+                    <img src="../assets/img/doctor/doctor_1.png" class="card-img-top" alt="Dr. James Lee" />
+                  </div>
+                  <div class="card-body text-center ">
+                    <div class="my-4">
+                      <h5 class="card-title mb-2 ">
+                        <a href="doctor_detail.html">Dr. James Lee, MD</a>
+                      </h5>
+                      <p class="card-subtitle mb-2">អ្នកឯកទេសខាងវេជ្ជសាស្ត្រសង្គ្រោះបន្ទាន់</p>
+                    </div>
+                    <p class="card-text ">
+                      វេជ្ជបណ្ឌិត Chen មានបទពិសោធន៍ជាង 10
+                      ឆ្នាំក្នុងផ្នែកវេជ្ជសាស្ត្រសង្គ្រោះបន្ទាន់
+                      ហើយត្រូវបានក្រុមប្រឹក្សាភិបាលបញ្ជាក់ផ្នែកវេជ្ជសាស្ត្រសង្គ្រោះបន្ទាន់។
+                      នាងមានចំណាប់អារម្មណ៍ពិសេសលើការថែទាំសំខាន់ និងការគ្រប់គ្រងរបួស
+                    </p>
+                    <div class="doctor-social d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
                   </div>
                 </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-2">
-                    <a href="doctor-details.html">Dr. James Lee, MD</a>
-                  </h5>
-                  <p class="text-primary mb-2">Head of Cardiologist</p>
-                  <p class="card-text">
-                    With expertise in managing complex heart conditions and
-                    performing advanced cardiac procedures.
-                  </p>
-                </div>
-              </div>
+              </a>
             </div>
 
-            <!-- Repeat for other doctors -->
-            <div class="col-lg-4 col-md-6">
-              <div class="card doctor-card rounded-5 h-100">
-                <div class="doctor-img-wrapper position-relative">
-                  <img
-                    src="../assets/img/doctor/doctor_2.png"
-                    class="card-img-top"
-                    alt="Dr. Anna Smith"
-                  />
-                  <div
-                    class="doctor-social d-flex justify-content-center align-items-center"
-                  >
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <div class="col-lg-4 col-md-6 mb-5">
+              <a href="doctor_detail.html">
+                <div class="card doctor-card h-100">
+                  <div class="doctor-img-wrapper position-relative">
+                    <div class="departmant position-absolute">
+                      ពេទ្យសង្គ្រោះបន្ទាន់
+                    </div>
+                    <img src="../assets/img/doctor/doctor_3.png" class="card-img-top" alt="Dr. James Lee" />
+                  </div>
+                  <div class="card-body text-center ">
+                    <div class="my-4">
+                      <h5 class="card-title mb-2 ">
+                        <a href="doctor_detail.html">Dr. James Lee, MD</a>
+                      </h5>
+                      <p class="card-subtitle mb-2">អ្នកឯកទេសខាងវេជ្ជសាស្ត្រសង្គ្រោះបន្ទាន់</p>
+                    </div>
+                    <p class="card-text ">
+                      វេជ្ជបណ្ឌិត Chen មានបទពិសោធន៍ជាង 10
+                      ឆ្នាំក្នុងផ្នែកវេជ្ជសាស្ត្រសង្គ្រោះបន្ទាន់
+                      ហើយត្រូវបានក្រុមប្រឹក្សាភិបាលបញ្ជាក់ផ្នែកវេជ្ជសាស្ត្រសង្គ្រោះបន្ទាន់។
+                      នាងមានចំណាប់អារម្មណ៍ពិសេសលើការថែទាំសំខាន់ និងការគ្រប់គ្រងរបួស
+                    </p>
+                    <div class="doctor-social d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
                   </div>
                 </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-2">
-                    <a href="doctor-details.html">Dr. Anna Smith, MD</a>
-                  </h5>
-                  <p class="text-primary mb-2">Head of Neurology</p>
-                  <p class="card-text">
-                    Specialized in neurological disorders and advanced brain
-                    treatments.
-                  </p>
-                </div>
-              </div>
+              </a>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="card doctor-card rounded-5 h-100">
-                <div class="doctor-img-wrapper position-relative">
-                  <img
-                    src="../assets/img/doctor/doctor_3.png"
-                    class="card-img-top"
-                    alt="Dr. Robert Kim"
-                  />
-                  <div
-                    class="doctor-social d-flex justify-content-center align-items-center"
-                  >
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <div class="col-lg-4 col-md-6 mb-5">
+              <a href="doctor_detail.html">
+                <div class="card doctor-card h-100">
+                  <div class="doctor-img-wrapper position-relative">
+                    <div class="departmant position-absolute">
+                      ពេទ្យសង្គ្រោះបន្ទាន់
+                    </div>
+                    <img src="../assets/img/doctor/doctor_2.png" class="card-img-top" alt="Dr. James Lee" />
+                  </div>
+                  <div class="card-body text-center ">
+                    <div class="my-4">
+                      <h5 class="card-title mb-2 ">
+                        <a href="doctor_detail.html">Dr. James Lee, MD</a>
+                      </h5>
+                      <p class="card-subtitle mb-2">អ្នកឯកទេសខាងវេជ្ជសាស្ត្រសង្គ្រោះបន្ទាន់</p>
+                    </div>
+                    <p class="card-text ">
+                      វេជ្ជបណ្ឌិត Chen មានបទពិសោធន៍ជាង 10
+                      ឆ្នាំក្នុងផ្នែកវេជ្ជសាស្ត្រសង្គ្រោះបន្ទាន់
+                      ហើយត្រូវបានក្រុមប្រឹក្សាភិបាលបញ្ជាក់ផ្នែកវេជ្ជសាស្ត្រសង្គ្រោះបន្ទាន់។
+                      នាងមានចំណាប់អារម្មណ៍ពិសេសលើការថែទាំសំខាន់ និងការគ្រប់គ្រងរបួស
+                    </p>
+                    <div class="doctor-social d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
                   </div>
                 </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-2">
-                    <a href="doctor-details.html">Dr. Robert Kim, MD</a>
-                  </h5>
-                  <p class="text-primary mb-2">Head of Pediatrics</p>
-                  <p class="card-text">
-                    Experienced in caring for children with compassion and
-                    specialized pediatric treatments.
-                  </p>
-                </div>
-              </div>
+              </a>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="card doctor-card rounded-5 h-100">
-                <div class="doctor-img-wrapper position-relative">
-                  <img
-                    src="../assets/img/doctor/doctor_1.png"
-                    class="card-img-top"
-                    alt="Dr. James Lee"
-                  />
-                  <div
-                    class="doctor-social d-flex justify-content-center align-items-center"
-                  >
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <!-- កុមារ -->
+            <div class="col-lg-4 col-md-6 mb-5">
+              <a href="doctor_detail.html">
+                <div class="card doctor-card h-100">
+                  <div class="doctor-img-wrapper position-relative">
+                    <div class="departmant position-absolute">
+                      ពេទ្យកុមារ
+                    </div>
+                    <img src="../assets/img/doctor/doctor_1 (1).png" class="card-img-top" alt="Dr. James Lee" />
+                  </div>
+                  <div class="card-body text-center ">
+                    <div class="my-4">
+                      <h5 class="card-title mb-2 ">
+                        <a href="doctor_detail.html">Dr. James Lee, MD</a>
+                      </h5>
+                      <p class="card-subtitle mb-2">អ្នកឯកទេសខាងវេជ្ជសាស្ត្រផ្នែកកុមារ</p>
+                    </div>
+                    <p class="card-text ">
+                      វេជ្ជបណ្ឌិត Bones
+                      គឺជាគ្រូពេទ្យកុមារដែលយកចិត្តទុកដាក់ដោយផ្តោតលើការផ្តល់ការថែទាំដ៏ទូលំទូលាយដល់កុមារគ្រប់វ័យ។
+                      គាត់មានវិញ្ញាបនបត្រផ្នែកវេជ្ជសាស្ត្រកុមារ
+                      និងមានចំណាប់អារម្មណ៍ពិសេសលើការធាត់ក្នុងវ័យកុមារ
+                    </p>
+                    <div class="doctor-social d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
                   </div>
                 </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-2">
-                    <a href="doctor-details.html">Dr. James Lee, MD</a>
-                  </h5>
-                  <p class="text-primary mb-2">Head of Cardiologist</p>
-                  <p class="card-text">
-                    With expertise in managing complex heart conditions and
-                    performing advanced cardiac procedures.
-                  </p>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5">
+              <a href="doctor_detail.html">
+                <div class="card doctor-card h-100">
+                  <div class="doctor-img-wrapper position-relative">
+                    <div class="departmant position-absolute">
+                      ពេទ្យកុមារ
+                    </div>
+                    <img src="../assets/img/doctor/doctor_2 (1).png" class="card-img-top" alt="Dr. James Lee" />
+                  </div>
+                  <div class="card-body text-center ">
+                    <div class="my-4">
+                      <h5 class="card-title mb-2 ">
+                        <a href="doctor_detail.html">Dr. James Lee, MD</a>
+                      </h5>
+                      <p class="card-subtitle mb-2">អ្នកឯកទេសខាងវេជ្ជសាស្ត្រផ្នែកកុមារ</p>
+                    </div>
+                    <p class="card-text ">
+                      វេជ្ជបណ្ឌិត Bones
+                      គឺជាគ្រូពេទ្យកុមារដែលយកចិត្តទុកដាក់ដោយផ្តោតលើការផ្តល់ការថែទាំដ៏ទូលំទូលាយដល់កុមារគ្រប់វ័យ។
+                      គាត់មានវិញ្ញាបនបត្រផ្នែកវេជ្ជសាស្ត្រកុមារ
+                      និងមានចំណាប់អារម្មណ៍ពិសេសលើការធាត់ក្នុងវ័យកុមារ
+                    </p>
+                    <div class="doctor-social d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
 
-            <!-- Repeat for other doctors -->
-            <div class="col-lg-4 col-md-6">
-              <div class="card doctor-card rounded-5 h-100">
-                <div class="doctor-img-wrapper position-relative">
-                  <img
-                    src="../assets/img/doctor/doctor_2.png"
-                    class="card-img-top"
-                    alt="Dr. Anna Smith"
-                  />
-                  <div
-                    class="doctor-social d-flex justify-content-center align-items-center"
-                  >
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <div class="col-lg-4 col-md-6 mb-5">
+              <a href="doctor_detail.html">
+                <div class="card doctor-card h-100">
+
+                  <div class="doctor-img-wrapper position-relative">
+                    <div class="departmant position-absolute">
+                      ពេទ្យកុមារ
+                    </div>
+                    <img src="../assets/img/doctor/doctor_4.png" class="card-img-top" alt="Dr. James Lee" />
+                  </div>
+                  <div class="card-body text-center ">
+                    <div class="my-4">
+                      <h5 class="card-title mb-2 ">
+                        <a href="doctor_detail.html">Dr. James Lee, MD</a>
+                      </h5>
+                      <p class="card-subtitle mb-2">អ្នកឯកទេសខាងវេជ្ជសាស្ត្រផ្នែកកុមារ</p>
+                    </div>
+                    <p class="card-text ">
+                      វេជ្ជបណ្ឌិត Bones
+                      គឺជាគ្រូពេទ្យកុមារដែលយកចិត្តទុកដាក់ដោយផ្តោតលើការផ្តល់ការថែទាំដ៏ទូលំទូលាយដល់កុមារគ្រប់វ័យ។
+                      គាត់មានវិញ្ញាបនបត្រផ្នែកវេជ្ជសាស្ត្រកុមារ
+                      និងមានចំណាប់អារម្មណ៍ពិសេសលើការធាត់ក្នុងវ័យកុមារ
+                    </p>
+                    <div class="doctor-social d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
                   </div>
                 </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-2">
-                    <a href="doctor-details.html">Dr. Anna Smith, MD</a>
-                  </h5>
-                  <p class="text-primary mb-2">Head of Neurology</p>
-                  <p class="card-text">
-                    Specialized in neurological disorders and advanced brain
-                    treatments.
-                  </p>
-                </div>
-              </div>
+              </a>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="card doctor-card rounded-5 h-100">
-                <div class="doctor-img-wrapper position-relative">
-                  <img
-                    src="../assets/img/doctor/doctor_3.png"
-                    class="card-img-top"
-                    alt="Dr. Robert Kim"
-                  />
-                  <div
-                    class="doctor-social d-flex justify-content-center align-items-center"
-                  >
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <!-- ជំងឺបេះដូង -->
+            <div class="col-lg-4 col-md-6 mb-5">
+              <a href="doctor_detail.html">
+                <div class="card doctor-card h-100">
+
+                  <div class="doctor-img-wrapper position-relative">
+                    <div class="departmant position-absolute">
+                      គ្រូពេទ្យបេះដូង
+                    </div>
+                    <img src="../assets/img/doctor/doctor_9.png" class="card-img-top" alt="Dr. James Lee" />
+                  </div>
+                  <div class="card-body text-center ">
+                    <div class="my-4">
+                      <h5 class="card-title mb-2 ">
+                        <a href="doctor_detail.html">Dr. James Lee, MD</a>
+                      </h5>
+                      <p class="card-subtitle mb-2">អ្នកឯកទេសខាងវេជ្ជសាស្ត្រផ្នែជំងឺបេះដូង</p>
+                    </div>
+                    <p class="card-text ">
+                      វេជ្ជបណ្ឌិត លី គឺជាគ្រូពេទ្យជំនាញបេះដូងដែលមានជំនាញក្នុងការធ្វើរោគវិនិច្ឆ័យ
+                      និងព្យាបាលជំងឺសរសៃឈាមបេះដូង។ គាត់មានវិញ្ញាបនបត្រផ្នែកជំងឺបេះដូង
+                      ហើយមានចំណាប់អារម្មណ៍ពិសេសលើផ្នែកការពារជំងឺបេះដូង
+                    </p>
+                    <div class="doctor-social d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
                   </div>
                 </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-2">
-                    <a href="doctor-details.html">Dr. Robert Kim, MD</a>
-                  </h5>
-                  <p class="text-primary mb-2">Head of Pediatrics</p>
-                  <p class="card-text">
-                    Experienced in caring for children with compassion and
-                    specialized pediatric treatments.
-                  </p>
-                </div>
-              </div>
+              </a>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="card doctor-card rounded-5 h-100">
-                <div class="doctor-img-wrapper position-relative">
-                  <img
-                    src="../assets/img/doctor/doctor_1.png"
-                    class="card-img-top"
-                    alt="Dr. James Lee"
-                  />
-                  <div
-                    class="doctor-social d-flex justify-content-center align-items-center"
-                  >
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <div class="col-lg-4 col-md-6 mb-5">
+              <a href="doctor_detail.html">
+                <div class="card doctor-card h-100">
+
+                  <div class="doctor-img-wrapper position-relative">
+                    <div class="departmant position-absolute">
+                      គ្រូពេទ្យបេះដូង
+                    </div>
+                    <img src="../assets/img/doctor/doctor_7.png" class="card-img-top" alt="Dr. James Lee" />
+                  </div>
+                  <div class="card-body text-center ">
+                    <div class="my-4">
+                      <h5 class="card-title mb-2 ">
+                        <a href="doctor_detail.html">Dr. James Lee, MD</a>
+                      </h5>
+                      <p class="card-subtitle mb-2">អ្នកឯកទេសខាងវេជ្ជសាស្ត្រផ្នែជំងឺបេះដូង</p>
+                    </div>
+                    <p class="card-text ">
+                      វេជ្ជបណ្ឌិត លី គឺជាគ្រូពេទ្យជំនាញបេះដូងដែលមានជំនាញក្នុងការធ្វើរោគវិនិច្ឆ័យ
+                      និងព្យាបាលជំងឺសរសៃឈាមបេះដូង។ គាត់មានវិញ្ញាបនបត្រផ្នែកជំងឺបេះដូង
+                      ហើយមានចំណាប់អារម្មណ៍ពិសេសលើផ្នែកការពារជំងឺបេះដូង
+                    </p>
+                    <div class="doctor-social d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
                   </div>
                 </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-2">
-                    <a href="doctor-details.html">Dr. James Lee, MD</a>
-                  </h5>
-                  <p class="text-primary mb-2">Head of Cardiologist</p>
-                  <p class="card-text">
-                    With expertise in managing complex heart conditions and
-                    performing advanced cardiac procedures.
-                  </p>
-                </div>
-              </div>
+              </a>
             </div>
 
-            <!-- Repeat for other doctors -->
-            <div class="col-lg-4 col-md-6">
-              <div class="card doctor-card rounded-5 h-100">
-                <div class="doctor-img-wrapper position-relative">
-                  <img
-                    src="../assets/img/doctor/doctor_2.png"
-                    class="card-img-top"
-                    alt="Dr. Anna Smith"
-                  />
-                  <div
-                    class="doctor-social d-flex justify-content-center align-items-center"
-                  >
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <div class="col-lg-4 col-md-6 mb-5">
+              <a href="doctor_detail.html">
+                <div class="card doctor-card h-100">
+
+                  <div class="doctor-img-wrapper position-relative">
+                    <div class="departmant position-absolute">
+                      គ្រូពេទ្យបេះដូង
+                    </div>
+                    <img src="../assets/img/doctor/doctor_8.png" class="card-img-top" alt="Dr. James Lee" />
+                  </div>
+                  <div class="card-body text-center ">
+                    <div class="my-4">
+                      <h5 class="card-title mb-2 ">
+                        <a href="doctor_detail.html">Dr. James Lee, MD</a>
+                      </h5>
+                      <p class="card-subtitle mb-2">អ្នកឯកទេសខាងវេជ្ជសាស្ត្រផ្នែជំងឺបេះដូង</p>
+                    </div>
+                    <p class="card-text ">
+                      វេជ្ជបណ្ឌិត លី គឺជាគ្រូពេទ្យជំនាញបេះដូងដែលមានជំនាញក្នុងការធ្វើរោគវិនិច្ឆ័យ
+                      និងព្យាបាលជំងឺសរសៃឈាមបេះដូង។ គាត់មានវិញ្ញាបនបត្រផ្នែកជំងឺបេះដូង
+                      ហើយមានចំណាប់អារម្មណ៍ពិសេសលើផ្នែកការពារជំងឺបេះដូង
+                    </p>
+                    <div class="doctor-social d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
                   </div>
                 </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-2">
-                    <a href="doctor-details.html">Dr. Anna Smith, MD</a>
-                  </h5>
-                  <p class="text-primary mb-2">Head of Neurology</p>
-                  <p class="card-text">
-                    Specialized in neurological disorders and advanced brain
-                    treatments.
-                  </p>
-                </div>
-              </div>
+              </a>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="card doctor-card rounded-5 h-100">
-                <div class="doctor-img-wrapper position-relative">
-                  <img
-                    src="../assets/img/doctor/doctor_3.png"
-                    class="card-img-top"
-                    alt="Dr. Robert Kim"
-                  />
-                  <div
-                    class="doctor-social d-flex justify-content-center align-items-center"
-                  >
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <!-- ចិត្តសាស្ត្រ -->
+            <div class="col-lg-4 col-md-6 mb-5">
+              <a href="doctor_detail.html">
+                <div class="card doctor-card h-100">
+
+                  <div class="doctor-img-wrapper position-relative">
+                    <div class="departmant position-absolute">
+                      គ្រូពេទ្យចិត្តសាស្ត្រ
+                    </div>
+                    <img src="../assets/img/doctor/doctor_10.png" class="card-img-top" alt="Dr. James Lee" />
+                  </div>
+                  <div class="card-body text-center ">
+                    <div class="my-4">
+                      <h5 class="card-title mb-2 ">
+                        <a href="doctor_detail.html">Dr. James Lee, MD</a>
+                      </h5>
+                      <p class="card-subtitle mb-2">អ្នកឯកទេសខាងវេជ្ជសាស្ត្រផ្នែចិត្តសាស្ត្រ</p>
+                    </div>
+                    <p class="card-text ">
+
+                      ជាមួយនឹងបទពិសោធន៍ជាង 15 ឆ្នាំនៃការរៀនចិត្តវិទ្យា និងអាកប្បកិរិយារបស់មនុស្ស
+                      លោកវេជ្ជបណ្ឌិត Jones គឺជាអ្នកជំនាញក្នុងការគ្រប់គ្រងជំងឺផ្លូវចិត្ត
+                      និងជំងឺថប់បារម្ភ
+                    </p>
+                    <div class="doctor-social d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
                   </div>
                 </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-2">
-                    <a href="doctor-details.html">Dr. Robert Kim, MD</a>
-                  </h5>
-                  <p class="text-primary mb-2">Head of Pediatrics</p>
-                  <p class="card-text">
-                    Experienced in caring for children with compassion and
-                    specialized pediatric treatments.
-                  </p>
-                </div>
-              </div>
+              </a>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="card doctor-card rounded-5 h-100">
-                <div class="doctor-img-wrapper position-relative">
-                  <img
-                    src="../assets/img/doctor/doctor_1.png"
-                    class="card-img-top"
-                    alt="Dr. James Lee"
-                  />
-                  <div
-                    class="doctor-social d-flex justify-content-center align-items-center"
-                  >
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                  </div>
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-2">
-                    <a href="doctor-details.html">Dr. James Lee, MD</a>
-                  </h5>
-                  <p class="text-primary mb-2">Head of Cardiologist</p>
-                  <p class="card-text">
-                    With expertise in managing complex heart conditions and
-                    performing advanced cardiac procedures.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <div class="col-lg-4 col-md-6 mb-5">
+              <a href="doctor_detail.html">
+                <div class="card doctor-card h-100">
 
-            <!-- Repeat for other doctors -->
-            <div class="col-lg-4 col-md-6">
-              <div class="card doctor-card rounded-5 h-100">
-                <div class="doctor-img-wrapper position-relative">
-                  <img
-                    src="../assets/img/doctor/doctor_2.png"
-                    class="card-img-top"
-                    alt="Dr. Anna Smith"
-                  />
-                  <div
-                    class="doctor-social d-flex justify-content-center align-items-center"
-                  >
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <div class="doctor-img-wrapper position-relative">
+                    <div class="departmant position-absolute">
+                      គ្រូពេទ្យចិត្តសាស្ត្រ
+                    </div>
+                    <img src="../assets/img/doctor/doctor_12.png" class="card-img-top" alt="Dr. James Lee" />
                   </div>
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-2">
-                    <a href="doctor-details.html">Dr. Anna Smith, MD</a>
-                  </h5>
-                  <p class="text-primary mb-2">Head of Neurology</p>
-                  <p class="card-text">
-                    Specialized in neurological disorders and advanced brain
-                    treatments.
-                  </p>
-                </div>
-              </div>
-            </div>
+                  <div class="card-body text-center ">
+                    <div class="my-4">
+                      <h5 class="card-title mb-2 ">
+                        <a href="doctor_detail.html">Dr. James Lee, MD</a>
+                      </h5>
+                      <p class="card-subtitle mb-2">អ្នកឯកទេសខាងវេជ្ជសាស្ត្រផ្នែចិត្តសាស្ត្រ</p>
+                    </div>
+                    <p class="card-text ">
 
-            <div class="col-lg-4 col-md-6">
-              <div class="card doctor-card rounded-5 h-100">
-                <div class="doctor-img-wrapper position-relative">
-                  <img
-                    src="../assets/img/doctor/doctor_3.png"
-                    class="card-img-top"
-                    alt="Dr. Robert Kim"
-                  />
-                  <div
-                    class="doctor-social d-flex justify-content-center align-items-center"
-                  >
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      ជាមួយនឹងបទពិសោធន៍ជាង 15 ឆ្នាំនៃការរៀនចិត្តវិទ្យា និងអាកប្បកិរិយារបស់មនុស្ស
+                      លោកវេជ្ជបណ្ឌិត Jones គឺជាអ្នកជំនាញក្នុងការគ្រប់គ្រងជំងឺផ្លូវចិត្ត
+                      និងជំងឺថប់បារម្ភ
+                    </p>
+                    <div class="doctor-social d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
                   </div>
                 </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title mb-2">
-                    <a href="doctor-details.html">Dr. Robert Kim, MD</a>
-                  </h5>
-                  <p class="text-primary mb-2">Head of Pediatrics</p>
-                  <p class="card-text">
-                    Experienced in caring for children with compassion and
-                    specialized pediatric treatments.
-                  </p>
-                </div>
-              </div>
+              </a>
             </div>
+            <div class="col-lg-4 col-md-6 mb-5">
+              <a href="doctor_detail.html">
+                <div class="card doctor-card h-100">
+
+                  <div class="doctor-img-wrapper position-relative">
+                    <div class="departmant position-absolute">
+                      គ្រូពេទ្យចិត្តសាស្ត្រ
+                    </div>
+                    <img src="../assets/img/doctor/doctor_5.png" class="card-img-top" alt="Dr. James Lee" />
+                  </div>
+                  <div class="card-body text-center ">
+                    <div class="my-4">
+                      <h5 class="card-title mb-2 ">
+                        <a href="doctor_detail.html">Dr. James Lee, MD</a>
+                      </h5>
+                      <p class="card-subtitle mb-2">អ្នកឯកទេសខាងវេជ្ជសាស្ត្រផ្នែចិត្តសាស្ត្រ</p>
+                    </div>
+                    <p class="card-text ">
+
+                      ជាមួយនឹងបទពិសោធន៍ជាង 15 ឆ្នាំនៃការរៀនចិត្តវិទ្យា និងអាកប្បកិរិយារបស់មនុស្ស
+                      លោកវេជ្ជបណ្ឌិត Jones គឺជាអ្នកជំនាញក្នុងការគ្រប់គ្រងជំងឺផ្លូវចិត្ត
+                      និងជំងឺថប់បារម្ភ
+                    </p>
+                    <div class="doctor-social d-flex justify-content-center align-items-center">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+   <footer class="footer pt-3 text-white">
+    
+    <!-- Links Section -->
+    <section class="link-footer">
+      <div class="container py-5">
+        <!-- Brand -->
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <img src="assets/img/logo1.png" alt="" width="160" class="mb-3" />
+            <p class="text-white-50 mx-auto" style="max-width: 500px">
+              សុខភាពរបស់អ្នក ជាមួយបច្ចេកវិទ្យារបស់យើង មិនត្រឹមតែបើកទ្វារទៅកាន់សក្តានុពលគ្មានកំណត់ទេ ប៉ុន្តែធ្វើឲ្យការថែទាំកាន់តែទំនើប សុវត្ថិភាព និងងាយស្រួលជាងមុន។
+            </p>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="footer pt-5 text-white">
-      <!-- Banner Section -->
-      <section
-        class="banner-footer position-relative text-white py-5"
-        style="
-          background: linear-gradient(135deg, #0f172a, #1e293b);
-          overflow: hidden;
-        "
-      >
-        <div
-          class="floating-elements position-absolute w-100 h-100"
-          style="top: 0; left: 0; z-index: 0; opacity: 0.08"
-        >
-          <i
-            class="floating-icon fas fa-heartbeat position-absolute"
-            style="top: 20%; left: 10%; font-size: 4rem"
-          ></i>
-          <i
-            class="floating-icon fas fa-stethoscope position-absolute"
-            style="top: 40%; right: 15%; font-size: 3.5rem"
-          ></i>
-          <i
-            class="floating-icon fas fa-plus-circle position-absolute"
-            style="bottom: 20%; left: 20%; font-size: 3rem"
-          ></i>
-        </div>
-        <div class="container position-relative z-1">
-          <div class="row align-items-center">
-            <div class="col-lg-6 mb-4">
-              <h1 class="display-5 fw-bold mb-4">
-                រក្សាទំនាក់ទំនងជាមួយ
-                <span class="text-info">សុខភាពរបស់អ្នក</span>
-              </h1>
-              <p class="lead opacity-90 mb-4">
-                ចូលរួមជាមួយមនុស្សរាប់ពាន់នាក់ដែលជឿជាក់លើ DigitalClinic
-                សម្រាប់ការយល់ដឹងផ្នែកវេជ្ជសាស្ត្រចុងក្រោយបំផុត
-                និងដំបូន្មានអ្នកជំនាញ។
-              </p>
-              <div class="d-flex align-items-center">
-                <i class="fas fa-users text-info fs-2 me-3"></i>
-                <div>
-                  <strong class="d-block">50,000+ អតិថិជនរីករាយ</strong>
-                  <small class="opacity-75">រីកលូតលាស់ជារៀងរាល់ថ្ងៃ</small>
-                </div>
-              </div>
+
+        <div class="row no-wrap">
+          <!-- Social -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">រក្សាទំនាក់ទំនង</h5>
+            <p class="text-white-50">
+              តាមដានពួកយើងសម្រាប់ព័ត៌មានសុខភាពប្រចាំថ្ងៃតាមរយៈ Social Media
+            </p>
+            <div class="d-flex gap-2 mb-3">
+              <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="col-lg-6 text-center">
-              <div
-                class="doctor-card p-4 bg-dark rounded-3 shadow-lg"
-                style="max-width: 350px; margin: auto"
-              >
-                <div class="mb-3 position-relative">
-                  <img
-                    src="../assets/img/footer/footer-doctorprofile.jpg"
-                    alt=""
-                    class="rounded-circle border border-4 border-info shadow"
-                    width="150"
-                  />
-                  <span
-                    class="position-absolute top-0 end-0 translate-middle badge bg-success rounded-circle p-2"
-                  >
-                    <i class="fas fa-plus text-white"></i>
-                  </span>
-                </div>
-                <h5 class="mb-1">អ្នកគ្រូពេទ្យ សារ៉ា លីដា</h5>
-                <p class="text-info mb-2">ប្រធានពេទ្យ</p>
-                <small class="opacity-75 fst-italic"
-                  >"យើងប្តេជ្ញារក្សាអ្នកឱ្យទទួលបានព័ត៌មាន និងសុខភាពល្អ"</small
-                >
-              </div>
-            </div>
+            <small class="text-white-50"><i class="fas fa-users me-1"></i>អ្នកគាំទ្រ 50K+</small>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">តំណភ្ជាប់រហ័ស</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-angle-right me-2"></i>អំពីយើង</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-angle-right me-2"></i>ផ្នែកឯកទេស</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-angle-right me-2"></i>ជួបគ្រូពេទ្យ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-angle-right me-2"></i>កាលវិភាគ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-angle-right me-2"></i>ការណាត់ជួប</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">សេវាសុខភាព</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-heartbeat me-2"></i>វេជ្ជសាស្ត្រទូទៅ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-child me-2"></i>ការថែទាំកុមារ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-heart me-2"></i>រោគបេះដូង</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-tooth me-2"></i>ទន្តសាស្ត្រ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-eye me-2"></i>ចក្ខុវិស័យ</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">ព័ត៍មានទំនាក់ទំនង</h5>
+            <p class="text-white-50 mb-1">
+              <i class="fas fa-map-marker-alt me-2"></i>123 Wellness Avenue,
+              ភ្នំពេញ
+            </p>
+            <p class="mb-1">
+              <a href="tel:123-436-7890" class="f-link"><i class="fas fa-phone me-2"></i>+1 (123) 436-7890</a>
+            </p>
+            <p class="mb-1">
+              <a href="mailto:hello@prohealth.com" class="f-link"><i
+                  class="fas fa-envelope me-2"></i>Welcometo@DigitalClinic.com</a>
+            </p>
+            <p class="text-white-50">
+              <i class="fas fa-clock me-2"></i>24/7 ការថែទាំសង្គ្រោះបន្ទាន់
+            </p>
+          </div>
+
+        <hr class="my-4" style="border:1px,solid, rgb(35, 88, 180)" />
+        <div class="row">
+          <div class="col text-center">
+            <p class="text-white-50 mb-0">
+              &copy; 2025 គ្លីនិកឌីជីថល | រក្សាសិទ្ធិដោយ G-15 |
+              <a href="#" class="text-decoration-none text-info">លក្ខខណ្ឌនៃសេវាកម្ម</a>
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+  </footer>
+  
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- swipper -->
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      grabCursor: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1200: { slidesPerView: 3 },
+      },
+    });
+    // Header scroll class
 
-      <!-- Links Section -->
-      <section class="link-footer" style="background: #0f172a">
-        <div class="container py-5">
-          <!-- Brand -->
-          <div class="row mb-5">
-            <div class="col text-center">
-              <img src="assets/img/logo1.png" alt="" width="160" class="mb-3" />
-              <p class="text-white-50 mx-auto" style="max-width: 500px">
-                ផ្តល់អំណាចដល់សហគមន៍ជាមួយនឹងព័ត៌មានសុខភាពដែលអាចទុកចិត្តបាន
-                ចាប់តាំងពីឆ្នាំ 2018.
-              </p>
-            </div>
-          </div>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) {
+        header.classList.add("bg-dark-blue", "text-white", "shadow-sm");
+      } else {
+        header.classList.remove("bg-dark-blue", "text-white", "shadow-sm");
+      }
+    });
+    const contactMethods = document.querySelectorAll('.contact-method');
+        const formPlaceholder = document.querySelector('.form-textarea');
+        
+        contactMethods.forEach(method => {
+            method.addEventListener('click', function() {
+                // Remove active class from all methods
+                contactMethods.forEach(m => m.classList.remove('active'));
+                // Add active class to clicked method
+                this.classList.add('active');
+                
+                // Update placeholder text based on selection
+                const methodType = this.getAttribute('data-method');
+                switch(methodType) {
+                    case 'urgent':
+                        formPlaceholder.placeholder = 'សូមពិពណ៌នាអំពីស្ថានភាពបន្ទាន់របស់អ្នក...';
+                        break;
+                    case 'appointment':
+                        formPlaceholder.placeholder = 'សូមប្រាប់យើងអំពីការណាត់ជួបដែលអ្នកចង់កក់...';
+                        break;
+                    case 'inquiry':
+                        formPlaceholder.placeholder = 'សូមសួរសំណួររបស់អ្នក...';
+                        break;
+                }
+            });
+        });
 
-          <div class="row">
-            <!-- Quick Links -->
-            <div class="col-lg-3 col-md-6 mb-4">
-              <h5 class="fw-bold mb-3">តំណភ្ជាប់រហ័ស</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#" class="f-link"
-                    ><i class="fas fa-angle-right me-2"></i>អំពីយើង</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="f-link"
-                    ><i class="fas fa-angle-right me-2"></i>ផ្នែកឯកទេស</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="f-link"
-                    ><i class="fas fa-angle-right me-2"></i>ជួបគ្រូពេទ្យ</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="f-link"
-                    ><i class="fas fa-angle-right me-2"></i>កាលវិភាគ</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="f-link"
-                    ><i class="fas fa-angle-right me-2"></i>ការណាត់ជួប</a
-                  >
-                </li>
-              </ul>
-            </div>
+        // Form submission with animation
+        const quickForm = document.querySelector('.quick-form');
+        quickForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            
+            // Show loading state
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> កំពុងបញ្ជូន...';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission
+            setTimeout(() => {
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> បានបញ្ជូនរួចរាល់!';
+                submitBtn.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.background = 'linear-gradient(135deg, #38bdf8 0%, #8b5cf6 100%)';
+                    quickForm.reset();
+                }, 2500);
+            }, 1500);
+        });
 
-            <!-- Services -->
-            <div class="col-lg-3 col-md-6 mb-4">
-              <h5 class="fw-bold mb-3">សេវាសុខភាព</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#" class="f-link"
-                    ><i class="fas fa-heartbeat me-2"></i>វេជ្ជសាស្ត្រទូទៅ</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="f-link"
-                    ><i class="fas fa-child me-2"></i>ការថែទាំកុមារ</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="f-link"
-                    ><i class="fas fa-heart me-2"></i>រោគបេះដូង</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="f-link"
-                    ><i class="fas fa-tooth me-2"></i>ទន្តសាស្ត្រ</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="f-link"
-                    ><i class="fas fa-eye me-2"></i>ចក្ខុវិស័យ</a
-                  >
-                </li>
-              </ul>
-            </div>
+        // Add particle effect on form interaction
+        const formInputs = document.querySelectorAll('.form-input, .form-textarea');
+        formInputs.forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.style.transform = 'translateY(-2px)';
+            });
+            
+            input.addEventListener('blur', function() {
+                this.parentElement.style.transform = 'translateY(0)';
+            });
+        });
 
-            <!-- Contact -->
-            <div class="col-lg-3 col-md-6 mb-4">
-              <h5 class="fw-bold mb-3">ទំនាក់ទំនង</h5>
-              <p class="text-white-50 mb-1">
-                <i class="fas fa-map-marker-alt me-2"></i>123 Wellness Avenue,
-                ភ្នំពេញ
-              </p>
-              <p class="mb-1">
-                <a href="tel:123-436-7890" class="f-link"
-                  ><i class="fas fa-phone me-2"></i>+1 (123) 436-7890</a
-                >
-              </p>
-              <p class="mb-1">
-                <a href="mailto:hello@prohealth.com" class="f-link"
-                  ><i class="fas fa-envelope me-2"></i
-                  >Welcometo@DigitalClinic.com</a
-                >
-              </p>
-              <p class="text-white-50">
-                <i class="fas fa-clock me-2"></i>24/7 ការថែទាំសង្គ្រោះបន្ទាន់
-              </p>
-            </div>
+        // Initialize animations on load
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                document.querySelector('.quick-contact-section').style.opacity = '1';
+                document.querySelector('.quick-contact-section').style.transform = 'translateY(0)';
+            }, 100);
+        });
 
-            <!-- Social -->
-            <div class="col-lg-3 col-md-6 mb-4">
-              <h5 class="fw-bold mb-3">រក្សាទំនាក់ទំនង</h5>
-              <p class="text-white-50">
-                តាមដានពួកយើងសម្រាប់ព័ត៌មានសុខភាពប្រចាំថ្ងៃ
-              </p>
-              <div class="d-flex gap-2 mb-3">
-                <a href="#" class="social-btn bg-info text-white"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a href="#" class="social-btn bg-danger text-white"
-                  ><i class="fab fa-youtube"></i
-                ></a>
-                <a href="#" class="social-btn bg-primary text-white"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="#" class="social-btn bg-pink-600 text-white"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </div>
-              <small class="text-white-50"
-                ><i class="fas fa-users me-1"></i>អ្នកគាំទ្រ 50K+</small
-              >
-            </div>
-          </div>
+        // Add some interactive floating elements
+        document.addEventListener('mousemove', function(e) {
+            const floatingShapes = document.querySelectorAll('.floating-shape');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            floatingShapes.forEach((shape, index) => {
+                const speed = (index + 1) * 0.5;
+                const xMove = (x - 0.5) * speed * 20;
+                const yMove = (y - 0.5) * speed * 20;
+                
+                shape.style.transform = `translate(${xMove}px, ${yMove}px)`;
+            });
+        });
+  </script>
+</body>
 
-          <hr class="my-4" style="border-color: rgba(255, 255, 255, 0.1)" />
-          <div class="row">
-            <div class="col text-center">
-              <p class="text-white-50 mb-0">
-                &copy; 2025 គ្លីនិកឌីជីថល | រក្សាសិទ្ធិដោយ G-15 |
-                <a href="#" class="text-decoration-none text-info"
-                  >លក្ខខណ្ឌនៃសេវាកម្ម</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </footer>
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <script>
-      // Header scroll class
-
-      window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        if (window.scrollY > 50) {
-          header.classList.add("bg-dark-blue", "text-white", "shadow-sm");
-        } else {
-          header.classList.remove("bg-dark-blue", "text-white", "shadow-sm");
-        }
-      });
-    </script>
-  </body>
 </html>
