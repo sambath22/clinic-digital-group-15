@@ -1052,6 +1052,11 @@ img {
 .footer {
   background: linear-gradient(to left, #04326b, #062c5a, #0b2545 100%);
 }
+.footer .footer-logo{
+  width: 160px;
+  cursor: pointer;
+  margin: auto;
+}
 .footer .f-link {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
