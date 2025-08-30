@@ -957,21 +957,18 @@ img {
 /* ==========doctor[end]=========== */
 
 /* ================Appointment========================== */
-.appointment,
-.appointment .card,
-.appointment .card-title {
+.appointment{
   background: var(--primary);
 }
 
 .appointment .appointment-image {
-  object-fit: contain;
   object-position: center;
   background-color: var(--primary);
   border-radius: 10px;
-  margin-top: 150px !important;
+  margin-top: 50px !important;
   padding: 30px 30px 0 30px;
   width: 100%;
-  height: 81.25%;
+  height: 94%;
 }
 .appointment .card .card-title .book-appointment {
   color: black;
@@ -984,11 +981,17 @@ img {
   font-weight: bold;
   font-size: 50px;
 }
+.appointment .card .form-label{
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
 .appointment .card form input,
 .appointment .card form select {
   padding: 15px 20px;
   border: 1px solid #2ca4c2;
   border-radius: 20px;
+  color: black;
 }
 .btn-submit .btn {
   padding: 10px 40px;
