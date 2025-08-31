@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="shortcut icon" type="icon" href="../assets/img/icon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clinic Digital - ប្រព័ន្ធគ្រប់គ្រងមន្ទីរពេទ្យ</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -415,12 +416,14 @@
 
       if (email && password) {
         // Example: you can check hardcoded values (for demo)
-        if (email === "patient@gmail.com" && password === "patient$168") {
+        if (email === "admin@gmail.com" && password === "admin$168") {
           // Save login status
           localStorage.setItem("isLoggedIn", "true");
+          localStorage.setItem("isAdmin", "true");
           window.location.href = "../index.html";
-        } else {
-          alert("អ៊ីមែល ឬ ពាក្យសម្ងាត់មិនត្រឹមត្រូវទេ!");
+        } else if (email === "user@gmail.com" && password === "user$168") {
+          localStorage.setItem("isLoggedIn", "true");
+          localStorage.setItem("isAdmin", "false");
         }
       } else {
         alert("សូមបំពេញព័ត៌មានទាំងអស់");
