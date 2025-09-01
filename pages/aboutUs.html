@@ -5,10 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-
+    <!-- AOS link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- ---------font-awesome---------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -24,56 +26,142 @@
     <!-- ============== -->
     <header class="fixed-top">
         <div class="container">
-            <nav class="navbar navbar-expand-xl navbar-dark">
+            <nav class="navbar navbar-expand-lg rounded-3">
                 <div class="container-fluid">
-                    <!-- Logo -->
-                    <a class="navbar-brand" href="../index.html">
-                        <img src="../assets/img/logo1.png" alt="Logo" height="40" />
+
+                    <!-- Logo (Left) -->
+                    <a class="navbar-brand fw-bold d-flex align-items-center text-white" href="index.html">
+                        <img src="../assets/img/logo1.png" alt="Clinic Digital Logo" height="40" class="me-2">
+                        Clinic Digital
                     </a>
 
-                    <!-- Toggler for mobile -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <!-- Mobile Toggler -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <!-- Navbar Links -->
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-uppercase">
-                            <li class="nav-item px-3">
-                                <a class="nav-link active" href="../index.html">ទំព័រដើម</a>
+                    <!-- Navbar Menu (CENTER) -->
+                    <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+                        <ul class="navbar-nav fw-bold text-uppercase">
+                            <li class="nav-item px-2">
+                                <a class="nav-link active text-white" href="../pages/index2.html">ទំព័រដើម</a>
                             </li>
-                            <li class="nav-item px-3">
-                                <a class="nav-link" href="../pages/aboutUs.html">អំពីពួកយើង</a>
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-white" href="../pages/aboutUs.html">អំពីពួកយើង</a>
                             </li>
-                            <li class="nav-item px-3">
-                                <a class="nav-link" href="../pages/appointment.html">កាណាត់ជួប</a>
-                            </li>
-                            <li class="nav-item px-3">
-                                <a class="nav-link" href="../pages/department_page.html">សេវាកម្ម</a>
-                            </li>
-                            <li class="nav-item px-3">
-                                <a class="nav-link" href="../pages/doctor.html">វេជ្ជបណ្ឌិត</a>
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-white" href="../pages/appointment.html">ការណាត់ជួប</a>
                             </li>
 
-                            <li class="nav-item px-3">
-                                <a class="nav-link" href="../pages/contact_us.html">ទាក់ទងមកពួកយើង</a>
+                            <!-- Services Dropdown -->
+                            <li class="nav-item dropdown px-2">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="servicesDropdown"
+                                    role="button" data-bs-toggle="dropdown">
+                                    សេវាកម្ម
+                                </a>
+                                <ul class="dropdown-menu rounded-3" style="background-color: #1e3a8a;">
+                                    <li><a class="dropdown-item text-white"
+                                            href="../pages/department_page.html">សេវាកម្មទាំងអស់</a></li>
+                                    <li><a class="dropdown-item text-white" href="../pages/lab.html">មន្ទីរពិសោធន៍</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-white" href="../pages/pharmacy.html">ឱសថស្ថាន</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider bg-white">
+                                    </li>
+                                    <li><a class="dropdown-item text-white"
+                                            href="../pages/emergency.html">សេវាកម្មបន្ទាន់</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Pages Dropdown -->
+                            <li class="nav-item dropdown px-2">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="pagesDropdown" role="button"
+                                    data-bs-toggle="dropdown">
+                                    ទំព័រផ្សេងៗ
+                                </a>
+                                <ul class="dropdown-menu rounded-3" style="background-color: #1e3a8a;">
+                                    <li><a class="dropdown-item text-white" href="blog.html">ពត៌មានថ្មីៗ</a></li>
+                                    <li><a class="dropdown-item text-white" href="timetable.html">ពេលវេលា</a></li>
+                                    <li><a class="dropdown-item text-white" href="pricing-plan.html">តម្លៃ</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider bg-white">
+                                    </li>
+                                    <li><a class="dropdown-item text-white" href="question.html">សាកសួរព័ត៍មាន</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-white" href="../pages/doctor.html">វេជ្ជបណ្ឌិត</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-white" href="../pages/contact_us.html">ទាក់ទងមកពួកយើង</a>
                             </li>
                         </ul>
                     </div>
 
-                    <!-- Buttons (Sign In / Register) -->
-                    <div class="d-flex ms-3">
-                        <a href="../pages/patient-signup.html" class="btn btn-custom btn-signin me-2">
-                            ចុះឈ្មោះ
-                        </a>
-                        <a href="../pages/patient-signup.html" class="btn btn-custom btn-register">
-                            ចូលគណនី
-                        </a>
+                    <!-- Right Side (Icons + Profile Dropdown) -->
+                    <div class="d-flex ms-3 align-items-center">
+                        <!-- Messages -->
+                        <div class="dropdown me-3">
+                            <a class="text-white position-relative" href="#" id="messagesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-envelope-fill fs-5"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    3
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end rounded-3"
+                                style="min-width: 250px; background-color: #1e3a8a;">
+                                <li><a class="dropdown-item text-white" href="#">Message 1</a></li>
+                                <li><a class="dropdown-item text-white" href="#">Message 2</a></li>
+                                <li><a class="dropdown-item text-white" href="#">Message 3</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Notification Link -->
+                        <div class="me-3">
+                            <a class="text-white position-relative" href="../notification.html" id="notificationsLink">
+                                <i class="bi bi-bell-fill fs-5"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    3
+                                    <span class="visually-hidden">unread notifications</span>
+                                </span>
+                            </a>
+                        </div>
+
+
+                        <!-- Profile Dropdown -->
+                        <div class="dropdown">
+                            <a class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                                href="#" id="userDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="../assets/img/user.png" alt="user" width="32" height="32"
+                                    class="rounded-circle me-2">
+                                សំបាត់
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end rounded-3" style="background-color: #1e3a8a;">
+                                <li><a class="dropdown-item text-white"
+                                        href="../pages/patient-dashboard.html">ផ្ទាំងគ្រប់គ្រង</a></li>
+                                <li><a class="dropdown-item text-white"
+                                        href="../pages/profile-user.html">ពត៌មានផ្ទាល់ខ្លួន</a></li>
+                                <li>
+                                    <hr class="dropdown-divider bg-white">
+                                </li>
+                                <li><a class="dropdown-item text-danger" href="../pages/logout.html">ចាកចេញ</a></li>
+                            </ul>
+                        </div>
                     </div>
+
                 </div>
             </nav>
         </div>
+
     </header>
+
 
     <main>
         <section class="about-us-hero">
@@ -98,7 +186,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                        <div class="service-text">
+                        <div class="service-text" data-aos="fade-right" data-aos-duration="2000">
                             <p class="small-text mb-0">សេវាកម្ម</p>
                             <h3 class="title fw-bold">សេវាកម្មពួកយើង</h3>
                         </div>
@@ -106,12 +194,12 @@
                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
                         <div class="service-card">
                             <div class="service-icon">
-                                <i class="fa-solid fa-calendar"></i>
+                                <img src="../assets/img/icons/calendar (1).png" alt="" class="w-50">
                             </div>
                             <div class="service-body">
-                                <h4>ពិនិត្យសុខភាព</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ex sit nisi nemo
-                                    voluptates omnis!</ផ>
+                                <h4>ការធ្វើតេស្តរោគវិនិច្ឆ័យ</h4>
+                                <p>ការធ្វើតេស្តឈាម ការសិក្សាអំពីរូបភាព និងការធ្វើតេស្តផ្សេងៗទៀត
+                                    ដើម្បីធ្វើរោគវិនិច្ឆ័យស្ថានភាពសុខភាព</p>
                             </div>
                             <a href="#" class="more-detail">
                                 <i class="fa-solid fa-arrow-right"></i>
@@ -121,12 +209,12 @@
                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
                         <div class="service-card">
                             <div class="service-icon">
-                                <i class="fa-solid fa-calendar"></i>
+                                <img src="../assets/img/icons/calendar (1).png" alt="" class="w-50">
                             </div>
                             <div class="service-body">
-                                <h4>ពិនិត្យសុខភាព</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ex sit nisi nemo
-                                    voluptates omnis!</ផ>
+                                <h4>Rehabilitation services</h4>
+                                <p>ការព្យាបាលដោយរាងកាយ ការព្យាបាលដោយការងារ
+                                    និងសេវាកម្មផ្សេងទៀតដើម្បីជួយអ្នកជំងឺឱ្យជាសះស្បើយពីរបួស</p>
                             </div>
                             <a href="#" class="more-detail">
                                 <i class="fa-solid fa-arrow-right"></i>
@@ -136,12 +224,11 @@
                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
                         <div class="service-card">
                             <div class="service-icon">
-                                <i class="fa-solid fa-calendar"></i>
+                                <img src="../assets/img/icons/calendar (1).png" alt="" class="w-50">
                             </div>
                             <div class="service-body">
-                                <h4>ពិនិត្យសុខភាព</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ex sit nisi nemo
-                                    voluptates omnis!</ផ>
+                                <h4>ការថែទាំបង្ការ</h4>
+                                <p>ការពិនិត្យសុខភាពប្រចាំឆ្នាំ ការចាក់ថ្នាំបង្ការ និងការពិនិត្យសុខភាពការពារ</p>
                             </div>
                             <a href="#" class="more-detail">
                                 <i class="fa-solid fa-arrow-right"></i>
@@ -151,12 +238,13 @@
                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
                         <div class="service-card">
                             <div class="service-icon">
-                                <i class="fa-solid fa-calendar"></i>
+                                <img src="../assets/img/icons/calendar (1).png" alt="" class="w-50">
                             </div>
                             <div class="service-body">
-                                <h4>ពិនិត្យសុខភាព</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ex sit nisi nemo
-                                    voluptates omnis!</ផ>
+                                <h4>ការព្យាបាលសម្រាប់ស្ថានភាពឈឺរ៉ាំរ៉ៃ</h4>
+                                <p>
+                                    ការគ្រប់គ្រងថ្នាំ ការគ្រប់គ្រងជំងឺ និងការព្យាបាលផ្សេងៗទៀត ដើម្បីកែលម្អលទ្ធផលសុខភាព
+                                </p>
                             </div>
                             <a href="#" class="more-detail">
                                 <i class="fa-solid fa-arrow-right"></i>
@@ -166,12 +254,14 @@
                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
                         <div class="service-card">
                             <div class="service-icon">
-                                <i class="fa-solid fa-calendar"></i>
+                                <img src="../assets/img/icons/calendar (1).png" alt="" class="w-50">
                             </div>
                             <div class="service-body">
-                                <h4>ពិនិត្យសុខភាព</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ex sit nisi nemo
-                                    voluptates omnis!</ផ>
+                                <h4>ការព្យាបាលសុខភាពផ្លូវចិត្ត</h4>
+                                <p>
+                                    ការប្រឹក្សា ការព្យាបាល
+                                    និងសេវាកម្មផ្សេងទៀតដើម្បីជួយអ្នកជំងឺគ្រប់គ្រងស្ថានភាពសុខភាពផ្លូវចិត្ត
+                                </p>
                             </div>
                             <a href="#" class="more-detail">
                                 <i class="fa-solid fa-arrow-right"></i>
@@ -194,64 +284,68 @@
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8">
                         <div class="choose-us-content p-3">
-                            <h4 class="title fw-bold">ហេតុអ្វីជ្រើសរើសពួកយើង?</h4>
+                            <h4 class="title fw-bold" data-aos="fade-left" data-aos-offset="500"
+                                data-aos-easing="ease-in-sine">ហេតុអ្វីជ្រើសរើសពួកយើង?</h4>
                             <div class="row">
                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <div class="choose-us-card">
+                                    <div class="choose-us-card" data-aos="fade-up" data-aos-duration="2000">
                                         <div class="choose-us-icon">
-                                            <i class="fa-solid fa-calendar"></i>
+                                            <img src="../assets/img/icons/award (1).png" alt="" class="w-50">
                                         </div>
                                         <div class="choose-us-body">
                                             <div class="service-body">
-                                                <h4>ពិនិត្យសុខភាព</h4>
-                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ex
-                                                    sit nisi nemo
-                                                    voluptates omnis!</ផ>
+                                                <h4>
+                                                    អ្នកជំនាញវេជ្ជសាស្រ្តដែលមានបទពិសោធន៍</h4>
+                                                <p>ក្រុមរបស់យើងរួមមានវេជ្ជបណ្ឌិតដែលមានបទពិសោធន៍ គិលានុបដ្ឋាយិកា
+                                                    និងអ្នកជំនាញផ្នែកថែទាំសុខភាពផ្សេងទៀត
+                                                    ដែលប្តេជ្ញាផ្តល់ការថែទាំល្អបំផុតដល់អ្នកជំងឺរបស់យើង
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <div class="choose-us-card">
+                                    <div class="choose-us-card" data-aos="fade-up" data-aos-duration="2000">
                                         <div class="choose-us-icon">
-                                            <i class="fa-solid fa-calendar"></i>
+                                            <img src="../assets/img/icons/technical-support (1).png" alt=""
+                                                class="w-50">
                                         </div>
                                         <div class="choose-us-body">
                                             <div class="service-body">
-                                                <h4>ពិនិត្យសុខភាព</h4>
-                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ex
-                                                    sit nisi nemo
-                                                    voluptates omnis!</ផ>
+                                                <h4>សេវាកម្មទូលំទូលាយ</h4>
+                                                <p>យើងផ្តល់ជូននូវសេវាថែទាំសុខភាពជាច្រើនប្រភេទ ចាប់ពីការថែទាំបង្ការ
+                                                    រហូតដល់ការព្យាបាលឯកទេសសម្រាប់លក្ខខណ្ឌស្មុគស្មាញ</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <div class="choose-us-card">
+                                    <div class="choose-us-card" data-aos="fade-up" data-aos-duration="2000">
                                         <div class="choose-us-icon">
-                                            <i class="fa-solid fa-calendar"></i>
+                                            <img src="../assets/img/icons/doctor (1).png" alt="" class="w-50">
                                         </div>
                                         <div class="choose-us-body">
                                             <div class="service-body">
-                                                <h4>ពិនិត្យសុខភាព</h4>
-                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ex
-                                                    sit nisi nemo
-                                                    voluptates omnis!</ផ>
+                                                <h4>វិធីសាស្រ្តផ្តោតលើអ្នកជំងឺ</h4>
+                                                <p>យើងជឿជាក់លើការព្យាបាលអ្នកជំងឺម្នាក់ៗជាបុគ្គល
+                                                    ហើយយើងចំណាយពេលស្វែងយល់ពីតម្រូវការ និងកង្វល់សុខភាពតែមួយគត់របស់អ្នក
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <div class="choose-us-card">
+                                    <div class="choose-us-card" data-aos="fade-up" data-aos-duration="2000">
                                         <div class="choose-us-icon">
-                                            <i class="fa-solid fa-calendar"></i>
+                                            <img src="../assets/img/icons/healthcare (3).png" alt="" class="w-50">
                                         </div>
                                         <div class="choose-us-body">
                                             <div class="service-body">
-                                                <h4>ពិនិត្យសុខភាព</h4>
-                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, ex
-                                                    sit nisi nemo
-                                                    voluptates omnis!</ផ>
+                                                <h4>គ្រឿងបរិក្ខារទំនើប</h4>
+                                                <p>មជ្ឈមណ្ឌលថែទាំសុខភាពរបស់យើងត្រូវបានបំពាក់ដោយបច្ចេកវិទ្យា
+                                                    និងឧបករណ៍ចុងក្រោយបំផុត
+                                                    ដើម្បីផ្តល់ជូនអ្នកជំងឺរបស់យើងនូវការថែទាំកម្រិតខ្ពស់បំផុតដែលអាចធ្វើទៅបាន
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -269,136 +363,238 @@
                 <p class="small-text mb-0 text-center">ជួបជាមួយ</p>
                 <h3 class="title text-center mb-4">វេជ្ជបណ្ឌិតជំនាញ</h3>
                 <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                        <div class="doctor-card">
+                    <div class="hight_150"></div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 ">
+                        <div class="doctor-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="1800">
                             <div class="doctor-image">
-                                <img src="../assets/img/avatar_1.png" alt="">
+                                <img src="../assets/img/about-us/doctor_2.png" alt="">
                             </div>
-                            <div class="doctor-body">
-                                <h4 class="doctor-name">វេជ្ជបណ្ឌិត James Lee, MD</h4>
-                                <p class="mb-0">ប្រធានគ្រូពេទ្យបេះដូង</p>
+                            <div class="doctor-body pt-5">
+                                <h4 class="doctor-name mt-5">វេជ្ជបណ្ឌិត James Lee, MD</h4>
+                                <p class="mb-2 subtitle">ប្រធានគ្រូពេទ្យបេះដូង</p>
+                                <p>ជាមួយនឹងជំនាញក្នុងការគ្រប់គ្រងស្ថានភាពបេះដូងស្មុគស្មាញ
+                                    និងអនុវត្តនីតិវិធីបេះដូងកម្រិតខ្ពស់</p>
                             </div>
                             <div class="doctor-social-media">
                                 <div class="social-media-item">
                                     <i class="fa-brands fa-facebook"></i>
                                 </div>
                                 <div class="social-media-item">
-                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="bi bi-messenger"></i>
                                 </div>
                                 <div class="social-media-item">
-                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="bi bi-telegram"></i>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                        <div class="doctor-card">
+
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 ">
+                        <div class="doctor-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="2000">
                             <div class="doctor-image">
-                                <img src="../assets/img/avatar_1.png" alt="">
+                                <img src="../assets/img/about-us/doctor_1 (1).png" alt="">
                             </div>
-                            <div class="doctor-body">
-                                <h4 class="doctor-name">វេជ្ជបណ្ឌិត James Lee, MD</h4>
-                                <p class="mb-0">ប្រធានគ្រូពេទ្យបេះដូង</p>
+                            <div class="doctor-body pt-5">
+                                <h4 class="doctor-name mt-5">វេជ្ជបណ្ឌិត James Lee, MD</h4>
+                                <p class="mb-2 subtitle">ប្រធានគ្រូពេទ្យបេះដូង</p>
+                                <p>ជាមួយនឹងជំនាញក្នុងការគ្រប់គ្រងស្ថានភាពបេះដូងស្មុគស្មាញ
+                                    និងអនុវត្តនីតិវិធីបេះដូងកម្រិតខ្ពស់</p>
                             </div>
                             <div class="doctor-social-media">
                                 <div class="social-media-item">
                                     <i class="fa-brands fa-facebook"></i>
                                 </div>
                                 <div class="social-media-item">
-                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="bi bi-messenger"></i>
                                 </div>
                                 <div class="social-media-item">
-                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="bi bi-telegram"></i>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                        <div class="doctor-card">
+
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 ">
+                        <div class="doctor-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="3000">
                             <div class="doctor-image">
-                                <img src="../assets/img/avatar_1.png" alt="">
+                                <img src="../assets/img/about-us/doctor_3.png" alt="">
                             </div>
-                            <div class="doctor-body">
-                                <h4 class="doctor-name">វេជ្ជបណ្ឌិត James Lee, MD</h4>
-                                <p class="mb-0">ប្រធានគ្រូពេទ្យបេះដូង</p>
+                            <div class="doctor-body pt-5">
+                                <h4 class="doctor-name mt-5">វេជ្ជបណ្ឌិត James Lee, MD</h4>
+                                <p class="mb-2 subtitle">ប្រធានគ្រូពេទ្យបេះដូង</p>
+                                <p>ជាមួយនឹងជំនាញក្នុងការគ្រប់គ្រងស្ថានភាពបេះដូងស្មុគស្មាញ
+                                    និងអនុវត្តនីតិវិធីបេះដូងកម្រិតខ្ពស់</p>
                             </div>
                             <div class="doctor-social-media">
                                 <div class="social-media-item">
                                     <i class="fa-brands fa-facebook"></i>
                                 </div>
                                 <div class="social-media-item">
-                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="bi bi-messenger"></i>
                                 </div>
                                 <div class="social-media-item">
-                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="bi bi-telegram"></i>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                        <div class="doctor-card">
-                            <div class="doctor-image">
-                                <img src="../assets/img/avatar_1.png" alt="">
-                            </div>
-                            <div class="doctor-body">
-                                <h4 class="doctor-name">វេជ្ជបណ្ឌិត James Lee, MD</h4>
-                                <p class="mb-0">ប្រធានគ្រូពេទ្យបេះដូង</p>
-                            </div>
-                            <div class="doctor-social-media">
-                                <div class="social-media-item">
-                                    <i class="fa-brands fa-facebook"></i>
+
+
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section class="facilities-section">
+            <!-- Facilities Section -->
+            <div class="container py-5 mt-5">
+                <div class="section-header">
+                    <h6 class="subtitle">HAVE A LOOK AT</h6>
+                    <h2 class="title">គ្រឿងបរិក្ខារ និងសកម្មភាពរបស់យើង</h2>
+                </div>
+
+                <div class="row g-4 facility-grid">
+                    <!-- First row of images -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="img-container">
+                            <img src="../assets/img/about-us/portfolio_1_lg.jpeg" alt="Doctor with Patient"
+                                class="facility-img">
+
+                            <div class="img-overlay2">
+                                <div class="img-overlay">
+                                    <div class="img-overlay-content">
+                                        <div class="hover-icon-container">
+                                            <i class="fa-solid fa-arrows-up-down-left-right hover-icon"></i>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="social-media-item">
-                                    <i class="fa-brands fa-facebook"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="img-container">
+                            <img src="../assets/img/about-us/portfolio_2_lg.jpeg" alt="Clean Hospital Room"
+                                class="facility-img">
+                            <div class="img-overlay2">
+                                <div class="img-overlay">
+                                    <div class="img-overlay-content">
+                                        <div class="hover-icon-container">
+                                            <i class="fa-solid fa-arrows-up-down-left-right hover-icon"></i>
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <div class="social-media-item">
-                                    <i class="fa-brands fa-facebook"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="img-container">
+                            <img src="../assets/img/about-us/portfolio_3_lg.jpeg" alt="Operating Light"
+                                class="facility-img">
+                            <div class="img-overlay2">
+                                <div class="img-overlay">
+                                    <div class="img-overlay-content">
+                                        <div class="hover-icon-container">
+                                            <i class="fa-solid fa-arrows-up-down-left-right hover-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Second row of images -->
+                    <div class="col-12 col-md-6 col-lg-8">
+                        <div class="img-container">
+                            <img src="../assets/img/about-us/portfolio_4_lg.jpeg" alt="MRI Machine"
+                                class="facility-img">
+                            <div class="img-overlay2">
+                                <div class="img-overlay">
+                                    <div class="img-overlay-content">
+                                        <div class="hover-icon-container">
+                                            <i class="fa-solid fa-arrows-up-down-left-right hover-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="img-container">
+                            <img src="../assets/img/about-us/portfolio_5_lg.jpeg" alt="Senior Patient Checkup"
+                                class="facility-img">
+                            <div class="img-overlay2">
+                                <div class="img-overlay">
+                                    <div class="img-overlay-content">
+                                        <div class="hover-icon-container">
+                                            <i class="fa-solid fa-arrows-up-down-left-right hover-icon"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                        <div class="doctor-card">
-                            <div class="doctor-image">
-                                <img src="../assets/img/avatar_1.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="awards-section">
+            <!-- Awards Section -->
+            <div class="container py-5 my-5">
+                <div class="section-header">
+                    <h6 class="subtitle">AWARDS</h6>
+                    <h2 class="title">ការឈ្នះរង្វាន់ និងការទទួលស្គាល់</h2>
+                    <p class="awards-subtitle mt-3">
+                        យើងត្រូវបានគេទទួលស្គាល់ចំពោះការប្តេជ្ញាចិត្តរបស់យើងចំពោះឧត្តមភាពក្នុងការថែទាំសុខភាព</p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <!-- Award Card 1 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="award-card gap-3">
+                            <div class="award-icon-container">
+                                <img src="../assets/img/icons/award (1).png" alt="" class="award-icon w-75">
                             </div>
-                            <div class="doctor-body">
-                                <h4 class="doctor-name">វេជ្ជបណ្ឌិត James Lee, MD</h4>
-                                <p class="mb-0">ប្រធានគ្រូពេទ្យបេះដូង</p>
-                            </div>
-                            <div class="doctor-social-media">
-                                <div class="social-media-item">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </div>
-                                <div class="social-media-item">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </div>
-                                <div class="social-media-item">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </div>
-                            </div>
+                            <p class="award-text mb-0">ពានរង្វាន់គុណភាពជាតិ Malcolm Baldrige</p>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                        <div class="doctor-card">
-                            <div class="doctor-image">
-                                <img src="../assets/img/avatar_1.png" alt="">
+                    <!-- Award Card 2 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="award-card gap-3">
+                            <div class="award-icon-container">
+                                <img src="../assets/img/icons/award (1).png" alt="" class="award-icon w-75">
                             </div>
-                            <div class="doctor-body">
-                                <h4 class="doctor-name">វេជ្ជបណ្ឌិត James Lee, MD</h4>
-                                <p class="mb-0">ប្រធានគ្រូពេទ្យបេះដូង</p>
+                            <p class="award-text mb-0">ពានរង្វាន់ HIMSS Davies</p>
+                        </div>
+                    </div>
+                    <!-- Award Card 3 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="award-card gap-3">
+                            <div class="award-icon-container">
+                                <img src="../assets/img/icons/award (1).png" alt="" class="award-icon w-75">
                             </div>
-                            <div class="doctor-social-media">
-                                <div class="social-media-item">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </div>
-                                <div class="social-media-item">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </div>
-                                <div class="social-media-item">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </div>
+                            <p class="award-text mb-0">Healthgrades មន្ទីរពេទ្យល្អបំផុតរបស់ជាតិ</p>
+                        </div>
+                    </div>
+                    <!-- Award Card 4 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="award-card gap-3">
+                            <div class="award-icon-container">
+                                <img src="../assets/img/icons/award (1).png" alt="" class="award-icon w-75">
                             </div>
+                            <p class="award-text mb-0">មន្ទីរពេទ្យល្អបំផុតថ្នាក់ជាតិ</p>
                         </div>
                     </div>
                 </div>
@@ -447,16 +643,20 @@
                                 <a href="#" class="f-link"><i class="fas fa-angle-right me-2"></i>អំពីយើង</a>
                             </li>
                             <li>
-                                <a href="department_page.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ផ្នែកឯកទេស</a>
+                                <a href="department_page.html" class="f-link"><i
+                                        class="fas fa-angle-right me-2"></i>ផ្នែកឯកទេស</a>
                             </li>
                             <li>
-                                <a href="doctor.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ជួបគ្រូពេទ្យ</a>
+                                <a href="doctor.html" class="f-link"><i
+                                        class="fas fa-angle-right me-2"></i>ជួបគ្រូពេទ្យ</a>
                             </li>
                             <li>
-                                <a href="timetable.html" class="f-link"><i class="fas fa-angle-right me-2"></i>កាលវិភាគ</a>
+                                <a href="timetable.html" class="f-link"><i
+                                        class="fas fa-angle-right me-2"></i>កាលវិភាគ</a>
                             </li>
                             <li>
-                                <a href="appointment.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ការណាត់ជួប</a>
+                                <a href="appointment.html" class="f-link"><i
+                                        class="fas fa-angle-right me-2"></i>ការណាត់ជួប</a>
                             </li>
                         </ul>
                     </div>
@@ -516,6 +716,8 @@
         </section>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <!-- swipper -->
     <!-- Swiper JS -->
@@ -529,6 +731,9 @@
                 header.classList.remove("bg-dark-blue", "text-white", "shadow-sm");
             }
         });
+
+        // AOS
+        AOS.init();
     </script>
 </body>
 
