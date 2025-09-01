@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="shortcut icon" type="icon" href="../assets/img/icon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clinic Digital</title>
 
@@ -51,10 +52,6 @@
               <li class="nav-item px-3">
                 <a class="nav-link" href="pages/doctor.html">វេជ្ជបណ្ឌិត</a>
               </li>
-
-
-
-
               <li class="nav-item px-3">
                 <a class="nav-link" href="pages/contact_us.html">ទាក់ទងមកពួកយើង</a>
               </li>
@@ -73,7 +70,7 @@
 
         </div>
       </nav>
-    </div> 
+    </div>
   </header>
 
 
@@ -460,20 +457,20 @@
     <!-- ===== FQA QUESTION SECTION [END]==== -->
 
     <!-- ==============Appointment============== -->
-    <section class="appointment p-3" id="appointment">
+    <section class="appointment" id="appointment">
       <div class="container">
         <div class="row no-wrap">
-          <div class="col-lg-6 col-xl-6">
-            <img src="assets/img/Appointment/appointment_img.png"
-              class="appointment-image object-fit-cover rounded-0 d-sm-none d-lg-block" alt="" />
+          <div class="col-sm-12 col-lg-6 ">
+              <img src="assets/img/Appointment/appointment_img.png"
+              class="appointment-image rounded-0 d-sm-none d-lg-block" alt="" />
           </div>
-          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-            <div class="card mt-3 border-0">
-              <div class="card-title">
+          <div class="col-sm-12 col-lg-6">
+            <div class="card mt-5">
+              <div class="card-title p-3">
                 <span class="book-appointment">តោះ!!</span>
                 <h1 class="title-appointment">កក់កាណាត់ជួប</h1>
                 <div class="col-md-12">
-                  <div class="card border-0 bg-white p-4 rounded-5">
+                  <div class="card-body border-0 bg-white p-4 rounded-5">
                     <form class="row g-3">
                       <div class="col-md-6">
                         <div>
@@ -519,7 +516,7 @@
                       <div class="col-md-6">
                         <div class="mb-3">
                           <label for="date" class="form-label">កាលបរិច្ឆេទដែលពេញចិត្ត</label>
-                          <input type="date" class="form-control" id="date" value="2025-08-21" />
+                          <input type="date" class="form-control" id="date" value="MM/DD/YYYY" />
                         </div>
                       </div>
                       <div class="col-md-6">
@@ -629,7 +626,8 @@
                   <a href="pages/aboutUs.html" class="f-link"><i class="fas fa-angle-right me-2"></i>អំពីយើង</a>
                 </li>
                 <li>
-                  <a href="pages/department_page.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ផ្នែកឯកទេស</a>
+                  <a href="pages/department_page.html" class="f-link"><i
+                      class="fas fa-angle-right me-2"></i>ផ្នែកឯកទេស</a>
                 </li>
                 <li>
                   <a href="pages/doctor.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ជួបគ្រូពេទ្យ</a>
@@ -701,7 +699,9 @@
     <!-- swipper -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
+    <script src="assets/js/login.js"></script>
+    <script>  
+      
       var swiper = new Swiper(".mySwiper", {
         loop: true,
         grabCursor: true,

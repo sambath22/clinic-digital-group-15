@@ -67,10 +67,10 @@ body {
   transition: color 0.3s ease;
 }
 
-/* Active Link */
+/* Active Link
 .navbar .navbar-nav .nav-item .nav-link.active {
   border-bottom: 2px solid var(--text-primary);
-}
+} */
 
 /* Hover Underline Animation */
 .navbar .nav-link::after {
@@ -80,7 +80,7 @@ body {
   bottom: -3px;
   width: 0;
   height: 2px;
-  background: var(--text-primary);
+  background: var(--text-color);
   transition: width 0.3s ease;
 }
 .navbar .nav-link:hover::after {

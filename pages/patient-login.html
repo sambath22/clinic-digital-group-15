@@ -1,433 +1,435 @@
 <!DOCTYPE html>
 <html lang="km">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clinic Digital - ប្រព័ន្ធគ្រប់គ្រងមន្ទីរពេទ្យ</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Kantumruy Pro", "Segoe UI", sans-serif;
-      }
 
-      body {
-        display: flex;
-        min-height: 100vh;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        position: relative;
-        overflow: hidden;
-        background: linear-gradient(135deg, #f0f7ff 0%, #e6f2ff 100%);
-      }
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" type="icon" href="../assets/img/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clinic Digital - ប្រព័ន្ធគ្រប់គ្រងមន្ទីរពេទ្យ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Kantumruy Pro", "Segoe UI", sans-serif;
+    }
 
-      /* Animated background shapes */
-      body::before {
-        content: "";
-        position: absolute;
-        width: 200%;
-        height: 200%;
-        background: radial-gradient(
-          circle,
+    body {
+      display: flex;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #f0f7ff 0%, #e6f2ff 100%);
+    }
+
+    /* Animated background shapes */
+    body::before {
+      content: "";
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle,
           rgba(74, 111, 165, 0.1) 0%,
-          transparent 70%
-        );
-        top: -50%;
-        left: -50%;
-        animation: rotateBG 20s linear infinite;
-        z-index: -1;
+          transparent 70%);
+      top: -50%;
+      left: -50%;
+      animation: rotateBG 20s linear infinite;
+      z-index: -1;
+    }
+
+    body::after {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: rgba(74, 111, 165, 0.15);
+      top: 20%;
+      right: 10%;
+      animation: float 10s ease-in-out infinite alternate;
+      z-index: -1;
+    }
+
+    @keyframes rotateBG {
+      0% {
+        transform: rotate(0deg);
       }
 
-      body::after {
-        content: "";
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        background: rgba(74, 111, 165, 0.15);
-        top: 20%;
-        right: 10%;
-        animation: float 10s ease-in-out infinite alternate;
-        z-index: -1;
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0px);
       }
 
-      @keyframes rotateBG {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
+      100% {
+        transform: translateY(-50px);
       }
+    }
 
-      @keyframes float {
-        0% {
-          transform: translateY(0px);
-        }
-        100% {
-          transform: translateY(-50px);
-        }
-      }
+    .container {
+      display: flex;
+      width: 100%;
+      max-width: 1200px;
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 1;
+    }
 
+    .left-panel {
+      flex: 1;
+      padding: 60px 40px;
+      background: white;
+    }
+
+    .right-panel {
+      flex: 1.2;
+      background: linear-gradient(120deg, #4a6fa5 0%, #2c4c7a 100%);
+      color: white;
+      padding: 60px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .logo {
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-icon {
+      background: #4a6fa5;
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      color: white;
+      font-size: 22px;
+    }
+
+    .logo-text {
+      font-size: 28px;
+      font-weight: 700;
+      color: #2c4c7a;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+      color: #2d3748;
+    }
+
+    .subtitle {
+      color: #718096;
+      margin-bottom: 32px;
+      font-size: 16px;
+    }
+
+    .form-group {
+      margin-bottom: 24px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: #4a5568;
+      font-size: 14px;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: all 0.3s;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #4a6fa5;
+      box-shadow: 0 0 0 3px rgba(74, 111, 165, 0.2);
+    }
+
+    .password-container {
+      position: relative;
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #a0aec0;
+      cursor: pointer;
+    }
+
+    .forgot-password {
+      display: block;
+      text-align: right;
+      margin-top: 8px;
+      color: #4a6fa5;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .forgot-password:hover {
+      text-decoration: underline;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 14px;
+      background: #4a6fa5;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #3c5a8a;
+    }
+
+    .signup-link {
+      text-align: center;
+      margin-top: 24px;
+      color: #718096;
+      font-size: 15px;
+    }
+
+    .signup-link a {
+      color: #4a6fa5;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .signup-link a:hover {
+      text-decoration: underline;
+    }
+
+    .right-panel h2 {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+
+    .right-panel p {
+      font-size: 18px;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .features {
+      margin-top: 40px;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .feature-icon {
+      background: rgba(255, 255, 255, 0.2);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 16px;
+    }
+
+    .medical-icons {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      gap: 15px;
+      opacity: 0.7;
+    }
+
+    .medical-icons i {
+      font-size: 24px;
+    }
+
+    @media (max-width: 900px) {
       .container {
-        display: flex;
-        width: 100%;
-        max-width: 1200px;
-        background: white;
-        border-radius: 15px;
-        overflow: hidden;
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-        position: relative;
-        z-index: 1;
-      }
-
-      .left-panel {
-        flex: 1;
-        padding: 60px 40px;
-        background: white;
+        flex-direction: column;
+        max-width: 500px;
       }
 
       .right-panel {
-        flex: 1.2;
-        background: linear-gradient(120deg, #4a6fa5 0%, #2c4c7a 100%);
-        color: white;
-        padding: 60px 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
-        overflow: hidden;
+        order: -1;
+        padding: 40px 30px;
       }
 
-      .logo {
-        margin-bottom: 40px;
-        display: flex;
-        align-items: center;
-      }
-
-      .logo-icon {
-        background: #4a6fa5;
-        width: 50px;
-        height: 50px;
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 15px;
-        color: white;
-        font-size: 22px;
-      }
-
-      .logo-text {
-        font-size: 28px;
-        font-weight: 700;
-        color: #2c4c7a;
-      }
-
-      h1 {
-        font-size: 28px;
-        margin-bottom: 8px;
-        color: #2d3748;
-      }
-
-      .subtitle {
-        color: #718096;
-        margin-bottom: 32px;
-        font-size: 16px;
-      }
-
-      .form-group {
-        margin-bottom: 24px;
-      }
-
-      label {
-        display: block;
-        margin-bottom: 8px;
-        font-weight: 500;
-        color: #4a5568;
-        font-size: 14px;
-      }
-
-      input {
-        width: 100%;
-        padding: 14px 16px;
-        border: 1px solid #e2e8f0;
-        border-radius: 8px;
-        font-size: 16px;
-        transition: all 0.3s;
-      }
-
-      input:focus {
-        outline: none;
-        border-color: #4a6fa5;
-        box-shadow: 0 0 0 3px rgba(74, 111, 165, 0.2);
-      }
-
-      .password-container {
-        position: relative;
-      }
-
-      .toggle-password {
-        position: absolute;
-        right: 16px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: #a0aec0;
-        cursor: pointer;
-      }
-
-      .forgot-password {
-        display: block;
-        text-align: right;
-        margin-top: 8px;
-        color: #4a6fa5;
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: 500;
-      }
-
-      .forgot-password:hover {
-        text-decoration: underline;
-      }
-
-      .btn {
-        width: 100%;
-        padding: 14px;
-        background: #4a6fa5;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        font-size: 16px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: background 0.3s;
-      }
-
-      .btn:hover {
-        background: #3c5a8a;
-      }
-
-      .signup-link {
-        text-align: center;
-        margin-top: 24px;
-        color: #718096;
-        font-size: 15px;
-      }
-
-      .signup-link a {
-        color: #4a6fa5;
-        text-decoration: none;
-        font-weight: 600;
-      }
-
-      .signup-link a:hover {
-        text-decoration: underline;
-      }
-
-      .right-panel h2 {
-        font-size: 32px;
-        margin-bottom: 24px;
-      }
-
-      .right-panel p {
-        font-size: 18px;
-        line-height: 1.6;
-        opacity: 0.9;
-      }
-
-      .features {
-        margin-top: 40px;
-      }
-
-      .feature {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-      }
-
-      .feature-icon {
-        background: rgba(255, 255, 255, 0.2);
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 16px;
+      .left-panel {
+        padding: 40px 30px;
       }
 
       .medical-icons {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        display: flex;
-        gap: 15px;
-        opacity: 0.7;
+        position: static;
+        justify-content: center;
+        margin-top: 30px;
       }
+    }
+  </style>
+</head>
 
-      .medical-icons i {
-        font-size: 24px;
-      }
-
-      @media (max-width: 900px) {
-        .container {
-          flex-direction: column;
-          max-width: 500px;
-        }
-
-        .right-panel {
-          order: -1;
-          padding: 40px 30px;
-        }
-
-        .left-panel {
-          padding: 40px 30px;
-        }
-
-        .medical-icons {
-          position: static;
-          justify-content: center;
-          margin-top: 30px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="left-panel">
-        <div class="logo">
-          <div class="logo-icon">
-            <i class="fa-solid fa-house-chimney-medical"></i>
-          </div>
-          <div class="logo-text">Clinic Digital</div>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-house-chimney-medical"></i>
         </div>
-        <h1>ចូលក្នុងគណនី</h1>
-        <p class="subtitle">
-          សូមបញ្ចូលព័ត៌មានគណនីរបស់អ្នក ដើម្បីចូលក្នុងផ្ទាំងគ្រប់គ្រង
-        </p>
-
-        <form>
-          <div class="form-group">
-            <label for="email">អាស័យដ្ឋានអ៊ីមែល</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="example@clinicdigital.com"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="password">ពាក្យសម្ងាត់</label>
-            <div class="password-container">
-              <input type="password" id="password" placeholder="••••••••" />
-              <span class="toggle-password" id="togglePassword">
-                <i class="far fa-eye"></i>
-              </span>
-            </div>
-            <a
-              href="../pages/patient-forgot-password.html"
-              class="forgot-password"
-              >ភ្លេចពាក្យសម្ងាត់?</a
-            >
-          </div>
-
-          <button type="submit" class="btn">ចូលក្នុងគណនី</button>
-
-          <div class="signup-link">
-            មិនទាន់មានគណនី? <a href="#">ទាក់ទងអ្នកគ្រប់គ្រង</a>
-          </div>
-        </form>
+        <div class="logo-text">Clinic Digital</div>
       </div>
+      <h1>ចូលក្នុងគណនី</h1>
+      <p class="subtitle">
+        សូមបញ្ចូលព័ត៌មានគណនីរបស់អ្នក ដើម្បីចូលក្នុងផ្ទាំងគ្រប់គ្រង
+      </p>
 
-      <div class="right-panel">
-        <h2>សូមស្វាគមន៍មកកាន់ Clinic Digital</h2>
-        <p>ប្រព័ន្ធគ្រប់គ្រងមន្ទីរពេទ្យ</p>
-
-        <p class="description">
-          ប្រព័ន្ធគ្រប់គ្រងមន្ទីរពេទ្យឌីជីថលដែលមានប្រសិទ្ធភាពជាមួយនឹងការគ្រប់គ្រងកំណត់ត្រាអ្នកជម្ងឺកណ្តាល
-          ការកំណត់ពេលណាត់ជួប និងការគ្រប់គ្រងសារពើភ័ណ្ឌវេជ្ជសាស្ត្រ។
-        </p>
-
-        <div class="features">
-          <div class="feature">
-            <div class="feature-icon">
-              <i class="fas fa-user-injured"></i>
-            </div>
-            <div>ការគ្រប់គ្រងកំណត់ត្រាអ្នកជម្ងឺកណ្តាល</div>
-          </div>
-
-          <div class="feature">
-            <div class="feature-icon">
-              <i class="fas fa-calendar-check"></i>
-            </div>
-            <div>ការកំណត់ពេលណាត់ជួបដ៏ឆ្លាតវៃ</div>
-          </div>
-
-          <div class="feature">
-            <div class="feature-icon">
-              <i class="fas fa-pills"></i>
-            </div>
-            <div>ការគ្រប់គ្រងឱសថសាល និងសារពើភ័ណ្ឌ</div>
-          </div>
-
-          <div class="feature">
-            <div class="feature-icon">
-              <i class="fas fa-file-medical"></i>
-            </div>
-            <div>របាយការណ៍សុខភាពឌីជីថល</div>
-          </div>
+      <form>
+        <div class="form-group">
+          <label for="email">អាស័យដ្ឋានអ៊ីមែល</label>
+          <input type="email" id="email" placeholder="example@clinicdigital.com" value="patient@gmail.com" />
         </div>
 
-        <div class="medical-icons">
-          <i class="fas fa-heartbeat"></i>
-          <i class="fas fa-stethoscope"></i>
-          <i class="fas fa-syringe"></i>
-          <i class="fas fa-ambulance"></i>
+        <div class="form-group">
+          <label for="password">ពាក្យសម្ងាត់</label>
+          <div class="password-container">
+            <input type="password" id="password" placeholder="••••••••" value="patient$168" />
+            <span class="toggle-password" id="togglePassword">
+              <i class="far fa-eye"></i>
+            </span>
+          </div>
+          <a href="../pages/patient-forgot-password.html" class="forgot-password">ភ្លេចពាក្យសម្ងាត់?</a>
         </div>
-      </div>
+
+        <button type="submit" class="btn" id="btn-login">ចូលក្នុងគណនី</button>
+
+        <div class="signup-link">
+          មិនទាន់មានគណនី? <a href="#">ទាក់ទងអ្នកគ្រប់គ្រង</a>
+        </div>
+      </form>
     </div>
 
-    <script>
-      // Toggle password visibility
-      document
-        .getElementById("togglePassword")
-        .addEventListener("click", function () {
-          const passwordInput = document.getElementById("password");
-          const icon = this.querySelector("i");
+    <div class="right-panel">
+      <h2>សូមស្វាគមន៍មកកាន់ Clinic Digital</h2>
+      <p>ប្រព័ន្ធគ្រប់គ្រងមន្ទីរពេទ្យ</p>
 
-          if (passwordInput.type === "password") {
-            passwordInput.type = "text";
-            icon.classList.remove("fa-eye");
-            icon.classList.add("fa-eye-slash");
-          } else {
-            passwordInput.type = "password";
-            icon.classList.remove("fa-eye-slash");
-            icon.classList.add("fa-eye");
-          }
-        });
+      <p class="description">
+        ប្រព័ន្ធគ្រប់គ្រងមន្ទីរពេទ្យឌីជីថលដែលមានប្រសិទ្ធភាពជាមួយនឹងការគ្រប់គ្រងកំណត់ត្រាអ្នកជម្ងឺកណ្តាល
+        ការកំណត់ពេលណាត់ជួប និងការគ្រប់គ្រងសារពើភ័ណ្ឌវេជ្ជសាស្ត្រ។
+      </p>
 
-      // Form submission
-      document.querySelector("form").addEventListener("submit", function (e) {
-        e.preventDefault();
-        const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">
+            <i class="fas fa-user-injured"></i>
+          </div>
+          <div>ការគ្រប់គ្រងកំណត់ត្រាអ្នកជម្ងឺកណ្តាល</div>
+        </div>
 
-        if (email && password) {
-          alert("ការចូលគណនីជោគជ័យ! កំពុងបញ្ជូនបន្តទៅកាន់ផ្ទាំងគ្រប់គ្រង...");
+        <div class="feature">
+          <div class="feature-icon">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <div>ការកំណត់ពេលណាត់ជួបដ៏ឆ្លាតវៃ</div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">
+            <i class="fas fa-pills"></i>
+          </div>
+          <div>ការគ្រប់គ្រងឱសថសាល និងសារពើភ័ណ្ឌ</div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">
+            <i class="fas fa-file-medical"></i>
+          </div>
+          <div>របាយការណ៍សុខភាពឌីជីថល</div>
+        </div>
+      </div>
+
+      <div class="medical-icons">
+        <i class="fas fa-heartbeat"></i>
+        <i class="fas fa-stethoscope"></i>
+        <i class="fas fa-syringe"></i>
+        <i class="fas fa-ambulance"></i>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+
+    // Toggle password visibility
+    document
+      .getElementById("togglePassword")
+      .addEventListener("click", function () {
+        const passwordInput = document.getElementById("password");
+        const icon = this.querySelector("i");
+
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          icon.classList.remove("fa-eye");
+          icon.classList.add("fa-eye-slash");
         } else {
-          alert("សូមបំពេញព័ត៌មានទាំងអស់");
+          passwordInput.type = "password";
+          icon.classList.remove("fa-eye-slash");
+          icon.classList.add("fa-eye");
         }
       });
-    </script>
-  </body>
+
+    // Form submission
+    document.querySelector("form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      if (email && password) {
+        // Example: you can check hardcoded values (for demo)
+        if (email === "admin@gmail.com" && password === "admin$168") {
+          // Save login status
+          localStorage.setItem("isLoggedIn", "true");
+          localStorage.setItem("isAdmin", "true");
+          window.location.href = "../index.html";
+        } else if (email === "user@gmail.com" && password === "user$168") {
+          localStorage.setItem("isLoggedIn", "true");
+          localStorage.setItem("isAdmin", "false");
+        }
+      } else {
+        alert("សូមបំពេញព័ត៌មានទាំងអស់");
+      }
+    });
+  </script>
+</body>
+
 </html>

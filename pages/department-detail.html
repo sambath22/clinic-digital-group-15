@@ -1,173 +1,171 @@
 <!DOCTYPE html>
 <html lang="km">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ព័ត៌មានផ្នែកពេទ្យ - គ្លីនិកឌីជីថល</title>
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- font-awesome -->
-     <!-- ---------font-awesome---------- -->
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" type="icon" href="../assets/img/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ព័ត៌មានផ្នែកពេទ្យ - គ្លីនិកឌីជីថល</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- font-awesome -->
+  <!-- ---------font-awesome---------- -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- bootrap CSS  -->
 
-    <!-- Google Font: Kantumruy Pro -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Google Font: Kantumruy Pro -->
+  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="../assets/css/style.css">
 
-    <style>
-      body {
-        font-family: "Kantumruy Pro", sans-serif;
-        background-color: #f9fafb;
-        color: #333;
+  <style>
+    body {
+      font-family: "Kantumruy Pro", sans-serif;
+      background-color: #f9fafb;
+      color: #333;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    p,
+    li {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+
+
+    /* Sidebar */
+    .dept-sidebar {
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      margin-bottom: 30px;
+      transition: transform 0.3s;
+    }
+
+    .dept-sidebar:hover {
+      transform: translateY(-3px);
+    }
+
+    .dept-sidebar .list-group-item {
+      border: none;
+      padding: 15px 20px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      color: #333;
+    }
+
+    .dept-sidebar .list-group-item:hover {
+      background-color: #e1e6ff;
+      color: #0d6efd;
+      cursor: pointer;
+    }
+
+    .dept-sidebar .list-group-item.active {
+      background-color: #0d6efd;
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
+    }
+
+    /* Doctor Card */
+    .doctor-contact {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.3s;
+    }
+
+    .doctor-contact:hover {
+      transform: translateY(-3px);
+    }
+
+    .doctor-contact img {
+      width: 250px;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+
+    /* Department Content */
+    .dept-content img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .dept-content h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .dept-content h3 {
+      color: #4e54c8;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    .dept-content ul {
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      background-color: #e1e6ff;
+      padding: 5px 12px;
+      border-radius: 8px;
+      font-weight: 500;
+    }
+
+    /* Responsive */
+    @media (max-width: 991px) {
+      header h1 {
+        font-size: 2rem;
       }
 
-      h1,
-      h2,
-      h3 {
-        font-weight: 600;
-        line-height: 1.3;
+      header p {
+        font-size: 1.1rem;
       }
+    }
 
-      p,
-      li {
-        font-size: 1rem;
-        line-height: 1.7;
-      }
-
-     
-
-      /* Sidebar */
-      .dept-sidebar {
-        background: #fff;
-        padding: 25px;
-        border-radius: 15px;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-        margin-bottom: 30px;
-        transition: transform 0.3s;
-      }
-
-      .dept-sidebar:hover {
-        transform: translateY(-3px);
-      }
-
-      .dept-sidebar .list-group-item {
-        border: none;
-        padding: 15px 20px;
-        border-radius: 10px;
-        margin-bottom: 12px;
-        font-weight: 500;
-        font-size: 1rem;
-        transition: all 0.3s ease;
-        color: #333;
-      }
-
-      .dept-sidebar .list-group-item:hover {
-        background-color: #e1e6ff;
-        color: #0d6efd;
-        cursor: pointer;
-      }
-
-      .dept-sidebar .list-group-item.active {
-        background-color: #0d6efd;
-        color: #fff;
-        box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
-      }
-
-      /* Doctor Card */
-      .doctor-contact {
-        background: #fff;
-        border-radius: 15px;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: transform 0.3s;
-      }
-
-      .doctor-contact:hover {
-        transform: translateY(-3px);
-      }
-
+    @media (max-width: 575px) {
       .doctor-contact img {
-        width: 250px;
-        border-radius: 15px;
-        object-fit: cover;
-      }
-
-      /* Department Content */
-      .dept-content img {
-        width: 100%;
-        border-radius: 15px;
-        margin-bottom: 25px;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+        width: 180px;
       }
 
       .dept-content h2 {
-        color: #2c3e50;
-        margin-bottom: 20px;
+        font-size: 1.6rem;
       }
 
       .dept-content h3 {
-        color: #4e54c8;
-        margin-top: 30px;
-        margin-bottom: 15px;
+        font-size: 1.3rem;
       }
+    }
+  </style>
+</head>
 
-      .dept-content ul {
-        padding-left: 20px;
-        margin-bottom: 20px;
-      }
-
-      .highlight {
-        background-color: #e1e6ff;
-        padding: 5px 12px;
-        border-radius: 8px;
-        font-weight: 500;
-      }
-
-      /* Responsive */
-      @media (max-width: 991px) {
-        header h1 {
-          font-size: 2rem;
-        }
-        header p {
-          font-size: 1.1rem;
-        }
-      }
-
-      @media (max-width: 575px) {
-        .doctor-contact img {
-          width: 180px;
-        }
-        .dept-content h2 {
-          font-size: 1.6rem;
-        }
-        .dept-content h3 {
-          font-size: 1.3rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Header -->
-   <!-- HEADER[START] -->
+<body>
+  <!-- Header -->
+  <!-- HEADER[START] -->
   <header class="fixed-top">
     <div class="container">
       <nav class="navbar navbar-expand-xl navbar-dark">
@@ -222,19 +220,17 @@
 
         </div>
       </nav>
-    </div> 
+    </div>
   </header>
-    <!-- Main Content -->
-     <main>
-         <section class="container my-5">
+  <!-- Main Content -->
+  <main>
+    <section class="container my-5">
       <div class="row g-4">
         <!-- Sidebar -->
         <div class="col-lg-4 col-md-5">
           <div class="dept-sidebar">
             <div class="list-group">
-              <a href="#" class="list-group-item active"
-                >សេវាកម្ម Angioplasty</a
-              >
+              <a href="#" class="list-group-item active">សេវាកម្ម Angioplasty</a>
               <a href="#" class="list-group-item">សេវាកម្មបេះដូង</a>
               <a href="#" class="list-group-item">សេវាកម្មធ្មេញ</a>
               <a href="#" class="list-group-item">សេវាកម្ម Endocrinology</a>
@@ -247,19 +243,13 @@
 
           <!-- Doctor Contact -->
           <div class="doctor-contact">
-            <img
-              src="../assets/img/department/department-detail/department-detail-2.jpg"
-              alt="Doctor"
-            />
+            <img src="../assets/img/department/department-detail/department-detail-2.jpg" alt="Doctor" />
           </div>
         </div>
 
         <!-- Department Content -->
         <div class="col-lg-8 col-md-7 dept-content">
-          <img
-            src="../assets/img/department/department-detail/department-detail_1.jpg"
-            alt="Department Image"
-          />
+          <img src="../assets/img/department/department-detail/department-detail_1.jpg" alt="Department Image" />
           <h2>សេវាកម្មវះកាត់ Angioplasty</h2>
           <p>
             គ្លីនិកឌីជីថល មានក្រុមគ្រូពេទ្យជំនាញខាងបេះដូង
@@ -306,133 +296,135 @@
         </div>
       </div>
     </section>
-     </main>
-   
-     <!-- ====================Footer=============================== -->
-    <footer class="footer pt-3 text-white">
+  </main>
 
-      <!-- Links Section -->
-      <section class="link-footer">
-        <div class="container py-5">
-          <!-- Brand -->
-          <div class="row mb-5">
-            <div class="col-12 text-center">
-              <img src="assets/img/logo1.png" alt="" width="160" class="mb-3" />
-              <p class="text-white-50 mx-auto" style="max-width: 500px">
-                សុខភាពរបស់អ្នក ជាមួយបច្ចេកវិទ្យារបស់យើង មិនត្រឹមតែបើកទ្វារទៅកាន់សក្តានុពលគ្មានកំណត់ទេ
-                ប៉ុន្តែធ្វើឲ្យការថែទាំកាន់តែទំនើប សុវត្ថិភាព និងងាយស្រួលជាងមុន។
+  <!-- ====================Footer=============================== -->
+  <footer class="footer pt-3 text-white">
+
+    <!-- Links Section -->
+    <section class="link-footer">
+      <div class="container py-5">
+        <!-- Brand -->
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <img src="assets/img/logo1.png" alt="" width="160" class="mb-3" />
+            <p class="text-white-50 mx-auto" style="max-width: 500px">
+              សុខភាពរបស់អ្នក ជាមួយបច្ចេកវិទ្យារបស់យើង មិនត្រឹមតែបើកទ្វារទៅកាន់សក្តានុពលគ្មានកំណត់ទេ
+              ប៉ុន្តែធ្វើឲ្យការថែទាំកាន់តែទំនើប សុវត្ថិភាព និងងាយស្រួលជាងមុន។
+            </p>
+          </div>
+        </div>
+
+        <div class="row no-wrap">
+          <!-- Social -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">រក្សាទំនាក់ទំនង</h5>
+            <p class="text-white-50">
+              តាមដានពួកយើងសម្រាប់ព័ត៌មានសុខភាពប្រចាំថ្ងៃតាមរយៈ Social Media
+            </p>
+            <div class="d-flex gap-2 mb-3">
+              <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+            <small class="text-white-50"><i class="fas fa-users me-1"></i>អ្នកគាំទ្រ 50K+</small>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">តំណភ្ជាប់រហ័ស</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="pages/aboutUs.html" class="f-link"><i class="fas fa-angle-right me-2"></i>អំពីយើង</a>
+              </li>
+              <li>
+                <a href="pages/department_page.html" class="f-link"><i
+                    class="fas fa-angle-right me-2"></i>ផ្នែកឯកទេស</a>
+              </li>
+              <li>
+                <a href="pages/doctor.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ជួបគ្រូពេទ្យ</a>
+              </li>
+              <li>
+                <a href="pages/timetable.html" class="f-link"><i class="fas fa-angle-right me-2"></i>កាលវិភាគ</a>
+              </li>
+              <li>
+                <a href="pages/appointment.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ការណាត់ជួប</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">សេវាសុខភាព</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-heartbeat me-2"></i>វេជ្ជសាស្ត្រទូទៅ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-child me-2"></i>ការថែទាំកុមារ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-heart me-2"></i>រោគបេះដូង</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-tooth me-2"></i>ទន្តសាស្ត្រ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-eye me-2"></i>ចក្ខុវិស័យ</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">ព័ត៍មានទំនាក់ទំនង</h5>
+            <p class="text-white-50 mb-1">
+              <i class="fas fa-map-marker-alt me-2"></i>123 Wellness Avenue,
+              ភ្នំពេញ
+            </p>
+            <p class="mb-1">
+              <a href="tel:123-436-7890" class="f-link"><i class="fas fa-phone me-2"></i>+1 (123) 436-7890</a>
+            </p>
+            <p class="mb-1">
+              <a href="mailto:hello@prohealth.com" class="f-link"><i
+                  class="fas fa-envelope me-2"></i>Welcometo@DigitalClinic.com</a>
+            </p>
+            <p class="text-white-50">
+              <i class="fas fa-clock me-2"></i>24/7 ការថែទាំសង្គ្រោះបន្ទាន់
+            </p>
+          </div>
+
+          <hr class="my-4" style="border:1px,solid, rgb(35, 88, 180)" />
+          <div class="row">
+            <div class="col text-center">
+              <p class="text-white-50 mb-0">
+                &copy; 2025 គ្លីនិកឌីជីថល | រក្សាសិទ្ធិដោយ G-15 |
+                <a href="#" class="text-decoration-none text-info">លក្ខខណ្ឌនៃសេវាកម្ម</a>
               </p>
             </div>
           </div>
-
-          <div class="row no-wrap">
-            <!-- Social -->
-            <div class="col-lg-3 col-md-6 mb-4">
-              <h5 class="fw-bold mb-3">រក្សាទំនាក់ទំនង</h5>
-              <p class="text-white-50">
-                តាមដានពួកយើងសម្រាប់ព័ត៌មានសុខភាពប្រចាំថ្ងៃតាមរយៈ Social Media
-              </p>
-              <div class="d-flex gap-2 mb-3">
-                <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
-                <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
-              </div>
-              <small class="text-white-50"><i class="fas fa-users me-1"></i>អ្នកគាំទ្រ 50K+</small>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="col-lg-3 col-md-6 mb-4">
-              <h5 class="fw-bold mb-3">តំណភ្ជាប់រហ័ស</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="pages/aboutUs.html" class="f-link"><i class="fas fa-angle-right me-2"></i>អំពីយើង</a>
-                </li>
-                <li>
-                  <a href="pages/department_page.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ផ្នែកឯកទេស</a>
-                </li>
-                <li>
-                  <a href="pages/doctor.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ជួបគ្រូពេទ្យ</a>
-                </li>
-                <li>
-                  <a href="pages/timetable.html" class="f-link"><i class="fas fa-angle-right me-2"></i>កាលវិភាគ</a>
-                </li>
-                <li>
-                  <a href="pages/appointment.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ការណាត់ជួប</a>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Services -->
-            <div class="col-lg-3 col-md-6 mb-4">
-              <h5 class="fw-bold mb-3">សេវាសុខភាព</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#" class="f-link"><i class="fas fa-heartbeat me-2"></i>វេជ្ជសាស្ត្រទូទៅ</a>
-                </li>
-                <li>
-                  <a href="#" class="f-link"><i class="fas fa-child me-2"></i>ការថែទាំកុមារ</a>
-                </li>
-                <li>
-                  <a href="#" class="f-link"><i class="fas fa-heart me-2"></i>រោគបេះដូង</a>
-                </li>
-                <li>
-                  <a href="#" class="f-link"><i class="fas fa-tooth me-2"></i>ទន្តសាស្ត្រ</a>
-                </li>
-                <li>
-                  <a href="#" class="f-link"><i class="fas fa-eye me-2"></i>ចក្ខុវិស័យ</a>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Contact -->
-            <div class="col-lg-3 col-md-6 mb-4">
-              <h5 class="fw-bold mb-3">ព័ត៍មានទំនាក់ទំនង</h5>
-              <p class="text-white-50 mb-1">
-                <i class="fas fa-map-marker-alt me-2"></i>123 Wellness Avenue,
-                ភ្នំពេញ
-              </p>
-              <p class="mb-1">
-                <a href="tel:123-436-7890" class="f-link"><i class="fas fa-phone me-2"></i>+1 (123) 436-7890</a>
-              </p>
-              <p class="mb-1">
-                <a href="mailto:hello@prohealth.com" class="f-link"><i
-                    class="fas fa-envelope me-2"></i>Welcometo@DigitalClinic.com</a>
-              </p>
-              <p class="text-white-50">
-                <i class="fas fa-clock me-2"></i>24/7 ការថែទាំសង្គ្រោះបន្ទាន់
-              </p>
-            </div>
-
-            <hr class="my-4" style="border:1px,solid, rgb(35, 88, 180)" />
-            <div class="row">
-              <div class="col text-center">
-                <p class="text-white-50 mb-0">
-                  &copy; 2025 គ្លីនិកឌីជីថល | រក្សាសិទ្ធិដោយ G-15 |
-                  <a href="#" class="text-decoration-none text-info">លក្ខខណ្ឌនៃសេវាកម្ម</a>
-                </p>
-              </div>
-            </div>
-          </div>
-      </section>
-    </footer>
+        </div>
+    </section>
+  </footer>
 
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-         // Header scroll class
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Header scroll class
 
-      window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        if (window.scrollY > 50) {
-          header.classList.add("bg-dark-blue", "text-white", "shadow-sm");
-        } else {
-          header.classList.remove("bg-dark-blue", "text-white", "shadow-sm");
-        }
-      });
-      const contactMethods = document.querySelectorAll('.contact-method');
-      const formPlaceholder = document.querySelector('.form-textarea');
-    </script>
-  </body>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) {
+        header.classList.add("bg-dark-blue", "text-white", "shadow-sm");
+      } else {
+        header.classList.remove("bg-dark-blue", "text-white", "shadow-sm");
+      }
+    });
+    const contactMethods = document.querySelectorAll('.contact-method');
+    const formPlaceholder = document.querySelector('.form-textarea');
+  </script>
+</body>
+
 </html>

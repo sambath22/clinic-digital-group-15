@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="icon" href="../assets/img/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Animation css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- ---------font-awesome---------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ---hover.css-- -->
+
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- font family cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ---hover.css-- -->
+  <!-- bootrap -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/department_page.css">
+  <link rel="stylesheet" href="../pages/blog.css">
+</head>
+
+<body>
+
+  <!-- =============== -->
+  <!-- Header -->
+  <!-- ============== -->
+
+  <header class="fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-xl navbar-dark">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/img/logo1.png" alt="Logo" height="40" />
+          </a>
+
+          <!-- Toggler for mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-uppercase">
+              <li class="nav-item px-3">
+                <a class="nav-link active" href="../index.html">ទំព័រដើម</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="../pages/aboutUs.html">អំពីពួកយើង</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="../pages/appointment.html">កាណាត់ជួប</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="../pages/department_page.html">សេវាកម្ម</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="../pages/doctor.html">វេជ្ជបណ្ឌិត</a>
+              </li>
+
+              <li class="nav-item px-3">
+                <a class="nav-link" href="../pages/contact_us.html">ទាក់ទងមកពួកយើង</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Buttons (Sign In / Register) -->
+
+          <div class="d-flex ms-3">
+            <a href="../pages/patient-signup.html" class="btn btn-custom btn-signin me-2">
+              ចុះឈ្មោះ
+            </a>
+            <a href="../pages/patient-login.html" class="btn btn-custom btn-register">
+              ចូលគណនី
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero_department d-flex align-items-center position-relative" id="hero">
+      <div class="container">
+        <div class="row align-items-center pt-5">
+          <!-- Left Column -->
+          <div class="col-md-6" data-aos-duration="1000">
+            <h1 class="display-4 fw-bold">សុខភាពល្អ ចាប់ផ្ដើមពីការយល់ដឹង</h1>
+            <p class="lead my-4">
+              ការត្រួតពិនិត្យ ការថែទាំអាហារ និងចិត្តវិជ្ជមាន គឺជាគន្លឹះនៃជីវិតមានសុខភាព។ ជីវិតមានអត្ថន័យ
+              ចាប់ផ្ដើមពីការថែទាំសុខភាពរៀងរាល់ថ្ងៃ៕
+            </p>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-md-6" data-aos-duration="1000">
+            <img src="../assets/img/blog/banner_img.png" alt="Hero Image" class="img-fluid hero-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="main-blog mt-5">
+      <div class="container">
+        <div class="blog-link">
+          <a href="../index.html" class="b-link">ទំព័រដើម / </a>
+          <a href="../pages/doctor.html" class="b-link">វេជ្ជបណ្ឌិត / </a>
+          <a href="#" class="b-link text-secondary">ព័ត៌មានលំអិត</a>
+        </div>
+        <h1 class="title-blog mt-5">ផ្លូវចិត្ត និងជីវិតប្រចាំថ្ងៃ</h1>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <a href="blog-detail1.html" class="card-image">
+                <img src="../assets/img/blog/post_1.jpeg" alt="">
+                <div class="link-icon"></div>
+              </a>
+              <div class="card-content">
+                <div class="date">ថ្ងៃទី 12 ខែមីនា</div>
+                <h3 class="card-title">សារៈសំខាន់នៃសុខភាពផ្លូវចិត្ត៖ ការយល់ដឹង និងការគ្រប់គ្រងជំងឺថប់បារម្ភ</h3>
+                <div class="d-flex gap-2 mb-3">
+                  <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+                  <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="btn-submit">
+                  <button type="submit" class="btn text-white mt-2">
+                    Submit <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <a href="blog-detail1.html" class="card-image">
+                <img src="../assets/img/blog/post_2.jpeg" alt="">
+                <div class="link-icon"></div>
+              </a>
+              <div class="card-content">
+                <div class="date">ថ្ងៃទី 11 ខែមីនា</div>
+                <h3 class="card-title">ការណែនាំរបស់ឪពុកម្តាយចំពោះការចាក់វ៉ាក់សាំងកុមារភាព៖ អ្វីដែលអ្នកត្រូវដឹង</h3>
+                <div class="d-flex gap-2 mb-3">
+                  <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+                  <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="btn-submit">
+                  <button type="submit" class="btn text-white mt-2">
+                    Submit <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <a href="blog-detail1.html" class="card-image">
+                <img src="../assets/img/blog/post_3.jpeg" alt="">
+                <div class="link-icon"></div>
+              </a>
+              <div class="card-content">
+                <div class="date">ថ្ងៃទី 9 ខែមីនា</div>
+                <h3 class="card-title">ការការពារជំងឺបេះដូង៖ គន្លឹះសម្រាប់របៀបរស់នៅដែលមានសុខភាពល្អបេះដូង</h3>
+                <div class="d-flex gap-2 mb-3">
+                  <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+                  <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="btn-submit">
+                  <button type="submit" class="btn text-white mt-2">
+                    Submit <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <a href="blog-detail1.html" class="card-image">
+                <img src="../assets/img/blog/post_4.jpeg" alt="">
+                <div class="link-icon"></div>
+              </a>
+              <div class="card-content">
+                <div class="date">ថ្ងៃទី 8 ខែមីនា</div>
+                <h3 class="card-title">រគ្រប់គ្រងការឈឺចាប់រ៉ាំរ៉ៃ៖ ជម្រើសនៃការព្យាបាល និងយុទ្ធសាស្ត្រ</h3>
+                <div class="d-flex gap-2 mb-3">
+                  <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+                  <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="btn-submit">
+                  <button type="submit" class="btn text-white mt-2">
+                    Submit <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <a href="blog-detail1.html" class="card-image">
+                <img src="../assets/img/blog/post_5.jpeg" alt="">
+                <div class="link-icon"></div>
+              </a>
+              <div class="card-content">
+                <div class="date">ថ្ងៃទី 5 ខែមីនា</div>
+                <h3 class="card-title">ការយល់ដឹង និងការគ្រប់គ្រងជំងឺទឹកនោមផ្អែម៖ គន្លឹះក្នុងការរស់នៅប្រកបដោយសុខភាពល្អ
+                </h3>
+                <div class="d-flex gap-2 mb-3">
+                  <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+                  <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="btn-submit">
+                  <button type="submit" class="btn text-white mt-2">
+                    Submit <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <a href="blog-detail1.html" class="card-image">
+                <img src="../assets/img/blog/post_6.jpeg" alt="">
+                <div class="link-icon"></div>
+              </a>
+              <div class="card-content">
+                <div class="date">ថ្ងៃទី 2 ខែមីនា</div>
+                <h3 class="card-title">តួនាទីនៃការព្យាបាលកាយសម្បទាក្នុងការស្តារ និងការពាររបួសផ្សេងៗទៀត</h3>
+                <div class="d-flex gap-2 mb-3">
+                  <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+                  <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="btn-submit">
+                  <button type="submit" class="btn text-white mt-2">
+                    Submit <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <a href="blog-detail1.html" class="card-image">
+                <img src="../assets/img/blog/post_7.jpeg" alt="">
+                <div class="link-icon"></div>
+              </a>
+              <div class="card-content">
+                <div class="date">ថ្ងៃទី 28 ខែកុម្ភៈ</div>
+                <h3 class="card-title">បំបែកការមាក់ងាយ៖ ការលើកកម្ពស់ការយល់ដឹងចំពោះបញ្ហាសុខភាពផ្លូវចិត្ត</h3>
+                <div class="d-flex gap-2 mb-3">
+                  <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+                  <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="btn-submit">
+                  <button type="submit" class="btn text-white mt-2">
+                    Submit <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <a href="blog-detail1.html" class="card-image">
+                <img src="../assets/img/blog/post_8.jpeg" alt="">
+                <div class="link-icon"></div>
+              </a>
+              <div class="card-content">
+                <div class="date">ថ្ងៃទី 28 ខែកុម្ភៈ</div>
+                <h3 class="card-title">អាឡែរហ្សី និងជំងឺហឺត៖ មូលហេតុ រោគសញ្ញា និងជម្រើសនៃការព្យាបាល</h3>
+                <div class="d-flex gap-2 mb-3">
+                  <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+                  <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="btn-submit">
+                  <button type="submit" class="btn text-white mt-2">
+                    Submit <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <a href="blog-detail1.html" class="card-image">
+                <img src="../assets/img/blog/post_9.jpeg" alt="">
+                <div class="link-icon"></div>
+              </a>
+              <div class="card-content">
+                <div class="date">ថ្ងៃទី 25 ខែកុម្ភៈ</div>
+                <h3 class="card-title">ការថែរក្សាស្បែករបស់អ្នក៖ គន្លឹះដើម្បីសុខភាពស្បែកភ្លឺថ្លាស្រស់ស្អាត</h3>
+                <div class="d-flex gap-2 mb-3">
+                  <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+                  <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="btn-submit">
+                  <button type="submit" class="btn text-white mt-2">
+                    Submit <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================Footer=============================== -->
+  <footer class="footer pt-3 text-white mt-5">
+
+    <!-- Links Section -->
+    <section class="link-footer">
+      <div class="container py-5">
+        <!-- Brand -->
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <img src="../assets/img/logo1.png" alt="" width="160" class="mb-3" />
+            <p class="text-white-50 mx-auto" style="max-width: 500px">
+              សុខភាពរបស់អ្នក ជាមួយបច្ចេកវិទ្យារបស់យើង មិនត្រឹមតែបើកទ្វារទៅកាន់សក្តានុពលគ្មានកំណត់ទេ
+              ប៉ុន្តែធ្វើឲ្យការថែទាំកាន់តែទំនើប សុវត្ថិភាព និងងាយស្រួលជាងមុន។
+            </p>
+          </div>
+        </div>
+
+        <div class="row no-wrap">
+          <!-- Social -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">រក្សាទំនាក់ទំនង</h5>
+            <p class="text-white-50">
+              តាមដានពួកយើងសម្រាប់ព័ត៌មានសុខភាពប្រចាំថ្ងៃតាមរយៈ Social Media
+            </p>
+            <div class="d-flex gap-2 mb-3">
+              <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+            <small class="text-white-50"><i class="fas fa-users me-1"></i>អ្នកគាំទ្រ 50K+</small>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">តំណភ្ជាប់រហ័ស</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="pages/aboutUs.html" class="f-link"><i class="fas fa-angle-right me-2"></i>អំពីយើង</a>
+              </li>
+              <li>
+                <a href="pages/department_page.html" class="f-link"><i
+                    class="fas fa-angle-right me-2"></i>ផ្នែកឯកទេស</a>
+              </li>
+              <li>
+                <a href="pages/doctor.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ជួបគ្រូពេទ្យ</a>
+              </li>
+              <li>
+                <a href="pages/timetable.html" class="f-link"><i class="fas fa-angle-right me-2"></i>កាលវិភាគ</a>
+              </li>
+              <li>
+                <a href="pages/appointment.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ការណាត់ជួប</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">សេវាសុខភាព</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-heartbeat me-2"></i>វេជ្ជសាស្ត្រទូទៅ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-child me-2"></i>ការថែទាំកុមារ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-heart me-2"></i>រោគបេះដូង</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-tooth me-2"></i>ទន្តសាស្ត្រ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-eye me-2"></i>ចក្ខុវិស័យ</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">ព័ត៍មានទំនាក់ទំនង</h5>
+            <p class="text-white-50 mb-1">
+              <i class="fas fa-map-marker-alt me-2"></i>123 Wellness Avenue,
+              ភ្នំពេញ
+            </p>
+            <p class="mb-1">
+              <a href="tel:123-436-7890" class="f-link"><i class="fas fa-phone me-2"></i>+1 (123) 436-7890</a>
+            </p>
+            <p class="mb-1">
+              <a href="mailto:hello@prohealth.com" class="f-link"><i
+                  class="fas fa-envelope me-2"></i>Welcometo@DigitalClinic.com</a>
+            </p>
+            <p class="text-white-50">
+              <i class="fas fa-clock me-2"></i>24/7 ការថែទាំសង្គ្រោះបន្ទាន់
+            </p>
+          </div>
+
+          <hr class="my-4" style="border:1px,solid, rgb(35, 88, 180)" />
+          <div class="row">
+            <div class="col text-center">
+              <p class="text-white-50 mb-0">
+                &copy; 2025 គ្លីនិកឌីជីថល | រក្សាសិទ្ធិដោយ G-15 |
+                <a href="#" class="text-decoration-none text-info">លក្ខខណ្ឌនៃសេវាកម្ម</a>
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+  </footer>
+
+
+
+
+
+
+
+
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Header scroll class
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) {
+        header.classList.add("bg-dark-blue", "text-white", "shadow-sm");
+      } else {
+        header.classList.remove("bg-dark-blue", "text-white", "shadow-sm");
+      }
+    });
+    // Add click animations and navigation
+    document.addEventListener('DOMContentLoaded', function () {
+      const cards = document.querySelectorAll('.card');
+      const linkIcons = document.querySelectorAll('.link-icon');
+      const submitButtons = document.querySelectorAll('.btn-submit .btn');
+
+      // Sample URLs for demonstration
+      const cardUrls = [
+        'https://example.com/mental-health-anxiety',
+        'https://example.com/childhood-vaccinations',
+        'https://example.com/heart-disease-prevention'
+      ];
+
+      // Add ripple effect on card click
+      cards.forEach((card, index) => {
+        card.addEventListener('click', function (e) {
+          // Don't trigger if clicking on social links or submit button
+          if (e.target.closest('.social-link') || e.target.closest('.btn-submit')) {
+            return;
+          }
+
+          // Create ripple effect
+          const ripple = document.createElement('div');
+          const rect = card.getBoundingClientRect();
+          const size = Math.max(rect.width, rect.height);
+          const x = e.clientX - rect.left - size / 2;
+          const y = e.clientY - rect.top - size / 2;
+
+          ripple.className = 'ripple';
+          ripple.style.cssText = `
+                        width: ${size}px;
+                        height: ${size}px;
+                        left: ${x}px;
+                        top: ${y}px;
+                    `;
+
+          card.style.position = 'relative';
+          card.style.overflow = 'hidden';
+          card.appendChild(ripple);
+
+          setTimeout(() => {
+            ripple.remove();
+            // Navigate to the page
+            window.open(cardUrls[index], '_blank');
+          }, 300);
+        });
+      });
+
+      // Handle link icon clicks
+      linkIcons.forEach((icon, index) => {
+        icon.addEventListener('click', function (e) {
+          e.stopPropagation();
+          window.open(cardUrls[index], '_blank');
+        });
+      });
+
+      // Handle submit button clicks
+      submitButtons.forEach((button, index) => {
+        button.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+
+          // Add loading animation
+          const originalText = button.innerHTML;
+          button.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Loading...';
+          button.disabled = true;
+
+          setTimeout(() => {
+            button.innerHTML = originalText;
+            button.disabled = false;
+            window.open(cardUrls[index], '_blank');
+          }, 1000);
+        });
+      });
+
+      // Social media link clicks
+      document.querySelectorAll('.social-link').forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+
+          // Add click animation
+          this.style.transform = 'scale(0.9)';
+          setTimeout(() => {
+            this.style.transform = '';
+          }, 150);
+
+          // Here you would add actual social sharing functionality
+          console.log('Social share clicked:', this.className);
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

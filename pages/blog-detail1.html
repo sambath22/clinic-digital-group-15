@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="icon" href="../assets/img/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog-details</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Animation css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- ---------font-awesome---------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ---hover.css-- -->
+
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- font family cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ---hover.css-- -->
+  <!-- bootrap -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/department_page.css">
+</head>
+
+<body>
+  <!-- =============== -->
+  <!-- Header -->
+  <!-- ============== -->
+
+  <header class="fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-xl navbar-dark">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/img/logo1.png" alt="Logo" height="40" />
+          </a>
+
+          <!-- Toggler for mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-uppercase">
+              <li class="nav-item px-3">
+                <a class="nav-link active" href="../index.html">ទំព័រដើម</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="../pages/aboutUs.html">អំពីពួកយើង</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="../pages/appointment.html">កាណាត់ជួប</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="../pages/department_page.html">សេវាកម្ម</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="../pages/doctor.html">វេជ្ជបណ្ឌិត</a>
+              </li>
+
+              <li class="nav-item px-3">
+                <a class="nav-link" href="../pages/contact_us.html">ទាក់ទងមកពួកយើង</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Buttons (Sign In / Register) -->
+
+          <div class="d-flex ms-3">
+            <a href="../pages/patient-signup.html" class="btn btn-custom btn-signin me-2">
+              ចុះឈ្មោះ
+            </a>
+            <a href="../pages/patient-login.html" class="btn btn-custom btn-register">
+              ចូលគណនី
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero_department d-flex align-items-center position-relative" id="hero">
+      <div class="container">
+        <div class="row align-items-center pt-5">
+          <!-- Left Column -->
+          <div class="col-md-6 col-sm-12" data-aos-duration="1000">
+            <h1 class="display-4 fw-bold">សុខភាពល្អ ចាប់ផ្ដើមពីការយល់ដឹង</h1>
+            <p class="lead my-4">
+              ការត្រួតពិនិត្យ ការថែទាំអាហារ និងចិត្តវិជ្ជមាន គឺជាគន្លឹះនៃជីវិតមានសុខភាព។ ជីវិតមានអត្ថន័យ
+              ចាប់ផ្ដើមពីការថែទាំសុខភាពរៀងរាល់ថ្ងៃ៕
+            </p>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-md-6 col-sm-12" data-aos-duration="1000">
+            <img src="../assets/img/blog/cta_img.png" alt="Hero Image" class="img-fluid hero-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-blog mt-5">
+      <div class="container">
+        <div class="blog-link">
+          <a href="../index.html" class="b-link">ទំព័រដើម / </a>
+          <a href="../pages/doctor.html" class="b-link">វេជ្ជបណ្ឌិត / </a>
+          <a href="#" class="b-link text-secondary">ព័ត៌មានលំអិត</a>
+        </div>
+        <h1 class="title-blog mt-5">ផ្លូវចិត្ត និងជីវិតប្រចាំថ្ងៃ</h1>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img src="../assets/img/blog/post_1.jpeg" class="img-fluid rounded shadow" alt="Lifestyle">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="mb-3 blog-article mt-sm-5">សុខភាពផ្លូវចិត្ត និងរបៀបរស់នៅដែលមានតម្លៃ</h1>
+            <p class="fs-5">សុខភាពពិតប្រាកដ មិនត្រឹមតែជាការគ្មានជំងឺនោះទេ ប៉ុន្តែជាការរស់នៅប្រចាំថ្ងៃ
+              ដែលមានតុល្យភាពទាំងផ្លូវកាយ និងផ្លូវចិត្ត។ ការថែទាំខ្លួនឯងតាមរយៈអាហារដែលមានប្រយោជន៍
+              ការធ្វើលំហាត់ប្រាណទៀងទាត់ ការគេងសម្រាកគ្រប់គ្រាន់ និងការរក្សាផ្លូវចិត្តឲ្យសុខសាន្ត គឺជាគន្លឹះ
+              សំខាន់ក្នុងការបង្កើតជីវិតមានន័យ។ មន្ទីរពេទ្យ និងអ្នកជំនាញផ្នែកសុខភាព ជួយរំលឹកយើងថា
+              សុខភាពមិនមែនជាគោលដៅតែមួយទេ ប៉ុន្តែជាដំណើរដែលត្រូវអនុវត្តជារៀងរាល់ថ្ងៃ។ ដោយយល់ដឹង
+              និងអនុវត្តជាបន្តបន្ទាប់ យើងអាចកសាងរបៀបរស់នៅដែលមានសុខភាពល្អ និងជីវិតដែលមានតម្លៃពិតប្រាកដ។</p>
+            <div class="btn-submit">
+              <button type="submit" class="btn text-white mt-2">
+                អានបន្ថែម<i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section mt-5" id="content">
+      <div class="container">
+        <div class="content-wrapper">
+          <div class="row">
+            <!-- Main Content -->
+            <div class="col-lg-8">
+              <!-- Introduction -->
+              <div class="content-card slide-up">
+                <div class="card-icon">
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <h2 class="card-title">តើជំងឺថប់បារម្ភជាអ្វី?</h2>
+                <p class="card-text">
+                  ជំងឺថប់បារម្ភ គឺជាស្ថានភាពសុខភាពផ្លូវចិត្តទូទៅបំផុត ដែលប៉ះពាល់ដល់មនុស្សរាប់លាននាក់នៅទូទាំងពិភពលោក។
+                  មិនដូចស្ត្រេសធម្មតាទេ ជំងឺទាំងនេះជាប់ពាក់ព័ន្ធនឹងការព្រួយបារម្ភដ៏លើសលប់ ដែលរំខានដល់ជីវិតប្រចាំថ្ងៃ។
+                  ការយល់ដឹងអំពីពួកគេគឺជាជំហានដំបូងឆ្ពោះទៅរកសុខភាពផ្លូវចិត្តកាន់តែប្រសើរឡើង។
+                </p>
+              </div>
+
+              <!-- Types -->
+              <div class="content-card slide-up stagger-1">
+                <div class="card-icon">
+                  <i class="fas fa-list"></i>
+                </div>
+                <h2 class="card-title">ប្រភេទទូទៅ</h2>
+                <ul class="feature-list">
+                  <li>
+                    <div class="feature-icon">
+                      <i class="fas fa-check"></i>
+                    </div>
+                    <div>
+                      <strong class="fw-bold">ជំងឺថប់បារម្ភទូទៅ (GAD) </strong> -
+                      ការព្រួយបារម្ភជាប់រហូតអំពីស្ថានភាពប្រចាំថ្ងៃ
+                    </div>
+                  </li>
+                  <li>
+                    <div class="feature-icon">
+                      <i class="fas fa-check"></i>
+                    </div>
+                    <div>
+                      <strong>ជំងឺភ័យស្លន់ស្លោ </strong> - រំពេច, ដំណាក់កាលធ្ងន់ធ្ងរនៃការភ័យខ្លាចជាមួយនឹងរោគសញ្ញារាងកាយ
+                    </div>
+                  </li>
+                  <li>
+                    <div class="feature-icon">
+                      <i class="fas fa-check"></i>
+                    </div>
+                    <div>
+                      <strong>ការថប់បារម្ភក្នុងសង្គម</strong> - ការភ័យខ្លាចយ៉ាងខ្លាំងចំពោះស្ថានភាពសង្គម និងការវិនិច្ឆ័យ
+                    </div>
+                  </li>
+                  <li>
+                    <div class="feature-icon">
+                      <i class="fas fa-check"></i>
+                    </div>
+                    <div>
+                      <strong>Phobias ជាក់លាក់</strong> - ការភ័យខ្លាចមិនសមហេតុផលនៃវត្ថុឬស្ថានភាពជាក់លាក់
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Treatment -->
+              <div class="content-card slide-up stagger-2">
+                <div class="card-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <h2 class="card-title">ការព្យាបាលប្រកបដោយប្រសិទ្ធភាព</h2>
+                <p class="card-text">
+                  ការថែទាំសុខភាពទំនើបផ្តល់នូវការព្យាបាលផ្អែកលើភស្តុតាងជាច្រើន។ ដំណឹងល្អ?
+                  ជំងឺថប់បារម្ភគឺអាចព្យាបាលបានខ្ពស់។
+                  មនុស្សភាគច្រើនឃើញភាពប្រសើរឡើងគួរឱ្យកត់សម្គាល់ជាមួយនឹងការថែទាំត្រឹមត្រូវ ការព្យាបាលដោយរួមបញ្ចូលគ្នា
+                  ការផ្លាស់ប្តូររបៀបរស់នៅ ហើយនៅពេលដែលត្រូវការថ្នាំ។
+                </p>
+                <ul class="feature-list">
+                  <li>
+                    <div class="feature-icon">
+                      <i class="fas fa-brain"></i>
+                    </div>
+                    <div>
+                      <strong>ការព្យាបាលដោយការយល់ដឹង (CBT)</strong> - ការព្យាបាលស្តង់ដារមាស
+                    </div>
+                  </li>
+                  <li>
+                    <div class="feature-icon">
+                      <i class="fas fa-leaf"></i>
+                    </div>
+                    <div>
+                      <strong>ការសមាធិ</strong> - បច្ចេកទេសកាត់បន្ថយភាពតានតឹងដែលបានបញ្ជាក់
+                    </div>
+                  </li>
+                  <li>
+                    <div class="feature-icon">
+                      <i class="fas fa-pills"></i>
+                    </div>
+                    <div>
+                      <strong>ថ្នាំ </strong> - នៅពេលចេញវេជ្ជបញ្ជាដោយអ្នកជំនាញថែទាំសុខភាព
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Self-Care -->
+              <div class="content-card slide-up stagger-3">
+                <div class="card-icon">
+                  <i class="fas fa-spa"></i>
+                </div>
+                <h2 class="card-title">គន្លឹះសុខភាពប្រចាំថ្ងៃ</h2>
+                <p class="card-text">
+                  ទម្លាប់ប្រចាំថ្ងៃតូចអាចបង្កើតភាពខុសគ្នាធំក្នុងការគ្រប់គ្រងការថប់បារម្ភ។ នេះគឺជាយុទ្ធសាស្ត្រជាក់ស្តែង
+                  ដែលអ្នកអាចចាប់ផ្តើមអនុវត្តនៅថ្ងៃនេះ ដើម្បីសុខភាពផ្លូវចិត្តកាន់តែប្រសើរឡើង។
+                </p>
+                <ul class="feature-list">
+                  <li>
+                    <div class="feature-icon">
+                      <i class="fas fa-running"></i>
+                    </div>
+                    <div>លំហាត់ប្រាណទៀងទាត់បញ្ចេញសារធាតុជំរុញអារម្មណ៍ធម្មជាតិ</div>
+                  </li>
+                  <li>
+                    <div class="feature-icon">
+                      <i class="fas fa-moon"></i>
+                    </div>
+                    <div>ការគេងប្រកបដោយគុណភាពគឺជាកត្តាសំខាន់សម្រាប់ការគ្រប់គ្រងអារម្មណ៍</div>
+                  </li>
+                  <li>
+                    <div class="feature-icon">
+                      <i class="fas fa-users"></i>
+                    </div>
+                    <div>រក្សាទំនាក់ទំនងជាមួយមិត្តភក្តិ និងក្រុមគ្រួសារដែលគាំទ្រ</div>
+                  </li>
+                  <li>
+                    <div class="feature-icon">
+                      <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <div>អាហារូបត្ថម្ភមានតុល្យភាពជួយដល់សុខភាពខួរក្បាល</div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Share Section -->
+              <div class="share-section slide-up stagger-4">
+                <h3 class="share-title mt-5">Found this helpful? Share it!</h3>
+                <div class="d-flex gap-2 mt-4">
+                  <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+                  <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+              <div class="sidebar-sticky">
+                <!-- Quick Links -->
+                <div class="sidebar-card slide-up">
+                  <h4 class="sidebar-title">ការរុករករហ័ស</h4>
+                  <a href="#" class="quick-link">
+                    <div class="quick-link-icon">
+                      <i class="fas fa-question-circle text-white"></i>
+                    </div>
+                    <div>តើជំងឺថប់បារម្ភជាអ្វី?</div>
+                  </a>
+                  <a href="#" class="quick-link">
+                    <div class="quick-link-icon">
+                      <i class="fas fa-list text-white"></i>
+                    </div>
+                    <div>ប្រភេទនៃការថប់បារម្ភ</div>
+                  </a>
+                  <a href="#" class="quick-link">
+                    <div class="quick-link-icon">
+                      <i class="fas fa-heart text-white"></i>
+                    </div>
+                    <div>ជម្រើសនៃការព្យាបាល</div>
+                  </a>
+                  <a href="#" class="quick-link">
+                    <div class="quick-link-icon">
+                      <i class="fas fa-spa text-white"></i>
+                    </div>
+                    <div>គន្លឹះថែរក្សាខ្លួនឯង</div>
+                  </a>
+                </div>
+
+                <!-- Author -->
+                <div class="sidebar-card slide-up stagger-1">
+                  <h4 class="sidebar-title">អំពីអ្នកនិពន្ធ</h4>
+                  <div class="d-flex align-items-center mb-3">
+                    <img
+                      src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                      alt="Dr. Sarah Johnson" class="rounded-circle me-3"
+                      style="width: 60px; height: 60px; object-fit: cover;">
+                    <div>
+                      <strong>វេជ្ជបណ្ឌិត Sarah Johnson</strong>
+                      <div class="text-muted"> អ្នកចិត្តសាស្រ្តគ្លីនិក</div>
+                    </div>
+                  </div>
+                  <p class="text-muted small">
+                    ឯកទេសខាងជំងឺថប់បារម្ភដែលមានបទពិសោធន៍ 15+
+                    ឆ្នាំជួយអ្នកជំងឺឱ្យសម្រេចបាននូវសុខុមាលភាពផ្លូវចិត្តកាន់តែប្រសើរឡើង។
+                  </p>
+                </div>
+
+                <!-- Popular Categories -->
+                <div class="sidebar-card slide-up stagger-2">
+                  <h4 class="sidebar-title">ប្រធានបទពេញនិយម</h4>
+                  <a href="#" class="quick-link">
+                    <div class="quick-link-icon">
+                      <i class="fas fa-brain text-white"></i>
+                    </div>
+                    <div>សុខភាពផ្លូវចិត្ត</div>
+                  </a>
+                  <a href="#" class="quick-link">
+                    <div class="quick-link-icon">
+                      <i class="fas fa-heartbeat text-white"></i>
+                    </div>
+                    <div>សុខភាពបេះដូងរ</div>
+                  </a>
+                  <a href="#" class="quick-link">
+                    <div class="quick-link-icon">
+                      <i class="fas fa-child text-white"></i>
+                    </div>
+                    <div>ការថែទាំកុមា</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Articles Section -->
+    <section class="py-5 mt-5">
+      <div class="container">
+        <h2 class="mb-5">អត្ថបទពាក់ព័ន្ធ</h2>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <a href="blog-detail1.html" class="card-image">
+                <img src="../assets/img/blog/post_1 (1).jpeg" alt="">
+                <div class="link-icon"></div>
+              </a>
+              <div class="card-content">
+                <div class="date">ថ្ងៃទី 1 ខែឧសភា ឆ្នាំ 2024</div>
+                <h3 class="card-title">អត្ថប្រយោជន៍នៃសមាធិចិត្តសម្រាប់ភាពតានតឹង និងការថប់បារម្ភ</h3>
+                <div class="d-flex gap-2 mb-3">
+                  <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+                  <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="btn-submit">
+                  <button type="submit" class="btn text-white mt-2">
+                    Submit <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <a href="blog-detail1.html" class="card-image">
+                <img src="../assets/img/blog/post_2 (1).jpeg" alt="">
+                <div class="link-icon"></div>
+              </a>
+              <div class="card-content">
+                <div class="date">ថ្ងៃទី 28 ខែកុម្ភៈ ឆ្នាំ 2025</div>
+                <h3 class="card-title">ស្វែងយល់ពីរោគសញ្ញាអស់កម្លាំងរ៉ាំរ៉ៃ៖ រោគសញ្ញា មូលហេតុ និងការព្យាបាល</h3>
+                <div class="d-flex gap-2 mb-3">
+                  <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+                  <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="btn-submit">
+                  <button type="submit" class="btn text-white mt-2">
+                    Submit <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <a href="blog-detail1.html" class="card-image">
+                <img src="../assets/img/blog/blog_4.jpeg" alt="">
+                <div class="link-icon"></div>
+              </a>
+              <div class="card-content">
+                <div class="date">ថ្ងៃទី ២៤ ខែសីហា ឆ្នាំ 2025</div>
+                <h3 class="card-title">ការគ្រប់គ្រងការឈឺចាប់រ៉ាំរ៉ៃ៖ គន្លឹះ
+                  និងយុទ្ធសាស្ត្រសម្រាប់គុណភាពជីវិតកាន់តែប្រសើរ</h3>
+                <div class="d-flex gap-2 mb-3">
+                  <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+                  <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="btn-submit">
+                  <button type="submit" class="btn text-white mt-2">
+                    Submit <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============Call To Action[START]================== -->
+    <section class="cta-section py-5">
+      <div class="container">
+        <div class="cta-banner">
+          <div class="cta-content p-4" data-aos="fade-left">
+            <h2>កុំអោយសុខភាពរបស់អ្នកត្រូវបានមិនអើពើ!</h2>
+            <p>
+              កំណត់ពេលជួបជាមួយវេជ្ជបណ្ឌិតមានបទពិសោធន៍<br />
+              របស់យើងថ្ងៃនេះ!
+            </p>
+            <div class="btn-submit">
+              <button type="submit" class="btn text-white mt-3">
+                <a href="pages/contact_us.html" class="quick-contact">ទំនាក់ទំនងមកយេីងឥឡូវនេះ<i
+                    class="fa-solid fa-arrow-right"></i></a>
+              </button>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- ==============Call To Action[END]================== -->
+  </main>
+
+  <!-- ====================Footer=============================== -->
+  <footer class="footer pt-3 text-white mt-5">
+
+    <!-- Links Section -->
+    <section class="link-footer">
+      <div class="container py-5">
+        <!-- Brand -->
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <img src="../assets/img/logo1.png" alt="" width="160" class="mb-3" />
+            <p class="text-white-50 mx-auto" style="max-width: 500px">
+              សុខភាពរបស់អ្នក ជាមួយបច្ចេកវិទ្យារបស់យើង មិនត្រឹមតែបើកទ្វារទៅកាន់សក្តានុពលគ្មានកំណត់ទេ
+              ប៉ុន្តែធ្វើឲ្យការថែទាំកាន់តែទំនើប សុវត្ថិភាព និងងាយស្រួលជាងមុន។
+            </p>
+          </div>
+        </div>
+
+        <div class="row no-wrap">
+          <!-- Social -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">រក្សាទំនាក់ទំនង</h5>
+            <p class="text-white-50">
+              តាមដានពួកយើងសម្រាប់ព័ត៌មានសុខភាពប្រចាំថ្ងៃតាមរយៈ Social Media
+            </p>
+            <div class="d-flex gap-2 mb-3">
+              <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+            <small class="text-white-50"><i class="fas fa-users me-1"></i>អ្នកគាំទ្រ 50K+</small>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">តំណភ្ជាប់រហ័ស</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="pages/aboutUs.html" class="f-link"><i class="fas fa-angle-right me-2"></i>អំពីយើង</a>
+              </li>
+              <li>
+                <a href="pages/department_page.html" class="f-link"><i
+                    class="fas fa-angle-right me-2"></i>ផ្នែកឯកទេស</a>
+              </li>
+              <li>
+                <a href="pages/doctor.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ជួបគ្រូពេទ្យ</a>
+              </li>
+              <li>
+                <a href="pages/timetable.html" class="f-link"><i class="fas fa-angle-right me-2"></i>កាលវិភាគ</a>
+              </li>
+              <li>
+                <a href="pages/appointment.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ការណាត់ជួប</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">សេវាសុខភាព</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-heartbeat me-2"></i>វេជ្ជសាស្ត្រទូទៅ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-child me-2"></i>ការថែទាំកុមារ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-heart me-2"></i>រោគបេះដូង</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-tooth me-2"></i>ទន្តសាស្ត្រ</a>
+              </li>
+              <li>
+                <a href="#" class="f-link"><i class="fas fa-eye me-2"></i>ចក្ខុវិស័យ</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">ព័ត៍មានទំនាក់ទំនង</h5>
+            <p class="text-white-50 mb-1">
+              <i class="fas fa-map-marker-alt me-2"></i>123 Wellness Avenue,
+              ភ្នំពេញ
+            </p>
+            <p class="mb-1">
+              <a href="tel:123-436-7890" class="f-link"><i class="fas fa-phone me-2"></i>+1 (123) 436-7890</a>
+            </p>
+            <p class="mb-1">
+              <a href="mailto:hello@prohealth.com" class="f-link"><i
+                  class="fas fa-envelope me-2"></i>Welcometo@DigitalClinic.com</a>
+            </p>
+            <p class="text-white-50">
+              <i class="fas fa-clock me-2"></i>24/7 ការថែទាំសង្គ្រោះបន្ទាន់
+            </p>
+          </div>
+
+          <hr class="my-4" style="border:1px,solid, rgb(35, 88, 180)" />
+          <div class="row">
+            <div class="col text-center">
+              <p class="text-white-50 mb-0">
+                &copy; 2025 គ្លីនិកឌីជីថល | រក្សាសិទ្ធិដោយ G-15 |
+                <a href="#" class="text-decoration-none text-info">លក្ខខណ្ឌនៃសេវាកម្ម</a>
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+  </footer>
+
+
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Header scroll class
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) {
+        header.classList.add("bg-dark-blue", "text-white", "shadow-sm");
+      } else {
+        header.classList.remove("bg-dark-blue", "text-white", "shadow-sm");
+      }
+    });
+    // Reading progress bar
+    window.addEventListener('scroll', () => {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.querySelector('.reading-progress').style.width = scrolled + '%';
+    });
+
+  </script>
+</body>
+
+</html>
