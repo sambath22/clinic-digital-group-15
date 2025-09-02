@@ -5,7 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clinic Digital</title>
-
+      
+  <link href="assets/img/logo1.png" rel="icon" />
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />  
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- ---------font-awesome---------- -->
@@ -14,99 +19,146 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- bootrap CSS  -->
   <link rel="stylesheet" href="assets/css/bootstrap.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+ 
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
-  <!-- HEADER[START] -->
-  <header class="fixed-top">
-    <div class="container">
-      <nav class="navbar navbar-expand-xl navbar-dark">
-        <div class="container-fluid">
-          <!-- Logo -->
-          <a class="navbar-brand" href="index.html">
-            <img src="assets/img/logo1.png" alt="Logo" height="40" />
+<!-- ======= HEADER ======= -->
+<header class="fixed-top">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+
+        <!-- Logo (Left) -->
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+          <img src="assets/img/logo1.png" alt="Clinic Digital Logo" height="40" class="me-2">
+        
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Menu (CENTER) -->
+        <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+          <ul class="navbar-nav fw-bold text-uppercase">
+            <li class="nav-item px-2">
+              <a class="nav-link active" href="index.html">ទំព័រដើម</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="pages/aboutUs.html">អំពីពួកយើង</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="pages/appointment.html">ការណាត់ជួប</a>
+            </li>
+
+            <!-- Dropdown Example -->
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                សេវាកម្ម
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="pages/department_page.html">សេវាកម្មទាំងអស់</a></li>
+                <li><a class="dropdown-item" href="pages/patient-login.html">សេវាកម្មលំអិត</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+               ទំព័រផ្សេងៗ
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="pages/blog.html">ពត៌មានថ្មីៗ</a></li>
+                <li><a class="dropdown-item" href="pages/timetable.html">ពេលវេលា</a></li>
+                <li><a class="dropdown-item" href="pages/pricing-plan.html">តម្លៃ</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="pages/question.html">សាកសួរព័ត៍មាន</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item px-2">
+              <a class="nav-link" href="pages/doctor.html">វេជ្ជបណ្ឌិត</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="pages/contact_us.html">ទាក់ទងមកយើង</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Side (Buttons / Account) -->
+        <div class="d-flex ms-3">
+          <!-- BEFORE LOGIN -->
+          <a href="pages/patient-signup.html" class="btn btn-custom btn-signin me-2">
+            ចុះឈ្មោះ
+          </a>
+          <a href="pages/patient-login.html" class="btn btn-custom btn-register">
+            ចូលគណនី
           </a>
 
-          <!-- Toggler for mobile -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!-- Navbar Links -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-uppercase">
-              <li class="nav-item px-3">
-                <a class="nav-link active" href="index.html">ទំព័រដើម</a>
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link" href="pages/aboutUs.html">អំពីពួកយើង</a>
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link" href="pages/appointment.html">កាណាត់ជួប</a>
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link" href="pages/department_page.html">សេវាកម្ម</a>
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link" href="pages/doctor.html">វេជ្ជបណ្ឌិត</a>
-              </li>
-
-
-
-
-              <li class="nav-item px-3">
-                <a class="nav-link" href="pages/contact_us.html">ទាក់ទងមកពួកយើង</a>
-              </li>
+          <!-- AFTER LOGIN (Dropdown Example) -->
+          <!--
+          <div class="dropdown ms-3">
+            <a class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" href="#" id="userDropdown" data-bs-toggle="dropdown">
+              <img src="assets/img/user.png" alt="user" width="32" height="32" class="rounded-circle me-2">
+              សំបាត់
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="pages/patient-dashboard.html">ផ្ទាំងគ្រប់គ្រង</a></li>
+              <li><a class="dropdown-item" href="pages/profile.html">ពត៌មានផ្ទាល់ខ្លួន</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item text-danger" href="logout.html">ចាកចេញ</a></li>
             </ul>
           </div>
-
-          <!-- Buttons (Sign In / Register) -->
-          <div class="d-flex ms-3">
-            <a href="pages/patient-signup.html" class="btn btn-custom btn-signin me-2">
-              ចុះឈ្មោះ
-            </a>
-            <a href="pages/patient-login.html" class="btn btn-custom btn-register">
-              ចូលគណនី
-            </a>
-          </div>
-
+          -->
         </div>
-      </nav>
-    </div> 
-  </header>
+
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- ======= END HEADER ======= -->
+
+<!-- ======= END HEADER ======= -->
 
 
   <!-- ==============HEADER[END]=================== -->
 
   <main>
-    <!-- ================Hero-banner[START]===================== -->
-    <section id="hero" class="hero d-flex flex-column mb-0 pb-0">
-      <div class="container d-flex align-items-center">
-        <div class="row m-0 align-items-center w-100">
-          <!-- Left text -->
-          <div class="hero-tex col-xl-6 col-lg-6 col-md-12 col-12 text-white">
-            <h1 class="mb-5">
-              ការថែទាំប្រកបដោយមេត្តា <br />
-              លទ្ធផលពិសេស
-            </h1>
-            <div class="mb-3">
-              <a href="#" class="btn fw-bold hero-btn">ជំនួយសុខភាព</a>
-            </div>
-            <p>
-              ក្រុមវេជ្ជបណ្ឌិតដែលមានបទពិសោធន៍
-              និងអ្នកជំនាញផ្នែកថែទាំសុខភាពរបស់យើងប្តេជ្ញាផ្តល់ការថែទាំប្រកបដោយគុណភាព
-              និងការយកចិត្តទុកដាក់ផ្ទាល់ខ្លួនដល់អ្នកជំងឺរបស់យើង។
-            </p>
-          </div>
+     <!-- ================Hero-banner[START]===================== -->
+    <section id="hero" class="hero d-flex flex-column mb-0 pb-0 shadow" 
+         style="position: relative; background: url('assets/img/hero_bg.jpeg') no-repeat center center; 
+                background-size: cover; min-height: 100vh;">
 
-          <!-- Right image -->
-          <div class="col-xl-6 col-lg-6 col-md-12 text-center me-5">
-            <img src="assets/img/patents.png" alt="Doctor and Family" class="cs_hero_patents" />
-          </div>
+  <!-- Overlay -->
+  <div style="position: absolute; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.4); z-index:1;"></div>
+
+  <div class="container d-flex align-items-center" style="position: relative; z-index:2;">
+    <div class="row m-0 align-items-center w-100">
+      <!-- Left text -->
+      <div class="hero-tex col-xl-6 col-lg-6 col-md-12 col-12 text-white">
+        <h1 class="mb-5">
+          ការថែទាំប្រកបដោយមេត្តា <br />
+          លទ្ធផលពិសេស
+        </h1>
+        <div class="mb-3">
+          <a href="#" class="btn fw-bold hero-btn">ជំនួយសុខភាព</a>
         </div>
+        <p>
+          ក្រុមវេជ្ជបណ្ឌិតដែលមានបទពិសោធន៍
+          និងអ្នកជំនាញផ្នែកថែទាំសុខភាពរបស់យើងប្តេជ្ញាផ្តល់ការថែទាំប្រកបដោយគុណភាព
+          និងការយកចិត្តទុកដាក់ផ្ទាល់ខ្លួនដល់អ្នកជំងឺរបស់យើង។
+        </p>
       </div>
+
+      <!-- Right image -->
+      <div class="col-xl-6 col-lg-6 col-md-12 text-center me-5">
+        <img src="assets/img/patents.png" alt="Doctor and Family" class="cs_hero_patents" />
+      </div>
+    </div>
+  </div>
     </section>
+
     <!-- ================Hero-banner[END]===================== -->
 
     <!-- About US -->
@@ -175,7 +227,7 @@
     <!-- ===============ABOUT[END]================ -->
     <!-- ==============TESTIMONIAL[START]=================== -->
 
-    <section class="testimonial cs_bg_filed align-items-cente py-5 border data-aos=" fade-up"">
+    <section class="testimonial cs_bg_filed align-items-cente py-5  ">
       <div class="container align-items-center">
         <span>មតិយោបល់</span>
         <h2>អ្វីដែលអ្នកជំងឺបាននិយាយ</h2>
@@ -208,7 +260,8 @@
                   បទពិសោធន៍ដ៏អស្ចារ្យនៅគ្លីនិក! គ្រូពេទ្យគឺ ប្រកបដោយវិជ្ជាជីវៈ
                   និងរួសរាយរាក់ទាក់ ហើយពួកគេបានធ្វើឱ្យខ្ញុំមានអារម្មណ៍ស្រួល
                   ពីដើមដល់ចប់។ ផ្តល់អនុសាសន៍ខ្ពស់សម្រាប់គ្រួសារ
-                  ការថែទាំសុខភាព។
+                  ការថែទាំសុខភាព។បុគ្គលិកមានចិត្តល្អ
+                  និងយកចិត្តទុកដាក់។
                 </p>
               </div>
             </div>
@@ -222,7 +275,9 @@
                 <p class="testimonial-text">
                   សេវាកម្មនៅទីនេះគឺអស្ចារ្យណាស់។ ពួកគេពិតជាយកចិត្តទុកដាក់
                   សុខុមាលភាពរបស់អ្នកជំងឺ។ ការ​ពិគ្រោះ​យោបល់​ឌីជីថល​បាន​រលូន
-                  និងងាយស្រួលចូលប្រើ។
+                  និងងាយស្រួលចូលប្រើ។បុគ្គលិកមានចិត្តល្អ
+                  និងយកចិត្តទុកដាក់។ផ្តល់អនុសាសន៍ខ្ពស់សម្រាប់គ្រួសារ
+                  ការថែទាំសុខភាព។
                 </p>
               </div>
             </div>
@@ -238,10 +293,10 @@
     </section>
     <!-- ============ TESTIMONIAL[END]============= -->
     <!-- ===========DOCTOR-SECTION[START]========= -->
-    <section class="doctor bg-light" id="doctor">
+    <section class="doctor bg-light py-4 m-0" >
       <div class="container">
-        <span>ព័ត៍មាន</span>
-        <h2 class="title">វេជ្ជបណ្ឌិត</h2>
+        <span>ព័ត៌មាន</span>
+        <h2 class="title py-2">វេជ្ជបណ្ឌិត</h2>
         <div class="row g-4">
           <!-- Doctor Card -->
           <div class="col-lg-4 col-md-6">
@@ -363,9 +418,307 @@
         </div>
       </div>
     </section>
+    <!-- ===============DEPARTMENT [END]================ -->
 
-    <!-- ===== FAQ SECTION [START]==== -->
-    <section class="faq py-5">
+
+ <section class="price-package mt-5 pt-5">
+          <div class="container">
+            <div class="row g-4">
+          
+                <!-- Senior Wellness Plan -->
+              <div class="col-lg-4 col-md-6">
+                  <div class="card pricing-card">
+                      <div class="card-header">
+                          <div class="plan-title">ផែនការសុខភាពមាត់ធ្មេញ</div>
+                          <p class="plan-description">
+                            ញញឹមដោយភាពជឿជាក់។ សូមរីករាយជាមួយការពិនិត្យសុខភាពមាត់ធ្មេញជាទៀងទាត់ ការធានារ៉ាប់រងសង្គ្រោះបន្ទាន់ និងការបញ្ចុះតម្លៃផ្តាច់មុខលើនីតិវិធីធ្មេញ។
+                          </p>
+                          <div class="price-section mt-5">
+                              <span class="price">$79</span><span class="price-period">/ខែ</span>
+                          </div>
+                      </div>
+                      <div class="features-section p-4 mb-5">
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ការពិនិត្យធ្មេញ</span>
+                          </div>
+                          <div class="feature-item ">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ការបញ្ចុះតម្លៃលើនីតិវិធី</span>
+                          </div>
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ការធានារ៉ាប់រងពេលមានអាសន្ន</span>
+                          </div>
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ដំបូន្មានសុខភាពមាត់ធ្មេញ</span>
+                          </div>
+                      </div>
+                      <div class="cta-section">
+                          <a href="#" class="cta-button">
+                              Get Started
+                              <i class="fas fa-arrow-right"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+                <!-- Senior Wellness Plan -->
+              <div class="col-lg-4 col-md-6">
+                  <div class="card pricing-card">
+                      <div class="card-header">
+                          <div class="plan-title">សេវាសុខភាពស្ត្រី</div>
+                          <p class="plan-description">
+                            សេវាសុខភាពស្ត្រីដ៏ទូលំទូលាយ។ ទទួលបានការថែទាំផ្នែករោគស្ត្រី ជំនួយផែនការគ្រួសារ និងមុនពេលសម្រាល/ក្រោយសម្រាលសម្រាប់ប្រសិទ្ធភាពខ្ពស់បំផុត និងការជាសះស្បើយឡើងវិញ។
+                          </p>
+                          </p>
+                          <div class="price-section mt-5">
+                              <span class="price">$169</span><span class="price-period">/ខែ</span>
+                          </div>
+                      </div>
+                      <div class="features-section p-4 mb-5">
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>សេវាសុខភាពស្ត្រី</span>
+                          </div>
+                          <div class="feature-item ">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ការថែទាំរោគស្ត្រី</span>
+                          </div>
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ផែនការគ្រួសារ</span>
+                          </div>
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ជំនួយមុនពេលសម្រាល និងក្រោយពេលសម្រាលាំ</span>
+                          </div>
+                      </div>
+                      <div class="cta-section">
+                          <a href="#" class="cta-button">
+                              Get Started
+                              <i class="fas fa-arrow-right"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+                <!-- Senior Wellness Plan -->
+              <div class="col-lg-4 col-md-6">
+                  <div class="card pricing-card">
+                      <div class="card-header">
+                          <div class="plan-title">ផែនការកីឡា និងកាយសម្បទា</div>
+                          <p class="plan-description">
+                            ប្រសើរសម្រាប់អត្តពលិក។ ចូលប្រើការវាយតម្លៃរបួសកីឡា ការព្យាបាលដោយចលនា និងការណែនាំពីអ្នកជំនាញសម្រាប់ប្រសិទ្ធភាពខ្ពស់បំផុត និងការជាសះស្បើយឡើងវិញ។
+                          </p>
+                          <div class="price-section mt-5">
+                              <span class="price">$119</span><span class="price-period">/ខែ</span>
+                          </div>
+                      </div>
+                      <div class="features-section p-4 mb-5">
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ការវាយតម្លៃរបួសកីឡា</span>
+                          </div>
+                          <div class="feature-item ">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>វគ្គព្យាបាលដោយចលនា</span>
+                          </div>
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>អ្នកជំនាញវេជ្ជសាស្ត្រកីឡា</span>
+                          </div>
+                          <div class="feature-item">
+                              <div class="feature-icon">
+                                  <i class="fas fa-check"></i>
+                              </div>
+                              <span>ជំនួយសុខភាព</span>
+                          </div>
+                      </div>
+                      <div class="cta-section">
+                          <a href="#" class="cta-button">
+                              Get Started
+                              <i class="fas fa-arrow-right"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+
+
+
+       <!-- Gallery Section -->
+      <section class="gallery my-5"> 
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-0">
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery/gallery-1.jpg"
+                  class="glightbox"
+                  data-gallery="images-gallery"
+                >
+                  <img
+                    src="assets/img/gallery/gallery-1.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- End Gallery Item -->
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery/gallery-2.jpg"
+                  class="glightbox"
+                  data-gallery="images-gallery"
+                >
+                  <img
+                    src="assets/img/gallery/gallery-2.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- End Gallery Item -->
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery/gallery-3.jpg"
+                  class="glightbox"
+                  data-gallery="images-gallery"
+                >
+                  <img
+                    src="assets/img/gallery/gallery-3.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- End Gallery Item -->
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery/gallery-4.jpg"
+                  class="glightbox"
+                  data-gallery="images-gallery"
+                >
+                  <img
+                    src="assets/img/gallery/gallery-4.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- End Gallery Item -->
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery/gallery-5.jpg"
+                  class="glightbox"
+                  data-gallery="images-gallery"
+                >
+                  <img
+                    src="assets/img/gallery/gallery-5.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- End Gallery Item -->
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery/gallery-6.jpg"
+                  class="glightbox"
+                  data-gallery="images-gallery"
+                >
+                  <img
+                    src="assets/img/gallery/gallery-6.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- End Gallery Item -->
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery/gallery-7.jpg"
+                  class="glightbox"
+                  data-gallery="images-gallery"
+                >
+                  <img
+                    src="assets/img/gallery/gallery-7.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- End Gallery Item -->
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery/gallery-8.jpg"
+                  class="glightbox"
+                  data-gallery="images-gallery"
+                >
+                  <img
+                    src="assets/img/gallery/gallery-8.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- End Gallery Item -->
+          </div>
+        </div>
+      </section>
+          <!-- ===== FAQ SECTION [START]==== -->
+<section class="question my-5">
+   <div class="faq py-5">
       <div class="container">
         <!-- Section Title -->
         <div class="faq-title text-center mb-4">
@@ -454,139 +807,144 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
+</section>
+   
     <!-- ===== FAQ SECTION [END]==== -->
+     <!-- Contact Section -->
+      <section id="contact" class="contact section my-5">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <!-- <h2 class="text-center fw-bold py-4">ទំនាក់ទំនងមកពួកយើង</h2> -->
+         
+        </div>
+        
+        <!-- End Section Title -->
 
-    <!-- ===== FQA QUESTION SECTION [END]==== -->
+        <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+          <iframe
+            style="border: 0; width: 100%; height: 270px"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+            frameborder="0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <!-- End Google Maps -->
 
-    <!-- ==============Appointment============== -->
-    <section class="appointment p-3" id="appointment">
-      <div class="container">
-        <div class="row no-wrap">
-          <div class="col-lg-6 col-xl-6">
-            <img src="assets/img/Appointment/appointment_img.png"
-              class="appointment-image object-fit-cover rounded-0 d-sm-none d-lg-block" alt="" />
-          </div>
-          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-            <div class="card mt-3 border-0">
-              <div class="card-title">
-                <span class="book-appointment">តោះ!!</span>
-                <h1 class="title-appointment">កក់កាណាត់ជួប</h1>
-                <div class="col-md-12">
-                  <div class="card border-0 bg-white p-4 rounded-5">
-                    <form class="row g-3">
-                      <div class="col-md-6">
-                        <div>
-                          <label for="" class="form-label">ឈ្មោះ</label>
-                          <input class="form-control" id="" type="text" placeholder="ប៊ុន​​​ ណា" aria-label="" />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div>
-                          <label for="" class="form-label">លេខទូរស័ព្ទ</label>
-                          <input class="form-control" id="" type="text" placeholder="+855 98 765 432" aria-label="" />
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div>
-                          <label for="" class="form-label">អុីម៉ែលរបស់អ្នក</label>
-                          <input class="form-control" id="" type="email" placeholder="ឈ្មោះ@gmail.com" aria-label="" />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="mb-3">
-                          <label for="" class="form-label">ហេតុផលសម្រាប់ការកក់</label>
-                          <select class="form-select" aria-label="Default select example" novalidate>
-                            <option value="1">ការត្រួតពិនិត្យជាប្រចាំ</option>
-                            <option value="2">ការវះកាត់</option>
-                            <option value="3">ការធ្វើតេស្តរោគវិទ្យា</option>
-                            <option value="4">របាយការណ៍ត្រួតពិនិត្យ</option>
-                            <option value="5">មូលហេតុផ្សេងៗទៀត</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="mb-3">
-                          <label for="" class="form-label">ផ្នែកឯកទេស</label>
-                          <select class="form-select" aria-label="Default select example" novalidate>
-                            <option value="1">ឯកទេសជំងឺទូទៅ</option>
-                            <option value="2">ឯកទេសការវះកាត់</option>
-                            <option value="3">ឯកទេសតម្រងនោម</option>
-                            <option value="4">ឯកទេសសម្ភព</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="mb-3">
-                          <label for="date" class="form-label">កាលបរិច្ឆេទដែលពេញចិត្ត</label>
-                          <input type="date" class="form-control" id="date" value="2025-08-21" />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="mb-3">
-                          <label for="time" class="form-label">ពេលវេលាដែលពេញចិត្ត</label>
-                          <select class="form-control" id="time">
-                            <option>09:00 AM</option>
-                            <option>09:30 AM</option>
-                            <option>10:00 AM</option>
-                            <option>10:30 AM</option>
-                            <option>11:00 AM</option>
-                            <option>11:30 AM</option>
-                            <option>12:00 PM</option>
-                            <option>12:30 PM</option>
-                            <option>01:00 PM</option>
-                            <option>01:30 PM</option>
-                            <option>02:00 PM</option>
-                            <option>02:30 PM</option>
-                            <option>03:00 PM</option>
-                            <option>03:30 PM</option>
-                            <option>04:00 PM</option>
-                            <option>04:30 PM</option>
-                            <option>05:00 PM</option>
-                            <option>06:00 PM</option>
-                            <option>07:00 PM</option>
-                            <option>08:00 PM</option>
-                            <option>09:00 PM</option>
-                            <option>10:00 PM</option>
-                            <option>11:00 PM</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="btn-submit">
-                        <button type="submit" class="btn text-white mt-3">
-                          Submit <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                      </div>
-                    </form>
-                  </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-4">
+              <div
+                class="info-item d-flex"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Location</h3>
+                  <p>A108 Adam Street, New York, NY 535022</p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+              <!-- End Info Item -->
 
-    <!-- ==============Call To Action[START]================== -->
-    <section class="cta-section py-5">
-      <div class="container">
-        <div class="cta-banner">
-          <div class="cta-content p-4" data-aos="fade-left">
-            <h2>កុំអោយសុខភាពរបស់អ្នកត្រូវបានមិនអើពើ!</h2>
-            <p>
-              កំណត់ពេលជួបជាមួយវេជ្ជបណ្ឌិតមានបទពិសោធន៍<br />
-              របស់យើងថ្ងៃនេះ!
-            </p>
-            <div class="btn-submit">
-              <button type="submit" class="btn text-white mt-3">
-                <a href="pages/contact_us.html" class="quick-contact">ទំនាក់ទំនងមកយេីងឥឡូវនេះ<i
-                    class="fa-solid fa-arrow-right"></i></a>
-              </button>
+              <div
+                class="info-item d-flex"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+1 5589 55488 55</p>
+                </div>
+              </div>
+              <!-- End Info Item -->
+
+              <div
+                class="info-item d-flex"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>info@example.com</p>
+                </div>
+              </div>
+              <!-- End Info Item -->
             </div>
+
+            <div class="col-lg-8">
+              <form
+                action="forms/contact.php"
+                method="post"
+                class="php-email-form"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Your Name"
+                      required=""
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="Your Email"
+                      required=""
+                    />
+                  </div>
+
+                  <div class="col-md-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="subject"
+                      placeholder="Subject"
+                      required=""
+                    />
+                  </div>
+
+                  <div class="col-md-12">
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      rows="6"
+                      placeholder="Message"
+                      required=""
+                    ></textarea>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Your message has been sent. Thank you!
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- End Contact Form -->
           </div>
         </div>
-    </section>
-    <!-- ==============Call To Action[END]================== -->
+      </section>
+      <!-- /Contact Section -->
+
+  
 
     <!-- ====================Footer=============================== -->
     <footer class="footer pt-3 text-white">

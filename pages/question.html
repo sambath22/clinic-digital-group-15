@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>សាកសួរព័ត៍មាន</title>
+      <link href="../assets/img/logo1.png" rel="icon" />
+
+      <!-- bootrap icon -->
+      <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+          rel="stylesheet"
+        />  
+        <!-- ---------font-awesome---------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="../assets/vendor/font-awesome/all.min.css"> -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/department_page.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+  <body>
+            <!-- ====================Header=============================== -->
+  <header class="fixed-top">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+
+        <!-- Logo (Left) -->
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+          <img src="../assets/img/logo1.png" alt="Clinic Digital Logo" height="40" class="me-2">
+        
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Menu (CENTER) -->
+        <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+          <ul class="navbar-nav fw-bold text-uppercase">
+            <li class="nav-item px-2">
+              <a class="nav-link active" href="../index.html">ទំព័រដើម</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="../pages/aboutUs.html">អំពីពួកយើង</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="../pages/appointment.html">ការណាត់ជួប</a>
+            </li>
+
+            <!-- Dropdown Example -->
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                សេវាកម្ម
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../pages/department_page.html">សេវាកម្មទាំងអស់</a></li>
+                <li><a class="dropdown-item" href="../pages/patient-login.html">សេវាកម្មលំអិត</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+               ទំព័រផ្សេងៗ
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../pages/blog.html">ពត៌មានថ្មីៗ</a></li>
+                <li><a class="dropdown-item" href="../pages/timetable.html">ពេលវេលា</a></li>
+                <li><a class="dropdown-item" href="../pages/pricing-plan.html">តម្លៃ</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="../pages/question.html">សាកសួរព័ត៍មាន</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item px-2">
+              <a class="nav-link" href="../pages/doctor.html">វេជ្ជបណ្ឌិត</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="../pages/contact_us.html">ទាក់ទងមកយើង</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Side (Buttons / Account) -->
+        <div class="d-flex ms-3">
+          <!-- BEFORE LOGIN -->
+          <a href="../pages/patient-signup.html" class="btn btn-custom btn-signin me-2">
+            ចុះឈ្មោះ
+          </a>
+          <a href="../pages/patient-login.html" class="btn btn-custom btn-register">
+            ចូលគណនី
+          </a>
+
+          <!-- AFTER LOGIN (Dropdown Example) -->
+          <!--
+          <div class="dropdown ms-3">
+            <a class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" href="#" id="userDropdown" data-bs-toggle="dropdown">
+              <img src="assets/img/user.png" alt="user" width="32" height="32" class="rounded-circle me-2">
+              សំបាត់
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="pages/patient-dashboard.html">ផ្ទាំងគ្រប់គ្រង</a></li>
+              <li><a class="dropdown-item" href="pages/profile.html">ពត៌មានផ្ទាល់ខ្លួន</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item text-danger" href="logout.html">ចាកចេញ</a></li>
+            </ul>
+          </div>
+          -->
+        </div>
+
+      </div>
+    </nav>
+  </div>
+</header>
+    <main>
+    
+         <!-- HERO-BANNER [START]-->
+    <section class="hero_department d-flex align-items-center" id="hero">
+      <div class="container">
+        <div class="row align-items-center pt-5">
+          <!-- Left Column -->
+          <div class="col-md-6" data-aos-duration="1000">
+            <h1 class="display-4 fw-bold">ជ្រើសរើសផ្នែកដែលអ្នកចង់ពិនិត្យ</h1>
+            <p class="lead my-4">ពួកយើងមានផ្នែកជាច្រើនដើម្បីបម្រើអ្នក</p>
+            <a href="#service" class="btn btn-primary btn-lg">
+              ស្វែងយល់បន្ថែម
+            </a>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-md-6" data-aos-duration="1000">
+            <img src="../assets/img/department_img/banner_img.png" alt="Hero Image" class="img-fluid hero-img" />
+          </div>
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </section>
+      <!-- ===== FAQ SECTION [START]==== -->
+      <section class="question my-5">
+        <div class="faq py-5">
+          <div class="container">
+            <!-- Section Title -->
+            <div class="faq-title text-center mb-4">
+              <h2 class="title">អ្វីដែលអ្នកជំងឺ <span>តែងតែសួរ</span></h2>
+            </div>
+
+            <!-- Accordion -->
+            <div class="accordion" id="faqAccordion">
+              <!-- Item 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                  >
+                    តើ ProHealth ផ្តល់សេវាកម្មអ្វីខ្លះ?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    ProHealth ផ្តល់ជូននូវសេវាកម្មវេជ្ជសាស្រ្ត
+                    និងថែទាំសុខភាពជាច្រើនប្រភេទ តាមតម្រូវការរបស់អ្នក។
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                  >
+                    តើខ្ញុំត្រូវកំណត់ពេលណាត់ជួបជាមួយ ProHealth ដោយរបៀបណា?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    អ្នកអាចកំណត់ពេលណាត់ជួបតាមអ៊ីនធឺណិត
+                    ឬដោយទាក់ទងក្រុមសេវាកម្មអតិថិជនរបស់យើង។
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                  >
+                    តើអ្នកទទួលយកការធានារ៉ាប់រងទេ?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    បាទ/ចាស យើងទទួលយកអ្នកផ្តល់សេវាធានារ៉ាប់រងធំៗភាគច្រើន។
+                    សូមបញ្ជាក់ជាមួយក្រុមការងាររបស់យើងសម្រាប់ព័ត៌មានលម្អិត។
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                  >
+                    តើខ្ញុំគួរនាំយកអ្វីទៅការណាត់ជួបរបស់ខ្ញុំ?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    សូមនាំយកអត្តសញ្ញាណប័ណ្ណដែលមានសុពលភាព ប័ណ្ណធានារ៉ាប់រង
+                    និងកំណត់ត្រាវេជ្ជសាស្ត្រពីមុន ប្រសិនបើមាន។
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 5 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                  >
+                    តើខ្ញុំស្នើសុំការបំពេញតាមវេជ្ជបញ្ជាដោយរបៀបណា?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    អ្នកអាចស្នើសុំការបំពេញតាមវេជ្ជបញ្ជាតាមរយៈវេបសាយអនឡាញរបស់យើង
+                    ឬដោយទាក់ទងការិយាល័យផ្ទាល់។
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!-- ====================Footer=============================== -->
+    <footer class="footer pt-3 text-white">
+
+      <!-- Links Section -->
+      <section class="link-footer">
+        <div class="container py-5">
+          <!-- Brand -->
+          <div class="row mb-5">
+            <div class="col-12 text-center">
+              <img src="../assets/img/logo1.png" alt="" width="160" class="mb-3" />
+              <p class="text-white-50 mx-auto" style="max-width: 500px">
+                សុខភាពរបស់អ្នក ជាមួយបច្ចេកវិទ្យារបស់យើង មិនត្រឹមតែបើកទ្វារទៅកាន់សក្តានុពលគ្មានកំណត់ទេ
+                ប៉ុន្តែធ្វើឲ្យការថែទាំកាន់តែទំនើប សុវត្ថិភាព និងងាយស្រួលជាងមុន។
+              </p>
+            </div>
+          </div>
+
+          <div class="row no-wrap">
+            <!-- Social -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="fw-bold mb-3">រក្សាទំនាក់ទំនង</h5>
+              <p class="text-white-50">
+                តាមដានពួកយើងសម្រាប់ព័ត៌មានសុខភាពប្រចាំថ្ងៃតាមរយៈ Social Media
+              </p>
+              <div class="d-flex gap-2 mb-3">
+                <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
+              </div>
+              <small class="text-white-50"><i class="fas fa-users me-1"></i>អ្នកគាំទ្រ 50K+</small>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="fw-bold mb-3">តំណភ្ជាប់រហ័ស</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="pages/aboutUs.html" class="f-link"><i class="fas fa-angle-right me-2"></i>អំពីយើង</a>
+                </li>
+                <li>
+                  <a href="pages/department_page.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ផ្នែកឯកទេស</a>
+                </li>
+                <li>
+                  <a href="pages/doctor.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ជួបគ្រូពេទ្យ</a>
+                </li>
+                <li>
+                  <a href="pages/timetable.html" class="f-link"><i class="fas fa-angle-right me-2"></i>កាលវិភាគ</a>
+                </li>
+                <li>
+                  <a href="pages/appointment.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ការណាត់ជួប</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="fw-bold mb-3">សេវាសុខភាព</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="f-link"><i class="fas fa-heartbeat me-2"></i>វេជ្ជសាស្ត្រទូទៅ</a>
+                </li>
+                <li>
+                  <a href="#" class="f-link"><i class="fas fa-child me-2"></i>ការថែទាំកុមារ</a>
+                </li>
+                <li>
+                  <a href="#" class="f-link"><i class="fas fa-heart me-2"></i>រោគបេះដូង</a>
+                </li>
+                <li>
+                  <a href="#" class="f-link"><i class="fas fa-tooth me-2"></i>ទន្តសាស្ត្រ</a>
+                </li>
+                <li>
+                  <a href="#" class="f-link"><i class="fas fa-eye me-2"></i>ចក្ខុវិស័យ</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="fw-bold mb-3">ព័ត៍មានទំនាក់ទំនង</h5>
+              <p class="text-white-50 mb-1">
+                <i class="fas fa-map-marker-alt me-2"></i>123 Wellness Avenue,
+                ភ្នំពេញ
+              </p>
+              <p class="mb-1">
+                <a href="tel:123-436-7890" class="f-link"><i class="fas fa-phone me-2"></i>+1 (123) 436-7890</a>
+              </p>
+              <p class="mb-1">
+                <a href="mailto:hello@prohealth.com" class="f-link"><i
+                    class="fas fa-envelope me-2"></i>Welcometo@DigitalClinic.com</a>
+              </p>
+              <p class="text-white-50">
+                <i class="fas fa-clock me-2"></i>24/7 ការថែទាំសង្គ្រោះបន្ទាន់
+              </p>
+            </div>
+
+            <hr class="my-4" style="border:1px,solid, rgb(35, 88, 180)" />
+            <div class="row">
+              <div class="col text-center">
+                <p class="text-white-50 mb-0">
+                  &copy; 2025 គ្លីនិកឌីជីថល | រក្សាសិទ្ធិដោយ G-15 |
+                  <a href="#" class="text-decoration-none text-info">លក្ខខណ្ឌនៃសេវាកម្ម</a>
+                </p>
+              </div>
+            </div>
+          </div>
+      </section>
+    </footer>
+    <script src="../assets/js/bootstrap.bundle.min.js">
+        
+    </script>
+    <script>
+        // Header scroll class
+
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 50) {
+          header.classList.add("bg-dark-blue", "text-white", "shadow-sm");
+        } else {
+          header.classList.remove("bg-dark-blue", "text-white", "shadow-sm");
+        }
+      });
+      const contactMethods = document.querySelectorAll('.contact-method');
+      const formPlaceholder = document.querySelector('.form-textarea');
+    </script>
+  </body>
+</html>

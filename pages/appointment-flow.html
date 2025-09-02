@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="km">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clinic Digital - ការណាត់ជួប</title>
+    <link href="../assets/img/logo1.png" rel="icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanuman:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Hanuman", serif;
+        background: #f0f4f8;
+        margin: 0;
+      }
+      .sidebar {
+        width: 250px;
+        background: #2c4c7a;
+        min-height: 100vh;
+        color: #fff;
+        position: fixed;
+        padding-top: 40px;
+      }
+      .sidebar h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 700;
+      }
+      .sidebar a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 12px 20px;
+        margin: 5px 0;
+        border-radius: 8px;
+        transition: 0.3s;
+      }
+      .sidebar a:hover {
+        background: #1b2e4b;
+      }
+      .main-content {
+        margin-left: 250px;
+        padding: 40px;
+      }
+      .dashboard-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+      .dashboard-header h1 {
+        font-size: 28px;
+        color: #2c4c7a;
+        font-weight: 700;
+      }
+      .card {
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        margin-bottom: 20px;
+      }
+      .card-header {
+        background: #3498db;
+        color: #fff;
+        font-weight: 600;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      .btn-primary-custom {
+        background: #3498db;
+        border: none;
+        border-radius: 50px;
+        padding: 8px 20px;
+        color: #fff;
+        transition: 0.3s;
+      }
+      .btn-primary-custom:hover {
+        background: #2980b9;
+      }
+      @media (max-width: 768px) {
+        .sidebar {
+          width: 100%;
+          position: relative;
+          min-height: auto;
+        }
+        .main-content {
+          margin-left: 0;
+          padding: 20px;
+        }
+      }
+
+      /* Multi-step modal styles */
+      .step {
+        display: none;
+      }
+      .step.active {
+        display: block;
+      }
+      .step-indicator {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+      }
+      .step-indicator div {
+        width: 32%;
+        text-align: center;
+        padding: 6px 0;
+        border-radius: 50px;
+        background: #dfe6ed;
+        color: #777;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        font-size: 14px;
+      }
+      .step-indicator .active-step {
+        background: #3498db;
+        color: #fff;
+        box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+      }
+      .doctor-icon {
+        width: 100px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+      .confirmation-icon {
+        font-size: 50px;
+        color: #2ecc71;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Clinic Digital</h2>
+      <a href="../pages/patient-dashboard.html">ផ្ទៃដើម</a>
+      <a href="../pages/appointment-flow.html"><b>ការណាត់ជួប</b></a>
+      <a href="../pages/medical-history.html">ប្រវត្តិក្នុងការពិនិត្យ</a>
+      <a href="../pages/notification.html">សារ / ជូនដំណឹង</a>
+      <a href="../pages/profile-user.html">ពត៌មានគណនី</a>
+      <a href="../pages/logout.html">ចាកចេញ</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="dashboard-header">
+        <h1>ការណាត់ជួប</h1>
+        <img
+          src="https://img.icons8.com/ios-filled/50/000000/calendar.png"
+          alt="Appointment"
+        />
+      </div>
+
+      <!-- Upcoming Appointments -->
+      <div class="card">
+        <div class="card-header">ការណាត់ជួបជិតមកដល់</div>
+        <div class="card-body">
+          <table class="table table-striped" id="appointmentsTable">
+            <thead>
+              <tr>
+                <th>ថ្ងៃ</th>
+                <th>ម៉ោង</th>
+                <th>វេជ្ជបណ្ឌិត</th>
+                <th>ផ្នែក</th>
+                <th>ស្ថានភាព</th>
+                <th>ជម្រើស</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10/09/2025</td>
+                <td>09:00</td>
+                <td>Dr. Sokha</td>
+                <td>Cardiology</td>
+                <td><span class="badge bg-info">បានកក់</span></td>
+                <td>
+                  <button class="btn btn-sm btn-warning">ផ្លាស់ប្តូរ</button>
+                  <button class="btn btn-sm btn-danger">លុប</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Book New Appointment Button -->
+      <div class="card">
+        <div class="card-header">កំណត់ការណាត់ជួបថ្មី</div>
+        <div class="card-body text-center">
+          <button
+            class="btn btn-primary-custom"
+            data-bs-toggle="modal"
+            data-bs-target="#bookingModal"
+          >
+            កក់ថ្មី ➝
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Multi-step Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">កំណត់ការណាត់ជួបថ្មី</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="step-indicator mb-3">
+              <div id="indicator1" class="active-step">ជំហាន ១</div>
+              <div id="indicator2">ជំហាន ២</div>
+              <div id="indicator3">ជំហាន ៣</div>
+              <div id="indicator4">សម្រេច</div>
+            </div>
+
+            <!-- Step 1 -->
+            <div class="step active" id="step1">
+              <div class="mb-3">
+                <label class="form-label">ជ្រើសរើសវេជ្ជបណ្ឌិត</label>
+                <select class="form-select" id="doctor">
+                  <option>Dr. Sokha - Cardiology</option>
+                  <option>Dr. Dara - Pediatrics</option>
+                  <option>Dr. Lina - Dentistry</option>
+                  <option>Dr. Vuthy - Dermatology</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">ថ្ងៃ</label>
+                <input type="date" class="form-control" id="date" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">ម៉ោង</label>
+                <input type="time" class="form-control" id="time" />
+              </div>
+              <button
+                class="btn btn-primary-custom float-end"
+                onclick="nextStep(2)"
+              >
+                បន្ត ➝
+              </button>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step" id="step2">
+              <div class="text-center mb-3">
+                <img
+                  class="doctor-icon"
+                  src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?crop=entropy&cs=tinysrgb&fit=crop&h=120&w=120"
+                  alt="Doctor"
+                />
+              </div>
+              <div
+                class="p-3 bg-light rounded-3 shadow-sm text-center"
+                id="doctorInfo"
+              ></div>
+              <div class="mt-3 d-flex justify-content-between">
+                <button class="btn btn-secondary" onclick="nextStep(1)">
+                  ← ត្រលប់
+                </button>
+                <button class="btn btn-primary-custom" onclick="nextStep(3)">
+                  បន្ត ➝
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step" id="step3">
+              <div class="mb-3">
+                <label class="form-label">ជ្រើសរើសវិធីបង់ប្រាក់</label>
+                <select class="form-select" id="paymentMethod">
+                  <option>ABA Bank</option>
+                  <option>Wing</option>
+                  <option>Visa / MasterCard</option>
+                </select>
+              </div>
+              <div class="d-flex justify-content-between mt-3">
+                <button class="btn btn-secondary" onclick="nextStep(2)">
+                  ← ត្រលប់
+                </button>
+                <button class="btn btn-success" onclick="nextStep(4)">
+                  បង់ប្រាក់ ➝
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 4: Confirmation -->
+            <div class="step text-center" id="step4">
+              <div class="confirmation-icon">🎉</div>
+              <h4 class="mb-2">ការណាត់ជួបបានបញ្ចប់ដោយជោគជ័យ!</h4>
+              <p id="confirmMsg"></p>
+              <div class="mt-3">
+                <button class="btn btn-success me-2" onclick="addAppointment()">
+                  បញ្ចប់
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function nextStep(step) {
+        document
+          .querySelectorAll(".step")
+          .forEach((s) => s.classList.remove("active"));
+        document.getElementById("step" + step).classList.add("active");
+
+        document
+          .querySelectorAll(".step-indicator div")
+          .forEach((ind) => ind.classList.remove("active-step"));
+        if (step <= 4)
+          document
+            .getElementById("indicator" + step)
+            .classList.add("active-step");
+
+        if (step === 2) {
+          const doctor = document.getElementById("doctor").value;
+          const date = document.getElementById("date").value;
+          const time = document.getElementById("time").value;
+          document.getElementById(
+            "doctorInfo"
+          ).innerHTML = `<h5>${doctor}</h5><p>កាលបរិច្ឆេទ: ${date}</p><p>ម៉ោង: ${time}</p>`;
+        }
+        if (step === 4) {
+          const doctor = document.getElementById("doctor").value;
+          const date = document.getElementById("date").value;
+          const time = document.getElementById("time").value;
+          const payment = document.getElementById("paymentMethod").value;
+          document.getElementById(
+            "confirmMsg"
+          ).innerHTML = `ការណាត់ជួបរបស់អ្នកជាមួយ <strong>${doctor}</strong> ត្រូវបានបញ្ជាក់។<br>កាលបរិច្ឆេទ: ${date} | ម៉ោង: ${time}<br>វិធីបង់ប្រាក់: ${payment} | តម្លៃ: $25`;
+        }
+      }
+
+      function addAppointment() {
+        const table = document
+          .getElementById("appointmentsTable")
+          .getElementsByTagName("tbody")[0];
+        const doctorFull = document.getElementById("doctor").value;
+        const doctorName = doctorFull.split(" - ")[0];
+        const department = doctorFull.split(" - ")[1] || "";
+        const date = document.getElementById("date").value;
+        const time = document.getElementById("time").value;
+
+        const row = table.insertRow();
+        row.innerHTML = `<td>${date}</td><td>${time}</td><td>${doctorName}</td><td>${department}</td><td><span class="badge bg-info">បានកក់</span></td>
+      <td><button class="btn btn-sm btn-warning">ផ្លាស់ប្តូរ</button> <button class="btn btn-sm btn-danger">លុប</button></td>`;
+
+        const modal = bootstrap.Modal.getInstance(
+          document.getElementById("bookingModal")
+        );
+        modal.hide();
+        // reset modal to step 1
+        nextStep(1);
+      }
+    </script>
+  </body>
+</html>

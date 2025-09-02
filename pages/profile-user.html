@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="km">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ពត៌មានផ្ទាល់ខ្លួន</title>
+    <link href="../assets/img/logo1.png" rel="icon" />
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />  
+    <!-- ---------font-awesome---------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+      body {
+        background: #e0f2fe;
+        color: #1e3a8a;
+      }
+
+      .profile-card {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        max-width: 800px;
+        margin: 50px auto;
+      }
+
+      .profile-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #cbd5e1;
+        padding-bottom: 15px;
+      }
+
+      .profile-header img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+        border: 3px solid #1e3a8a;
+      }
+
+      .profile-header h3 {
+        margin: 0;
+        font-weight: bold;
+      }
+
+      .profile-header p {
+        margin: 0;
+        color: #555;
+      }
+
+      .info-item {
+        margin-bottom: 15px;
+      }
+
+      .info-label {
+        font-weight: bold;
+        color: #1e3a8a;
+      }
+
+      .info-value {
+        color: #555;
+        margin-left: 5px;
+      }
+
+      .btn-edit {
+        background: #1e3a8a;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 25px;
+        padding: 8px 20px;
+        transition: 0.3s;
+      }
+
+      .btn-edit:hover {
+        background: #3b82f6;
+        color: #fff;
+      }
+
+      .btn-back {
+        background: #f87171;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 25px;
+        padding: 8px 20px;
+        transition: 0.3s;
+        margin-left: 10px;
+        text-decoration: none;
+      }
+
+      .btn-back:hover {
+        background: #ef4444;
+        color: #fff;
+      }
+
+      @media (max-width: 576px) {
+        .profile-header {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .profile-header img {
+          margin-bottom: 10px;
+        }
+
+        .text-end {
+          text-align: center !important;
+        }
+
+        .btn-back {
+          margin-left: 0;
+          margin-top: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+<!-- ======= HEADER ======= -->
+<header class="bg-dark-blue">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg rounded-3" >
+      <div class="container-fluid">
+
+        <!-- Logo (Left) -->
+        <a class="navbar-brand fw-bold d-flex align-items-center text-white" href="index.html">
+          <img src="../assets/img/logo1.png" alt="Clinic Digital Logo" height="40" class="me-2">
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Menu (CENTER) -->
+        <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+          <ul class="navbar-nav fw-bold text-uppercase">
+            <li class="nav-item px-2">
+              <a class="nav-link active text-white" href="../pages/index2.html">ទំព័រដើម</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-white" href="../pages/aboutUs.html">អំពីពួកយើង</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-white" href="../pages/appointment.html">ការណាត់ជួប</a>
+            </li>
+
+            <!-- Services Dropdown -->
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                សេវាកម្ម
+              </a>
+              <ul class="dropdown-menu rounded-3" style="background-color: #1e3a8a;">
+                <li><a class="dropdown-item text-white" href="../pages/department_page.html">សេវាកម្មទាំងអស់</a></li>
+                <li><a class="dropdown-item text-white" href="../pages/department-detail.html">សេវាកម្មលំអិត</a></li>
+              </ul>
+            </li>
+
+            <!-- Pages Dropdown -->
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown">
+               ទំព័រផ្សេងៗ
+              </a>
+              <ul class="dropdown-menu rounded-3" style="background-color: #1e3a8a;">
+                <li><a class="dropdown-item text-white" href="blog.html">ពត៌មានថ្មីៗ</a></li>
+                <li><a class="dropdown-item text-white" href="timetable.html">ពេលវេលា</a></li>
+                <li><a class="dropdown-item text-white" href="pricing-plan.html">តម្លៃ</a></li>
+                <li><hr class="dropdown-divider bg-white"></li>
+                <li><a class="dropdown-item text-white" href="question.html">សាកសួរព័ត៍មាន</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item px-2">
+              <a class="nav-link text-white" href="../pages/doctor.html">វេជ្ជបណ្ឌិត</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-white" href="../pages/contact_us.html">ទាក់ទងមកពួកយើង</a>
+            </li>
+          </ul>
+        </div>
+
+       <!-- Right Side (Icons + Profile Dropdown) -->
+<div class="d-flex ms-3 align-items-center">
+  <!-- Messages -->
+  <div class="dropdown me-3">
+    <a class="text-white position-relative" href="#" id="messagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-envelope-fill fs-5"></i>
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        3
+        <span class="visually-hidden">unread messages</span>
+      </span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end rounded-3" style="min-width: 250px; background-color: #1e3a8a;">
+      <li><a class="dropdown-item text-white" href="#">Message 1</a></li>
+      <li><a class="dropdown-item text-white" href="#">Message 2</a></li>
+      <li><a class="dropdown-item text-white" href="#">Message 3</a></li>
+    </ul>
+  </div>
+
+<!-- Notification Link -->
+<div class="me-3">
+  <a class="text-white position-relative" href="../notification.html" id="notificationsLink">
+    <i class="bi bi-bell-fill fs-5"></i>
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+      3
+      <span class="visually-hidden">unread notifications</span>
+    </span>
+  </a>
+</div>
+
+
+  <!-- Profile Dropdown -->
+  <div class="dropdown">
+    <a class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <img src="../assets/img/user.png" alt="user" width="32" height="32" class="rounded-circle me-2">
+      សំបាត់
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end rounded-3" style="background-color: #1e3a8a;">
+      <li><a class="dropdown-item text-white" href="../pages/patient-dashboard.html">ផ្ទាំងគ្រប់គ្រង</a></li>
+      <li><a class="dropdown-item text-white" href="../pages/profile-user.html">ពត៌មានផ្ទាល់ខ្លួន</a></li>
+      <li><hr class="dropdown-divider bg-white"></li>
+      <li><a class="dropdown-item text-danger" href="../pages/logout.html">ចាកចេញ</a></li>
+    </ul>
+  </div>
+</div>
+
+      </div>
+    </nav>
+  </div>
+
+</header>
+    <div class="container">
+      <div class="profile-card">
+        <div class="profile-header">
+          <img
+            id="profileImage"
+            src="../assets/img/user copy.png"
+            alt="Profile Picture"
+          />
+          <div>
+            <h3 id="profileName">ឈ្មោះ</h3>
+            <p id="profileRole">តួនាទី</p>
+          </div>
+        </div>
+
+        <div class="profile-info">
+          <div class="row">
+            <div class="col-md-6 info-item">
+              <span class="info-label">អ៊ីមែល៖</span>
+              <span class="info-value" id="profileEmail"></span>
+            </div>
+            <div class="col-md-6 info-item">
+              <span class="info-label">លេខទូរស័ព្ទ៖</span>
+              <span class="info-value" id="profilePhone"></span>
+            </div>
+            <div class="col-md-6 info-item">
+              <span class="info-label">អាសយដ្ឋាន៖</span>
+              <span class="info-value" id="profileAddress"></span>
+            </div>
+            <div class="col-md-6 info-item">
+              <span class="info-label">ថ្ងៃកំណើត៖</span>
+              <span class="info-value" id="profileDob"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-end mt-3">
+          <a href="edit-profile.html" class="btn btn-edit">កែប្រែពត៌មាន</a>
+          <a href="patient-dashboard.html" class="btn btn-back"
+            >ត្រឡប់ទៅផ្ទៃដើម</a
+          >
+        </div>
+      </div>
+    </div>
+     <!-- ====================Footer=============================== -->
+    <footer class="footer pt-3 text-white">
+
+      <!-- Links Section -->
+      <section class="link-footer ">
+        <div class="container py-5">
+          <!-- Brand -->
+          <div class="row mb-5">
+            <div class="col-12 text-center">
+              <img src="assets/img/logo1.png" alt="" width="160" class="mb-3" />
+             
+            </div>
+          </div>
+
+          <div class="row no-wrap">
+            <!-- Social -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="fw-bold mb-3">រក្សាទំនាក់ទំនង</h5>
+              <p class="text-white-50">
+                តាមដានពួកយើងសម្រាប់ព័ត៌មានសុខភាពប្រចាំថ្ងៃតាមរយៈ Social Media
+              </p>
+              <div class="d-flex gap-2 mb-3">
+                <a href="#" class="social-btn bg-fb text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-btn bg-danger text-white"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-btn bg-linkin text-white"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-btn bg-ig text-white"><i class="fab fa-instagram"></i></a>
+              </div>
+              <small class="text-white-50"><i class="fas fa-users me-1"></i>អ្នកគាំទ្រ 50K+</small>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="fw-bold mb-3">តំណភ្ជាប់រហ័ស</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="pages/aboutUs.html" class="f-link"><i class="fas fa-angle-right me-2"></i>អំពីយើង</a>
+                </li>
+                <li>
+                  <a href="pages/department_page.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ផ្នែកឯកទេស</a>
+                </li>
+                <li>
+                  <a href="pages/doctor.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ជួបគ្រូពេទ្យ</a>
+                </li>
+                <li>
+                  <a href="pages/timetable.html" class="f-link"><i class="fas fa-angle-right me-2"></i>កាលវិភាគ</a>
+                </li>
+                <li>
+                  <a href="pages/appointment.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ការណាត់ជួប</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="fw-bold mb-3">សេវាសុខភាព</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="f-link"><i class="fas fa-heartbeat me-2"></i>វេជ្ជសាស្ត្រទូទៅ</a>
+                </li>
+                <li>
+                  <a href="#" class="f-link"><i class="fas fa-child me-2"></i>ការថែទាំកុមារ</a>
+                </li>
+                <li>
+                  <a href="#" class="f-link"><i class="fas fa-heart me-2"></i>រោគបេះដូង</a>
+                </li>
+                <li>
+                  <a href="#" class="f-link"><i class="fas fa-tooth me-2"></i>ទន្តសាស្ត្រ</a>
+                </li>
+                <li>
+                  <a href="#" class="f-link"><i class="fas fa-eye me-2"></i>ចក្ខុវិស័យ</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="fw-bold mb-3">ព័ត៍មានទំនាក់ទំនង</h5>
+              <p class="text-white-50 mb-1">
+                <i class="fas fa-map-marker-alt me-2"></i>123 Wellness Avenue,
+                ភ្នំពេញ
+              </p>
+              <p class="mb-1">
+                <a href="tel:123-436-7890" class="f-link"><i class="fas fa-phone me-2"></i>+1 (123) 436-7890</a>
+              </p>
+              <p class="mb-1">
+                <a href="mailto:hello@prohealth.com" class="f-link"><i
+                    class="fas fa-envelope me-2"></i>Welcometo@DigitalClinic.com</a>
+              </p>
+              <p class="text-white-50">
+                <i class="fas fa-clock me-2"></i>24/7 ការថែទាំសង្គ្រោះបន្ទាន់
+              </p>
+            </div>
+
+            <hr class="my-4" style="border:1px,solid, rgb(35, 88, 180)" />
+            <div class="row">
+              <div class="col text-center">
+                <p class="text-white-50 mb-0">
+                  &copy; 2025 គ្លីនិកឌីជីថល | រក្សាសិទ្ធិដោយ G-15 |
+                  <a href="#" class="text-decoration-none text-info">លក្ខខណ្ឌនៃសេវាកម្ម</a>
+                </p>
+              </div>
+            </div>
+          </div>
+      </section>
+    </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+     
+      // Load profile data from localStorage
+      const data = JSON.parse(localStorage.getItem("profileData")) || {
+        name: "អន សម្បត្តិ",
+        role: "អ្នកជំងឺ",
+        email: "sambath@example.com",
+        phone: "+855 12 345 678",
+        address: "ភ្នំពេញ, កម្ពុជា",
+        dob: "2000-01-01",
+        image: "../assets/img/user.png",
+      };
+
+      document.getElementById("profileName").textContent = data.name;
+      document.getElementById("profileRole").textContent = data.role;
+      document.getElementById("profileEmail").textContent = data.email;
+      document.getElementById("profilePhone").textContent = data.phone;
+      document.getElementById("profileAddress").textContent = data.address;
+      document.getElementById("profileDob").textContent = data.dob;
+      document.getElementById("profileImage").src = data.image;
+    </script>
+  </body>
+</html>

@@ -29,142 +29,9 @@ header a.nav-link {
   font-size: 17px;
 }
 
-/* ===========================
-   Base Styles
-=========================== */
-body {
-  font-family: "Kantumruy Pro", sans-serif;
-  color: var(--body-text);
-  overflow-x: hidden;
-  min-height: 100vh;
-  background-color: var(--bg-color);
-  margin: 0;
-  padding: 0;
-}
-
-/* ===========================
-  & Navbar
-=========================== */
-.navbar {
-  width: 100%;
-  padding: 12px;
-}
-
-/* Logo */
-.navbar .navbar-brand img {
-  height: 50px;
-  width: auto;
-  object-fit: contain;
-}
-
-/* Nav Links */
-.navbar .navbar-nav .nav-item .nav-link {
-  width: 100%;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: var(--text-primary);
-  position: relative;
-  transition: color 0.3s ease;
-  white-space: nowrap;
-}
-
-/* Active Link */
-.navbar .navbar-nav .nav-item .nav-link.active {
-  border-bottom: 2px solid var(--text-color);
-}
-
-/* Hover Underline Animation */
-.navbar .nav-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0;
-  height: 2px;
-  background: var(--text-color);
-  transition: width 0.3s ease;
-}
-.navbar .nav-link:hover::after {
-  width: 100%;
-}
-
-/* Dropdown menu background */
-.dropdown-menu {
-  background-color: #02305c; /* dark blue */
-  border-radius: 8px;
-}
-
-/* Dropdown text color */
-.dropdown-menu .dropdown-item {
-  color: #fff;
-}
-
-/* Hover effect */
-.dropdown-menu .dropdown-item:hover {
-  background-color: #0066cc;
-  color: #fff;
-}
-
-/* Custom buttons */
-.btn-custom {
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 6px 18px;
-  border-radius: 20px;
-  transition: all 0.3s ease;
-}
-
-.btn-signin {
-  background-color: var(--secondary);
-  border: 2px solid var(--secondary);
-  color: #fff;
-  font-size: 17px;
-  white-space: nowrap;
-}
-
-.btn-signin:hover {
-  background-color: var(--primary);
-  color: #004a8f;
-}
-
-.btn-register {
-  background-color: var(--text-primary);
-  border: 2px solid var(--accent);
-  color: #fff;
-  margin-left: 10px;
-  font-size: 17px;
-  white-space: nowrap;
-}
-
-.btn-register:hover {
-  background-color: #004a8f;
-  border-color: var(--accent);
-}
-.hero-btn {
-  background-color: #02305c;
-  color: var(--text-color);
-}
-.hero-btn:hover {
-  background-color: #004a8f;
-}
-.experience h2,
-.experience p {
-  color: var(--text-primary) !important;
-}
-
-@media (max-width: 1024px) {
-  .navbar .navbar-nav {
-    background-color: #004a8f;
-    padding: 10px 15px;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
-}
-
 /* ====================HERO DEPARTMENT [START]================ */
 .hero_department {
-  min-height: 80vh;
+  /* min-height: 80vh; */
   padding-top: 100px;
   /* padding: 800px 10px; */
   background: url("../img/department_img/hero_bg.svg") center/cover no-repeat;
@@ -229,7 +96,7 @@ body {
 .arrow-btn {
   background-color: #eaf4ff;
   border-radius: 12px;
-  /* width: 50px; */
+  width: 50px;
   height: 50px;
   display: flex;
   align-items: center;
@@ -241,19 +108,22 @@ body {
 .arrow-btn i {
   font-size: 20px;
   color: #1e90ff;
-  transition: transform 0.3s ease;
-}
-
-.arrow-btn:hover {
-  background-color: #1e90ff;
-  transform: translateY(-3px);
+  transition: transform 0.5s ease;
 }
 
 .arrow-btn:hover i {
-  color: #fff;
-  transform: translateX(4px);
+  color: #010a5e;
+  /* transform: translateX(4px); */
 }
-/* footer */
+/*===================== footer================================ */
+.footer {
+  background: linear-gradient(to left, #04326b, #062c5a, #0b2545 100%);
+}
+.footer .footer-logo {
+  width: 160px;
+  cursor: pointer;
+  margin: auto;
+}
 .footer .f-link {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
@@ -262,10 +132,10 @@ body {
   transition: all 0.3s;
 }
 .footer .f-link:hover {
-  color: #06b6d4;
+  color: var(--secondary);
   padding-left: 5px;
 }
-.footer .social-btn {
+.social-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -274,7 +144,60 @@ body {
   border-radius: 50%;
   transition: 0.3s;
 }
-.footer .social-btn:hover {
+.bg-fb {
+  background-color: #1877f2;
+}
+.bg-linkin {
+  background-color: #0a66c2;
+}
+.bg-ig {
+  background: linear-gradient(#5b51d8, #e1306c, #fcaf45);
+}
+.social-btn:hover {
   transform: scale(1.1);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+/* ==================Contact us======================= */
+.form-contact .card {
+  background-color: var(--bg-color);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.form-contact .card form input,
+.form-contact .card form select,
+.form-contact .card form textarea {
+  padding: 15px 20px;
+  border: 1px solid #2ca4c2;
+  border-radius: 20px;
+}
+.form-contact .btn {
+  padding: 10px 40px;
+  border-radius: 30px;
+  font-weight: 500;
+  background: linear-gradient(to right, #2e6fae, #2a5377);
+}
+.find-us {
+  margin-top: 660px;
+}
+.find-us h2 {
+  color: #274660;
+}
+.find-us .card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.find-us .card:hover {
+  background: linear-gradient(
+    135deg,
+    var(--secondary),
+    var(--text-primary)
+  ); /* blue gradient */
+  color: #fff;
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.find-us .card:hover i {
+  color: #fff;
 }

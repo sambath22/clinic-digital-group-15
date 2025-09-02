@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+        <link href="../assets/img/logo1.png" rel="icon" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
       rel="stylesheet"
@@ -43,88 +45,99 @@
     <link rel="stylesheet" href="../pages/blog.css">
 </head>
 <body>
+    <!-- ====================Header=============================== -->
+  <header class="fixed-top">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
 
-    <!-- =============== -->
-    <!-- Header -->
-    <!-- ============== -->
+        <!-- Logo (Left) -->
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+          <img src="../assets/img/logo1.png" alt="Clinic Digital Logo" height="40" class="me-2">
+        
+        </a>
 
-    <header class="fixed-top">
-      <div class="container">
-        <nav class="navbar navbar-expand-xl navbar-dark">
-          <div class="container-fluid">
-            <!-- Logo -->
-            <a class="navbar-brand" href="../index.html">
-              <img src="../assets/img/logo1.png" alt="Logo" height="40" />
-            </a>
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- Toggler for mobile -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+        <!-- Navbar Menu (CENTER) -->
+        <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+          <ul class="navbar-nav fw-bold text-uppercase">
+            <li class="nav-item px-2">
+              <a class="nav-link active" href="../index.html">ទំព័រដើម</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="../pages/aboutUs.html">អំពីពួកយើង</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="../pages/appointment.html">ការណាត់ជួប</a>
+            </li>
 
-            <!-- Navbar Links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul
-                class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-uppercase"
-              >
-                <li class="nav-item px-3">
-                  <a class="nav-link active" href="../index.html">ទំព័រដើម</a>
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="../pages/aboutUs.html"
-                    >អំពីពួកយើង</a
-                  >
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="../pages/appointment.html"
-                    >កាណាត់ជួប</a
-                  >
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="../pages/department_page.html"
-                    >សេវាកម្ម</a
-                  >
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="../pages/doctor.html"
-                    >វេជ្ជបណ្ឌិត</a
-                  >
-                </li>
-
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="../pages/contact_us.html"
-                    >ទាក់ទងមកពួកយើង</a
-                  >
-                </li>
+            <!-- Dropdown Example -->
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                សេវាកម្ម
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../pages/department_page.html">សេវាកម្មទាំងអស់</a></li>
+                <li><a class="dropdown-item" href="../pages/patient-login.html">សេវាកម្មលំអិត</a></li>
               </ul>
-            </div>
-
-            <!-- Buttons (Sign In / Register) -->
-
-            <div class="d-flex ms-3">
-              <a
-                href="../pages/patient-signup.html"
-                class="btn btn-custom btn-signin me-2"
-              >
-                ចុះឈ្មោះ
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+               ទំព័រផ្សេងៗ
               </a>
-              <a
-                href="../pages/patient-login.html"
-                class="btn btn-custom btn-register"
-              >
-                ចូលគណនី
-              </a>
-            </div>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../pages/blog.html">ពត៌មានថ្មីៗ</a></li>
+                <li><a class="dropdown-item" href="../pages/timetable.html">ពេលវេលា</a></li>
+                <li><a class="dropdown-item" href="../pages/pricing-plan.html">តម្លៃ</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="../pages/question.html">សាកសួរព័ត៍មាន</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item px-2">
+              <a class="nav-link" href="../pages/doctor.html">វេជ្ជបណ្ឌិត</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="../pages/contact_us.html">ទាក់ទងមកយើង</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Side (Buttons / Account) -->
+        <div class="d-flex ms-3">
+          <!-- BEFORE LOGIN -->
+          <a href="../pages/patient-signup.html" class="btn btn-custom btn-signin me-2">
+            ចុះឈ្មោះ
+          </a>
+          <a href="../pages/patient-login.html" class="btn btn-custom btn-register">
+            ចូលគណនី
+          </a>
+
+          <!-- AFTER LOGIN (Dropdown Example) -->
+          <!--
+          <div class="dropdown ms-3">
+            <a class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" href="#" id="userDropdown" data-bs-toggle="dropdown">
+              <img src="assets/img/user.png" alt="user" width="32" height="32" class="rounded-circle me-2">
+              សំបាត់
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="pages/patient-dashboard.html">ផ្ទាំងគ្រប់គ្រង</a></li>
+              <li><a class="dropdown-item" href="pages/profile.html">ពត៌មានផ្ទាល់ខ្លួន</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item text-danger" href="logout.html">ចាកចេញ</a></li>
+            </ul>
           </div>
-        </nav>
-      </div>
-    </header>
+          -->
+        </div>
 
+      </div>
+    </nav>
+  </div>
+</header>
     <main>
        <section
         class="hero_department d-flex align-items-center position-relative"
@@ -384,11 +397,6 @@
           <!-- Brand -->
           <div class="row mb-5">
             <div class="col-12 text-center">
-              <img src="../assets/img/logo1.png" alt="" width="160" class="mb-3" />
-              <p class="text-white-50 mx-auto" style="max-width: 500px">
-                សុខភាពរបស់អ្នក ជាមួយបច្ចេកវិទ្យារបស់យើង មិនត្រឹមតែបើកទ្វារទៅកាន់សក្តានុពលគ្មានកំណត់ទេ
-                ប៉ុន្តែធ្វើឲ្យការថែទាំកាន់តែទំនើប សុវត្ថិភាព និងងាយស្រួលជាងមុន។
-              </p>
             </div>
           </div>
 
