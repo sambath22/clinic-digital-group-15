@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clinic Digital</title>
 
+  <!-- AOS link -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- ---------font-awesome---------- -->
@@ -73,7 +75,7 @@
 
         </div>
       </nav>
-    </div> 
+    </div>
   </header>
 
 
@@ -629,7 +631,8 @@
                   <a href="pages/aboutUs.html" class="f-link"><i class="fas fa-angle-right me-2"></i>អំពីយើង</a>
                 </li>
                 <li>
-                  <a href="pages/department_page.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ផ្នែកឯកទេស</a>
+                  <a href="pages/department_page.html" class="f-link"><i
+                      class="fas fa-angle-right me-2"></i>ផ្នែកឯកទេស</a>
                 </li>
                 <li>
                   <a href="pages/doctor.html" class="f-link"><i class="fas fa-angle-right me-2"></i>ជួបគ្រូពេទ្យ</a>
@@ -696,6 +699,9 @@
           </div>
       </section>
     </footer>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- swipper -->
@@ -820,6 +826,9 @@
           shape.style.transform = `translate(${xMove}px, ${yMove}px)`;
         });
       });
+
+      // AOS
+      AOS.init();
     </script>
 </body>
 
