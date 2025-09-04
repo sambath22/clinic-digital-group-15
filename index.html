@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,108 +25,82 @@
 </head>
 
 <body>
-<!-- ======= HEADER ======= -->
+  <!-- header -->
 <header class="fixed-top">
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-xl navbar-light py-2">
+      
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+        <img src="assets/img/logo1.png" alt="Clinic Digital Logo" height="40" class="me-2">
+      </a>
 
-        <!-- Logo (Left) -->
-        <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-          <img src="assets/img/logo1.png" alt="Clinic Digital Logo" height="40" class="me-2">
-        
-        </a>
+      <!-- Mobile Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Mobile Toggler -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <!-- Navbar Links + Buttons -->
+      <div class="collapse navbar-collapse justify-content-between" id="mainNavbar">
 
-        <!-- Navbar Menu (CENTER) -->
-        <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
-          <ul class="navbar-nav fw-bold text-uppercase">
-            <li class="nav-item px-2">
-              <a class="nav-link active" href="index.html">ទំព័រដើម</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="pages/aboutUs.html">អំពីពួកយើង</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="pages/appointment.html">ការណាត់ជួប</a>
-            </li>
+        <!-- Centered Menu -->
+        <ul class="navbar-nav mx-auto fw-bold text-uppercase ">
+          <li class="nav-item px-2">
+            <a class="nav-link active" href="index.html">ទំព័រដើម</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="pages/aboutUs.html">អំពីពួកយើង</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="pages/appointment.html">ការណាត់ជួប</a>
+          </li>
+          <li class="nav-item dropdown px-2">
+            <a class="nav-link dropdown-toggle" href="pages/department_page.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+              សេវាកម្ម
+            </a>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item" href="pages/department_page.html">សេវាកម្មទាំងអស់</a></li>
+              <li><a class="dropdown-item" href="pages/department-detail.html">សេវាកម្មលំអិត</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown px-2">
+            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown">
+              ទំព័រផ្សេងៗ
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="pages/blog.html">ពត៌មានថ្មីៗ</a></li>
+              <li><a class="dropdown-item" href="pages/timetable.html">ពេលវេលា</a></li>
+              <li><a class="dropdown-item" href="pages/pricing-plan.html">តម្លៃ</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="pages/question.html">សាកសួរព័ត៍មាន</a></li>
+            </ul>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="pages/doctor.html">វេជ្ជបណ្ឌិត</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="pages/contact_us.html">ទាក់ទងមកពួកយើង</a>
+          </li>
+        </ul>
 
-            <!-- Dropdown Example -->
-            <li class="nav-item dropdown px-2">
-              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
-                សេវាកម្ម
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="pages/department_page.html">សេវាកម្មទាំងអស់</a></li>
-                <li><a class="dropdown-item" href="pages/patient-login.html">សេវាកម្មលំអិត</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown px-2">
-              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
-               ទំព័រផ្សេងៗ
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="pages/blog.html">ពត៌មានថ្មីៗ</a></li>
-                <li><a class="dropdown-item" href="pages/timetable.html">ពេលវេលា</a></li>
-                <li><a class="dropdown-item" href="pages/pricing-plan.html">តម្លៃ</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="pages/question.html">សាកសួរព័ត៍មាន</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item px-2">
-              <a class="nav-link" href="pages/doctor.html">វេជ្ជបណ្ឌិត</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="pages/contact_us.html">ទាក់ទងមកយើង</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Right Side (Buttons / Account) -->
-        <div class="d-flex ms-3">
-          <!-- BEFORE LOGIN -->
-          <a href="pages/patient-signup.html" class="btn btn-custom btn-signin me-2">
+        <!-- Right Side Buttons -->
+        <div class=" flex-column flex-xl-row mt-3 mt-xl-0">
+          <a href="pages/patient-signup.html" class="btn btn-custom btn-signin me-xl-2 mb-2 mb-xl-0">
             ចុះឈ្មោះ
           </a>
           <a href="pages/patient-login.html" class="btn btn-custom btn-register">
             ចូលគណនី
           </a>
-
-          <!-- AFTER LOGIN (Dropdown Example) -->
-          <!--
-          <div class="dropdown ms-3">
-            <a class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" href="#" id="userDropdown" data-bs-toggle="dropdown">
-              <img src="assets/img/user.png" alt="user" width="32" height="32" class="rounded-circle me-2">
-              សំបាត់
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="pages/patient-dashboard.html">ផ្ទាំងគ្រប់គ្រង</a></li>
-              <li><a class="dropdown-item" href="pages/profile.html">ពត៌មានផ្ទាល់ខ្លួន</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item text-danger" href="logout.html">ចាកចេញ</a></li>
-            </ul>
-          </div>
-          -->
         </div>
 
       </div>
     </nav>
   </div>
 </header>
-<!-- ======= END HEADER ======= -->
 
 <!-- ======= END HEADER ======= -->
-
-
-  <!-- ==============HEADER[END]=================== -->
-
-  <main>
-     <!-- ================Hero-banner[START]===================== -->
+<main>
+    <!-- ================Hero-banner[START]===================== -->
     <section id="hero" class="hero d-flex flex-column mb-0 pb-0 shadow" 
          style="position: relative; background: url('assets/img/hero_bg.jpeg') no-repeat center center; 
                 background-size: cover; min-height: 100vh;">
@@ -133,227 +108,244 @@
   <!-- Overlay -->
   <div style="position: absolute; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.4); z-index:1;"></div>
 
-  <div class="container d-flex align-items-center" style="position: relative; z-index:2;">
-    <div class="row m-0 align-items-center w-100">
-      <!-- Left text -->
-      <div class="hero-tex col-xl-6 col-lg-6 col-md-12 col-12 text-white">
-        <h1 class="mb-5">
-          ការថែទាំប្រកបដោយមេត្តា <br />
-          លទ្ធផលពិសេស
-        </h1>
-        <div class="mb-3">
-          <a href="#" class="btn fw-bold hero-btn">ជំនួយសុខភាព</a>
+      <div class="container d-flex align-items-center" style="position: relative; z-index:2;">
+        <div class="row m-0 align-items-center w-100">
+          <!-- Left text -->
+          <div class="hero-tex col-xl-6 col-lg-6 col-md-12 col-12 text-white">
+            <h1 class="mb-5">
+              ការថែទាំប្រកបដោយផាសុខភាព<br />
+              ទទួលបានការយកចិត្តទុកដាក់
+            </h1>
+            <div class="mb-3">
+              <a href="pages/appointment.html" class="btn fw-bold hero-btn">កក់ការណាត់ជួប</a>
+            </div>
+            <p>
+              ក្រុមវេជ្ជបណ្ឌិតដែលមានបទពិសោធន៍
+              និងអ្នកជំនាញផ្នែកថែទាំសុខភាពរបស់យើងប្តេជ្ញាផ្តល់ការថែទាំប្រកបដោយគុណភាព
+              និងការយកចិត្តទុកដាក់ផ្ទាល់ខ្លួនដល់អ្នកជំងឺរបស់យើង។
+            </p>
+          </div>
+
+          <!-- Right image -->
+          <div class="col-xl-6 col-lg-6 col-md-12 text-center me-5">
+            <img src="assets/img/patents.png" alt="Doctor and Family" class="cs_hero_patents" />
+          </div>
         </div>
-        <p>
-          ក្រុមវេជ្ជបណ្ឌិតដែលមានបទពិសោធន៍
-          និងអ្នកជំនាញផ្នែកថែទាំសុខភាពរបស់យើងប្តេជ្ញាផ្តល់ការថែទាំប្រកបដោយគុណភាព
-          និងការយកចិត្តទុកដាក់ផ្ទាល់ខ្លួនដល់អ្នកជំងឺរបស់យើង។
-        </p>
+      </div>
+    </section>
+    <!-- ================Hero-banner[END]===================== -->
+
+    <!-- About US -->
+    <section class="aboutus cs_shape_wrap mb-5" id="about">
+  <div class="cs_shape_3">
+    <svg width="738" height="1021" viewBox="0 0 738 1021" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path opacity="0.3"
+        d="M506.527 867.937C615.393 1097.48 818.459 1018.63 907.122 949.788C1042.42 829.481 1036.04 611.775 1029.54 527.791C1024.34 460.604 1062.82 284.256 1082.7 204.481C1083.75 -64.008 818.226 5.58123 770.748 15.9811C723.269 26.3809 576.724 101.716 421.771 86.8061C297.808 74.8779 186.268 99.512 145.993 113.32C-23.6388 193.807 -2.65999 291.251 7.10276 333.378C16.8655 375.504 69.7486 450.893 258.934 518.436C410.283 572.47 487.55 773.465 506.527 867.937Z"
+        fill="url(#paint0_linear_6_231)"></path>
+      <defs>
+        <linearGradient id="paint0_linear_6_231" x1="916.904" y1="949.82" x2="393.707" y2="-20.953"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#86BBF1" offset="0"></stop>
+          <stop offset="1" stop-color="#D2EAEF"></stop>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <div class="cs_height_190 cs_height_xl_150 cs_height_lg_105"></div>
+
+  <div class="container">
+    <div class="experience row text-center align-items-center">
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-0">
+        <h2 class="mt-2">20+</h2>
+        <p class="mb-0">ឆ្នាំនៃបទពិសោធន៍</p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-md-0">
+        <h2 class="mt-2">95%</h2>
+        <p class="mb-0">អត្រាពេញចិត្តរបស់អ្នកជំងឺ</p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-md-0">
+        <h2 class="mt-2">5000+</h2>
+        <p class="mb-0">អ្នកជំងឺដែលបានបម្រើប្រចាំឆ្នាំ</p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-md-0">
+        <h2 class="mt-2">10+</h2>
+        <p class="mb-0">អ្នកផ្តល់សេវាសុខាភិបាលក្នុងក្រុម</p>
+      </div>
+    </div>
+
+    <div class="row align-items-center mt-5 gap_y_50">
+      <div class="col-lg-6">
+        <div class="about-image">
+          <img src="assets/img/about-us/about.png" alt="អំពីយើង" />
+          <div class="about_mini_img">
+            <img src="assets/img/about-us/about_mini.svg" alt="Mini" class="rotate_animation" />
+            <img src="assets/img/about-us/tick.svg" alt="ត្រង់" class="right_icon" />
+          </div>
+        </div>
       </div>
 
-      <!-- Right image -->
-      <div class="col-xl-6 col-lg-6 col-md-12 text-center me-5">
-        <img src="assets/img/patents.png" alt="Doctor and Family" class="cs_hero_patents" />
+      <div class="col-lg-6">
+        <div class="about_content">
+          <h3 class="subtitle text-uppercase">អំពីពួកយើង</h3>
+          <h2 class="title">
+            DigiTal Clinic គឺជាក្រុមគ្រូពេទ្យដែលមានបទពិសោធន៍ខ្ពស់
+          </h2>
+          <p class="mb-0">
+            យើងបានឧទ្ទិសដល់ការផ្តល់សេវាថែទាំសុខភាពដែលមានគុណភាពខ្ពស់។ យើងជឿជាក់លើវិធីសាស្ត្ររួមចំពោះការថែទាំសុខភាព ដែលផ្តោតលើការព្យាបាលទាំងមូល មិនត្រឹមតែជាជំងឺ ឬរោគសញ្ញាប៉ុណ្ណោះទេ។
+          </p>
+        </div>
       </div>
     </div>
   </div>
     </section>
 
-    <!-- ================Hero-banner[END]===================== -->
-
-    <!-- About US -->
-    <section class="aboutus cs_shape_wrap mb-5" id="about">
-      <div class="cs_shape_3">
-        <svg width="738" height="1021" viewBox="0 0 738 1021" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path opacity="0.3"
-            d="M506.527 867.937C615.393 1097.48 818.459 1018.63 907.122 949.788C1042.42 829.481 1036.04 611.775 1029.54 527.791C1024.34 460.604 1062.82 284.256 1082.7 204.481C1083.75 -64.008 818.226 5.58123 770.748 15.9811C723.269 26.3809 576.724 101.716 421.771 86.8061C297.808 74.8779 186.268 99.512 145.993 113.32C-23.6388 193.807 -2.65999 291.251 7.10276 333.378C16.8655 375.504 69.7486 450.893 258.934 518.436C410.283 572.47 487.55 773.465 506.527 867.937Z"
-            fill="url(#paint0_linear_6_231)"></path>
-          <defs>
-            <linearGradient id="paint0_linear_6_231" x1="916.904" y1="949.82" x2="393.707" y2="-20.953"
-              gradientUnits="userSpaceOnUse">
-              <stop stop-color="#86BBF1" offset="0"></stop>
-              <stop offset="1" stop-color="#D2EAEF"></stop>
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
-      <div class="cs_height_190 cs_height_xl_150 cs_height_lg_105"></div>
-      <div class="container">
-        <div class="experience row text-center align-items-center">
-          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3 mb-md-0">
-            <h2 class="mt-2">20+</h2>
-            <p class="mb-0">Year Of Experience</p>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-md-0">
-            <h2 class="mt-2">95%</h2>
-            <p class="mb-0">Patient satisfaction rating</p>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-md-0">
-            <h2 class="mt-2">5000+</h2>
-            <p class="mb-0">Patients served annually</p>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-md-0">
-            <h2 class="mt-2">10+</h2>
-            <p class="mb-0">Healthcare providers on staff</p>
-          </div>
-        </div>
-
-        <div class="row align-items-center mt-5 gap_y_50">
-          <div class="col-lg-6">
-            <div class="about-image">
-              <img src="assets/img/about-us/about.png" alt="About" />
-              <div class="about_mini_img">
-                <img src="assets/img/about-us/about_mini.svg" alt="Mini" class="rotate_animation" />
-                <img src="assets/img/about-us/tick.svg" alt="Right" class="right_icon" />
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="about_content">
-              <h3 class="subtitle text-uppercase">អំពីពួកយើង</h3>
-              <h2 class="title">
-                DigiTal Clinic គឺជាក្រុមគ្រូពេទ្យដែលមានបទពិសោធន៍
-              </h2>
-              <p class="mb-0">
-                ឧទ្ទិសដល់ការផ្តល់សេវាថែទាំសុខភាពគុណភាពខ្ពស់។ យើងជឿជាក់លើ ក
-                វិធីសាស្រ្តរួមចំពោះការថែទាំសុខភាពដែលផ្តោតលើការព្យាបាលទាំងមូល
-                មនុស្ស​មិន​ត្រឹម​តែ​ជា​ជំងឺ​ឬ​រោគ​សញ្ញា​នោះ​ទេ
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- ===============ABOUT[END]================ -->
     <!-- ==============TESTIMONIAL[START]=================== -->
 
-    <section class="testimonial cs_bg_filed align-items-cente py-5  ">
-      <div class="container align-items-center">
-        <span>មតិយោបល់</span>
-        <h2>អ្វីដែលអ្នកជំងឺបាននិយាយ</h2>
+    <section class="testimonial-section">
+      <div class="container">
+        <h2>អ្វីដែល <span>អតិថិជន</span> និយាយ</h2>
+        <p class="subtitle">សូមស្តាប់ពីអតិថិជនដែលពេញចិត្តនិងការប្រើប្រាស់ Platform របស់យើង</p>
+
         <!-- Swiper -->
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <!-- Slide 1 -->
             <div class="swiper-slide">
-              <div class="testimonial-card">
-                <img src="assets/img/testimonial_img_1.png" alt="profile" />
-                <div class="testimonial-name">Laurence Vendetta</div>
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-text">
-                  ថ្មីៗនេះខ្ញុំត្រូវនាំកូនរបស់ខ្ញុំទៅ ProHealth សម្រាប់អនីតិជន
-                  របួស ហើយខ្ញុំចាប់អារម្មណ៍យ៉ាងខ្លាំងចំពោះការថែទាំ។ នេះ។
-                  គ្រូពេទ្យកុមារគឺអស្ចារ្យជាមួយគាត់
-                  ហើយធ្វើឱ្យគាត់មានអារម្មណ៍ស្រួល។ បុគ្គលិកមានចិត្តល្អ
-                  និងយកចិត្តទុកដាក់។
-                </p>
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">
+                Clinic Digital បានបន្ថែមប្រសិទ្ធភាពក្នុងការគ្រប់គ្រងក្លិនិករបស់យើង។
+                អ្នកជំងឺមានភាពពេញចិត្ត និងក្រុមការងារចូលចិត្តប្រើប្រាស់យ៉ាងខ្លាំង។
+              </p>
+              <div class="testimonial-footer">
+                <img src="assets/img/testimonial_img.jpg" alt="ចន ដូ" />
+                <div>
+                  <h4>ចន ដូ</h4>
+                  <p>ប្រធានផ្នែកគ្រប់គ្រង Clinic at HealthFirst</p>
+                </div>
               </div>
             </div>
 
             <!-- Slide 2 -->
             <div class="swiper-slide">
-              <div class="testimonial-card">
-                <img src="assets/img/testimonial_img_2.png" alt="profile" />
-                <div class="testimonial-name">Paulo Hubert</div>
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-text">
-                  បទពិសោធន៍ដ៏អស្ចារ្យនៅគ្លីនិក! គ្រូពេទ្យគឺ ប្រកបដោយវិជ្ជាជីវៈ
-                  និងរួសរាយរាក់ទាក់ ហើយពួកគេបានធ្វើឱ្យខ្ញុំមានអារម្មណ៍ស្រួល
-                  ពីដើមដល់ចប់។ ផ្តល់អនុសាសន៍ខ្ពស់សម្រាប់គ្រួសារ
-                  ការថែទាំសុខភាព។បុគ្គលិកមានចិត្តល្អ
-                  និងយកចិត្តទុកដាក់។
-                </p>
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">
+                Platform របស់ Clinic Digital មាន UI សាមញ្ញ និងងាយស្រួលប្រើ។
+                វាបន្ថែមការចូលរួម និងកាត់បន្ថយពេលវេលាការងាររបស់យើង។
+              </p>
+              <div class="testimonial-footer">
+                <img src="assets/img/testimonial_img_1.png" alt="អេលីយ៉ា រ៉ាមីរ៉េស" />
+                <div>
+                  <h4>អេលីយ៉ា រ៉ាមីរ៉េស</h4>
+                  <p>នាយកប្រតិបត្តិ at EcoHealth Clinic</p>
+                </div>
               </div>
             </div>
 
             <!-- Slide 3 -->
             <div class="swiper-slide">
-              <div class="testimonial-card">
-                <img src="assets/img/testimonial_img.jpg" alt="profile" />
-                <div class="testimonial-name">Sophia James</div>
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-text">
-                  សេវាកម្មនៅទីនេះគឺអស្ចារ្យណាស់។ ពួកគេពិតជាយកចិត្តទុកដាក់
-                  សុខុមាលភាពរបស់អ្នកជំងឺ។ ការ​ពិគ្រោះ​យោបល់​ឌីជីថល​បាន​រលូន
-                  និងងាយស្រួលចូលប្រើ។បុគ្គលិកមានចិត្តល្អ
-                  និងយកចិត្តទុកដាក់។ផ្តល់អនុសាសន៍ខ្ពស់សម្រាប់គ្រួសារ
-                  ការថែទាំសុខភាព។
-                </p>
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">
+                Clinic Digital បានផ្តល់បទពិសោធន៍ថ្មីក្នុងការតាមដានពិន្ទុសុខភាព និងការណាត់ជួប។
+                វាបង្កើនប្រសិទ្ធភាពនៃសេវាកម្មយើងយ៉ាងច្រើន។
+              </p>
+              <div class="testimonial-footer">
+                <img src="assets/img/testimonial_img_2.png" alt="មៀ សុង" />
+                <div>
+                  <h4>មៀ សុង</h4>
+                  <p>CTO at HealthBridgeTech</p>
+                </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Custom Nav Buttons -->
-          <div class="swiper-nav">
-            <div class="custom-swiper-btn swiper-button-prev">←</div>
-            <div class="custom-swiper-btn swiper-button-next">→</div>
-          </div>
+        <!-- Custom Buttons -->
+        <div class="testimonial-buttons">
+          <button class="btn-prev">&#10094;</button>
+          <button class="btn-next">&#10095;</button>
         </div>
       </div>
     </section>
+
     <!-- ============ TESTIMONIAL[END]============= -->
     <!-- ===========DOCTOR-SECTION[START]========= -->
-    <section class="doctor bg-light py-4 m-0" >
-      <div class="container">
+    <section class="doctor py-5 bg-light">
+      <div class="container text-center">
         <span>ព័ត៌មាន</span>
-        <h2 class="title py-2">វេជ្ជបណ្ឌិត</h2>
+        <h2>វេជ្ជបណ្ឌិត</h2>
         <div class="row g-4">
-          <!-- Doctor Card -->
+          <!-- Doctor 1 -->
+   
           <div class="col-lg-4 col-md-6">
-            <div class="card doctor-card shadow-sm border-0 h-100">
+             <div class="card doctor-card shadow-sm border-0 h-100">
               <div class="doctor-img-wrapper position-relative">
-                <img src="assets/img/doctor/doctor_1.png" class="card-img-top" alt="Dr. James Lee" />
-                <div class="doctor-social d-flex justify-content-center align-items-center">
+                <a href=""></a>
+                <img src="assets/img/doctor/doctor_1.png" alt="Dr. James Lee" />
+                <div
+                  class="doctor-social d-flex justify-content-center align-items-center"
+                >
                   <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                   <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                   <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 </div>
               </div>
               <div class="card-body text-center">
-                <h5 class="card-title mb-2">
+                <h5 class="card-title">
                   <a href="doctor-details.html">វេជ្ជបណ្ឌិត James Lee, MD</a>
                 </h5>
-                <p class="text-primary mb-2">ប្រធានគ្រូពេទ្យបេះដូង</p>
+                <p>ប្រធានគ្រូពេទ្យបេះដូង</p>
               </div>
             </div>
           </div>
 
-          <!-- Repeat for other doctors -->
+          <!-- Doctor 2 -->
           <div class="col-lg-4 col-md-6">
             <div class="card doctor-card shadow-sm border-0 h-100">
               <div class="doctor-img-wrapper position-relative">
-                <img src="assets/img/doctor/doctor_2.png" class="card-img-top" alt="Dr. Anna Smith" />
-                <div class="doctor-social d-flex justify-content-center align-items-center">
+                <img
+                  src="assets/img/doctor/doctor_2.png"
+                  alt="Dr. Anna Smith"
+                />
+                <div
+                  class="doctor-social d-flex justify-content-center align-items-center"
+                >
                   <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                   <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                   <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 </div>
               </div>
               <div class="card-body text-center">
-                <h5 class="card-title mb-2">
+                <h5 class="card-title">
                   <a href="doctor-details.html">វេជ្ជបណ្ឌិត Anna Smith, MD</a>
                 </h5>
-                <p class="text-primary mb-2">ប្រធានផ្នែកសរសៃប្រសាទ</p>
+                <p>ប្រធានផ្នែកសរសៃប្រសាទ</p>
               </div>
             </div>
           </div>
 
+          <!-- Doctor 3 -->
           <div class="col-lg-4 col-md-6">
             <div class="card doctor-card shadow-sm border-0 h-100">
               <div class="doctor-img-wrapper position-relative">
-                <img src="assets/img/doctor/doctor_3.png" class="card-img-top" alt="Dr. Robert Kim" />
-                <div class="doctor-social d-flex justify-content-center align-items-center">
+                <img
+                  src="assets/img/doctor/doctor_3.png"
+                  alt="Dr. Robert Kim"
+                />
+                <div
+                  class="doctor-social d-flex justify-content-center align-items-center"
+                >
                   <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                   <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                   <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 </div>
               </div>
               <div class="card-body text-center">
-                <h5 class="card-title mb-2">
-                  <a href="doctor-details.html">
-                    វេជ្ជបណ្ឌិត Robert Kim, MD</a>
+                <h5 class="card-title">
+                  <a href="doctor-details.html">វេជ្ជបណ្ឌិត Robert Kim, MD</a>
                 </h5>
-                <p class="text-primary mb-2">ប្រធានពេទ្យកុមារ</p>
+                <p>ប្រធានពេទ្យកុមារ</p>
               </div>
             </div>
           </div>
@@ -421,9 +413,11 @@
     <!-- ===============DEPARTMENT [END]================ -->
 
 
- <section class="price-package mt-5 pt-5">
+ <section class="price-package">
           <div class="container">
-            <div class="row g-4">
+              <h2>កញ្ចប់ <span>តម្លៃ</span> សម្រាប់អ្នកជំងឺ</h2>
+
+            <div class="row mt-3 g-4">
           
                 <!-- Senior Wellness Plan -->
               <div class="col-lg-4 col-md-6">
@@ -943,7 +937,7 @@
         </div>
       </section>
       <!-- /Contact Section -->
-
+</main>
   
 
     <!-- ====================Footer=============================== -->
@@ -1060,28 +1054,22 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        grabCursor: true,
+      // swipper 
+       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 30,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+        loop: true,
         breakpoints: {
           768: { slidesPerView: 2 },
-          1200: { slidesPerView: 3 },
+          1024: { slidesPerView: 3 },
         },
       });
+
+      // Custom buttons control
+      document.querySelector(".btn-prev").addEventListener("click", () => swiper.slidePrev());
+      document.querySelector(".btn-next").addEventListener("click", () => swiper.slideNext());
+
+      // ================swipper[END]=====================
       // Header scroll class
 
       window.addEventListener("scroll", function () {
